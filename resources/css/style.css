@@ -1,0 +1,30 @@
+.login_box {
+    position: absolute;
+width: 500px;
+height: 600px;
+left: 710px;
+top: 240px;
+
+/* Lapis */
+
+background: rgba(255, 255, 255, 0.5);
+border-radius: 20px;
+}
+
+
+
+.box_login {
+    position: absolute;
+width: 378px;
+height: 80px;
+left: 771px;
+top: 421px;
+}
+
+.button_login{
+    position: absolute;
+width: 200px;
+height: 70px;
+left: 860px;
+top: 731px;
+}
