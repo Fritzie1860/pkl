@@ -2,6 +2,6 @@
 
 @section('content') 
 
-    <img src={{image/Gradient.svg}} alt="">
+    <div ></div>
     
 @endsection
