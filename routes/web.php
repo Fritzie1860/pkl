@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::view('/login', 'login');
+Route::view('/db', 'dashboard');

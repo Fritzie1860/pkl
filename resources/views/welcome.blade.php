@@ -2,6 +2,8 @@
 
 @section('content') 
 
-    <div ></div>
+    <div class="side_bg">
+
+    </div>
     
 @endsection

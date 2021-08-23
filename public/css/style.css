@@ -68,3 +68,10 @@
     font-weight: normal;
     font-size: 20px;
 }
+
+.side_bg{
+    width: 300px;
+    height: 100%;
+    background-image: url("images/gradientberdiri.png");
+    /* background-attachment: fixed; */
+}
