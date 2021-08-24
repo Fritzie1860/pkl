@@ -70,8 +70,41 @@
 }
 
 .side_bg{
+    padding-top: 190px;
     width: 300px;
     height: 100%;
-    background-image: url("images/gradientberdiri.png");
-    /* background-attachment: fixed; */
+    margin-top:-10px;
+    margin-left: -10px;
+    background-size: cover;
+    background-image: url("../images/gradientberdiri.png");
+    
+}
+
+.active {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    }
+
+.sub_menu {
+    margin-left: 50px;
+    width: 250px;
+    height: 70px;
+}
+
+.sub_menu p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    display: inline;
+    color: #141414;
+    margin-left: 10px;
+}
+
+.sub_menu img {
+    width: 21px;
+    height: 24.07px;
 }
