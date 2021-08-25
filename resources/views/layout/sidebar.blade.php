@@ -4,26 +4,28 @@
     </head>
     <body>
         <div class="side_bg"  >
-        <div class="sub_menu">
-        <img src="{{asset('images/home_fill.png')}}" > 
-            <p>
-                Dashboard
-            </p>
-        </div>
+            <img src="{{asset('images/invest_sidebar.png')}}" >   
+            @include('layout.header')
+            <div class="sub_menu">
+                <img src="{{asset('images/home_fill.png')}}" > 
+                <a href="#">
+                    Dashboard
+                </a>
+            </div>
 
-        <div class="sub_menu">
-        <img src="{{asset('images/folder_fill.png')}}"> 
-            <p>
-                Project
-            </p>
-        </div>
+            <div class="sub_menu">
+                <img src="{{asset('images/folder_fill.png')}}"> 
+                <a href="#">
+                    Project
+                </a>
+            </div>
 
-        <div class="sub_menu"> 
-            <img src="{{asset('images/users_fill.png')}}">
-            <p>
-                Users
-            </p>
-        </div>
+            <div class="sub_menu"> 
+                <img src="{{asset('images/users_fill.png')}}">
+                <a href="#">
+                    Users
+                </a>
+            </div>
         </div>
         
     </body>
