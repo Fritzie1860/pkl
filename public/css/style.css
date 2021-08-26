@@ -177,6 +177,11 @@
     height: 120px;
 }
 
+.pad {
+    padding-top: 15px;
+    margin-left: 12px;
+}
+
 .last_seen {
     background-image: url("../images/po.png");
     width: 569px;

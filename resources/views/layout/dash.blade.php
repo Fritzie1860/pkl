@@ -24,11 +24,11 @@
         </div>
 
         <div class="last_seen"> 
-            <h1> Last Seen</h1>
+            <h1 class="pad"> Last Seen</h1>
         </div>
 
         <div class="recent">
-        <h1> Recently</h1>
+        <h1 class="pad"> Recently</h1>
         </div>
     </div>
 </div>
