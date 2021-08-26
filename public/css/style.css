@@ -72,10 +72,11 @@
 .side_bg{
     width: 300px;
     height: 100%;
-    margin-top:-10px;
+    margin-top:-80px;
     margin-left: -10px;
     background-size: cover;
     background-image: url("../images/gradientberdiri.png");
+    float: left;
     
 }
 
@@ -112,17 +113,78 @@
 }
 
 .sub_menu img {
-    padding-top: 20px;
+    padding-top: 30px;
     width: 25px;
     height: 25px;
 }
 
 .header{
     background-image: url("../images/gradienttidur.png");
-    width: 74px;
-    height: 1624px;
-    transform: rotate(90deg);
+    width: 1624px;
+    height: 74px;
+    margin-top:-10px;
+    margin-left: 290px;
+    /* transform: rotate(90deg); */
     left: 300px;
     top: 0px;
-    float: right;
+    
+}
+
+.konten {
+    display: inline-flex;
+    margin-left: 70px;
+    margin-top: 70px;
+    width: 1400px;
+    height: 900px;
+}
+
+.pro_over {
+     
+    background-image: url("../images/po.png");
+    width: 888px;
+    height: 812px;
+    left: 370px;
+    top: 148px;
+    
+}
+
+.samping_pro {
+    margin-left: 25px;
+    width: 569px;
+    height: 2000px;
+
+}
+
+.info {
+    
+    width: 1624px;
+    height: 130px;
+    
+}
+
+.detil:last-child {
+    display: inline-block;
+    margin-left: 25px;
+    background-image: url("../images/po.png");
+    width: 270px;
+    height: 120px;
+}
+
+.detil{
+    display: inline-block;
+    background-image: url("../images/po.png");
+    width: 270px;
+    height: 120px;
+}
+
+.last_seen {
+    background-image: url("../images/po.png");
+    width: 569px;
+    height: 248px;
+}
+
+.recent {
+    background-image: url("../images/po.png");
+    width: 569px;
+    height: 393px;
 }
