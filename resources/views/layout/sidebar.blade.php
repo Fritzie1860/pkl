@@ -16,7 +16,7 @@
             <div class="sub_menu">
                 <img src="{{asset('images/folder_fill.png')}}"> 
                 <a href="#">
-                    Project
+                    Projects
                 </a>
             </div>
 
