@@ -1,0 +1,173 @@
+
+
+.pass{
+    margin-top: 30px;
+}
+
+.text_log h1 {
+    /* position: absolute; */
+    margin-block-end: 0%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: lighter;
+    color: #141414;
+
+}
+
+.apa {
+    margin-top: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.text_log input {
+    width: 377.99px;
+    height: 55px;   
+    border: none;
+    border-bottom: 3px solid #141414;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.button_login input{
+    margin-left: 100px;
+    width: 200px;
+    height: 70px;
+    margin-top: 35px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.side_bg{
+    width: 300px;
+    height: 100%;
+    margin-top:-80px;
+    margin-left: -10px;
+    background-size: cover;
+    background-image: url("../images/gradientberdiri.png");
+    float: left;
+    
+}
+
+.side_bg img{
+    width: 200px;
+    height: 200px;
+    margin-left: 48px;
+}
+
+.active {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    }
+
+.sub_menu {
+    margin-left: 20px;
+    width: 250px;
+    height: 70px;
+    
+}
+
+.sub_menu a {
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    display: inline;
+    color: #141414;
+    margin-left: 10px;
+}
+
+.sub_menu img {
+    padding-top: 30px;
+    width: 25px;
+    height: 25px;
+}
+
+.header{
+    background-image: url("../images/gradienttidur.png");
+    width: 1624px;
+    height: 74px;
+    margin-top:-10px;
+    margin-left: 290px;
+    /* transform: rotate(90deg); */
+    left: 300px;
+    top: 0px;
+    
+}
+
+.konten {
+    display: inline-flex;
+    margin-left: 70px;
+    margin-top: 70px;
+    width: 1400px;
+    height: 900px;
+}
+
+.pro_over {
+     
+    background-image: url("../images/po.png");
+    width: 888px;
+    height: 812px;
+    left: 370px;
+    top: 148px;
+    
+}
+
+.samping_pro {
+    margin-left: 25px;
+    width: 569px;
+    height: 2000px;
+
+}
+
+.info {
+    
+    width: 1624px;
+    height: 130px;
+    
+}
+
+.detil:last-child {
+    display: inline-block;
+    margin-left: 25px;
+    background-image: url("../images/po.png");
+    width: 270px;
+    height: 120px;
+}
+
+.detil{
+    display: inline-block;
+    background-image: url("../images/po.png");
+    width: 270px;
+    height: 120px;
+}
+
+.pad {
+    padding-top: 15px;
+    margin-left: 12px;
+}
+
+.last_seen {
+    background-image: url("../images/po.png");
+    width: 569px;
+    height: 248px;
+}
+
+.recent {
+    background-image: url("../images/po.png");
+    width: 569px;
+    height: 393px;
+}
