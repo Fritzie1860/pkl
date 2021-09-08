@@ -895,8 +895,8 @@ h5 {
   border: 0;
 }
 .navbar-default {
-  background-color: transparent;
-  border-color: #2f4050;
+  background-color: #141414;
+  background-image: url("patterns/Gradient.png");
 }
 .navbar-top-links li {
   display: inline-block;
@@ -1000,8 +1000,8 @@ h5 {
 }
 .nav-header {
   padding: 33px 25px;
-  background-color: #2f4050;
-  background-image: url("patterns/header-profile.png");
+  background-color: #141414;
+  background-image: url("patterns/Gradient.png");
 }
 .caret {
   display: inline-block;

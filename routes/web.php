@@ -19,4 +19,6 @@ Route::get('/', function () {
 
 Route::view('/login', 'login');
 Route::view('/forgotpass', 'forgotpass');
-Route::view('/sb', 'sb');
+Route::view('/sidebar', 'layout.sidebar');
+Route::view('/header', 'layout.header');
+Route::view('/dashboard', 'dashboard');
