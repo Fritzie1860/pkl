@@ -250,7 +250,7 @@
 
         </div>
     </nav> -->
-    <div id="page-wrapper" class="gray-bg">
+    
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
@@ -316,5 +316,4 @@
 
         </nav>
         </div>
-    </div>
 </body>

@@ -23,13 +23,13 @@
                     </div>
                 </li>
                 <li class="active">
-                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span></a>
+                    <a href="/dashboard"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Projects</span></a>
+                    <a href="/projects"><i class="fa fa-table"></i> <span class="nav-label">Projects</span></a>
                 </li>
                 <li>
-                    <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Users</span>  </a>
+                    <a href="/users"><i class="fa fa-pie-chart"></i> <span class="nav-label">Users</span>  </a>
                 </li>
             </ul>
         </div>

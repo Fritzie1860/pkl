@@ -22,3 +22,5 @@ Route::view('/forgotpass', 'forgotpass');
 Route::view('/sidebar', 'layout.sidebar');
 Route::view('/header', 'layout.header');
 Route::view('/dashboard', 'dashboard');
+Route::view('/projects', 'projects');
+Route::view('/users', 'users');

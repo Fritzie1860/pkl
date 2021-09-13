@@ -872,11 +872,11 @@ h5 {
   color: #999c9e;
 }
 .nav > li.active > a {
-  color: #ffffff;
+  color: #141414;
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus {
-  background-color: #293846;
+  background-color: #141414;
   color: white;
 }
 .nav .open > a,
@@ -1023,8 +1023,8 @@ ul.nav-second-level {
   background: #293846;
 }
 .nav > li.active {
-  border-left: 4px solid #19aa8d;
-  background: #293846;
+  border-left: 4px solid #141414;
+  background: rgba(255, 255, 255, 0.5);
 }
 .nav.nav-second-level > li.active {
   border: none;
