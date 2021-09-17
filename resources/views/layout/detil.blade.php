@@ -1,16 +1,11 @@
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="row">
         <div class="col-lg-12">
-            <div class="ibox ">
+            <div class="ibox">
                 <div class="ibox-title">
                     <h5>All form elements <small>With custom checbox and radion elements.</small></h5>
-                    <div class="ibox-tools">
-                        <a class="collapse-link">
-                            <i class="fa fa-chevron-up"></i>
-                        </a>
-                    </div>
                 </div>
-                <div class="ibox-content">
+                <div class="ibox-content" style="display:none" >
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="m-b-md">
@@ -95,7 +90,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="ibox-content">
+                <div class="ibox-content" style="display:none" >
                             
                             <div class="row m-t-sm">
                                 <div class="col-lg-12">
@@ -410,7 +405,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="ibox-content">
+                <div class="ibox-content" style="display:none">
                             
                             <div class="row m-t-sm">
                                 <div class="col-lg-12">
@@ -725,7 +720,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="ibox-content">
+                <div class="ibox-content" style="display:none">
                             
                             <div class="row m-t-sm">
                                 <div class="col-lg-12">
@@ -1040,7 +1035,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="ibox-content">
+                <div class="ibox-content" style="display:none">
                             
                             <div class="row m-t-sm">
                                 <div class="col-lg-12">
@@ -1355,7 +1350,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="ibox-content">
+                <div class="ibox-content" style="display:none">
                             
                             <div class="row m-t-sm">
                                 <div class="col-lg-12">
@@ -1670,7 +1665,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="ibox-content">
+                <div class="ibox-content" style="display:none">
                             
                             <div class="row m-t-sm">
                                 <div class="col-lg-12">
@@ -1985,7 +1980,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="ibox-content">
+                <div class="ibox-content" style="display:none">
                             
                             <div class="row m-t-sm">
                                 <div class="col-lg-12">

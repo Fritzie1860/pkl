@@ -41,18 +41,6 @@
                         <th>Tanggal Mulai</th>
                         <th>Status</th>
                         <th>Action</th>
-                        <th>Nama Proyek</th>
-                        <th>Tanggal Mulai</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                        <th>Nama Proyek</th>
-                        <th>Tanggal Mulai</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                        <th>Nama Proyek</th>
-                        <th>Tanggal Mulai</th>
-                        <th>Status</th>
-                        <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
