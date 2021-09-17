@@ -25,34 +25,34 @@
                     <div class="ibox-title">
                         <h5>Basic Data Tables example with responsive plugin</h5>
                         <div class="ibox-tools">
-                            <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="fa fa-wrench"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-user">
-                                <li><a href="#" class="dropdown-item">Config option 1</a>
-                                </li>
-                                <li><a href="#" class="dropdown-item">Config option 2</a>
-                                </li>
-                            </ul>
-                            <a class="close-link">
-                                <i class="fa fa-times"></i>
+                            <a href="/tambah_project">
+                                <i class="fa fa-plus"></i>
+                                <h5>Tambah</h5>
                             </a>
                         </div>
                     </div>
                     <div class="ibox-content">
 
-                        <div class="table-responsive">
+                        <div class="table-responsive scrollmenu">
                     <table class="table table-striped table-bordered table-hover dataTables-example" >
                     <thead>
                     <tr>
-                        <th>Rendering engine</th>
-                        <th>Browser</th>
-                        <th>Platform(s)</th>
-                        <th>Engine version</th>
-                        <th>CSS grade</th>
+                        <th>Nama Proyek</th>
+                        <th>Tanggal Mulai</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                        <th>Nama Proyek</th>
+                        <th>Tanggal Mulai</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                        <th>Nama Proyek</th>
+                        <th>Tanggal Mulai</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                        <th>Nama Proyek</th>
+                        <th>Tanggal Mulai</th>
+                        <th>Status</th>
+                        <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -61,16 +61,19 @@
                         <td>Internet
                             Explorer 4.0
                         </td>
-                        <td>Win 95+</td>
                         <td class="center">4</td>
-                        <td class="center">X</td>
+                        <td class="project-actions">
+                            <center>
+                                <a href="/detil_project" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                                <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+                            </center>
+                        </td>
                     </tr>
                     <tr class="gradeC">
                         <td>Trident</td>
                         <td>Internet
                             Explorer 5.0
                         </td>
-                        <td>Win 95+</td>
                         <td class="center">5</td>
                         <td class="center">C</td>
                     </tr>
@@ -79,7 +82,6 @@
                         <td>Internet
                             Explorer 5.5
                         </td>
-                        <td>Win 95+</td>
                         <td class="center">5.5</td>
                         <td class="center">A</td>
                     </tr>
@@ -88,175 +90,150 @@
                         <td>Internet
                             Explorer 6
                         </td>
-                        <td>Win 98+</td>
                         <td class="center">6</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Trident</td>
                         <td>Internet Explorer 7</td>
-                        <td>Win XP SP2+</td>
                         <td class="center">7</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Trident</td>
                         <td>AOL browser (AOL desktop)</td>
-                        <td>Win XP</td>
                         <td class="center">6</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Firefox 1.0</td>
-                        <td>Win 98+ / OSX.2+</td>
                         <td class="center">1.7</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Firefox 1.5</td>
-                        <td>Win 98+ / OSX.2+</td>
                         <td class="center">1.8</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Firefox 2.0</td>
-                        <td>Win 98+ / OSX.2+</td>
                         <td class="center">1.8</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Firefox 3.0</td>
-                        <td>Win 2k+ / OSX.3+</td>
                         <td class="center">1.9</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Camino 1.0</td>
-                        <td>OSX.2+</td>
                         <td class="center">1.8</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Camino 1.5</td>
-                        <td>OSX.3+</td>
                         <td class="center">1.8</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Netscape 7.2</td>
-                        <td>Win 95+ / Mac OS 8.6-9.2</td>
                         <td class="center">1.7</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Netscape Browser 8</td>
-                        <td>Win 98SE+</td>
                         <td class="center">1.7</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Netscape Navigator 9</td>
-                        <td>Win 98+ / OSX.2+</td>
                         <td class="center">1.8</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Mozilla 1.0</td>
-                        <td>Win 95+ / OSX.1+</td>
                         <td class="center">1</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Mozilla 1.1</td>
-                        <td>Win 95+ / OSX.1+</td>
                         <td class="center">1.1</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Mozilla 1.2</td>
-                        <td>Win 95+ / OSX.1+</td>
                         <td class="center">1.2</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Mozilla 1.3</td>
-                        <td>Win 95+ / OSX.1+</td>
                         <td class="center">1.3</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Mozilla 1.4</td>
-                        <td>Win 95+ / OSX.1+</td>
                         <td class="center">1.4</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Mozilla 1.5</td>
-                        <td>Win 95+ / OSX.1+</td>
                         <td class="center">1.5</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Mozilla 1.6</td>
-                        <td>Win 95+ / OSX.1+</td>
                         <td class="center">1.6</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Mozilla 1.7</td>
-                        <td>Win 98+ / OSX.1+</td>
                         <td class="center">1.7</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Mozilla 1.8</td>
-                        <td>Win 98+ / OSX.1+</td>
                         <td class="center">1.8</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Seamonkey 1.1</td>
-                        <td>Win 98+ / OSX.2+</td>
                         <td class="center">1.8</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Epiphany 2.20</td>
-                        <td>Gnome</td>
                         <td class="center">1.8</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Webkit</td>
                         <td>Safari 1.2</td>
-                        <td>OSX.3</td>
                         <td class="center">125.5</td>
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
                         <td>Webkit</td>
                         <td>Safari 1.3</td>
-                        <td>OSX.3</td>
                         <td class="center">312.8</td>
                         <td class="center">A</td>
                     </tr>
@@ -298,7 +275,6 @@
                     <tr class="gradeA">
                         <td>Presto</td>
                         <td>Opera 7.0</td>
-                        <td>Win 95+ / OSX.1+</td>
                         <td class="center">-</td>
                         <td class="center">A</td>
                     </tr>

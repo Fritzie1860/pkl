@@ -5591,6 +5591,10 @@ _:future,
   -ms-animation-nam: none;
   animation: none;
 }
+
+.scrollmenu {
+  overflow: auto;
+}
 body.modal-open .animated {
   animation-fill-mode: initial;
   z-index: inherit;

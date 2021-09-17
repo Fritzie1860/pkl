@@ -24,3 +24,5 @@ Route::view('/header', 'layout.header');
 Route::view('/dashboard', 'dashboard');
 Route::view('/projects', 'projects');
 Route::view('/users', 'users');
+Route::view('/tambah_project', 'tambah_project');
+Route::view('/detil_project', 'detil_project');

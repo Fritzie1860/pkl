@@ -84,6 +84,17 @@
     <!-- Sparkline demo data  -->
     <script src="js/demo/sparkline-demo.js"></script>
 
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('.i-checks').iCheck({
+                        checkboxClass: 'icheckbox_square-green',
+                        radioClass: 'iradio_square-green',
+                    });
+                });
+    </script>
+    
     <script>
         $(document).ready(function() {
             $('.chart').easyPieChart({
