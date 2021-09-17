@@ -56,7 +56,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="gradeX">
+                    <tr class="gradeX font_bantu">
                         <td>Trident</td>
                         <td>Internet
                             Explorer 4.0

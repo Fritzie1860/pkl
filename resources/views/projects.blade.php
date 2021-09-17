@@ -6,6 +6,6 @@
     @include('layout.sidebar')
     <div id="page-wrapper" class="gray-bg">
         @include('layout.header')
-        @include('layout.tabel')
+        @include('layout.tabel_projects')
     </div>
 </div>

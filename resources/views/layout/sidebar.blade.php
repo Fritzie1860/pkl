@@ -22,13 +22,25 @@
                         </ul>
                     </div>
                 </li>
-                <li class="active">
+                <li class="<?php 
+                    if(request()->is('dashboard')) {
+                        echo "active";
+                    }
+                ?>">
                     <a href="/dashboard"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span></a>
                 </li>
-                <li>
+                <li class="<?php 
+                    if(request()->is('projects')) {
+                        echo "active";
+                    }
+                ?>">
                     <a href="/projects"><i class="fa fa-table"></i> <span class="nav-label">Projects</span></a>
                 </li>
-                <li>
+                <li class="<?php 
+                    if(request()->is('users')) {
+                        echo "active";
+                    }
+                ?>">
                     <a href="/users"><i class="fa fa-pie-chart"></i> <span class="nav-label">Users</span>  </a>
                 </li>
             </ul>

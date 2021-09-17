@@ -4,5 +4,7 @@
 @endsection
 <div id="wrapper">
     @include('layout.sidebar')
-    @include('layout.header')
+    <div id="page-wrapper" class="gray-bg">
+        @include('layout.header')
+    </div>
 </div>
