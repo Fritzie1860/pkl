@@ -5702,12 +5702,18 @@ body.mini-navbar.fixed-sidebar .logo-element {
     margin: 0 auto;
 }
 .login_box {
-    margin: 50% auto;
-    position: absolute;
+    margin: 20% auto;
+    /* position: absolute; */
     align-content: center;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    width: 300px;
+    width: 500px;
+}
+
+.login_box img {
+  width: 200px;
+  margin-left: 25%;
+  /* height: 200px; */
 }
 .middle-box {
   max-width: 400px;
