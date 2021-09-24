@@ -98,7 +98,7 @@
             </div>
         </div>
     </div>
-    <!-- Tos -->
+    <!-- Tos 1 -->
     <div class="row">
         <div class="col-lg-12">
             <div class="ibox ">
@@ -182,16 +182,7 @@
                                                                                 <td class="center">5</td>
                                                                                 <td class="center">C</td>
                                                                             </tr>
-                                                                            <!-- <tfoot>
-                                    <tr>
-                                        <th>Rendering engine</th>
-                                        <th>Browser</th>
-                                        <th>Platform(s)</th>
-                                        <th>Engine version</th>
-                                        <th>CSS grade</th>
-                                    </tr>
-                                    </tfoot> -->
-                                                                    </table>
+                                                                                                                                                </table>
                                                                 </div>
 
                                                             </div>
@@ -287,15 +278,7 @@
                                                                                 <td class="center">5</td>
                                                                                 <td class="center">C</td>
                                                                             </tr>
-                                                                            <!-- <tfoot>
-                                    <tr>
-                                        <th>Rendering engine</th>
-                                        <th>Browser</th>
-                                        <th>Platform(s)</th>
-                                        <th>Engine version</th>
-                                        <th>CSS grade</th>
-                                    </tr>
-                                    </tfoot> -->
+                                                                           
                                                                     </table>
                                                                 </div>
 
@@ -423,6 +406,359 @@
 
     </div>
     <!-- Tos 2 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>TOS 2<small>Pedestal</small></h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content" style="display:none">
+
+                    <div class="row m-t-sm">
+                        <div class="col-lg-12">
+                            <div class="panel blank-panel">
+                                <div class="panel-heading">
+                                    <div class="panel-options">
+                                        <ul class="nav nav-tabs">
+                                            <li><a class="nav-link active" href="#tab-4" data-toggle="tab">Peestal</a></li>
+                                            <li><a class="nav-link" href="#tab-5" data-toggle="tab">Summary</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="panel-body">
+                                    <div class="tab-content">
+                                        
+                                        <div class="tab-pane active" id="tab-4">
+                                        <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Tables example with responsive plugin</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="4" >No</th>
+                                                                                <th rowspan="4">Type Kolom</th>
+                                                                                <th rowspan="4"> Bentuk Kolom</th>
+                                                                                <th colspan="3">Dimensi Kolom</th>
+                                                                                <th rowspan="3">Tebal Plat </th>
+                                                                                <th rowspan="3">Tinggi Net</th>
+                                                                                <th rowspan="3">Selimut Beton</th>
+                                                                                <th rowspan="3">Jumlah Kolom</th>
+                                                                                <th colspan="4">Footplat</th>
+                                                                                <th colspan="17"> Penulangan Kolom</th>
+                                                                                <th rowspan="3" >Besi</th>
+                                                                                <th rowspan="3">Beton</th>
+                                                                                <th rowspan="3">Bekisting</th>
+                                                                                <th rowspan="3">Timbunan</th>
+                                                                                <th rowspan="3">Rasio Besi</th>
+
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th rowspan="2">Tinggi</th>
+                                                                                <th rowspan="2">Lebar</th>
+                                                                                <th rowspan="2">Panjang</th>
+                                                                                <th rowspan="3">type</th>
+                                                                                <th rowspan="2">B</th>
+                                                                                <th rowspan="2">H</th>
+                                                                                <th rowspan="2">T</th>
+                                                                                <th rowspan="3" >Keterangan</th>
+                                                                                <th colspan="2" >Tulang Pokok</th>
+                                                                                <th colspan="3">Sengkang</th>
+                                                                                <th colspan="6" >Tulang Pokok</th>
+                                                                                <th colspan="5">Sengkang</th>
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Dia</th>
+                                                                                <th>Qty</th>
+                                                                                <th>Dia</th>
+                                                                                <th>Qty</th>
+                                                                                <th>Jarak</th>
+                                                                                <th>Ovlp</th>
+                                                                                <th>Stek u/ Kolom</th>
+                                                                                <th>Kait ke Footplat</th>
+                                                                                <th rowspan="2">Panjang Besi</th>
+                                                                                <th rowspan="2">Total Panjang</th>
+                                                                                <th>Berat</th>
+                                                                                <th colspan="2">Tekukan</th>
+                                                                                <th>Qty</th>
+                                                                                <th>Total Panjang</th>
+                                                                                <th>Berat</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>(m)</th>
+                                                                                <th>(m)</th>
+                                                                                <th>(m)</th>
+                                                                                <th>(m)</th>
+                                                                                <th>(m)</th>
+                                                                                <th>(m)</th>
+                                                                                <th>(Ttk)</th>
+                                                                                <th>(m)</th>
+                                                                                <th>(m)</th>
+                                                                                <th>(m)</th>
+                                                                                <th>(mm)</th>
+                                                                                <th>(n)</th>
+                                                                                <th>(mm)</th>
+                                                                                <th>(n)</th>
+                                                                                <th>(m)</th>
+                                                                                <th>(1.3Ldd)</th>
+                                                                                <th>(28ld+8ld)</th>
+                                                                                <th>(Tebal FP +20ld+8ld)</th>
+                                                                                <th>(kg)</th>
+                                                                                <th>ld</th>
+                                                                                <th>Panjang</th>
+                                                                                <th>(n)</th>
+                                                                                <th>(m)</th>
+                                                                                <th>(kg)</th>
+                                                                                <th>(kg)</th>
+                                                                                <th>(kg)</th>
+                                                                                <th>(m2)</th>
+                                                                                <th>(m3)</th>
+                                                                                <th>(kg/m3)</th>
+
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+                                                                           
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-5">
+                                            2
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Tos 3 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>TOS 2<small>Pedestal</small></h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content" style="display:none">
+
+                    <div class="row m-t-sm">
+                        <div class="col-lg-12">
+                            <div class="panel blank-panel">
+                                <div class="panel-heading">
+                                    <div class="panel-options">
+                                        <ul class="nav nav-tabs">
+                                            <li><a class="nav-link active" href="#tab-4" data-toggle="tab">Peestal</a></li>
+                                            <li><a class="nav-link" href="#tab-5" data-toggle="tab">Summary</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="panel-body">
+                                    <div class="tab-content">
+                                        
+                                        <div class="tab-pane active" id="tab-4">
+                                            1
+                                        </div>
+                                        <div class="tab-pane" id="tab-5">
+                                            2
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Tos 4 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>TOS 2<small>Pedestal</small></h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content" style="display:none">
+
+                    <div class="row m-t-sm">
+                        <div class="col-lg-12">
+                            <div class="panel blank-panel">
+                                <div class="panel-heading">
+                                    <div class="panel-options">
+                                        <ul class="nav nav-tabs">
+                                            <li><a class="nav-link active" href="#tab-4" data-toggle="tab">Peestal</a></li>
+                                            <li><a class="nav-link" href="#tab-5" data-toggle="tab">Summary</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="panel-body">
+                                    <div class="tab-content">
+                                        
+                                        <div class="tab-pane active" id="tab-4">
+                                            1
+                                        </div>
+                                        <div class="tab-pane" id="tab-5">
+                                            2
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Tos 5 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>TOS 2<small>Pedestal</small></h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content" style="display:none">
+
+                    <div class="row m-t-sm">
+                        <div class="col-lg-12">
+                            <div class="panel blank-panel">
+                                <div class="panel-heading">
+                                    <div class="panel-options">
+                                        <ul class="nav nav-tabs">
+                                            <li><a class="nav-link active" href="#tab-4" data-toggle="tab">Peestal</a></li>
+                                            <li><a class="nav-link" href="#tab-5" data-toggle="tab">Summary</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="panel-body">
+                                    <div class="tab-content">
+                                        
+                                        <div class="tab-pane active" id="tab-4">
+                                            1
+                                        </div>
+                                        <div class="tab-pane" id="tab-5">
+                                            2
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Tos 6 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>TOS 2<small>Pedestal</small></h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content" style="display:none">
+
+                    <div class="row m-t-sm">
+                        <div class="col-lg-12">
+                            <div class="panel blank-panel">
+                                <div class="panel-heading">
+                                    <div class="panel-options">
+                                        <ul class="nav nav-tabs">
+                                            <li><a class="nav-link active" href="#tab-4" data-toggle="tab">Peestal</a></li>
+                                            <li><a class="nav-link" href="#tab-5" data-toggle="tab">Summary</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="panel-body">
+                                    <div class="tab-content">
+                                        
+                                        <div class="tab-pane active" id="tab-4">
+                                            1
+                                        </div>
+                                        <div class="tab-pane" id="tab-5">
+                                            2
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Tos 7 -->
     <div class="row">
         <div class="col-lg-12">
             <div class="ibox ">
