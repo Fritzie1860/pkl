@@ -27,7 +27,7 @@
 }
 
 .text_log input {
-    width: 377.99px;
+    width: 90%;
     height: 55px;   
     border: none;
     border-bottom: 3px solid #141414;
@@ -35,9 +35,9 @@
 }
 
 .button_login input{
-    margin-left: 100px;
-    width: 200px;
-    height: 70px;
+    margin-left: 20%;
+    width: 40%;
+    height: 10%px;
     margin-top: 35px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0);

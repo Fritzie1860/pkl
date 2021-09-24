@@ -108,81 +108,122 @@
 
                                 <div class="tab-content">
                                 <div class="tab-pane active" id="tab-1">
-                                    <div class="feed-activity-list">
-                                        <div class="feed-element">
-                                            <a href="#" class="float-left">
-                                                <img alt="image" class="rounded-circle" src="img/a2.jpg">
-                                            </a>
-                                            <div class="media-body ">
-                                                <small class="float-right">2h ago</small>
-                                                <strong>Mark Johnson</strong> posted message on <strong>Monica Smith</strong> site. <br>
-                                                <small class="text-muted">Today 2:10 pm - 12.06.2014</small>
-                                                <div class="well">
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                                    Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="feed-element">
-                                            <a href="#" class="float-left">
-                                                <img alt="image" class="rounded-circle" src="img/a3.jpg">
-                                            </a>
-                                            <div class="media-body ">
-                                                <small class="float-right">2h ago</small>
-                                                <strong>Janet Rosowski</strong> add 1 photo on <strong>Monica Smith</strong>. <br>
-                                                <small class="text-muted">2 days ago at 8:30am</small>
-                                            </div>
-                                        </div>
-                                        <div class="feed-element">
-                                            <a href="#" class="float-left">
-                                                <img alt="image" class="rounded-circle" src="img/a4.jpg">
-                                            </a>
-                                            <div class="media-body ">
-                                                <small class="float-right text-navy">5h ago</small>
-                                                <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
-                                                <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
-                                                <div class="actions">
-                                                    <a href=""  class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
-                                                    <a href=""  class="btn btn-xs btn-white"><i class="fa fa-heart"></i> Love</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="feed-element">
-                                            <a href="#" class="float-left">
-                                                <img alt="image" class="rounded-circle" src="img/a5.jpg">
-                                            </a>
-                                            <div class="media-body ">
-                                                <small class="float-right">2h ago</small>
-                                                <strong>Kim Smith</strong> posted message on <strong>Monica Smith</strong> site. <br>
-                                                <small class="text-muted">Yesterday 5:20 pm - 12.06.2014</small>
-                                                <div class="well">
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                                    Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="feed-element">
-                                            <a href="#" class="float-left">
-                                                <img alt="image" class="rounded-circle" src="img/profile.jpg">
-                                            </a>
-                                            <div class="media-body ">
-                                                <small class="float-right">23h ago</small>
-                                                <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
-                                                <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
-                                            </div>
-                                        </div>
-                                        <div class="feed-element">
-                                            <a href="#" class="float-left">
-                                                <img alt="image" class="rounded-circle" src="img/a7.jpg">
-                                            </a>
-                                            <div class="media-body ">
-                                                <small class="float-right">46h ago</small>
-                                                <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
-                                                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
-                                            </div>
-                                        </div>
-                                    </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>Basic Data Tables example with responsive plugin</h5>
+                        <div class="ibox-tools">
+                            <a href="/tambah_project">
+                                <i class="fa fa-plus"></i>
+                                <h5>Tambah</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
 
+                        <div class="table-responsive scrollmenu">
+                    <table class="table table-striped table-bordered table-hover dataTables-example" >
+                    <thead>
+                    <tr>
+                        <th rowspan="2" align="center">No</th>
+                        <th rowspan="2" align="center">Type</th>
+                        <th colspan="3" align="center"> Dimensi Foot Plat</th>
+                        <th rowspan="2" align="center">Level MTA (m')</th>
+                        <th rowspan="2" align="center">Jumlah </th>
+                        <th colspan="7" align="center">Tulangan Atas Vertikal</th>
+                        <th colspan="7" align="center">Tulangan Bawah Vertikal</th>
+                        <th colspan="7" align="center">Tulangan Atas Hoizontal</th>
+                        <th colspan="7" align="center">Tulangan Bawah Horizontal</th>
+                        <th colspan="4" align="center"> Tulangan Pinggang</th>
+                        <th colspan="6" align="center">Volume</th>
+                        
+                    </tr>
+                    <tr>
+                        <th>Lebar (m')</th>
+                        <th>Panjang (m')</th>
+                        <th>Tinggi (m')</th>
+                        <th>Dia</th>
+                        <th>Jarak</th>
+                        <th>Panjang</th>
+                        <th>Add</th>
+                        <th>Jumlah</th>
+                        <th>Berat Jenis</th>
+                        <th>Total</th>
+                        <th>Dia</th>
+                        <th>Jarak</th>
+                        <th>Panjang</th>
+                        <th>Add</th>
+                        <th>Jumlah</th>
+                        <th>Berat Jenis</th>
+                        <th>Total</th>
+                        <th>Dia</th>
+                        <th>Jarak</th>
+                        <th>Panjang</th>
+                        <th>Add</th>
+                        <th>Jumlah</th>
+                        <th>Berat Jenis</th>
+                        <th>Total</th>
+                        <th>Dia</th>
+                        <th>Jarak</th>
+                        <th>Panjang</th>
+                        <th>Add</th>
+                        <th>Jumlah</th>
+                        <th>Berat Jenis</th>
+                        <th>Total</th>
+                        <th>Dia</th>
+                        <th>Jumlah</th>
+                        <th>Panjang</th>
+                        <th>Total</th>
+                        <th>Besi</th>
+                        <th>Beton</th>
+                        <th>Bekisting Batako</th>
+                        <th>Galian</th>
+                        <th>LC</th>
+                        <th>Pasir</th>
+                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="gradeX font_bantu">
+                        <td>Trident</td>
+                        <td>Internet
+                            Explorer 4.0
+                        </td>
+                        <td class="center">4</td>
+                        <td class="project-actions">
+                            <center>
+                                <a href="/detil_project" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                                <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr class="gradeC">
+                        <td>Trident</td>
+                        <td>Internet
+                            Explorer 5.0
+                        </td>
+                        <td class="center">5</td>
+                        <td class="center">C</td>
+                    </tr>
+                    <tfoot>
+                    <tr>
+                        <th>Rendering engine</th>
+                        <th>Browser</th>
+                        <th>Platform(s)</th>
+                        <th>Engine version</th>
+                        <th>CSS grade</th>
+                    </tr>
+                    </tfoot>
+                    </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
                                 </div>
                                 <div class="tab-pane" id="tab-2">
 

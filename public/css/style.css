@@ -5707,11 +5707,11 @@ body.mini-navbar.fixed-sidebar .logo-element {
     align-content: center;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    width: 500px;
+    width: 90%;
 }
 
 .login_box img {
-  width: 200px;
+  width: 40%;
   margin-left: 25%;
   /* height: 200px; */
 }
