@@ -171,3 +171,7 @@
     width: 569px;
     height: 393px;
 }
+
+table th{
+    text-align: center;
+}

@@ -83,11 +83,11 @@
                                 </div>
                                 <div class="col-sm-8 text-sm-left">
                                     <dd class="project-people mb-1">
-                                        <a href=""><img alt="image" class="rounded-circle" src="img/a3.jpg"></a>
-                                        <a href=""><img alt="image" class="rounded-circle" src="img/a1.jpg"></a>
-                                        <a href=""><img alt="image" class="rounded-circle" src="img/a2.jpg"></a>
-                                        <a href=""><img alt="image" class="rounded-circle" src="img/a4.jpg"></a>
-                                        <a href=""><img alt="image" class="rounded-circle" src="img/a5.jpg"></a>
+                                        <a href="><img alt="image" class="rounded-circle" src="img/a3.jpg"></a>
+                                        <a href="><img alt="image" class="rounded-circle" src="img/a1.jpg"></a>
+                                        <a href="><img alt="image" class="rounded-circle" src="img/a2.jpg"></a>
+                                        <a href="><img alt="image" class="rounded-circle" src="img/a4.jpg"></a>
+                                        <a href="><img alt="image" class="rounded-circle" src="img/a5.jpg"></a>
                                     </dd>
                                 </div>
                             </dl>
@@ -150,27 +150,27 @@
                                                                                 <th rowspan="2" style="vertical-align:middle;">No</th>
                                                                                 <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                 <th rowspan="2" style="vertical-align:middle;">Bentuk</th>
-                                                                                <th>B</th>
-                                                                                <th>B' </th>
-                                                                                <th>H</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>Luas Alas</th>
-                                                                                <th>Volume Batu Kali</th>
-                                                                                <th>Pair Urrug (M2)</th>
-                                                                                <th>Galian</th>
-                                                                                <th>Timbunan</th>
+                                                                                <th style="vertical-align:middle;">B</th>
+                                                                                <th style="vertical-align:middle;">B' </th>
+                                                                                <th style="vertical-align:middle;">H</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Luas Alas</th>
+                                                                                <th style="vertical-align:middle;">Volume Batu Kali</th>
+                                                                                <th style="vertical-align:middle;">Pair Urrug (M2)</th>
+                                                                                <th style="vertical-align:middle;">Galian</th>
+                                                                                <th style="vertical-align:middle;">Timbunan</th>
 
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m2)</th>
-                                                                                <th>(m3)</th>
-                                                                                <th>0.05</th>
-                                                                                <th>(m3)</th>
-                                                                                <th>(m3)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m2)</th>
+                                                                                <th style="vertical-align:middle;">(m3)</th>
+                                                                                <th style="vertical-align:middle;">0.05</th>
+                                                                                <th style="vertical-align:middle;">(m3)</th>
+                                                                                <th style="vertical-align:middle;">(m3)</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
@@ -211,11 +211,11 @@
                                                                     <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                         <thead>
                                                                             <tr>
-                                                                                <th rowspan="2" style="vertical-align:middle;" align="center">No</th>
-                                                                                <th rowspan="2" style="vertical-align:middle;" align="center">Type</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">No</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Type</th>
                                                                                 <th colspan="3" align="center"> Dimensi Foot Plat</th>
-                                                                                <th rowspan="2" style="vertical-align:middle;" align="center">Level MTA (m')</th>
-                                                                                <th rowspan="2" style="vertical-align:middle;" align="center">Jumlah </th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Level MTA (m')</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Jumlah </th>
                                                                                 <th colspan="7" align="center">Tulangan Atas Vertikal</th>
                                                                                 <th colspan="7" align="center">Tulangan Bawah Vertikal</th>
                                                                                 <th colspan="7" align="center">Tulangan Atas Hoizontal</th>
@@ -225,47 +225,47 @@
 
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Lebar (m')</th>
-                                                                                <th>Panjang (m')</th>
-                                                                                <th>Tinggi (m')</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>Add</th>
-                                                                                <th>Jumlah</th>
-                                                                                <th>Berat Jenis</th>
-                                                                                <th>Total</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>Add</th>
-                                                                                <th>Jumlah</th>
-                                                                                <th>Berat Jenis</th>
-                                                                                <th>Total</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>Add</th>
-                                                                                <th>Jumlah</th>
-                                                                                <th>Berat Jenis</th>
-                                                                                <th>Total</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>Add</th>
-                                                                                <th>Jumlah</th>
-                                                                                <th>Berat Jenis</th>
-                                                                                <th>Total</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Jumlah</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>Total</th>
-                                                                                <th>Besi</th>
-                                                                                <th>Beton</th>
-                                                                                <th>Bekisting Batako</th>
-                                                                                <th>Galian</th>
-                                                                                <th>LC</th>
-                                                                                <th>Pasir</th>
+                                                                                <th style="vertical-align:middle;">Lebar (m')</th>
+                                                                                <th style="vertical-align:middle;">Panjang (m')</th>
+                                                                                <th style="vertical-align:middle;">Tinggi (m')</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Add</th>
+                                                                                <th style="vertical-align:middle;">Jumlah</th>
+                                                                                <th style="vertical-align:middle;">Berat Jenis</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Add</th>
+                                                                                <th style="vertical-align:middle;">Jumlah</th>
+                                                                                <th style="vertical-align:middle;">Berat Jenis</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Add</th>
+                                                                                <th style="vertical-align:middle;">Jumlah</th>
+                                                                                <th style="vertical-align:middle;">Berat Jenis</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Add</th>
+                                                                                <th style="vertical-align:middle;">Jumlah</th>
+                                                                                <th style="vertical-align:middle;">Berat Jenis</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Jumlah</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                                <th style="vertical-align:middle;">Besi</th>
+                                                                                <th style="vertical-align:middle;">Beton</th>
+                                                                                <th style="vertical-align:middle;">Bekisting Batako</th>
+                                                                                <th style="vertical-align:middle;">Galian</th>
+                                                                                <th style="vertical-align:middle;">LC</th>
+                                                                                <th style="vertical-align:middle;">Pasir</th>
 
                                                                             </tr>
                                                                         </thead>
@@ -308,11 +308,11 @@
                                                                     <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                         <thead>
                                                                             <tr>
-                                                                                <th rowspan="2" style="vertical-align:middle;" align="center">No</th>
-                                                                                <th rowspan="2" style="vertical-align:middle;" align="center">Type</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">No</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Type</th>
                                                                                 <th colspan="3" align="center"> Dimensi Foot Plat</th>
-                                                                                <th rowspan="2" style="vertical-align:middle;" align="center">Level MTA (m')</th>
-                                                                                <th rowspan="2" style="vertical-align:middle;" align="center">Jumlah </th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Level MTA (m')</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Jumlah </th>
                                                                                 <th colspan="7" align="center">Tulangan Atas Vertikal</th>
                                                                                 <th colspan="7" align="center">Tulangan Bawah Vertikal</th>
                                                                                 <th colspan="7" align="center">Tulangan Atas Hoizontal</th>
@@ -322,47 +322,47 @@
 
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Lebar (m')</th>
-                                                                                <th>Panjang (m')</th>
-                                                                                <th>Tinggi (m')</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>Add</th>
-                                                                                <th>Jumlah</th>
-                                                                                <th>Berat Jenis</th>
-                                                                                <th>Total</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>Add</th>
-                                                                                <th>Jumlah</th>
-                                                                                <th>Berat Jenis</th>
-                                                                                <th>Total</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>Add</th>
-                                                                                <th>Jumlah</th>
-                                                                                <th>Berat Jenis</th>
-                                                                                <th>Total</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>Add</th>
-                                                                                <th>Jumlah</th>
-                                                                                <th>Berat Jenis</th>
-                                                                                <th>Total</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Jumlah</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>Total</th>
-                                                                                <th>Besi</th>
-                                                                                <th>Beton</th>
-                                                                                <th>Bekisting Batako</th>
-                                                                                <th>Galian</th>
-                                                                                <th>LC</th>
-                                                                                <th>Pasir</th>
+                                                                                <th style="vertical-align:middle;">Lebar (m')</th>
+                                                                                <th style="vertical-align:middle;">Panjang (m')</th>
+                                                                                <th style="vertical-align:middle;">Tinggi (m')</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Add</th>
+                                                                                <th style="vertical-align:middle;">Jumlah</th>
+                                                                                <th style="vertical-align:middle;">Berat Jenis</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Add</th>
+                                                                                <th style="vertical-align:middle;">Jumlah</th>
+                                                                                <th style="vertical-align:middle;">Berat Jenis</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Add</th>
+                                                                                <th style="vertical-align:middle;">Jumlah</th>
+                                                                                <th style="vertical-align:middle;">Berat Jenis</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Add</th>
+                                                                                <th style="vertical-align:middle;">Jumlah</th>
+                                                                                <th style="vertical-align:middle;">Berat Jenis</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Jumlah</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                                <th style="vertical-align:middle;">Besi</th>
+                                                                                <th style="vertical-align:middle;">Beton</th>
+                                                                                <th style="vertical-align:middle;">Bekisting Batako</th>
+                                                                                <th style="vertical-align:middle;">Galian</th>
+                                                                                <th style="vertical-align:middle;">LC</th>
+                                                                                <th style="vertical-align:middle;">Pasir</th>
 
                                                                             </tr>
                                                                         </thead>
@@ -478,52 +478,52 @@
 
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Dia</th>
-                                                                                <th>Qty</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Qty</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>Ovlp</th>
-                                                                                <th>Stek u/ Kolom</th>
-                                                                                <th>Kait ke Footplat</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Qty</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Qty</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">Ovlp</th>
+                                                                                <th style="vertical-align:middle;">Stek u/ Kolom</th>
+                                                                                <th style="vertical-align:middle;">Kait ke Footplat</th>
                                                                                 <th rowspan="2" style="vertical-align:middle;">Panjang Besi</th>
                                                                                 <th rowspan="2" style="vertical-align:middle;">Total Panjang</th>
-                                                                                <th>Berat</th>
+                                                                                <th style="vertical-align:middle;">Berat</th>
                                                                                 <th colspan="2">Tekukan</th>
-                                                                                <th>Qty</th>
-                                                                                <th>Total Panjang</th>
-                                                                                <th>Berat</th>
+                                                                                <th style="vertical-align:middle;">Qty</th>
+                                                                                <th style="vertical-align:middle;">Total Panjang</th>
+                                                                                <th style="vertical-align:middle;">Berat</th>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(Ttk)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(mm)</th>
-                                                                                <th>(n)</th>
-                                                                                <th>(mm)</th>
-                                                                                <th>(n)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(1.3Ldd)</th>
-                                                                                <th>(28ld+8ld)</th>
-                                                                                <th>(Tebal FP +20ld+8ld)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>ld</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>(n)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>(m2)</th>
-                                                                                <th>(m3)</th>
-                                                                                <th>(kg/m3)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(Ttk)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(mm)</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(mm)</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(1.3Ldd)</th>
+                                                                                <th style="vertical-align:middle;">(28ld+8ld)</th>
+                                                                                <th style="vertical-align:middle;">(Tebal FP +20ld+8ld)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">ld</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(m2)</th>
+                                                                                <th style="vertical-align:middle;">(m3)</th>
+                                                                                <th style="vertical-align:middle;">(kg/m3)</th>
 
                                                                             </tr>
                                                                         </thead>
@@ -598,51 +598,51 @@
 
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Dia</th>
-                                                                                <th>Qty</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Qty</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>Ovlp</th>
-                                                                                <th>Stek u/ Kolom</th>
-                                                                                <th>Kait ke Footplat</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Qty</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Qty</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">Ovlp</th>
+                                                                                <th style="vertical-align:middle;">Stek u/ Kolom</th>
+                                                                                <th style="vertical-align:middle;">Kait ke Footplat</th>
                                                                                 <th rowspan="2" style="vertical-align:middle;">Panjang Besi</th>
                                                                                 <th rowspan="2" style="vertical-align:middle;">Total Panjang</th>
-                                                                                <th>Berat</th>
+                                                                                <th style="vertical-align:middle;">Berat</th>
                                                                                 <th colspan="2">Tekukan</th>
-                                                                                <th>Qty</th>
-                                                                                <th>Total Panjang</th>
-                                                                                <th>Berat</th>
+                                                                                <th style="vertical-align:middle;">Qty</th>
+                                                                                <th style="vertical-align:middle;">Total Panjang</th>
+                                                                                <th style="vertical-align:middle;">Berat</th>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(Ttk)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(mm)</th>
-                                                                                <th>(n)</th>
-                                                                                <th>(mm)</th>
-                                                                                <th>(n)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(1.3Ldd)</th>
-                                                                                <th>(28ld+8ld)</th>
-                                                                                <th>(Tebal FP +20ld+8ld)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>ld</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>(n)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>(m2)</th>
-                                                                                <th>(kg/m3)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(Ttk)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(mm)</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(mm)</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(1.3Ldd)</th>
+                                                                                <th style="vertical-align:middle;">(28ld+8ld)</th>
+                                                                                <th style="vertical-align:middle;">(Tebal FP +20ld+8ld)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">ld</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(m2)</th>
+                                                                                <th style="vertical-align:middle;">(kg/m3)</th>
 
                                                                             </tr>
                                                                         </thead>
@@ -776,7 +776,7 @@
                                                                                 <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                 <th rowspan="2" style="vertical-align:middle;"> Bentuk</th>
                                                                                 <th colspan="2">Dimensi</th>
-                                                                                <th rowspan="2" colspan="2" style="vertical-align:middle;">Tebal Selimut(mm)</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="2" style="vertical-align:middle;">Tebal Selimut(mm)</th>
                                                                                 <th colspan="2"> Tulangan Pokok</th>
                                                                                 <th colspan="4" style="vertical-align:middle;">Tulangan Sengkang</th>
                                                                                 <th colspan="2" style="vertical-align:middle;">Ties - Horisontal Tumpuan</th>
@@ -786,22 +786,22 @@
 
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Lebar (m)</th>
-                                                                                <th>Panjang(m)</th>
-                                                                                <th>Diameter(mm)</th>
-                                                                                <th>Jumlah</th>
-                                                                                <th>Dia. Tumpuan (mm)</th>
-                                                                                <th>Jarak Tumpuan (mm)</th>
-                                                                                <th>Dia. Lapangan (mm)</th>
-                                                                                <th>Jarak Lapangan (mm)</th>
-                                                                                <th>Dia(m)</th>
-                                                                                <th>Jarak(mm)</th>
-                                                                                <th>Dia(m)</th>
-                                                                                <th>Jarak(mm)</th>
-                                                                                <th>Dia(m)</th>
-                                                                                <th>Jarak(mm)</th>
-                                                                                <th>Dia(m)</th>
-                                                                                <th>Jarak(mm)</th>
+                                                                                <th style="vertical-align:middle;">Lebar (m)</th>
+                                                                                <th style="vertical-align:middle;">Panjang(m)</th>
+                                                                                <th style="vertical-align:middle;">Diameter(mm)</th>
+                                                                                <th style="vertical-align:middle;">Jumlah</th>
+                                                                                <th style="vertical-align:middle;">Dia. Tumpuan (mm)</th>
+                                                                                <th style="vertical-align:middle;">Jarak Tumpuan (mm)</th>
+                                                                                <th style="vertical-align:middle;">Dia. Lapangan (mm)</th>
+                                                                                <th style="vertical-align:middle;">Jarak Lapangan (mm)</th>
+                                                                                <th style="vertical-align:middle;">Dia(m)</th>
+                                                                                <th style="vertical-align:middle;">Jarak(mm)</th>
+                                                                                <th style="vertical-align:middle;">Dia(m)</th>
+                                                                                <th style="vertical-align:middle;">Jarak(mm)</th>
+                                                                                <th style="vertical-align:middle;">Dia(m)</th>
+                                                                                <th style="vertical-align:middle;">Jarak(mm)</th>
+                                                                                <th style="vertical-align:middle;">Dia(m)</th>
+                                                                                <th style="vertical-align:middle;">Jarak(mm)</th>
 
 
                                                                             </tr>
@@ -878,51 +878,51 @@
 
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Dia</th>
-                                                                                <th>Qty</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Qty</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>Ovlp</th>
-                                                                                <th>Stek u/ Kolom</th>
-                                                                                <th>Kait ke Footplat</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Qty</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Qty</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">Ovlp</th>
+                                                                                <th style="vertical-align:middle;">Stek u/ Kolom</th>
+                                                                                <th style="vertical-align:middle;">Kait ke Footplat</th>
                                                                                 <th rowspan="2" style="vertical-align:middle;">Panjang Besi</th>
                                                                                 <th rowspan="2" style="vertical-align:middle;">Total Panjang</th>
-                                                                                <th>Berat</th>
+                                                                                <th style="vertical-align:middle;">Berat</th>
                                                                                 <th colspan="2">Tekukan</th>
-                                                                                <th>Qty</th>
-                                                                                <th>Total Panjang</th>
-                                                                                <th>Berat</th>
+                                                                                <th style="vertical-align:middle;">Qty</th>
+                                                                                <th style="vertical-align:middle;">Total Panjang</th>
+                                                                                <th style="vertical-align:middle;">Berat</th>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(Ttk)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(mm)</th>
-                                                                                <th>(n)</th>
-                                                                                <th>(mm)</th>
-                                                                                <th>(n)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(1.3Ldd)</th>
-                                                                                <th>(28ld+8ld)</th>
-                                                                                <th>(Tebal FP +20ld+8ld)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>ld</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>(n)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>(m2)</th>
-                                                                                <th>(kg/m3)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(Ttk)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(mm)</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(mm)</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(1.3Ldd)</th>
+                                                                                <th style="vertical-align:middle;">(28ld+8ld)</th>
+                                                                                <th style="vertical-align:middle;">(Tebal FP +20ld+8ld)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">ld</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(m2)</th>
+                                                                                <th style="vertical-align:middle;">(kg/m3)</th>
 
                                                                             </tr>
                                                                         </thead>
@@ -997,51 +997,51 @@
 
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Dia</th>
-                                                                                <th>Qty</th>
-                                                                                <th>Dia</th>
-                                                                                <th>Qty</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>Ovlp</th>
-                                                                                <th>Stek u/ Kolom</th>
-                                                                                <th>Kait ke Footplat</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Qty</th>
+                                                                                <th style="vertical-align:middle;">Dia</th>
+                                                                                <th style="vertical-align:middle;">Qty</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">Ovlp</th>
+                                                                                <th style="vertical-align:middle;">Stek u/ Kolom</th>
+                                                                                <th style="vertical-align:middle;">Kait ke Footplat</th>
                                                                                 <th rowspan="2" style="vertical-align:middle;">Panjang Besi</th>
                                                                                 <th rowspan="2" style="vertical-align:middle;">Total Panjang</th>
-                                                                                <th>Berat</th>
+                                                                                <th style="vertical-align:middle;">Berat</th>
                                                                                 <th colspan="2">Tekukan</th>
-                                                                                <th>Qty</th>
-                                                                                <th>Total Panjang</th>
-                                                                                <th>Berat</th>
+                                                                                <th style="vertical-align:middle;">Qty</th>
+                                                                                <th style="vertical-align:middle;">Total Panjang</th>
+                                                                                <th style="vertical-align:middle;">Berat</th>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(Ttk)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(mm)</th>
-                                                                                <th>(n)</th>
-                                                                                <th>(mm)</th>
-                                                                                <th>(n)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(1.3Ldd)</th>
-                                                                                <th>(28ld+8ld)</th>
-                                                                                <th>(Tebal FP +20ld+8ld)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>ld</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>(n)</th>
-                                                                                <th>(m)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>(m2)</th>
-                                                                                <th>(kg/m3)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(Ttk)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(mm)</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(mm)</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(1.3Ldd)</th>
+                                                                                <th style="vertical-align:middle;">(28ld+8ld)</th>
+                                                                                <th style="vertical-align:middle;">(Tebal FP +20ld+8ld)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">ld</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(m)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(m2)</th>
+                                                                                <th style="vertical-align:middle;">(kg/m3)</th>
 
                                                                             </tr>
                                                                         </thead>
@@ -1125,7 +1125,7 @@
         <div class="col-lg-12">
             <div class="ibox ">
                 <div class="ibox-title">
-                    <h5>TOS 2<small>Pedestal</small></h5>
+                    <h5>TOS 4<small>Tie Beam</small></h5>
                     <div class="ibox-tools">
                         <a class="collapse-link">
                             <i class="fa fa-chevron-up"></i>
@@ -1172,37 +1172,37 @@
                                                                     <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                         <thead>
                                                                             <tr>
-                                                                                <th rowspan="3">Type</th>
-                                                                                <th rowspan="3">B</th>
-                                                                                <th rowspan="3">H</th>
-                                                                                <th rowspan="3">Beton Decking</th>
-                                                                                <th rowspan="2" colspan="3">Dia Tulangan</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Type</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">B</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">H</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Beton Decking</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="3">Dia Tulangan</th>
                                                                                 <th colspan="3"> Sengkang</th>
                                                                                 <th colspan="2"> Peminggang</th>
-                                                                                <th colspan="6" rowspan="2">Jumlahh Tulangan Utama</th>
+                                                                                <th colspan="6" rowspan="2" style="vertical-align:middle;">Jumlahh Tulangan Utama</th>
                                                                                 <th colspan="3"> Jarak Sengkang</th>
-                                                                                <th rowspan="3">Luas Sekur Beton (m2)</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Luas Sekur Beton (m2)</th>
 
                                                                             </tr>
                                                                             <tr>
                                                                                 <th colspan="3">Dia</th>
-                                                                                <th rowspan="2"">Dia</th>
-                                                                                <th rowspan=" 2">N</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
                                                                                 <th colspan="3">Dia</th>
 
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Utama</th>
-                                                                                <th>Skg</th>
-                                                                                <th>Pg</th>
-                                                                                <th>Ka</th>
-                                                                                <th>tg</th>
-                                                                                <th>KI</th>
+                                                                                <th style="vertical-align:middle;">Utama</th>
+                                                                                <th style="vertical-align:middle;">Skg</th>
+                                                                                <th style="vertical-align:middle;">Pg</th>
+                                                                                <th style="vertical-align:middle;">Ka</th>
+                                                                                <th style="vertical-align:middle;">tg</th>
+                                                                                <th style="vertical-align:middle;">KI</th>
                                                                                 <th colspan="3">Atas</th colspan="3">
                                                                                 <th colspan="3" colspan="3">Bawah</th>
-                                                                                <th>Ka</th>
-                                                                                <th>tg</th>
-                                                                                <th>KI</th>
+                                                                                <th style="vertical-align:middle;">Ka</th>
+                                                                                <th style="vertical-align:middle;">tg</th>
+                                                                                <th style="vertical-align:middle;">KI</th>
                                                                             </tr>
 
                                                                         </thead>
@@ -1226,7 +1226,7 @@
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tab-12">
-                                        <div class="wrapper wrapper-content animated fadeInRight">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <div class="ibox ">
@@ -1245,131 +1245,139 @@
                                                                     <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                         <thead>
                                                                             <tr>
-                                                                                <th rowspan="2" colspan="4">AS</th>
-                                                                                <th rowspan="3"> Code </th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Nos </th>
+                                                                                <th colspan="2">Code</th>
                                                                                 <th colspan="4"> Panjang Balok</th>
-                                                                                <th rowspan="3">Tebal Plat</th>
-                                                                                <th colspan="2" rowspan="2">Dimensi TB</th>
-                                                                                <th rowspan="3">Luas Sekur Beton</th>
-                                                                                <th rowspan="3"> Decking Beton</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Tebal Plat</th>
+                                                                                <th colspan="2" rowspan="2" style="vertical-align:middle;">Dimensi TB</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Luas Sekur Beton</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Decking Beton</th>
                                                                                 <th colspan="7"> Tulangan Utama</th>
                                                                                 <th colspan="6"> Tulangan Sengkang</th>
                                                                                 <th colspan="2">Peminggang</th>
                                                                                 <th colspan="4">Tulangan Utama</th>
                                                                                 <th colspan="13">TULANGAN SENGKANG</th>
                                                                                 <th colspan="3"> Tulangan Peminggang</th>
-                                                                                <th rowspan="2" colspan="3"> Besi</th>
-                                                                                <th rowspan="3">Rasio Besi</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="3"> Besi</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Rasio Besi</th>
                                                                                 <th colspan="3">Volume</th>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th rowspan="2"></th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Pos</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">type</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang Kotor</th>
+                                                                                <th colspan="2">Pengaruhh Kolom</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang Bersi</th>
                                                                                 <th colspan="6">Jumlah Tulangan</th>
-                                                                                <th rowspan="2">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
                                                                                 <th colspan="3">Dia Sengkang</th>
                                                                                 <th colspan="3">Jarak Sengkang</th>
-                                                                                <th rowspan="2">Dia</th>
-                                                                                <th rowspan="2">N</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
                                                                                 <th colspan="4">Tulangan Menerus</th>
                                                                                 <th colspan="4">Kiri</th>
                                                                                 <th colspan="4">Tengah</th>
                                                                                 <th colspan="4">Kanan</th>
-                                                                                <th rowspan="2">Berat</th>
-                                                                                <th rowspan="2">Panjang</th>
-                                                                                <th rowspan="2">N</th>
-                                                                                <th rowspan="2">Berat</th>
-                                                                                <th rowspan="2">Beton</th>
-                                                                                <th rowspan="2">Besi</th>
-                                                                                <th rowspan="2">Bekisting</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Berat</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Berat</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Beton</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Besi</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Bekisting</th>
 
                                                                             </tr>
                                                                             <tr>
-                                                                                <th rowspan="2"> As</th>
-                                                                                <th rowspan="2"> -- </th>
-                                                                                <th rowspan="2"> As</th>
-                                                                                <th>Kiri</th>
-                                                                                <th>Kanan</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">no</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> As</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> - </th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> As</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Kanan</th>
+                                                                                <th style="vertical-align:middle;">B</th>
+                                                                                <th style="vertical-align:middle;">H</th>
                                                                                 <th colspan="3"> Atas</th>
                                                                                 <th colspan="3">Bawah</th>
-                                                                                <th>sk-kiri</th>
-                                                                                <th>sk-tgh</th>
-                                                                                <th>sk-knn</th>
-                                                                                <th>Kiri</th>
-                                                                                <th>Tengah</th>
-                                                                                <th>Kanan</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>Atas</th>
-                                                                                <th>Bawah</th>
-                                                                                <th>Berat</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>P</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>N</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>P</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>N</th>
-                                                                                <th>Panjang</th>
-                                                                                <th>P</th>
-                                                                                <th>Jarak</th>
-                                                                                <th>N</th>
+                                                                                <th style="vertical-align:middle;">sk-kiri</th>
+                                                                                <th style="vertical-align:middle;">sk-tgh</th>
+                                                                                <th style="vertical-align:middle;">sk-knn</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tengah</th>
+                                                                                <th style="vertical-align:middle;">Kanan</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Atas</th>
+                                                                                <th style="vertical-align:middle;">Bawah</th>
+                                                                                <th style="vertical-align:middle;">Berat</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
                                                                                 <th >Utama</th>
-                                                                                <th>Add</th>
-                                                                                <th>Total</th>
+                                                                                <th style="vertical-align:middle;">Add</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>bh</th>
-                                                                                <th>m'</th>
-                                                                                <th>m'</th>
-                                                                                <th>m'</th>
-                                                                                <th>m'</th>
-                                                                                <th>m'</th>
-                                                                                <th>m'</th>
-                                                                                <th>m'</th>
-                                                                                <th>m2</th>
-                                                                                <th>m'</th>
-                                                                                <th>Kiri</th>
-                                                                                <th>Tgh</th>
-                                                                                <th>Kn</th>
-                                                                                <th>Kiri</th>
-                                                                                <th>Tgh</th>
-                                                                                <th>Kn</th>
-                                                                                <th>m'</th>
-                                                                                <th>m'</th>
-                                                                                <th>m'</th>
-                                                                                <th>m'</th>
-                                                                                <th>m'</th>
-                                                                                <th>m'</th>
-                                                                                <th>m'</th>
-                                                                                <th>(m')</th>
-                                                                                <th>(bh)</th>
-                                                                                <th>(m')</th>
-                                                                                <th>(bh)</th>
-                                                                                <th>(bh)</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>(m')</th>
-                                                                                <th>(m')</th>
-                                                                                <th>(m')</th>
-                                                                                <th>bh</th>
-                                                                                <th>(m')</th>
-                                                                                <th>(m')</th>
-                                                                                <th>(m')</th>
-                                                                                <th>bh</th>
-                                                                                <th>(m')</th>
-                                                                                <th>(m')</th>
-                                                                                <th>(m')</th>
-                                                                                <th>bh</th>
-                                                                                <th>kg</th>
-                                                                                <th>(m')</th>
-                                                                                <th>bh</th>
-                                                                                <th>(kg)</th>
-                                                                                <th>kg</th>
-                                                                                <th>kg</th>
-                                                                                <th>kg</th>
-                                                                                <th>m2</th>
-                                                                                <th>m2</th>
-                                                                                <th>kg</th>
-                                                                                <th>m2</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tgh</th>
+                                                                                <th style="vertical-align:middle;">Kn</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tgh</th>
+                                                                                <th style="vertical-align:middle;">Kn</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
 
                                                                             </tr>
 
@@ -1394,13 +1402,409 @@
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tab-13">
-                                            3
+                                        <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya ground</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Nos </th>
+                                                                                <th colspan="2">Code</th>
+                                                                                <th colspan="4"> Panjang Balok</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Tebal Plat</th>
+                                                                                <th colspan="2" rowspan="2" style="vertical-align:middle;">Dimensi TB</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Luas Sekur Beton</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Decking Beton</th>
+                                                                                <th colspan="7"> Tulangan Utama</th>
+                                                                                <th colspan="6"> Tulangan Sengkang</th>
+                                                                                <th colspan="2">Peminggang</th>
+                                                                                <th colspan="4">Tulangan Utama</th>
+                                                                                <th colspan="13">TULANGAN SENGKANG</th>
+                                                                                <th colspan="3"> Tulangan Peminggang</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="3"> Besi</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Rasio Besi</th>
+                                                                                <th colspan="3">Volume</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Pos</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">type</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang Kotor</th>
+                                                                                <th colspan="2">Pengaruhh Kolom</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang Bersi</th>
+                                                                                <th colspan="6">Jumlah Tulangan</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th colspan="3">Dia Sengkang</th>
+                                                                                <th colspan="3">Jarak Sengkang</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th colspan="4">Tulangan Menerus</th>
+                                                                                <th colspan="4">Kiri</th>
+                                                                                <th colspan="4">Tengah</th>
+                                                                                <th colspan="4">Kanan</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Berat</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Berat</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Beton</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Besi</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Bekisting</th>
+
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th rowspan="2" style="vertical-align:middle;">no</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> As</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> - </th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> As</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Kanan</th>
+                                                                                <th style="vertical-align:middle;">B</th>
+                                                                                <th style="vertical-align:middle;">H</th>
+                                                                                <th colspan="3"> Atas</th>
+                                                                                <th colspan="3">Bawah</th>
+                                                                                <th style="vertical-align:middle;">sk-kiri</th>
+                                                                                <th style="vertical-align:middle;">sk-tgh</th>
+                                                                                <th style="vertical-align:middle;">sk-knn</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tengah</th>
+                                                                                <th style="vertical-align:middle;">Kanan</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Atas</th>
+                                                                                <th style="vertical-align:middle;">Bawah</th>
+                                                                                <th style="vertical-align:middle;">Berat</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th >Utama</th>
+                                                                                <th style="vertical-align:middle;">Add</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tgh</th>
+                                                                                <th style="vertical-align:middle;">Kn</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tgh</th>
+                                                                                <th style="vertical-align:middle;">Kn</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                                <th style="vertical-align:middle;">m3</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="tab-pane" id="tab-14">
-                                            4
+                                        <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya pump room</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Nos </th>
+                                                                                <th colspan="2">Code</th>
+                                                                                <th colspan="4"> Panjang Balok</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Tebal Plat</th>
+                                                                                <th colspan="2" rowspan="2" style="vertical-align:middle;">Dimensi TB</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Luas Sekur Beton</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Decking Beton</th>
+                                                                                <th colspan="7"> Tulangan Utama</th>
+                                                                                <th colspan="6"> Tulangan Sengkang</th>
+                                                                                <th colspan="2">Peminggang</th>
+                                                                                <th colspan="4">Tulangan Utama</th>
+                                                                                <th colspan="13">TULANGAN SENGKANG</th>
+                                                                                <th colspan="3"> Tulangan Peminggang</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="3"> Besi</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Rasio Besi</th>
+                                                                                <th colspan="3">Volume</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Pos</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">type</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang Kotor</th>
+                                                                                <th colspan="2">Pengaruhh Kolom</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang Bersi</th>
+                                                                                <th colspan="6">Jumlah Tulangan</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th colspan="3">Dia Sengkang</th>
+                                                                                <th colspan="3">Jarak Sengkang</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th colspan="4">Tulangan Menerus</th>
+                                                                                <th colspan="4">Kiri</th>
+                                                                                <th colspan="4">Tengah</th>
+                                                                                <th colspan="4">Kanan</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Berat</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Berat</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Beton</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Besi</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Bekisting</th>
+
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th rowspan="2" style="vertical-align:middle;">no</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> As</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> - </th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> As</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Kanan</th>
+                                                                                <th style="vertical-align:middle;">B</th>
+                                                                                <th style="vertical-align:middle;">H</th>
+                                                                                <th colspan="3"> Atas</th>
+                                                                                <th colspan="3">Bawah</th>
+                                                                                <th style="vertical-align:middle;">sk-kiri</th>
+                                                                                <th style="vertical-align:middle;">sk-tgh</th>
+                                                                                <th style="vertical-align:middle;">sk-knn</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tengah</th>
+                                                                                <th style="vertical-align:middle;">Kanan</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Atas</th>
+                                                                                <th style="vertical-align:middle;">Bawah</th>
+                                                                                <th style="vertical-align:middle;">Berat</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th >Utama</th>
+                                                                                <th style="vertical-align:middle;">Add</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tgh</th>
+                                                                                <th style="vertical-align:middle;">Kn</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tgh</th>
+                                                                                <th style="vertical-align:middle;">Kn</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                                <th style="vertical-align:middle;">m3</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="tab-pane" id="tab-15">
-                                            5
+                                        <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="2" style="vertical-align:middle;" >No</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" >Nama</th>
+                                                                                <th >Beton</th>
+                                                                                <th >Besi</th>
+                                                                                <th >Bekisting</th>
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">m3</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -1419,7 +1823,7 @@
         <div class="col-lg-12">
             <div class="ibox ">
                 <div class="ibox-title">
-                    <h5>TOS 5<small>Beam</small></h5>
+                    <h5>TOS 5<small> Beam</small></h5>
                     <div class="ibox-tools">
                         <a class="collapse-link">
                             <i class="fa fa-chevron-up"></i>
@@ -1434,8 +1838,10 @@
                                 <div class="panel-heading">
                                     <div class="panel-options">
                                         <ul class="nav nav-tabs">
-                                            <li><a class="nav-link active" href="#tab-4" data-toggle="tab">Peestal</a></li>
-                                            <li><a class="nav-link" href="#tab-5" data-toggle="tab">Summary</a></li>
+                                            <li><a class="nav-link active" href="#tab-16" data-toggle="tab">Data</a></li>
+                                            <li><a class="nav-link" href="#tab-17" data-toggle="tab">Ground</a></li>
+                                            <li><a class="nav-link" href="#tab-18" data-toggle="tab">Pump Room</a></li>
+                                            <li><a class="nav-link" href="#tab-19" data-toggle="tab">Summary</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1443,11 +1849,471 @@
                                 <div class="panel-body">
                                     <div class="tab-content">
 
-                                        <div class="tab-pane active" id="tab-4">
-                                            1
+                                        <div class="tab-pane active" id="tab-16">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Type</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">B</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">H</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Beton Decking</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="3">Dia Tulangan</th>
+                                                                                <th colspan="3"> Sengkang</th>
+                                                                                <th colspan="2"> Peminggang</th>
+                                                                                <th colspan="6" rowspan="2" style="vertical-align:middle;">Jumlahh Tulangan Utama</th>
+                                                                                <th colspan="3"> Jarak Sengkang</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th colspan="3">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th colspan="3">Dia</th>
+
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">Utama</th>
+                                                                                <th style="vertical-align:middle;">Skg</th>
+                                                                                <th style="vertical-align:middle;">Pg</th>
+                                                                                <th style="vertical-align:middle;">Ka</th>
+                                                                                <th style="vertical-align:middle;">tg</th>
+                                                                                <th style="vertical-align:middle;">KI</th>
+                                                                                <th colspan="3">Atas</th colspan="3">
+                                                                                <th colspan="3" colspan="3">Bawah</th>
+                                                                                <th style="vertical-align:middle;">Ka</th>
+                                                                                <th style="vertical-align:middle;">tg</th>
+                                                                                <th style="vertical-align:middle;">KI</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="tab-pane" id="tab-5">
-                                            2
+                                        <div class="tab-pane" id="tab-17">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya ground</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Nos </th>
+                                                                                <th colspan="2">Code</th>
+                                                                                <th colspan="4"> Panjang Balok</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Tebal Plat</th>
+                                                                                <th colspan="2" rowspan="2" style="vertical-align:middle;">Dimensi TB</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Decking Beton</th>
+                                                                                <th colspan="7"> Tulangan Utama</th>
+                                                                                <th colspan="6"> Tulangan Sengkang</th>
+                                                                                <th colspan="2">Peminggang</th>
+                                                                                <th colspan="4">Tulangan Utama</th>
+                                                                                <th colspan="13">Tulangan Sengkang</th>
+                                                                                <th colspan="3"> Tulangan Peminggang</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="3"> Besi</th>
+                                                                                <th colspan="3">Volume</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Pos</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">type</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang Kotor</th>
+                                                                                <th colspan="2">Pengaruhh Kolom</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang Bersi</th>
+                                                                                <th colspan="6">Jumlah Tulangan</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th colspan="3">Dia Sengkang</th>
+                                                                                <th colspan="3">Jarak Sengkang</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th colspan="4">Tulangan Menerus</th>
+                                                                                <th colspan="4">Kiri</th>
+                                                                                <th colspan="4">Tengah</th>
+                                                                                <th colspan="4">Kanan</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Berat</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Berat</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Beton</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Besi</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Bekisting</th>
+
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th rowspan="2" style="vertical-align:middle;">no</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> As</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> - </th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> As</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Kanan</th>
+                                                                                <th style="vertical-align:middle;">B</th>
+                                                                                <th style="vertical-align:middle;">H</th>
+                                                                                <th colspan="3"> Atas</th>
+                                                                                <th colspan="3">Bawah</th>
+                                                                                <th style="vertical-align:middle;">sk-kiri</th>
+                                                                                <th style="vertical-align:middle;">sk-tgh</th>
+                                                                                <th style="vertical-align:middle;">sk-knn</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tengah</th>
+                                                                                <th style="vertical-align:middle;">Kanan</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Atas</th>
+                                                                                <th style="vertical-align:middle;">Bawah</th>
+                                                                                <th style="vertical-align:middle;">Berat</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th >Utama</th>
+                                                                                <th style="vertical-align:middle;">Add</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tgh</th>
+                                                                                <th style="vertical-align:middle;">Kn</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tgh</th>
+                                                                                <th style="vertical-align:middle;">Kn</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">m3</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-18">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya ground</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Nos </th>
+                                                                                <th colspan="2">Code</th>
+                                                                                <th colspan="4"> Panjang Balok</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Tebal Plat</th>
+                                                                                <th colspan="2" rowspan="2" style="vertical-align:middle;">Dimensi TB</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Decking Beton</th>
+                                                                                <th colspan="7"> Tulangan Utama</th>
+                                                                                <th colspan="6"> Tulangan Sengkang</th>
+                                                                                <th colspan="2">Peminggang</th>
+                                                                                <th colspan="4">Tulangan Utama</th>
+                                                                                <th colspan="13">Tulangan Sengkang</th>
+                                                                                <th colspan="3"> Tulangan Peminggang</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="3"> Besi</th>
+                                                                                <th colspan="3">Volume</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Pos</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">type</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang Kotor</th>
+                                                                                <th colspan="2">Pengaruhh Kolom</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang Bersi</th>
+                                                                                <th colspan="6">Jumlah Tulangan</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th colspan="3">Dia Sengkang</th>
+                                                                                <th colspan="3">Jarak Sengkang</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th colspan="4">Tulangan Menerus</th>
+                                                                                <th colspan="4">Kiri</th>
+                                                                                <th colspan="4">Tengah</th>
+                                                                                <th colspan="4">Kanan</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Berat</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Panjang</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Berat</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Beton</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Besi</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Bekisting</th>
+
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th rowspan="2" style="vertical-align:middle;">no</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> As</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> - </th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> As</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Kanan</th>
+                                                                                <th style="vertical-align:middle;">B</th>
+                                                                                <th style="vertical-align:middle;">H</th>
+                                                                                <th colspan="3"> Atas</th>
+                                                                                <th colspan="3">Bawah</th>
+                                                                                <th style="vertical-align:middle;">sk-kiri</th>
+                                                                                <th style="vertical-align:middle;">sk-tgh</th>
+                                                                                <th style="vertical-align:middle;">sk-knn</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tengah</th>
+                                                                                <th style="vertical-align:middle;">Kanan</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">Atas</th>
+                                                                                <th style="vertical-align:middle;">Bawah</th>
+                                                                                <th style="vertical-align:middle;">Berat</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th style="vertical-align:middle;">Panjang</th>
+                                                                                <th style="vertical-align:middle;">P</th>
+                                                                                <th style="vertical-align:middle;">Jarak</th>
+                                                                                <th style="vertical-align:middle;">N</th>
+                                                                                <th >Utama</th>
+                                                                                <th style="vertical-align:middle;">Add</th>
+                                                                                <th style="vertical-align:middle;">Total</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tgh</th>
+                                                                                <th style="vertical-align:middle;">Kn</th>
+                                                                                <th style="vertical-align:middle;">Kiri</th>
+                                                                                <th style="vertical-align:middle;">Tgh</th>
+                                                                                <th style="vertical-align:middle;">Kn</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">m'</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(bh)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">bh</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">m3</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-19">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="2" style="vertical-align:middle;" >No</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" >Nama</th>
+                                                                                <th >Beton</th>
+                                                                                <th >Besi</th>
+                                                                                <th >Bekisting</th>
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">m3</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -1466,7 +2332,7 @@
         <div class="col-lg-12">
             <div class="ibox ">
                 <div class="ibox-title">
-                    <h5>TOS 2<small>Pedestal</small></h5>
+                    <h5>TOS 6<small> SLAB</small></h5>
                     <div class="ibox-tools">
                         <a class="collapse-link">
                             <i class="fa fa-chevron-up"></i>
@@ -1481,8 +2347,11 @@
                                 <div class="panel-heading">
                                     <div class="panel-options">
                                         <ul class="nav nav-tabs">
-                                            <li><a class="nav-link active" href="#tab-4" data-toggle="tab">Peestal</a></li>
-                                            <li><a class="nav-link" href="#tab-5" data-toggle="tab">Summary</a></li>
+                                            <li><a class="nav-link active" href="#tab-20" data-toggle="tab">t 200 upper GF</a></li>
+                                            <li><a class="nav-link" href="#tab-21" data-toggle="tab">Lantai 1</a></li>
+                                            <li><a class="nav-link" href="#tab-22" data-toggle="tab">t 120 upper GF</a></li>
+                                            <li><a class="nav-link" href="#tab-23" data-toggle="tab">Pump Room</a></li>
+                                            <li><a class="nav-link" href="#tab-24" data-toggle="tab">Summary</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1490,11 +2359,342 @@
                                 <div class="panel-body">
                                     <div class="tab-content">
 
-                                        <div class="tab-pane active" id="tab-4">
-                                            1
+                                        <div class="tab-pane active" id="tab-20">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Type</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">B</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">H</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Beton Decking</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="3">Dia Tulangan</th>
+                                                                                <th colspan="3"> Sengkang</th>
+                                                                                <th colspan="2"> Peminggang</th>
+                                                                                <th colspan="6" rowspan="2" style="vertical-align:middle;">Jumlahh Tulangan Utama</th>
+                                                                                <th colspan="3"> Jarak Sengkang</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th colspan="3">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th colspan="3">Dia</th>
+
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">Utama</th>
+                                                                                <th style="vertical-align:middle;">Skg</th>
+                                                                                <th style="vertical-align:middle;">Pg</th>
+                                                                                <th style="vertical-align:middle;">Ka</th>
+                                                                                <th style="vertical-align:middle;">tg</th>
+                                                                                <th style="vertical-align:middle;">KI</th>
+                                                                                <th colspan="3">Atas</th colspan="3">
+                                                                                <th colspan="3" colspan="3">Bawah</th>
+                                                                                <th style="vertical-align:middle;">Ka</th>
+                                                                                <th style="vertical-align:middle;">tg</th>
+                                                                                <th style="vertical-align:middle;">KI</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="tab-pane" id="tab-5">
-                                            2
+                                        <div class="tab-pane" id="tab-21">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Type</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">B</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">H</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Beton Decking</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="3">Dia Tulangan</th>
+                                                                                <th colspan="3"> Sengkang</th>
+                                                                                <th colspan="2"> Peminggang</th>
+                                                                                <th colspan="6" rowspan="2" style="vertical-align:middle;">Jumlahh Tulangan Utama</th>
+                                                                                <th colspan="3"> Jarak Sengkang</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th colspan="3">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th colspan="3">Dia</th>
+
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">Utama</th>
+                                                                                <th style="vertical-align:middle;">Skg</th>
+                                                                                <th style="vertical-align:middle;">Pg</th>
+                                                                                <th style="vertical-align:middle;">Ka</th>
+                                                                                <th style="vertical-align:middle;">tg</th>
+                                                                                <th style="vertical-align:middle;">KI</th>
+                                                                                <th colspan="3">Atas</th colspan="3">
+                                                                                <th colspan="3" colspan="3">Bawah</th>
+                                                                                <th style="vertical-align:middle;">Ka</th>
+                                                                                <th style="vertical-align:middle;">tg</th>
+                                                                                <th style="vertical-align:middle;">KI</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-22">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Type</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">B</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">H</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Beton Decking</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="3">Dia Tulangan</th>
+                                                                                <th colspan="3"> Sengkang</th>
+                                                                                <th colspan="2"> Peminggang</th>
+                                                                                <th colspan="6" rowspan="2" style="vertical-align:middle;">Jumlahh Tulangan Utama</th>
+                                                                                <th colspan="3"> Jarak Sengkang</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th colspan="3">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th colspan="3">Dia</th>
+
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">Utama</th>
+                                                                                <th style="vertical-align:middle;">Skg</th>
+                                                                                <th style="vertical-align:middle;">Pg</th>
+                                                                                <th style="vertical-align:middle;">Ka</th>
+                                                                                <th style="vertical-align:middle;">tg</th>
+                                                                                <th style="vertical-align:middle;">KI</th>
+                                                                                <th colspan="3">Atas</th colspan="3">
+                                                                                <th colspan="3" colspan="3">Bawah</th>
+                                                                                <th style="vertical-align:middle;">Ka</th>
+                                                                                <th style="vertical-align:middle;">tg</th>
+                                                                                <th style="vertical-align:middle;">KI</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-23">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Type</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">B</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">H</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;">Beton Decking</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" colspan="3">Dia Tulangan</th>
+                                                                                <th colspan="3"> Sengkang</th>
+                                                                                <th colspan="2"> Peminggang</th>
+                                                                                <th colspan="6" rowspan="2" style="vertical-align:middle;">Jumlahh Tulangan Utama</th>
+                                                                                <th colspan="3"> Jarak Sengkang</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th colspan="3">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Dia</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">N</th>
+                                                                                <th colspan="3">Dia</th>
+
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">Utama</th>
+                                                                                <th style="vertical-align:middle;">Skg</th>
+                                                                                <th style="vertical-align:middle;">Pg</th>
+                                                                                <th style="vertical-align:middle;">Ka</th>
+                                                                                <th style="vertical-align:middle;">tg</th>
+                                                                                <th style="vertical-align:middle;">KI</th>
+                                                                                <th colspan="3">Atas</th colspan="3">
+                                                                                <th colspan="3" colspan="3">Bawah</th>
+                                                                                <th style="vertical-align:middle;">Ka</th>
+                                                                                <th style="vertical-align:middle;">tg</th>
+                                                                                <th style="vertical-align:middle;">KI</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-24">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="2" style="vertical-align:middle;" >No</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;" >Nama</th>
+                                                                                <th >Beton</th>
+                                                                                <th >Besi</th>
+                                                                                <th >Bekisting</th>
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">m3</th>
+                                                                                <th style="vertical-align:middle;">kg</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -1513,7 +2713,7 @@
         <div class="col-lg-12">
             <div class="ibox ">
                 <div class="ibox-title">
-                    <h5>TOS 2<small>Pedestal</small></h5>
+                    <h5>TOS 7<small> RETAINING WALL</small></h5>
                     <div class="ibox-tools">
                         <a class="collapse-link">
                             <i class="fa fa-chevron-up"></i>
@@ -1528,8 +2728,13 @@
                                 <div class="panel-heading">
                                     <div class="panel-options">
                                         <ul class="nav nav-tabs">
-                                            <li><a class="nav-link active" href="#tab-4" data-toggle="tab">Peestal</a></li>
-                                            <li><a class="nav-link" href="#tab-5" data-toggle="tab">Summary</a></li>
+                                            <li><a class="nav-link active" href="#tab-25" data-toggle="tab">Pump Room</a></li>
+                                            <li><a class="nav-link" href="#tab-26" data-toggle="tab">Pool</a></li>
+                                            <li><a class="nav-link" href="#tab-27" data-toggle="tab">Gutter Kolam Renang</a></li>
+                                            <li><a class="nav-link" href="#tab-28" data-toggle="tab">Gutter Tanaman lt 1</a></li>
+                                            <li><a class="nav-link" href="#tab-29" data-toggle="tab">Janggutan</a></li>
+                                            <li><a class="nav-link" href="#tab-30" data-toggle="tab">RW Batu Kali</a></li>
+                                            <li><a class="nav-link" href="#tab-31" data-toggle="tab">Summary</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1537,11 +2742,554 @@
                                 <div class="panel-body">
                                     <div class="tab-content">
 
-                                        <div class="tab-pane active" id="tab-4">
-                                            1
+                                        <div class="tab-pane active" id="tab-25">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> No</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Type</th>
+                                                                                <th colspan="3"> Dimensi</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Beton</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Bekisting</th>
+                                                                                <th colspan="13"> Tulangan Retaining Wall</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;"> tinggi</th>
+                                                                                <th style="vertical-align:middle;"> panjang</th>
+                                                                                <th style="vertical-align:middle;"> tebal</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Uraian</th>
+                                                                                <th style="vertical-align:middle;"> Uk.</th>
+                                                                                <th style="vertical-align:middle;"> Dia</th>
+                                                                                <th style="vertical-align:middle;"> Jarak</th>
+                                                                                <th style="vertical-align:middle;"> Kait</th>
+                                                                                <th style="vertical-align:middle;"> oL</th>
+                                                                                <th style="vertical-align:middle;"> Is</th>
+                                                                                <th style="vertical-align:middle;"> Panjang</th>
+                                                                                <th style="vertical-align:middle;"> Btg</th>
+                                                                                <th style="vertical-align:middle;"> P.Total</th>
+                                                                                <th style="vertical-align:middle;"> BJ</th>
+                                                                                <th style="vertical-align:middle;"> Nos</th>
+                                                                                <th style="vertical-align:middle;"> Total Berat</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">m3</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(kg/m')</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="tab-pane" id="tab-5">
-                                            2
+                                        <div class="tab-pane" id="tab-26">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> No</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Type</th>
+                                                                                <th colspan="3"> Dimensi</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Beton</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Bekisting</th>
+                                                                                <th colspan="13"> Tulangan Retaining Wall</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;"> tinggi</th>
+                                                                                <th style="vertical-align:middle;"> panjang</th>
+                                                                                <th style="vertical-align:middle;"> tebal</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Uraian</th>
+                                                                                <th style="vertical-align:middle;"> Uk.</th>
+                                                                                <th style="vertical-align:middle;"> Dia</th>
+                                                                                <th style="vertical-align:middle;"> Jarak</th>
+                                                                                <th style="vertical-align:middle;"> Kait</th>
+                                                                                <th style="vertical-align:middle;"> oL</th>
+                                                                                <th style="vertical-align:middle;"> Is</th>
+                                                                                <th style="vertical-align:middle;"> Panjang</th>
+                                                                                <th style="vertical-align:middle;"> Btg</th>
+                                                                                <th style="vertical-align:middle;"> P.Total</th>
+                                                                                <th style="vertical-align:middle;"> BJ</th>
+                                                                                <th style="vertical-align:middle;"> Nos</th>
+                                                                                <th style="vertical-align:middle;"> Total Berat</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">m3</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(kg/m')</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-27">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> No</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Type</th>
+                                                                                <th colspan="3"> Dimensi</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Beton</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Bekisting</th>
+                                                                                <th colspan="13"> Tulangan Retaining Wall</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;"> tinggi</th>
+                                                                                <th style="vertical-align:middle;"> panjang</th>
+                                                                                <th style="vertical-align:middle;"> tebal</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Uraian</th>
+                                                                                <th style="vertical-align:middle;"> Uk.</th>
+                                                                                <th style="vertical-align:middle;"> Dia</th>
+                                                                                <th style="vertical-align:middle;"> Jarak</th>
+                                                                                <th style="vertical-align:middle;"> Kait</th>
+                                                                                <th style="vertical-align:middle;"> oL</th>
+                                                                                <th style="vertical-align:middle;"> Is</th>
+                                                                                <th style="vertical-align:middle;"> Panjang</th>
+                                                                                <th style="vertical-align:middle;"> Btg</th>
+                                                                                <th style="vertical-align:middle;"> P.Total</th>
+                                                                                <th style="vertical-align:middle;"> BJ</th>
+                                                                                <th style="vertical-align:middle;"> Nos</th>
+                                                                                <th style="vertical-align:middle;"> Total Berat</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">m3</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(kg/m')</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-28">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> No</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Type</th>
+                                                                                <th colspan="3"> Dimensi</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Beton</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Bekisting</th>
+                                                                                <th colspan="13"> Tulangan Retaining Wall</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;"> tinggi</th>
+                                                                                <th style="vertical-align:middle;"> panjang</th>
+                                                                                <th style="vertical-align:middle;"> tebal</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Uraian</th>
+                                                                                <th style="vertical-align:middle;"> Uk.</th>
+                                                                                <th style="vertical-align:middle;"> Dia</th>
+                                                                                <th style="vertical-align:middle;"> Jarak</th>
+                                                                                <th style="vertical-align:middle;"> Kait</th>
+                                                                                <th style="vertical-align:middle;"> oL</th>
+                                                                                <th style="vertical-align:middle;"> Is</th>
+                                                                                <th style="vertical-align:middle;"> Panjang</th>
+                                                                                <th style="vertical-align:middle;"> Btg</th>
+                                                                                <th style="vertical-align:middle;"> P.Total</th>
+                                                                                <th style="vertical-align:middle;"> BJ</th>
+                                                                                <th style="vertical-align:middle;"> Nos</th>
+                                                                                <th style="vertical-align:middle;"> Total Berat</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">m3</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(kg/m')</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-29">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> No</th>
+                                                                                <th rowspan="3" style="vertical-align:middle;"> Type</th>
+                                                                                <th colspan="3"> Dimensi</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Beton</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Bekisting</th>
+                                                                                <th colspan="13"> Tulangan Retaining Wall</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;"> tinggi</th>
+                                                                                <th style="vertical-align:middle;"> panjang</th>
+                                                                                <th style="vertical-align:middle;"> tebal</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;"> Uraian</th>
+                                                                                <th style="vertical-align:middle;"> Uk.</th>
+                                                                                <th style="vertical-align:middle;"> Dia</th>
+                                                                                <th style="vertical-align:middle;"> Jarak</th>
+                                                                                <th style="vertical-align:middle;"> Kait</th>
+                                                                                <th style="vertical-align:middle;"> oL</th>
+                                                                                <th style="vertical-align:middle;"> Is</th>
+                                                                                <th style="vertical-align:middle;"> Panjang</th>
+                                                                                <th style="vertical-align:middle;"> Btg</th>
+                                                                                <th style="vertical-align:middle;"> P.Total</th>
+                                                                                <th style="vertical-align:middle;"> BJ</th>
+                                                                                <th style="vertical-align:middle;"> Nos</th>
+                                                                                <th style="vertical-align:middle;"> Total Berat</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">m3</th>
+                                                                                <th style="vertical-align:middle;">m2</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(m')</th>
+                                                                                <th style="vertical-align:middle;">(kg/m')</th>
+                                                                                <th style="vertical-align:middle;">(n)</th>
+                                                                                <th style="vertical-align:middle;">(kg)</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-30">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;"> No</th>
+                                                                                <th style="vertical-align:middle;"> Nama</th>
+                                                                                <th style="vertical-align:middle;"> B</th>
+                                                                                <th style="vertical-align:middle;"> H</th>
+                                                                                <th style="vertical-align:middle;"> Luas Alas (m2)</th>
+                                                                                <th style="vertical-align:middle;"> Panjang (m)</th>
+                                                                                <th style="vertical-align:middle;"> Volume (m3)</th>
+                                                                                <th style="vertical-align:middle;"> Galian (m3)</th>
+                                                                                <th style="vertical-align:middle;"> Pasir Urug (m2)</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th colspan="8">TO PUMP ROOM</th>
+                                                                                <th style="vertical-align:middle;">0,05</th>
+                                                                            </tr>
+
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-31">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="ibox ">
+                                                            <div class="ibox-title">
+                                                                <h5>Basic Data Punya tabel 4</h5>
+                                                                <div class="ibox-tools">
+                                                                    <a href="/tambah_project">
+                                                                        <i class="fa fa-plus"></i>
+                                                                        <h5>Tambah</h5>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ibox-content">
+
+                                                                <div class="table-responsive scrollmenu">
+                                                                    <h5>Rekap Volume Retaining Wall</h5>
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;"> No</th>
+                                                                                <th style="vertical-align:middle;"> Nama</th>
+                                                                                <th style="vertical-align:middle;"> Beton (m3)</th>
+                                                                                <th style="vertical-align:middle;"> Besi (kg)</th>
+                                                                                <th style="vertical-align:middle;"> Bekisting (m2)</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                    <h5>Rekap Volume Retaining Wall Batu Kali</h5>
+                                                                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th style="vertical-align:middle;"> No</th>
+                                                                                <th style="vertical-align:middle;"> Nama</th>
+                                                                                <th style="vertical-align:middle;"> Beton (m3)</th>
+                                                                                <th style="vertical-align:middle;"> Besi (kg)</th>
+                                                                                <th style="vertical-align:middle;"> Bekisting (m2)</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="gradeC">
+                                                                                <td>Trident</td>
+                                                                                <td>Internet
+                                                                                    Explorer 5.0
+                                                                                </td>
+                                                                                <td class="center">5</td>
+                                                                                <td class="center">C</td>
+                                                                            </tr>
+
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -1555,5 +3303,6 @@
         </div>
 
     </div>
+    
 </div>
 </div>
