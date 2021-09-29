@@ -26,3 +26,4 @@ Route::view('/projects', 'projects');
 Route::view('/users', 'users');
 Route::view('/tambah_project', 'tambah_project');
 Route::view('/detil_project', 'detil_project');
+Route::view('/profil', 'profil');
