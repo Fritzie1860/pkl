@@ -48,11 +48,11 @@
                     <table class="table table-striped table-bordered table-hover dataTables-example" >
                     <thead>
                     <tr>
-                        <th>Rendering engine</th>
-                        <th>Browser</th>
-                        <th>Platform(s)</th>
-                        <th>Engine version</th>
-                        <th>CSS grade</th>
+                        <th>Foto</th>
+                        <th>Nama</th>
+                        <th>e-mail</th>
+                        <th>Status </th>
+                        <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -63,7 +63,12 @@
                         </td>
                         <td>Win 95+</td>
                         <td class="center">4</td>
-                        <td class="center">X</td>
+                        <td class="project-actions">
+                            <center>
+                                <a href="/detil_project" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                                <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+                            </center>
+                        </td>
                     </tr>
                     <tr class="gradeC">
                         <td>Trident</td>
