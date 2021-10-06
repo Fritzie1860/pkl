@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use \App\Models\user;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {   
@@ -33,10 +34,10 @@ class UserController extends Controller
 
     }
 
-    public function cek (Request $req){
+    public function cek (){
         $y=user::find(1) ;
+        // Auth::user($y);
         dd($y);
-        dd($req);
         // user::deleted()
         // redirect('/users'); 
 

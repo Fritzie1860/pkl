@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [UserController::class, 'index']);
 Route::get('/simpan', [UserController::class, 'store']);
-Route::post('/cek', [UserController::class, 'cek']);
+Route::post('/login', [AuthController::class, 'login']);
 
 
 Route::view('/login', 'login');
