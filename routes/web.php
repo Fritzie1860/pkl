@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [UserController::class, 'index']);
 Route::get('/simpan', [UserController::class, 'store']);
+Route::post('/cek', [UserController::class, 'cek']);
 
 
 Route::view('/login', 'login');

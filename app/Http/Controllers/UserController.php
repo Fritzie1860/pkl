@@ -27,8 +27,18 @@ class UserController extends Controller
                 'status' => 1,
                 'foto'  => "kosong"];
       
-        user::insert($hasil);
+        user::insert($hasil) ;
+        // user::deleted()
         redirect('/users'); 
+
+    }
+
+    public function cek (Request $req){
+        $y=user::find(1) ;
+        dd($y);
+        dd($req);
+        // user::deleted()
+        // redirect('/users'); 
 
     }
 }
