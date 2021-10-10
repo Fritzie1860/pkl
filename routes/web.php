@@ -24,7 +24,7 @@ Route::view('/login', 'login');
 Route::view('/forgotpass', 'forgotpass');
 Route::view('/sidebar', 'layout.sidebar');
 Route::view('/header', 'layout.header');
-Route::view('/dashboard', 'dashboard');
+Route::get('/dashboard', [UserController::class, 'dashboard'])->middleware();
 Route::view('/projects', 'projects');
 Route::view('/users', 'users');
 Route::view('/tambah_project', 'tambah_project');

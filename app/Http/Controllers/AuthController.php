@@ -27,13 +27,17 @@ class AuthController extends Controller
     public function login(Request $request)
     {
 
-        // dd($request);
-        $validator = $request->validate([
-            'email'                 => 'required|email',
+        //dd($request);
+        echo $request['email'];
+        $log = user::all()->where('email',$request['email']);
+        //dd($log);
+        dd(auth($log));
+        // $validator = $request->validate([
+        //     'email'                 => 'required|email',
             
-        ]);
+        // ]);
         // dd($validator);
-        return redirect()->back()->withErrors($validator)->withInput($request->all);
+        // return redirect()->back()->withErrors($validator)->withInput($request->all);
         // if (!$validator) {
         //     dd($validator);
         //     return redirect()->back()->withErrors($validator)->withInput($request->all);

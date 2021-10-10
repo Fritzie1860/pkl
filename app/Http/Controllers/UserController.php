@@ -40,6 +40,9 @@ class UserController extends Controller
         dd($y);
         // user::deleted()
         // redirect('/users'); 
+    }
 
+    public function dashboard () {
+        return view('dashboard');
     }
 }

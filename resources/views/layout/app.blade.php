@@ -259,4 +259,26 @@
             });
         });
     </script>
+    <!-- ChartJS-->
+    <script src="js/plugins/chartJs/Chart.min.js"></script>
+    <script>
+      var doughnutData = {
+        labels: ["Prepared","On Going","Finished" ],
+        datasets: [{
+            data: [40,27,106],
+            backgroundColor: ["#a3e1d4","#dedede","#b5b8cf"]
+        }]
+    } ;
+
+
+    var doughnutOptions = {
+        responsive: true
+    };
+
+
+    var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+    new Chart(ctx4, {type: 'doughnut', data: doughnutData, options:doughnutOptions});
+</script>
+
+
 </head>
