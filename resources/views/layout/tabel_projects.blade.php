@@ -59,6 +59,36 @@
                                             </center>
                                         </td>
                                     </tr>
+                                    <tr class="gradeA font_bantu">
+                                    <td><center>Villa warna warni</center></td>
+                                        <td>
+                                            <center>
+                                            07 Sept 2020
+                                            </center>
+                                        </td>
+                                        <td class="center"> <center> On Going</center></td>
+                                        <td class="project-actions">
+                                            <center>
+                                                <a href="/detil_project" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                                                <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+                                            </center>
+                                        </td>
+                                    </tr>
+                                    <tr class="gradeA font_bantu">
+                                    <td><center>Villa warna warni</center></td>
+                                        <td>
+                                            <center>
+                                            07 Sept 2020
+                                            </center>
+                                        </td>
+                                        <td class="center"> <center> On Going</center></td>
+                                        <td class="project-actions">
+                                            <center>
+                                                <a href="/detil_project" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                                                <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+                                            </center>
+                                        </td>
+                                    </tr>
                                 </tbody>
                                 <tfoot>
                                     <tr>

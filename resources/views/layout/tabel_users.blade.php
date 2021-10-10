@@ -58,10 +58,11 @@
                                 <tbody>
                                     @foreach ($data as $row):
                                     <tr>
-                                        <th>{{$row->foto}}</th>
-                                        <th>{{$row->username}}</th>
-                                        <th>{{$row->email}}</th>
-                                        <th>{{$row->status}}</th>
+                                        <!-- <td>{{$row->foto}}</td> -->
+                                        <td><img src="img/a2.jpg" alt=""></td>
+                                        <td>{{$row->username}}</td>
+                                        <td>{{$row->email}}</td>
+                                        <td>{{$row->status}}</td>
                                         <td class="project-actions">
                                             <center>
                                                 <a href="/detil_project" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
