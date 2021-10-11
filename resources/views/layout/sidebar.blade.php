@@ -37,11 +37,11 @@
                     <a href="/projects"><i class="fa fa-table"></i> <span class="nav-label">Projects</span></a>
                 </li>
                 <li class="<?php 
-                    if(request()->is('users')) {
+                    if(request()->is('/')) {
                         echo "active";
                     }
                 ?>">
-                    <a href="/users"><i class="fa fa-pie-chart"></i> <span class="nav-label">Users</span>  </a>
+                    <a href="/"><i class="fa fa-pie-chart"></i> <span class="nav-label">Users</span>  </a>
                 </li>
             </ul>
         </div>

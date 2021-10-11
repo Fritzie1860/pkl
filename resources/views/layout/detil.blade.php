@@ -279,7 +279,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos1PumpRoom">Tambahkan</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -602,7 +602,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos2GroundFloor">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -721,7 +721,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos2Pedestal">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -768,7 +768,7 @@
                                                                         </tbody>
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos2Summary">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -882,7 +882,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos3Data">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1001,7 +1001,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos3Ground">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1120,7 +1120,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos3PumpRoom">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1166,7 +1166,7 @@
                                                                         </tbody>
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos3Summary">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1281,7 +1281,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos4Data">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1457,7 +1457,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos4Data">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1633,7 +1633,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos4Ground">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1809,7 +1809,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos4PumpRoom">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1862,7 +1862,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos4Summary">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1976,7 +1976,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos5Data">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2147,7 +2147,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos5Ground">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2318,7 +2318,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos5PumpRoom">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2371,7 +2371,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos5Summary">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2486,7 +2486,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos6200UpperGF">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2557,7 +2557,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos6Lantai1">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2628,7 +2628,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos6120UppperGF">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2699,7 +2699,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos4PumpRoom">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2752,7 +2752,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos6Summary">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2883,7 +2883,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tosPumpRoom">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2968,7 +2968,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos7PumpRoom">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -3053,7 +3053,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos7KolamRenang">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -3138,7 +3138,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos7Lantai1">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -3223,7 +3223,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos7Janggutan">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -3278,7 +3278,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos7RwBatuKali">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -3347,7 +3347,7 @@
 
                                                                     </table>
                                                                 </div>
-
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos7Summary">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -3370,58 +3370,4 @@
 </div>
 </div>
 
-<!-- Modal pop up -->
-
-<!-- tos 1 foot plat -->
-<div class="modal fade" id="contohModal" role="dialog" arialabelledby="modalLabel" area-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- tos 1 Batu Kali -->
-<div class="modal fade" id="tos1BatuKali" role="dialog" arialabelledby="modalLabel" area-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Batu Kali</h2>
-            </div>
-            <form>
-                <div class="container">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
-</div>
-</div>
+@include('layout.popup')
