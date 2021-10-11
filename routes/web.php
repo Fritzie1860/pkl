@@ -15,12 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [UserController::class, 'index']);
+Route::get('/', [UserController::class, 'index'])->middleware('auth');
 Route::get('/simpan', [UserController::class, 'store']);
-Route::post('/login', [AuthController::class, 'login']);
+Route::post('verif', [AuthController::class, 'verif']);
+// Route::post('/login', [AuthController::class, 'login']);
 
 
-Route::view('/login', 'login');
+Route::get('login', [AuthController::class,'login'])->name('login');;
 Route::view('/forgotpass', 'forgotpass');
 Route::view('/sidebar', 'layout.sidebar');
 Route::view('/header', 'layout.header');
@@ -29,4 +30,4 @@ Route::view('/projects', 'projects');
 Route::view('/users', 'users');
 Route::view('/tambah_project', 'tambah_project');
 Route::view('/detil_project', 'detil_project');
-Route::view('/profil', 'profil');
+Route::view('/profil', 'profil')->name('home');

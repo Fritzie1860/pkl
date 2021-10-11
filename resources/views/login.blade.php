@@ -4,7 +4,7 @@
     <div class="login_box" style="position:static;">
         <div class="margin_input">
             <img src="/images/invest.png" alt="">
-            <form action="/login" method="post">
+            <form action="/verif" method="post">
             
                 <div class="text_log email">
                     <h1>Email</h1>   

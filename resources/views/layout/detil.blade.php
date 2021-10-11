@@ -2,15 +2,12 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="ibox">
-                <div class="ibox-title">
-                    <h5>All form elements <small>With custom checbox and radion elements.</small></h5>
-                </div>
-                <div class="ibox-content" >
+                <div class="ibox-content">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="m-b-md">
                                 <a href="#" class="btn btn-white btn-xs float-right">Edit project</a>
-                                <h2>Contract with Zender Company</h2>
+                                <h2>Villa Warna warni</h2>
                             </div>
 
                         </div>
@@ -83,11 +80,11 @@
                                 </div>
                                 <div class="col-sm-8 text-sm-left">
                                     <dd class="project-people mb-1">
-                                        <a href="><img alt="image" class="rounded-circle" src="img/a3.jpg"></a>
-                                        <a href="><img alt="image" class="rounded-circle" src="img/a1.jpg"></a>
-                                        <a href="><img alt="image" class="rounded-circle" src="img/a2.jpg"></a>
-                                        <a href="><img alt="image" class="rounded-circle" src="img/a4.jpg"></a>
-                                        <a href="><img alt="image" class="rounded-circle" src="img/a5.jpg"></a>
+                                        <a href="><img alt=" image" class="rounded-circle" src="img/a3.jpg"></a>
+                                        <a href="><img alt=" image" class="rounded-circle" src="img/a1.jpg"></a>
+                                        <a href="><img alt=" image" class="rounded-circle" src="img/a2.jpg"></a>
+                                        <a href="><img alt=" image" class="rounded-circle" src="img/a4.jpg"></a>
+                                        <a href="><img alt=" image" class="rounded-circle" src="img/a5.jpg"></a>
                                     </dd>
                                 </div>
                             </dl>
@@ -294,7 +291,7 @@
                                                     <div class="col-lg-12">
                                                         <div class="ibox ">
                                                             <div class="ibox-title">
-                                                                <h5>Mantapp</h5>
+                                                                <h5>Footplat</h5>
                                                                 <div class="ibox-tools">
                                                                     <a href="/tambah_project">
                                                                         <i class="fa fa-plus"></i>
@@ -368,16 +365,81 @@
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr class="gradeA">
-                                                                                <td>Trident</td>
-                                                                                <td>Internet
-                                                                                    Explorer 5.0
-                                                                                </td>
-                                                                                <td class="center">5</td>
-                                                                                <td class="center">C</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>10</td>
+                                                                                <td>5</td>
+                                                                                <td>5</td>
+                                                                                <td>5</td>
+                                                                                <td>5</td>
+                                                                            </tr>
+                                                                            <tr class="gradeA">
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>20</td>
+                                                                                <td>5</td>
+                                                                                <td>5</td>
+                                                                                <td>5</td>
+                                                                                <td>5</td>
+                                                                            </tr>
+                                                                            <tr class="gradeA">
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>5</td>
+                                                                                <td>5</td>
+                                                                                <td>5</td>
+                                                                                <td>5</td>
                                                                             </tr>
                                                                     </table>
-                                                                </div>
 
+                                                                </div>
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#contohModal">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1321,7 +1383,7 @@
                                                                                 <th style="vertical-align:middle;">P</th>
                                                                                 <th style="vertical-align:middle;">Jarak</th>
                                                                                 <th style="vertical-align:middle;">N</th>
-                                                                                <th >Utama</th>
+                                                                                <th>Utama</th>
                                                                                 <th style="vertical-align:middle;">Add</th>
                                                                                 <th style="vertical-align:middle;">Total</th>
                                                                             </tr>
@@ -1402,7 +1464,7 @@
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tab-13">
-                                        <div class="wrapper wrapper-content animated fadeInRight">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <div class="ibox ">
@@ -1497,7 +1559,7 @@
                                                                                 <th style="vertical-align:middle;">P</th>
                                                                                 <th style="vertical-align:middle;">Jarak</th>
                                                                                 <th style="vertical-align:middle;">N</th>
-                                                                                <th >Utama</th>
+                                                                                <th>Utama</th>
                                                                                 <th style="vertical-align:middle;">Add</th>
                                                                                 <th style="vertical-align:middle;">Total</th>
                                                                             </tr>
@@ -1578,7 +1640,7 @@
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tab-14">
-                                        <div class="wrapper wrapper-content animated fadeInRight">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <div class="ibox ">
@@ -1673,7 +1735,7 @@
                                                                                 <th style="vertical-align:middle;">P</th>
                                                                                 <th style="vertical-align:middle;">Jarak</th>
                                                                                 <th style="vertical-align:middle;">N</th>
-                                                                                <th >Utama</th>
+                                                                                <th>Utama</th>
                                                                                 <th style="vertical-align:middle;">Add</th>
                                                                                 <th style="vertical-align:middle;">Total</th>
                                                                             </tr>
@@ -1754,7 +1816,7 @@
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tab-15">
-                                        <div class="wrapper wrapper-content animated fadeInRight">
+                                            <div class="wrapper wrapper-content animated fadeInRight">
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <div class="ibox ">
@@ -1773,12 +1835,12 @@
                                                                     <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                         <thead>
                                                                             <tr>
-                                                                                <th rowspan="2" style="vertical-align:middle;" >No</th>
-                                                                                <th rowspan="2" style="vertical-align:middle;" >Nama</th>
-                                                                                <th >Beton</th>
-                                                                                <th >Besi</th>
-                                                                                <th >Bekisting</th>
-                                                                                
+                                                                                <th rowspan="2" style="vertical-align:middle;">No</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Nama</th>
+                                                                                <th>Beton</th>
+                                                                                <th>Besi</th>
+                                                                                <th>Bekisting</th>
+
                                                                             </tr>
                                                                             <tr>
                                                                                 <th style="vertical-align:middle;">m3</th>
@@ -2014,7 +2076,7 @@
                                                                                 <th style="vertical-align:middle;">P</th>
                                                                                 <th style="vertical-align:middle;">Jarak</th>
                                                                                 <th style="vertical-align:middle;">N</th>
-                                                                                <th >Utama</th>
+                                                                                <th>Utama</th>
                                                                                 <th style="vertical-align:middle;">Add</th>
                                                                                 <th style="vertical-align:middle;">Total</th>
                                                                             </tr>
@@ -2185,7 +2247,7 @@
                                                                                 <th style="vertical-align:middle;">P</th>
                                                                                 <th style="vertical-align:middle;">Jarak</th>
                                                                                 <th style="vertical-align:middle;">N</th>
-                                                                                <th >Utama</th>
+                                                                                <th>Utama</th>
                                                                                 <th style="vertical-align:middle;">Add</th>
                                                                                 <th style="vertical-align:middle;">Total</th>
                                                                             </tr>
@@ -2282,12 +2344,12 @@
                                                                     <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                         <thead>
                                                                             <tr>
-                                                                                <th rowspan="2" style="vertical-align:middle;" >No</th>
-                                                                                <th rowspan="2" style="vertical-align:middle;" >Nama</th>
-                                                                                <th >Beton</th>
-                                                                                <th >Besi</th>
-                                                                                <th >Bekisting</th>
-                                                                                
+                                                                                <th rowspan="2" style="vertical-align:middle;">No</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Nama</th>
+                                                                                <th>Beton</th>
+                                                                                <th>Besi</th>
+                                                                                <th>Bekisting</th>
+
                                                                             </tr>
                                                                             <tr>
                                                                                 <th style="vertical-align:middle;">m3</th>
@@ -2663,12 +2725,12 @@
                                                                     <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                         <thead>
                                                                             <tr>
-                                                                                <th rowspan="2" style="vertical-align:middle;" >No</th>
-                                                                                <th rowspan="2" style="vertical-align:middle;" >Nama</th>
-                                                                                <th >Beton</th>
-                                                                                <th >Besi</th>
-                                                                                <th >Bekisting</th>
-                                                                                
+                                                                                <th rowspan="2" style="vertical-align:middle;">No</th>
+                                                                                <th rowspan="2" style="vertical-align:middle;">Nama</th>
+                                                                                <th>Beton</th>
+                                                                                <th>Besi</th>
+                                                                                <th>Bekisting</th>
+
                                                                             </tr>
                                                                             <tr>
                                                                                 <th style="vertical-align:middle;">m3</th>
@@ -3303,6 +3365,31 @@
         </div>
 
     </div>
-    
+
 </div>
+</div>
+
+<div class="modal fade" id="contohModal" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>

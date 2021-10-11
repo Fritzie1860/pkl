@@ -24,14 +24,35 @@ class AuthController extends Controller
         return view('login');
     }
 
-    public function login(Request $request)
+    public function verif(Request $request)
     {
 
         //dd($request);
-        echo $request['email'];
+        // echo $request['email'];
         $log = user::all()->where('email',$request['email']);
         //dd($log);
-        dd(auth($log));
+        $data = [
+            'email'     => $request->input('email'),
+            'password'  => $request->input('password'),
+        ];
+        // dd($data);
+        $x = Auth::login($data);
+        dd($x);
+        // Auth::attempt($data);
+        // dd(Auth::check());
+        if (Auth::check()) { // true sekalian session field di users nanti bisa dipanggil via Auth
+            //Login Success
+            echo "hy";
+            // return redirect()->route('home');
+  
+        } else { // false
+  
+            //Login Fail
+            // Session::flash('error', 'Email atau password salah');
+            // return redirect()->route('login');
+            echo "hallo";
+        }
+        echo "finish";
         // $validator = $request->validate([
         //     'email'                 => 'required|email',
             
@@ -66,6 +87,10 @@ class AuthController extends Controller
     public function showFormRegister()
     {
         return view('register');
+    }
+
+    public function login () {
+        return view('login');
     }
 
     public function register(Request $request)
