@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [UserController::class, 'index'])->middleware('auth');
+Route::get('/', [UserController::class, 'index']);
 Route::get('/simpan', [UserController::class, 'store']);
 Route::post('verif', [AuthController::class, 'verif']);
 // Route::post('/login', [AuthController::class, 'login']);

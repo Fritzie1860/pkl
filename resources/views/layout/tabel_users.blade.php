@@ -56,7 +56,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($data as $row):
+                                    @foreach ($data as $row)
                                     <tr>
                                         <!-- <td>{{$row->foto}}</td> -->
                                         <td><img src="img/a2.jpg" alt=""></td>
