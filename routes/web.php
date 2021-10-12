@@ -17,11 +17,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [UserController::class, 'index']);
 Route::get('/simpan', [UserController::class, 'store']);
-Route::post('verif', [AuthController::class, 'verif']);
+// Route::post('verif', [AuthController::class, 'verif']);
 // Route::post('/login', [AuthController::class, 'login']);
 
 
-Route::get('login', [AuthController::class,'login'])->name('login');;
+Route::get('/', [AuthController::class,'showFormLogin'])->name('login');
+Route::get('login', [AuthController::class, 'showFormLogin'])->name('login');
+Route::post('login', [AuthController::class, 'login']);
+
 Route::view('/forgotpass', 'forgotpass');
 Route::view('/sidebar', 'layout.sidebar');
 Route::view('/header', 'layout.header');

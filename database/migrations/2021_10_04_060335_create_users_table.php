@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('alamat', 255);
             $table->boolean('status');
             $table->string('foto',255);
-            $table->string('password',50);
+            $table->string('password',250);
             $table->timestamps();
         });
     }
