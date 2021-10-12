@@ -1,7 +1,7 @@
 <!-- Modal pop up -->
 
 <!-- tos 1 foot plat -->
-<div class="modal fade" id="contohModal" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+<div class="modal fade" id="tos1FootPlat" role="dialog" arialabelledby="modalLabel" area-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -783,7 +783,7 @@
 </div>
 
 <!-- tos 7 gutter tanaman lantai 1  -->
-<div class="modal fade" id="tos7lantai1" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+<div class="modal fade" id="tos7Lantai1" role="dialog" arialabelledby="modalLabel" area-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">

@@ -4703,6 +4703,12 @@ body.body-small .footer.fixed {
 .table > thead:first-child > tr:first-child > th {
   border-top: 0;
 }
+th{
+  font-size: 12px;
+}
+td{
+  font-size: 12px;
+}
 .table-bordered {
   border: 1px solid #EBEBEB;
 }
