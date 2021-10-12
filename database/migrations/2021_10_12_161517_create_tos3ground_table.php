@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTos2pedestalTable extends Migration
+class CreateTos3groundTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class CreateTos2pedestalTable extends Migration
      */
     public function up()
     {
-        Schema::create('tos2pedestal', function (Blueprint $table) {
-            $table->id('id_tos21', 5);
+        Schema::create('tos3ground', function (Blueprint $table) {
+            $table->id('id_tos32', 5);
             $table->string('tipe_kolom',100);
             $table->string('bentuk_kolom',100);
             $table->double('dk_t',5);
@@ -60,6 +60,6 @@ class CreateTos2pedestalTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tos2pedestal');
+        Schema::dropIfExists('tos3ground');
     }
 }

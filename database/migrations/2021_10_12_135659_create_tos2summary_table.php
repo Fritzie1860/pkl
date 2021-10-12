@@ -14,7 +14,7 @@ class CreateTos2summaryTable extends Migration
     public function up()
     {
         Schema::create('tos2summary', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_tos23', 5);
             $table->string('nama', 100);
             $table->double('beton',5);
             $table->double('besi',5);

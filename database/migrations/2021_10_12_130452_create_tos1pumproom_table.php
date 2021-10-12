@@ -14,7 +14,7 @@ class CreateTos1pumproomTable extends Migration
     public function up()
     {
         Schema::create('tos1pumproom', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_tos12', 5);
             $table->string('type',100);
             $table->double('dfp_l',5);
             $table->double('dfp_p',5);

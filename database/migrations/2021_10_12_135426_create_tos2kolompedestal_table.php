@@ -14,8 +14,7 @@ class CreateTos2kolompedestalTable extends Migration
     public function up()
     {
         Schema::create('tos2kolompedestal', function (Blueprint $table) {
-            $table->id();
-            $table->id();
+            $table->id('id_tos22', 5);
             $table->string('tipe_kolom',100);
             $table->string('bentuk_kolom',100);
             $table->double('dk_t',5);
