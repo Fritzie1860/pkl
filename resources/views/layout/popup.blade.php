@@ -5,6 +5,9 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
+                <h2>Foot Plat</h2>
+            </div>
+            <div class="container">
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
@@ -60,7 +63,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Palm Room</h2>
+                <h2>Pump Room</h2>
             </div>
             <div class="container">
                 <form>

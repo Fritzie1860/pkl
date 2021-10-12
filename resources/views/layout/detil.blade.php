@@ -279,7 +279,7 @@
 
                                                                     </table>
                                                                 </div>
-                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos1PumpRoom">Tambahkan</button>
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos1PumpRoom">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2883,7 +2883,7 @@
 
                                                                     </table>
                                                                 </div>
-                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tosPumpRoom">Tambah</button>
+                                                                <button type="submit" class="btn btn-primary float-right mt-2" data-toggle="modal" data-target="#tos7PumpRoom">Tambah</button>
                                                             </div>
                                                         </div>
                                                     </div>
