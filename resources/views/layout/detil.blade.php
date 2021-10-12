@@ -115,7 +115,8 @@
                                     <div class="panel-heading">
                                         <div class="panel-options">
                                             <ul class="nav nav-tabs">
-                                                <li><a class="nav-link active" href="#tab-1" data-toggle="tab">Foot Plat</a></li>
+                                                <li><a class="nav-link active" href="#tab-32" data-toggle="tab">Overleap & Hook</a></li>
+                                                <li><a class="nav-link" href="#tab-1" data-toggle="tab">Foot Plat</a></li>
                                                 <li><a class="nav-link" href="#tab-2" data-toggle="tab">Pump Room</a></li>
                                                 <li><a class="nav-link" href="#tab-3" data-toggle="tab">Batu Kali</a></li>
                                             </ul>
@@ -276,7 +277,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane active" id="tab-1">
+                                            <div class="tab-pane" id="tab-1">
                                                 <div class="wrapper wrapper-content animated fadeInRight">
                                                     <div class="row">
                                                         <div class="col-lg-12">
@@ -285,6 +286,164 @@
                                                                     <h5>Foot Plat</h5>
                                                                     <div class="ibox-tools">
                                                                         <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1FootPlat"> Tambah</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ibox-content">
+
+                                                                    <div class="table-responsive scrollmenu">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th rowspan="2" style="vertical-align:middle;">No</th>
+                                                                                    <th rowspan="2" style="vertical-align:middle;">Type</th>
+                                                                                    <th colspan="3" align="center"> Dimensi Foot Plat</th>
+                                                                                    <th rowspan="2" style="vertical-align:middle;">Level MTA (m')</th>
+                                                                                    <th rowspan="2" style="vertical-align:middle;">Jumlah </th>
+                                                                                    <th colspan="7" align="center">Tulangan Atas Vertikal</th>
+                                                                                    <th colspan="7" align="center">Tulangan Bawah Vertikal</th>
+                                                                                    <th colspan="7" align="center">Tulangan Atas Hoizontal</th>
+                                                                                    <th colspan="7" align="center">Tulangan Bawah Horizontal</th>
+                                                                                    <th colspan="4" align="center"> Tulangan Pinggang</th>
+                                                                                    <th colspan="6" align="center">Volume</th>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th style="vertical-align:middle;">Lebar (m')</th>
+                                                                                    <th style="vertical-align:middle;">Panjang (m')</th>
+                                                                                    <th style="vertical-align:middle;">Tinggi (m')</th>
+                                                                                    <th style="vertical-align:middle;">Dia</th>
+                                                                                    <th style="vertical-align:middle;">Jarak</th>
+                                                                                    <th style="vertical-align:middle;">Panjang</th>
+                                                                                    <th style="vertical-align:middle;">Add</th>
+                                                                                    <th style="vertical-align:middle;">Jumlah</th>
+                                                                                    <th style="vertical-align:middle;">Berat Jenis</th>
+                                                                                    <th style="vertical-align:middle;">Total</th>
+                                                                                    <th style="vertical-align:middle;">Dia</th>
+                                                                                    <th style="vertical-align:middle;">Jarak</th>
+                                                                                    <th style="vertical-align:middle;">Panjang</th>
+                                                                                    <th style="vertical-align:middle;">Add</th>
+                                                                                    <th style="vertical-align:middle;">Jumlah</th>
+                                                                                    <th style="vertical-align:middle;">Berat Jenis</th>
+                                                                                    <th style="vertical-align:middle;">Total</th>
+                                                                                    <th style="vertical-align:middle;">Dia</th>
+                                                                                    <th style="vertical-align:middle;">Jarak</th>
+                                                                                    <th style="vertical-align:middle;">Panjang</th>
+                                                                                    <th style="vertical-align:middle;">Add</th>
+                                                                                    <th style="vertical-align:middle;">Jumlah</th>
+                                                                                    <th style="vertical-align:middle;">Berat Jenis</th>
+                                                                                    <th style="vertical-align:middle;">Total</th>
+                                                                                    <th style="vertical-align:middle;">Dia</th>
+                                                                                    <th style="vertical-align:middle;">Jarak</th>
+                                                                                    <th style="vertical-align:middle;">Panjang</th>
+                                                                                    <th style="vertical-align:middle;">Add</th>
+                                                                                    <th style="vertical-align:middle;">Jumlah</th>
+                                                                                    <th style="vertical-align:middle;">Berat Jenis</th>
+                                                                                    <th style="vertical-align:middle;">Total</th>
+                                                                                    <th style="vertical-align:middle;">Dia</th>
+                                                                                    <th style="vertical-align:middle;">Jumlah</th>
+                                                                                    <th style="vertical-align:middle;">Panjang</th>
+                                                                                    <th style="vertical-align:middle;">Total</th>
+                                                                                    <th style="vertical-align:middle;">Besi</th>
+                                                                                    <th style="vertical-align:middle;">Beton</th>
+                                                                                    <th style="vertical-align:middle;">Bekisting Batako</th>
+                                                                                    <th style="vertical-align:middle;">Galian</th>
+                                                                                    <th style="vertical-align:middle;">LC</th>
+                                                                                    <th style="vertical-align:middle;">Pasir</th>
+
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="gradeA">
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+                                                                                    <td>5</td>
+                                                                                    <td>5</td>
+                                                                                    <td>5</td>
+                                                                                    <td>5</td>
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+                                                                                    <td>5</td>
+                                                                                    <td>5</td>
+                                                                                    <td>5</td>
+                                                                                    <td>5</td>
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>30</td>
+                                                                                    <td>5</td>
+                                                                                    <td>5</td>
+                                                                                    <td>5</td>
+                                                                                    <td>5</td>
+                                                                                </tr>
+                                                                        </table>
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane active" id="tab-32">
+                                                <div class="wrapper wrapper-content animated fadeInRight">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="ibox ">
+                                                                <div class="ibox-title">
+                                                                    <h5>Overleap & Hook</h5>
+                                                                    <div class="ibox-tools">
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1OH"> Tambah</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
