@@ -23,7 +23,7 @@ class CreateTos2summaryTable extends Migration
             $table->timestamps();
         });
     }
-
+    //
     /**
      * Reverse the migrations.
      *
