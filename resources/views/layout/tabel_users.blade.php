@@ -26,14 +26,14 @@
                         <h5>Basic Data Tables example with responsive plugin</h5>
                         <div class="ibox-tools">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1OH"> Tambah</button>
+                                <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#add_user"> Tambah</button>
                             </a>
                         </div>
                     </div>
                     <div class="ibox-content">
 
                         <div class="table-responsive">
-                            
+
                             <table class="table table-striped table-bordered table-hover dataTables-user">
                                 <thead>
                                     <tr>
@@ -70,7 +70,11 @@
                                         <td class="project-actions">
                                             <center>
                                                 <a href="/detil_project" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
-                                                <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+                                                <!-- <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a> -->
+                                                <button type="button" class="btn btn-primary 
+            btn-sm" data-toggle="modal" data-nama="Reza" data-umur=31 data-target="#edit_user" id="submit">
+                                                    Submit
+                                                </button>
                                             </center>
                                         </td>
                                     </tr>
@@ -125,3 +129,44 @@
         </div>
     </div>
 </div>
+
+<!-- buat edit  -->
+<div class="modal fade" id="edit_user" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    Confirmation
+                </h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        ×
+                    </span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <!-- Data passed is displayed 
+                            in this part of the 
+                            modal body -->
+                <h6 id="modal_body"></h6>
+                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#exampleModal" id="submit">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $("#submit").click(function() {
+        var name = $(this).data('nama');
+        var marks = $(this).data('umur');
+        var str = "You Have Entered " +
+            "Name: " + name +
+            " and Marks: " + marks;
+        $("#modal_body").html(str);
+    });
+</script>
