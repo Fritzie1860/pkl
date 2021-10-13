@@ -115,7 +115,7 @@
                                     <div class="panel-heading">
                                         <div class="panel-options">
                                             <ul class="nav nav-tabs">
-                                                <li><a class="nav-link active" href="#tab-32" data-toggle="tab">Overleap & Hook</a></li>
+                                                <li><a class="nav-link active" href="#tab-32" data-toggle="tab">Absolute Reference</a></li>
                                                 <li><a class="nav-link" href="#tab-1" data-toggle="tab">Foot Plat</a></li>
                                                 <li><a class="nav-link" href="#tab-2" data-toggle="tab">Pump Room</a></li>
                                                 <li><a class="nav-link" href="#tab-3" data-toggle="tab">Batu Kali</a></li>
@@ -125,15 +125,15 @@
 
                                     <div class="panel-body">
                                         <div class="tab-content">
-                                            <div class="tab-pane " id="tab-3">
+                                            <div class="tab-pane active" id="tab-32">
                                                 <div class="wrapper wrapper-content animated fadeInRight">
                                                     <div class="row">
                                                         <div class="col-lg-12">
                                                             <div class="ibox ">
                                                                 <div class="ibox-title">
-                                                                    <h5>Batu Kali</h5>
+                                                                    <h5>Overleap & Hook</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1BatuKali"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1OH"> Tambah</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -142,136 +142,27 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">No</th>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">Nama</th>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">Bentuk</th>
-                                                                                    <th style="vertical-align:middle;">B</th>
-                                                                                    <th style="vertical-align:middle;">B' </th>
-                                                                                    <th style="vertical-align:middle;">H</th>
-                                                                                    <th style="vertical-align:middle;">Panjang</th>
-                                                                                    <th style="vertical-align:middle;">Luas Alas</th>
-                                                                                    <th style="vertical-align:middle;">Volume Batu Kali</th>
-                                                                                    <th style="vertical-align:middle;">Pair Urrug (M2)</th>
-                                                                                    <th style="vertical-align:middle;">Galian</th>
-                                                                                    <th style="vertical-align:middle;">Timbunan</th>
-
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <th style="vertical-align:middle;">(m)</th>
-                                                                                    <th style="vertical-align:middle;">(m)</th>
-                                                                                    <th style="vertical-align:middle;">(m)</th>
-                                                                                    <th style="vertical-align:middle;">(m)</th>
-                                                                                    <th style="vertical-align:middle;">(m2)</th>
-                                                                                    <th style="vertical-align:middle;">(m3)</th>
-                                                                                    <th style="vertical-align:middle;">0.05</th>
-                                                                                    <th style="vertical-align:middle;">(m3)</th>
-                                                                                    <th style="vertical-align:middle;">(m3)</th>
+                                                                                    <th>Dia</th>
+                                                                                    <th>Panjang</th>
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                <tr class="gradeC">
-                                                                                    <td>Trident</td>
-                                                                                    <td>Internet
-                                                                                        Explorer 5.0
-                                                                                    </td>
-                                                                                    <td class="center">5</td>
-                                                                                    <td class="center">C</td>
+                                                                                <tr class="gradeA">
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+
                                                                                 </tr>
+                                                                                <tr class="gradeA">
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+
+                                                                                </tr>
+                                                                            </tbody>
                                                                         </table>
                                                                     </div>
+                                                                    
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane" id="tab-2">
-                                                <div class="wrapper wrapper-content animated fadeInRight">
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <div class="ibox ">
-                                                                <div class="ibox-title">
-                                                                    <h5>Pump Room</h5>
-                                                                    <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1PumpRoom"> Tambah</button>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="ibox-content">
-                                                                    <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">No</th>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">Type</th>
-                                                                                    <th colspan="3" align="center"> Dimensi Foot Plat</th>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">Level MTA (m')</th>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">Jumlah </th>
-                                                                                    <th colspan="7" align="center">Tulangan Atas Vertikal</th>
-                                                                                    <th colspan="7" align="center">Tulangan Bawah Vertikal</th>
-                                                                                    <th colspan="7" align="center">Tulangan Atas Hoizontal</th>
-                                                                                    <th colspan="7" align="center">Tulangan Bawah Horizontal</th>
-                                                                                    <th colspan="4" align="center"> Tulangan Pinggang</th>
-                                                                                    <th colspan="6" align="center">Volume</th>
 
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <th style="vertical-align:middle;">Lebar (m')</th>
-                                                                                    <th style="vertical-align:middle;">Panjang (m')</th>
-                                                                                    <th style="vertical-align:middle;">Tinggi (m')</th>
-                                                                                    <th style="vertical-align:middle;">Dia</th>
-                                                                                    <th style="vertical-align:middle;">Jarak</th>
-                                                                                    <th style="vertical-align:middle;">Panjang</th>
-                                                                                    <th style="vertical-align:middle;">Add</th>
-                                                                                    <th style="vertical-align:middle;">Jumlah</th>
-                                                                                    <th style="vertical-align:middle;">Berat Jenis</th>
-                                                                                    <th style="vertical-align:middle;">Total</th>
-                                                                                    <th style="vertical-align:middle;">Dia</th>
-                                                                                    <th style="vertical-align:middle;">Jarak</th>
-                                                                                    <th style="vertical-align:middle;">Panjang</th>
-                                                                                    <th style="vertical-align:middle;">Add</th>
-                                                                                    <th style="vertical-align:middle;">Jumlah</th>
-                                                                                    <th style="vertical-align:middle;">Berat Jenis</th>
-                                                                                    <th style="vertical-align:middle;">Total</th>
-                                                                                    <th style="vertical-align:middle;">Dia</th>
-                                                                                    <th style="vertical-align:middle;">Jarak</th>
-                                                                                    <th style="vertical-align:middle;">Panjang</th>
-                                                                                    <th style="vertical-align:middle;">Add</th>
-                                                                                    <th style="vertical-align:middle;">Jumlah</th>
-                                                                                    <th style="vertical-align:middle;">Berat Jenis</th>
-                                                                                    <th style="vertical-align:middle;">Total</th>
-                                                                                    <th style="vertical-align:middle;">Dia</th>
-                                                                                    <th style="vertical-align:middle;">Jarak</th>
-                                                                                    <th style="vertical-align:middle;">Panjang</th>
-                                                                                    <th style="vertical-align:middle;">Add</th>
-                                                                                    <th style="vertical-align:middle;">Jumlah</th>
-                                                                                    <th style="vertical-align:middle;">Berat Jenis</th>
-                                                                                    <th style="vertical-align:middle;">Total</th>
-                                                                                    <th style="vertical-align:middle;">Dia</th>
-                                                                                    <th style="vertical-align:middle;">Jumlah</th>
-                                                                                    <th style="vertical-align:middle;">Panjang</th>
-                                                                                    <th style="vertical-align:middle;">Total</th>
-                                                                                    <th style="vertical-align:middle;">Besi</th>
-                                                                                    <th style="vertical-align:middle;">Beton</th>
-                                                                                    <th style="vertical-align:middle;">Bekisting Batako</th>
-                                                                                    <th style="vertical-align:middle;">Galian</th>
-                                                                                    <th style="vertical-align:middle;">LC</th>
-                                                                                    <th style="vertical-align:middle;">Pasir</th>
-
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr class="gradeC">
-                                                                                    <td>Trident</td>
-                                                                                    <td>Internet
-                                                                                        Explorer 5.0
-                                                                                    </td>
-                                                                                    <td class="center">5</td>
-                                                                                    <td class="center">C</td>
-                                                                                </tr>
-
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -435,19 +326,18 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane active" id="tab-32">
+                                            <div class="tab-pane" id="tab-2">
                                                 <div class="wrapper wrapper-content animated fadeInRight">
                                                     <div class="row">
                                                         <div class="col-lg-12">
                                                             <div class="ibox ">
                                                                 <div class="ibox-title">
-                                                                    <h5>Overleap & Hook</h5>
+                                                                    <h5>Pump Room</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1OH"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1PumpRoom"> Tambah</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
-
                                                                     <div class="table-responsive scrollmenu">
                                                                         <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
@@ -511,82 +401,77 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                <tr class="gradeA">
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
+                                                                                <tr class="gradeC">
+                                                                                    <td>Trident</td>
+                                                                                    <td>Internet
+                                                                                        Explorer 5.0
+                                                                                    </td>
+                                                                                    <td class="center">5</td>
+                                                                                    <td class="center">C</td>
                                                                                 </tr>
-                                                                                <tr class="gradeA">
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
+
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane " id="tab-3">
+                                                <div class="wrapper wrapper-content animated fadeInRight">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="ibox ">
+                                                                <div class="ibox-title">
+                                                                    <h5>Batu Kali</h5>
+                                                                    <div class="ibox-tools">
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1BatuKali"> Tambah</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ibox-content">
+
+                                                                    <div class="table-responsive scrollmenu">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th rowspan="2" style="vertical-align:middle;">No</th>
+                                                                                    <th rowspan="2" style="vertical-align:middle;">Nama</th>
+                                                                                    <th rowspan="2" style="vertical-align:middle;">Bentuk</th>
+                                                                                    <th style="vertical-align:middle;">B</th>
+                                                                                    <th style="vertical-align:middle;">B' </th>
+                                                                                    <th style="vertical-align:middle;">H</th>
+                                                                                    <th style="vertical-align:middle;">Panjang</th>
+                                                                                    <th style="vertical-align:middle;">Luas Alas</th>
+                                                                                    <th style="vertical-align:middle;">Volume Batu Kali</th>
+                                                                                    <th style="vertical-align:middle;">Pair Urrug (M2)</th>
+                                                                                    <th style="vertical-align:middle;">Galian</th>
+                                                                                    <th style="vertical-align:middle;">Timbunan</th>
+
                                                                                 </tr>
-                                                                                <tr class="gradeA">
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
+                                                                                <tr>
+                                                                                    <th style="vertical-align:middle;">(m)</th>
+                                                                                    <th style="vertical-align:middle;">(m)</th>
+                                                                                    <th style="vertical-align:middle;">(m)</th>
+                                                                                    <th style="vertical-align:middle;">(m)</th>
+                                                                                    <th style="vertical-align:middle;">(m2)</th>
+                                                                                    <th style="vertical-align:middle;">(m3)</th>
+                                                                                    <th style="vertical-align:middle;">0.05</th>
+                                                                                    <th style="vertical-align:middle;">(m3)</th>
+                                                                                    <th style="vertical-align:middle;">(m3)</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="gradeC">
+                                                                                    <td>Trident</td>
+                                                                                    <td>Internet
+                                                                                        Explorer 5.0
+                                                                                    </td>
+                                                                                    <td class="center">5</td>
+                                                                                    <td class="center">C</td>
                                                                                 </tr>
                                                                         </table>
-
                                                                     </div>
-
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -594,16 +479,15 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
 
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- Tos 2 -->
         <div class="row">
@@ -2500,7 +2384,8 @@
                                     <div class="panel-heading">
                                         <div class="panel-options">
                                             <ul class="nav nav-tabs">
-                                                <li><a class="nav-link active" href="#tab-20" data-toggle="tab">t 200 upper GF</a></li>
+                                                <li><a class="nav-link active" href="#tab-34" data-toggle="tab">Absolute Reference</a></li>
+                                                <li><a class="nav-link" href="#tab-20" data-toggle="tab">t 200 upper GF</a></li>
                                                 <li><a class="nav-link" href="#tab-21" data-toggle="tab">Lantai 1</a></li>
                                                 <li><a class="nav-link" href="#tab-22" data-toggle="tab">t 120 upper GF</a></li>
                                                 <li><a class="nav-link" href="#tab-23" data-toggle="tab">Pump Room</a></li>
@@ -2511,8 +2396,50 @@
 
                                     <div class="panel-body">
                                         <div class="tab-content">
+                                            <div class="tab-pane active" id="tab-34">
+                                                <div class="wrapper wrapper-content animated fadeInRight">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="ibox ">
+                                                                <div class="ibox-title">
+                                                                    <h5>Overleap & Hook</h5>
+                                                                    <div class="ibox-tools">
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1OH"> Tambah</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ibox-content">
 
-                                            <div class="tab-pane active" id="tab-20">
+                                                                    <div class="table-responsive scrollmenu">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Dia</th>
+                                                                                    <th>Panjang</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="gradeA">
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab-20">
                                                 <div class="wrapper wrapper-content animated fadeInRight">
                                                     <div class="row">
                                                         <div class="col-lg-12">
@@ -2573,7 +2500,37 @@
 
                                                                         </table>
                                                                     </div>
+                                                                    <h5>Rekapitulasi Perhitungan Struktur Plat</h5>
+                                                                    <div class="table-responsive scrollmenu">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th rowspan="2" style="vertical-align:middle;">Area</th>
+                                                                                    <th colspan="3" style="vertical-align:middle;">Data</th>
+                                                                                    <th style="vertical-align:middle;">Ratio Besi</th>
+                                                                                    <th colspan="4" style="vertical-align:middle;">Volume</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Keliling</th>
+                                                                                    <th>Luasan</th>
+                                                                                    <th>Tebal</th>
+                                                                                    <th>Beton</th>
+                                                                                    <th>Bekisting</th>
+                                                                                    <th>Besi</th>
+                                                                                    <th>Lean Concrete</th>                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="gradeA">
+                                                                                    
 
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    
+
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2642,7 +2599,37 @@
 
                                                                         </table>
                                                                     </div>
+                                                                    <h5>Rekapitulasi Perhitungan Struktur Plat</h5>
+                                                                    <div class="table-responsive scrollmenu">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th rowspan="2" style="vertical-align:middle;">Area</th>
+                                                                                    <th colspan="3" style="vertical-align:middle;">Data</th>
+                                                                                    <th style="vertical-align:middle;">Ratio Besi</th>
+                                                                                    <th colspan="4" style="vertical-align:middle;">Volume</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Keliling</th>
+                                                                                    <th>Luasan</th>
+                                                                                    <th>Tebal</th>
+                                                                                    <th>Beton</th>
+                                                                                    <th>Bekisting</th>
+                                                                                    <th>Besi</th>
+                                                                                    <th>Lean Concrete</th>                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="gradeA">
+                                                                                    
 
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    
+
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2711,7 +2698,37 @@
 
                                                                         </table>
                                                                     </div>
+                                                                    <h5>Rekapitulasi Perhitungan Struktur Plat</h5>
+                                                                    <div class="table-responsive scrollmenu">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th rowspan="2" style="vertical-align:middle;">Area</th>
+                                                                                    <th colspan="3" style="vertical-align:middle;">Data</th>
+                                                                                    <th style="vertical-align:middle;">Ratio Besi</th>
+                                                                                    <th colspan="4" style="vertical-align:middle;">Volume</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Keliling</th>
+                                                                                    <th>Luasan</th>
+                                                                                    <th>Tebal</th>
+                                                                                    <th>Beton</th>
+                                                                                    <th>Bekisting</th>
+                                                                                    <th>Besi</th>
+                                                                                    <th>Lean Concrete</th>                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="gradeA">
+                                                                                    
 
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    
+
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2780,7 +2797,37 @@
 
                                                                         </table>
                                                                     </div>
+                                                                    <h5>Rekapitulasi Perhitungan Struktur Plat</h5>
+                                                                    <div class="table-responsive scrollmenu">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th rowspan="2" style="vertical-align:middle;">Area</th>
+                                                                                    <th colspan="3" style="vertical-align:middle;">Data</th>
+                                                                                    <th style="vertical-align:middle;">Ratio Besi</th>
+                                                                                    <th colspan="4" style="vertical-align:middle;">Volume</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Keliling</th>
+                                                                                    <th>Luasan</th>
+                                                                                    <th>Tebal</th>
+                                                                                    <th>Beton</th>
+                                                                                    <th>Bekisting</th>
+                                                                                    <th>Besi</th>
+                                                                                    <th>Lean Concrete</th>                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="gradeA">
+                                                                                    
 
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    
+
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2869,7 +2916,8 @@
                                     <div class="panel-heading">
                                         <div class="panel-options">
                                             <ul class="nav nav-tabs">
-                                                <li><a class="nav-link active" href="#tab-25" data-toggle="tab">Pump Room</a></li>
+                                                <li><a class="nav-link active" href="#tab-33" data-toggle="tab">Absolute Reference</a></li>
+                                                <li><a class="nav-link" href="#tab-25" data-toggle="tab">Pump Room</a></li>
                                                 <li><a class="nav-link" href="#tab-26" data-toggle="tab">Pool</a></li>
                                                 <li><a class="nav-link" href="#tab-27" data-toggle="tab">Gutter Kolam Renang</a></li>
                                                 <li><a class="nav-link" href="#tab-28" data-toggle="tab">Gutter Tanaman lt 1</a></li>
@@ -2882,8 +2930,44 @@
 
                                     <div class="panel-body">
                                         <div class="tab-content">
+                                            <div class="tab-pane active" id="tab-33">
+                                                <div class="wrapper wrapper-content animated fadeInRight">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="ibox ">
+                                                                <div class="ibox-title">
+                                                                    <h5>Absolute Reference</h5>
+                                                                    <div class="ibox-tools">
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos7AR"> Tambah</button>
 
-                                            <div class="tab-pane active" id="tab-25">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ibox-content">
+
+                                                                    <div class="table-responsive scrollmenu">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Dia</th>
+                                                                                    <th>Splice</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="gradeC">
+                                                                                    <td>Ok</td>
+                                                                                    <td>OYa</td>
+                                                                                </tr>
+
+                                                                        </table>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab-25">
                                                 <div class="wrapper wrapper-content animated fadeInRight">
                                                     <div class="row">
                                                         <div class="col-lg-12">
@@ -3342,27 +3426,6 @@
 
                                                                         </table>
                                                                     </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane" id="tab-31">
-                                                <div class="wrapper wrapper-content animated fadeInRight">
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <div class="ibox ">
-                                                                <div class="ibox-title">
-                                                                    <h5>Summary</h5>
-                                                                    <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos7Summary"> Tambah</button>
-
-                                                                    </div>
-                                                                </div>
-                                                                <div class="ibox-content">
-
                                                                     <div class="table-responsive scrollmenu">
                                                                         <h5>Rekap Volume Retaining Wall</h5>
                                                                         <table class="table table-striped table-bordered table-hover dataTables-example">
@@ -3386,6 +3449,29 @@
                                                                                 </tr>
 
                                                                         </table>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab-31">
+                                                <div class="wrapper wrapper-content animated fadeInRight">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="ibox ">
+                                                                <div class="ibox-title">
+                                                                    <h5>Summary</h5>
+                                                                    <div class="ibox-tools">
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos7Summary"> Tambah</button>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ibox-content">
+
+                                                                    <div class="table-responsive scrollmenu">
                                                                         <h5>Rekap Volume Retaining Wall Batu Kali</h5>
                                                                         <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>

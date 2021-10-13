@@ -4554,7 +4554,7 @@ video {
   padding: 0 20px;
 }
 .wrapper-content {
-  padding: 20px 10px 40px;
+  padding: 10px;
 }
 #page-wrapper {
   padding: 0 15px;
@@ -5599,6 +5599,7 @@ _:future,
 }
 
 .scrollmenu {
+  height: 200px;
   overflow: auto;
 }
 body.modal-open .animated {
