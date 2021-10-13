@@ -24,7 +24,6 @@
                     {extend: 'csv'},
                     {extend: 'excel', title: 'ExampleFile'},
                     {extend: 'pdf', title: 'ExampleFile'},
-
                     {extend: 'print',
                      customize: function (win){
                             $(win.document.body).addClass('white-bg');
@@ -38,6 +37,17 @@
                 ]
 
             });
+
+        });
+
+
+        $(document).ready(function(){
+            $('.dataTables-user').DataTable({
+                pageLength: 25,
+                responsive: true,
+
+            });
+            
 
         });
 

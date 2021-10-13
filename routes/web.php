@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [UserController::class, 'index']);
+Route::get('/users', [UserController::class, 'index']);
 Route::get('/simpan', [UserController::class, 'store']);
 // Route::post('verif', [AuthController::class, 'verif']);
 // Route::post('/login', [AuthController::class, 'login']);
@@ -30,7 +30,6 @@ Route::view('/sidebar', 'layout.sidebar');
 Route::view('/header', 'layout.header');
 Route::get('/dashboard', [UserController::class, 'dashboard'])->middleware();
 Route::view('/projects', 'projects');
-Route::view('/users', 'users');
 Route::view('/tambah_project', 'tambah_project');
 Route::view('/detil_project', 'detil_project');
 Route::view('/profil', 'profil')->name('home');

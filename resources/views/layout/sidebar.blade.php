@@ -41,7 +41,7 @@
                         echo "active";
                     }
                 ?>">
-                    <a href="/"><i class="fa fa-pie-chart"></i> <span class="nav-label">Users</span>  </a>
+                    <a href="/users"><i class="fa fa-pie-chart"></i> <span class="nav-label">Users</span>  </a>
                 </li>
             </ul>
         </div>

@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class tos1pumproom extends Model
 {
     use HasFactory;
+
+    
 }
