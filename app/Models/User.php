@@ -11,8 +11,11 @@ class user extends Authenticatable
     use HasFactory;
 
     protected $fillable = [
-        'name',
+        'username',
         'email',
+        'alamat',
+        'status',
+        'no_hp',
         'password',
     ];
 

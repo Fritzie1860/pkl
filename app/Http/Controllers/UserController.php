@@ -6,7 +6,10 @@ use \App\Models\user;
 use Illuminate\Support\Facades\Hash;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+
+use function GuzzleHttp\Promise\all;
+
+// use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -24,17 +27,13 @@ class UserController extends Controller
 
     public function store(Request $req)
     {
-        // echo ($req['nama']);
-        // $user = new user();
-
         $hasil = [
             'foto' => 'hey',
             'username' => $req['nama'],
             'email' => $req['email'],
             'no_hp' => $req['no_hp'],
             'alamat' => $req['alamat'],
-            // 'email'  => "kosong",
-            'status' => $req['status'], 
+            'status' => $req['status'],
             'password' => Hash::make($req['pw'])
         ];
 
@@ -43,20 +42,32 @@ class UserController extends Controller
         return redirect('/users');
     }
 
-    public function hapus($id){
-        $post = user::all()->where('id',$id)->each->delete(); 
-        // dd($post);
-        // $post
-        return redirect('/posts');
+    public function hapus($id)
+    {
+        $post = user::all()->where('id', $id)->each->delete();
+        return redirect('/users');
+    }
+
+    public function update(Request $req)
+    {
+        $user = user::all()->where("id",4)->first()->update([
+            'username' => "SERRisma",
+            'email' =>"xreza70",
+            'alamat' => "disini",
+            'no_hp' => "+62123"
+            
+      ]);
+// dd($user);
+        // $user->username = 'Paris to London';
+
+        // $user->save();
+        // return redirect('/users');
     }
 
     public function cek()
     {
         $y = user::find(1);
-        // Auth::user($y);
         dd($y);
-        // user::deleted()
-        // redirect('/users'); 
     }
 
     public function dashboard()

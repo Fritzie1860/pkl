@@ -140,27 +140,27 @@
 
             <div class="modal-body">
 
-                <form>
+                <form action="/edituser" method="post">
 
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Username</label>
-                        <input type="text" class="form-control" id="isi_nama" placeholder="Nama">
+                        <input type="text" class="form-control" name = "username" id="isi_nama" placeholder="Nama">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">E-mail</label>
-                        <input type="text" class="form-control" id="isi_email" placeholder="Email">
+                        <input type="text" name="email" class="form-control" id="isi_email" placeholder="Email">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Alamat</label>
-                        <input type="text" class="form-control" id="isi_alamat" placeholder="Alamat">
+                        <input type="text" name="alamat" class="form-control" id="isi_alamat" placeholder="Alamat">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Status</label>
-                        <select class="form-select form-select-lg" style="margin-left: 100px; width:150px" id="isi_pilih">
+                        <select class="form-select form-select-lg" name="status" style="margin-left: 100px; width:150px" id="isi_pilih">
                             <option selected>Pilih</option>
                             <option value="0">Staff</option>
                             <option value="1">Magang</option>
