@@ -17,6 +17,7 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('username', 255);
             $table->string('email',255);
+            $table->string('no_hp',255);
             $table->string('alamat', 255);
             $table->boolean('status');
             $table->string('foto',255);

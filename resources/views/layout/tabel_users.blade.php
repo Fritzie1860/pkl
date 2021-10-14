@@ -85,30 +85,35 @@
                 <h2>Batu Kali</h2>
             </div>
             <div class="container">
-                <form>
+                <form action="/inputuser" method="post">
                     <div class="form-group">
                         <label for="nama">Nama</label>
-                        <input type="text" class="form-control" id="nama" placeholder="Nama">
+                        <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="text" class="form-control" id="email" placeholder="Email">
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Email">
                     </div>
                     <div class="form-group">
                         <label for="no_hp">Nomor HP</label>
-                        <input type="text" class="form-control" id="no_hp" placeholder="+62 XXX XXX XXX">
+                        <input type="text" class="form-control" name="no_hp" id="no_hp" placeholder="+62 XXX XXX XXX">
                     </div>
                     <div class="form-group">
                         <label for="alamat">Alamat</label>
-                        <input type="text" class="form-control" id="alamat" placeholder="Jl. Nama Jalan">
+                        <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Jl. Nama Jalan">
                     </div>
                     <div class="form-group">
                         <label for="status">Status</label>
-                        <input type="text" class="form-control" id="status" placeholder="Pilih...">
+                        <select class="form-select form-select-sm " name ="status" style="margin-left: 100px; border: 3px; border-left:30px;  width:150px" id="isi_pilih">
+                            <option selected>Pilih</option>
+                            <option value="0">Staff</option>
+                            <option value="1">Magang</option>
+                            <!-- <option value="3">Three</option> -->
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Your Password">
+                        <input type="password" name="pw" class="form-control" id="password" placeholder="Your Password">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

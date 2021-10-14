@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/users', [UserController::class, 'index']);
-Route::get('/simpan', [UserController::class, 'store']);
+Route::post('/inputuser', [UserController::class, 'store']);
 // Route::post('verif', [AuthController::class, 'verif']);
 // Route::post('/login', [AuthController::class, 'login']);
 
