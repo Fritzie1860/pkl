@@ -51,12 +51,12 @@
                                         <td><img src="img/a2.jpg" alt=""></td>
                                         <td>{{$row->username}}</td>
                                         <td>{{$row->email}}</td>
-                                        <td>{{$row->status}}</td>
+                                        <td>{{$row->alamat}}</td>
                                         <td class="project-actions">
                                             <center>
                                                 <a href="/detil_project" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
                                                 <button type="button" class="btn btn-primary 
-            btn-sm" data-toggle="modal" data-nama="<?= $row->username ?>" data-umur=31 data-target="#edit_user" id="detil">
+            btn-sm" data-toggle="modal" data-nama="<?= $row->username ?>" data-alamat="<?= $row->alamat ?>" data-email="<?= $row->email ?>" data-status="<?= $row->status ?>" data-target="#edit_user" id="detil">
                                                     Submit
                                                 </button>
 
@@ -64,24 +64,7 @@
                                         </td>
                                     </tr>
                                     @endforeach
-                                    <tr class="gradeX font_bantu">
-                                        <td>Trident</td>
-                                        <td>Internet
-                                            Explorer 4.0
-                                        </td>
-                                        <td>Win 95+</td>
-                                        <td class="center">4</td>
-                                        <td class="project-actions">
-                                            <center>
-                                                <a href="/detil_project" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
-                                                <!-- <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a> -->
-                                                <button type="button" class="btn btn-primary 
-            btn-sm" data-toggle="modal" data-nama="Reza" data-umur=31 data-target="#edit_user" id="submit">
-                                                    Submit
-                                                </button>
-                                            </center>
-                                        </td>
-                                    </tr>
+
                                 </tbody>
 
                             </table>
@@ -156,8 +139,28 @@
 
 
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="text" class="form-control" id="isiin" placeholder="Password">
+                        <label for="exampleInputPassword1">Username</label>
+                        <input type="text" class="form-control" id="isi_nama" placeholder="Nama">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">E-mail</label>
+                        <input type="text" class="form-control" id="isi_email" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Alamat</label>
+                        <input type="text" class="form-control" id="isi_alamat" placeholder="Alamat">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Status</label>
+                        <select class="form-select form-select-lg" style="margin-left: 100px; width:150px" id="isi_pilih">
+                            <option selected>Pilih</option>
+                            <option value="0">Staff</option>
+                            <option value="1">Magang</option>
+                            <!-- <option value="3">Three</option> -->
+                        </select>
                     </div>
 
 
@@ -173,9 +176,16 @@
     $(document).ready(function() {
         $(document).on('click', "#detil", function() {
             var name = $(this).data('nama');
-            var marks = $(this).data('umur');
+            var email = $(this).data('email');
+            var alamat = $(this).data('alamat');
 
-            $("#isiin").val(name);
+            $("#isi_nama").val(name);
+            $("#isi_email").val(email);
+            $("#isi_alamat").val(alamat);
+            var status = $(this).data('status');
+            var pilih = document.getElementById('isi_pilih');
+            console.log(status);
+            pilih.value = status;
         })
     });
 </script>
