@@ -55,7 +55,11 @@
                                         <td class="project-actions">
                                             <center>
                                                 <a href="/detil_project" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
-                                                <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+                                                <button type="button" class="btn btn-primary 
+            btn-sm" data-toggle="modal" data-nama="<?= $row->username ?>" data-umur=31 data-target="#edit_user" id="detil">
+                                                    Submit
+                                                </button>
+
                                             </center>
                                         </td>
                                     </tr>
@@ -148,25 +152,30 @@
 
             <div class="modal-body">
 
-                <!-- Data passed is displayed 
-                            in this part of the 
-                            modal body -->
-                <h6 id="modal_body"></h6>
-                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#exampleModal" id="submit">
-                    Submit
-                </button>
+                <form>
+
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="text" class="form-control" id="isiin" placeholder="Password">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
             </div>
         </div>
     </div>
 </div>
 
 <script type="text/javascript">
-    $("#submit").click(function() {
-        var name = $(this).data('nama');
-        var marks = $(this).data('umur');
-        var str = "You Have Entered " +
-            "Name: " + name +
-            " and Marks: " + marks;
-        $("#modal_body").html(str);
+    $(document).ready(function() {
+        $(document).on('click', "#detil", function() {
+            var name = $(this).data('nama');
+            var marks = $(this).data('umur');
+
+            $("#isiin").val(name);
+        })
     });
 </script>
