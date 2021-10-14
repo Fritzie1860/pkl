@@ -54,7 +54,7 @@
                                         <td>{{$row->alamat}}</td>
                                         <td class="project-actions">
                                             <center>
-                                                <a href="/detil_project" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                                                <a href="/hapususer/<?= $row->id?>" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> Hapus </a>
                                                 <button type="button" class="btn btn-primary 
             btn-sm" data-toggle="modal" data-nama="<?= $row->username ?>" data-alamat="<?= $row->alamat ?>" data-email="<?= $row->email ?>" data-status="<?= $row->status ?>" data-target="#edit_user" id="detil">
                                                     Submit

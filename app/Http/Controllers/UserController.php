@@ -40,7 +40,14 @@ class UserController extends Controller
 
         user::insert($hasil);
         // // user::deleted()
-        redirect('/users');
+        return redirect('/users');
+    }
+
+    public function hapus($id){
+        $post = user::all()->where('id',$id)->each->delete(); 
+        // dd($post);
+        // $post
+        return redirect('/posts');
     }
 
     public function cek()
