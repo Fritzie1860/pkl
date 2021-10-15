@@ -50,18 +50,21 @@ class UserController extends Controller
 
     public function update(Request $req)
     {
-        $user = user::all()->where("id",1)->first()->update([
-            'username' => "SERRisma",
-            'email' =>"xreza70",
-            'alamat' => "disini",
-            'no_hp' => "+62123"
+
+        // dd($req);
+        $user = user::all()->where("id",$req->idu)->first()->update([
+            'username' => $req->username,
+            'email' =>$req->email,
+            'alamat' => $req->alamat,
+            // 'no_hp' => $req->no_hp,
+            'status' => $req->status
             
       ]);
 // dd($user);
         // $user->username = 'Paris to London';
 
         // $user->save();
-        // return redirect('/users');
+        return redirect('/users');
     }
 
     public function cek()

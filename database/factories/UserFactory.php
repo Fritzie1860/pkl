@@ -28,6 +28,7 @@ class UserFactory extends Factory
             'email' => $this->faker->unique()->safeEmail(),
             'password' => $this->faker->password(),
             'alamat' => $this->faker->address(),
+            'no_hp' => $this->faker->phoneNumber(),
             'status' => $this->faker->boolean(),
             'foto' => $this->faker->text(15)
         ];

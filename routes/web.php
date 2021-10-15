@@ -1,8 +1,9 @@
 <?php
-
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -27,11 +28,7 @@ Route::get('/', [AuthController::class,'showFormLogin'])->name('login');
 Route::get('login', [AuthController::class, 'showFormLogin'])->name('login');
 Route::post('login', [AuthController::class, 'login']);
 
-Route::view('/forgotpass', 'forgotpass');
-Route::view('/sidebar', 'layout.sidebar');
-Route::view('/header', 'layout.header');
-Route::get('/dashboard', [UserController::class, 'dashboard'])->middleware();
-Route::view('/projects', 'projects');
-Route::view('/tambah_project', 'tambah_project');
-Route::view('/detil_project', 'detil_project');
-Route::view('/profil', 'profil')->name('home');
+Route::get('/projects', [ProjectController::class, 'index']);
+Route::post('/inputProject', [ProjectController::class, 'store']);
+Route::post('/editProject', [ProjectController::class, 'update']);
+Route::get('/hapusProject/{id}', [ProjectController::class, 'hapus']);

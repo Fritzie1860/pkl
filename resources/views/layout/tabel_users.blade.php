@@ -23,7 +23,7 @@
             <div class="col-lg-12">
                 <div class="ibox ">
                     <div class="ibox-title">
-                        <h5>Basic Data Tables example with responsive plugin</h5>
+                        <h5>Users List</h5>
                         <div class="ibox-tools">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                 <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#add_user"> Tambah</button>
@@ -39,7 +39,9 @@
                                     <tr>
                                         <th>Foto</th>
                                         <th>Nama</th>
-                                        <th>e-mail</th>
+                                        <th>E-mail</th>
+                                        <th>Alamat</th>
+                                        <th>No. Handphone</th>
                                         <th>Status </th>
                                         <th>Action</th>
                                     </tr>
@@ -52,14 +54,20 @@
                                         <td>{{$row->username}}</td>
                                         <td>{{$row->email}}</td>
                                         <td>{{$row->alamat}}</td>
+                                        <td>{{$row->no_hp}}</td>
+                                        @if($row->status==0)
+                                        <td>Staff</td>
+                                        @else
+                                        <td>Magang</td>
+                                        @endif
                                         <td class="project-actions">
                                             <center>
-                                                <a href="/hapususer/<?= $row->id?>" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> Hapus </a>
-                                                <button type="button" class="btn btn-primary 
-            btn-sm" data-toggle="modal" data-nama="<?= $row->username ?>" data-alamat="<?= $row->alamat ?>" data-email="<?= $row->email ?>" data-status="<?= $row->status ?>" data-target="#edit_user" id="detil">
-                                                    Submit
-                                                </button>
-
+                                                <div style="display: inline-block;">
+                                                    <a href="/hapususer/<?= $row->id ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i>  </a>
+                                                    <a class="btn btn-white btn-sm " data-toggle="modal" data-idu="<?= $row->id ?>" data-nama="<?= $row->username ?>" data-alamat="<?= $row->alamat ?>" data-email="<?= $row->email ?>" data-status="<?= $row->status ?>" data-target="#edit_user" id="detil">
+                                                    <i class="fa fa-edit "></i>
+                                                    </a>
+                                                </div>
                                             </center>
                                         </td>
                                     </tr>
@@ -82,7 +90,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Batu Kali</h2>
+                <h2>Add User</h2>
             </div>
             <div class="container">
                 <form action="/inputuser" method="post">
@@ -104,7 +112,7 @@
                     </div>
                     <div class="form-group">
                         <label for="status">Status</label>
-                        <select class="form-select form-select-sm " name ="status" style="margin-left: 100px; border: 3px; border-left:30px;  width:150px" id="isi_pilih">
+                        <select class="form-select form-select-sm " name="status" style="margin-left: 100px; border: 3px; border-left:30px;  width:150px" id="isi_pilih">
                             <option selected>Pilih</option>
                             <option value="0">Staff</option>
                             <option value="1">Magang</option>
@@ -142,10 +150,10 @@
 
                 <form action="/edituser" method="post">
 
-
+                    <input type="text" name="idu" id="rahasia" style="display: none;">
                     <div class="form-group">
                         <label for="exampleInputPassword1">Username</label>
-                        <input type="text" class="form-control" name = "username" id="isi_nama" placeholder="Nama">
+                        <input type="text" class="form-control" name="username" id="isi_nama" placeholder="Nama">
                     </div>
 
                     <div class="form-group">
@@ -159,9 +167,14 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="exampleInputPassword1">Nomor HP</label>
+                        <input type="text" name="no_hp" class="form-control" id="isi_email" placeholder="+62 XXX XXX XXX">
+                    </div>
+
+                    <div class="form-group">
                         <label for="exampleInputPassword1">Status</label>
-                        <select class="form-select form-select-lg" name="status" style="margin-left: 100px; width:150px" id="isi_pilih">
-                            <option selected>Pilih</option>
+                        <select class="form-select form-select-lg" name="status" id="isiin" style="margin-left: 100px; width:150px">
+                            <!-- <option selected>Pilih</option> -->
                             <option value="0">Staff</option>
                             <option value="1">Magang</option>
                             <!-- <option value="3">Three</option> -->
@@ -178,19 +191,23 @@
 </div>
 
 <script type="text/javascript">
-    $(document).ready(function() {
-        $(document).on('click', "#detil", function() {
-            var name = $(this).data('nama');
-            var email = $(this).data('email');
-            var alamat = $(this).data('alamat');
+    // $(document).ready(function() {
+    $(document).on('click', "#detil", function() {
+        var name = $(this).data('nama');
+        var email = $(this).data('email');
+        var alamat = $(this).data('alamat');
+        var idu = $(this).data('idu');
 
-            $("#isi_nama").val(name);
-            $("#isi_email").val(email);
-            $("#isi_alamat").val(alamat);
-            var status = $(this).data('status');
-            var pilih = document.getElementById('isi_pilih');
-            console.log(status);
-            pilih.value = status;
-        })
-    });
+        $("#isi_nama").val(name);
+        $("#isi_email").val(email);
+        $("#isi_alamat").val(alamat);
+        $("#rahasia").val(idu);
+        var status = $(this).data('status');
+        var pilih = document.getElementById('isiin');
+        console.log(status);
+        pilih.value = status;
+        // $('#isi_pilih').val(status);
+        // document.querySelector('#isiin').value=status;
+    })
+    // });
 </script>

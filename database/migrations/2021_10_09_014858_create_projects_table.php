@@ -14,13 +14,14 @@ class CreateProjectsTable extends Migration
     public function up()
     {
         Schema::create('projects', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_projects', 5);
             $table->string('pro_nama', 125);
             $table->date('tanggal_mulai');
             $table->string('pro_status');
             $table->timestamp('pro_update');
         });
     }
+    
 
     /**
      * Reverse the migrations.
