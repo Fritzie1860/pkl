@@ -50,7 +50,7 @@ class UserController extends Controller
 
     public function update(Request $req)
     {
-        $user = user::all()->where("id",4)->first()->update([
+        $user = user::all()->where("id",1)->first()->update([
             'username' => "SERRisma",
             'email' =>"xreza70",
             'alamat' => "disini",
