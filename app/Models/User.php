@@ -16,6 +16,7 @@ class user extends Authenticatable
         'alamat',
         'status',
         'no_hp',
+        'foto',
         'password',
     ];
 

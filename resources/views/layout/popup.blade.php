@@ -39,77 +39,79 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">DFP L</label>
                         <input type="text" class="form-control" name="dfp_l" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">DFP P</label>
                         <input type="text" class="form-control" name="dfp_p" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">DFP T</label>
                         <input type="text" class="form-control" name="dfp_t" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">Level MTA</label>
                         <input type="text" class="form-control" name="level_mta" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">Jumlah
+
+                        </label>
                         <input type="text" class="form-control" name="jumlah" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">Tav Dia</label>
                         <input type="text" class="form-control" name="tav_dia" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">Tav Jarak</label>
                         <input type="text" class="form-control" name="tav_jarak" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">TBV dia</label>
                         <input type="text" class="form-control" name="tbv_dia" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">Tbv jarak</label>
                         <input type="text" class="form-control" name="tbv_jarak" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">TBH dia</label>
                         <input type="text" class="form-control" name="tbh_dia" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">TBH Jarak</label>
                         <input type="text" class="form-control" name="tbh_jarak" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">TAH dia</label>
                         <input type="text" class="form-control" name="tah_dia" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">Tah jarak</label>
                         <input type="text" class="form-control" name="tah_jarak" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">TP dia</label>
                         <input type="text" class="form-control" name="tp_dia" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Email address</label>
+                        <label for="type">TP jum</label>
                         <input type="text" class="form-control" name="tp_jum" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
@@ -129,19 +131,31 @@
                 <h2>Batu Kali</h2>
             </div>
             <div class="container">
-                <form>
+                <form action="tos14" method="post">
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <label for="Nama">Email address</label> 
+                        <input type="text" class="form-control" name="nama" id="Nama" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <label for="bentuk">Email address</label> 
+                        <input type="text" class="form-control" name="bentuk" id="bentuk" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div class="form-group">
+                        <label for="B">Email address</label> 
+                        <input type="text" class="form-control" name="B" id="B" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="B_">Email address</label> 
+                        <input type="text" class="form-control" name="B_" id="B_" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="H">Email address</label> 
+                        <input type="text" class="form-control" name="H" id="H" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="H">Email address</label> 
+                        <input type="text" class="form-control" name="panjang" id="H" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -159,19 +173,89 @@
             </div>
             <div class="container">
                 <form>
+                    <div class="form-group">
+                        <label for="type">Type</label>
+                        <input type="text" class="form-control" name="type" id="type" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <label for="type">DFP L</label>
+                        <input type="text" class="form-control" name="dfp_l" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
+
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <label for="type">DFP P</label>
+                        <input type="text" class="form-control" name="dfp_p" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
+                    <div class="form-group">
+                        <label for="type">DFP T</label>
+                        <input type="text" class="form-control" name="dfp_t" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
+
+                    <div class="form-group">
+                        <label for="type">Level MTA</label>
+                        <input type="text" class="form-control" name="level_mta" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Jumlah
+
+                        </label>
+                        <input type="text" class="form-control" name="jumlah" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Tav Dia</label>
+                        <input type="text" class="form-control" name="tav_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Tav Jarak</label>
+                        <input type="text" class="form-control" name="tav_jarak" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">TBV dia</label>
+                        <input type="text" class="form-control" name="tbv_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Tbv jarak</label>
+                        <input type="text" class="form-control" name="tbv_jarak" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">TBH dia</label>
+                        <input type="text" class="form-control" name="tbh_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">TBH Jarak</label>
+                        <input type="text" class="form-control" name="tbh_jarak" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">TAH dia</label>
+                        <input type="text" class="form-control" name="tah_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Tah jarak</label>
+                        <input type="text" class="form-control" name="tah_jarak" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">TP dia</label>
+                        <input type="text" class="form-control" name="tp_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">TP jum</label>
+                        <input type="text" class="form-control" name="tp_jum" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>

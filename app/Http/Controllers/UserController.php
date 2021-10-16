@@ -6,6 +6,7 @@ use \App\Models\user;
 use Illuminate\Support\Facades\Hash;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 use function GuzzleHttp\Promise\all;
 
@@ -52,21 +53,39 @@ class UserController extends Controller
 
     public function update(Request $req)
     {
-
+        
         // dd($req);
-        $user = user::all()->where("id",$req->idu)->first()->update([
-            'username' => $req->username,
-            'email' =>$req->email,
-            'alamat' => $req->alamat,
-            // 'no_hp' => $req->no_hp,
-            'status' => $req->status
-            
-      ]);
+        if($req->ganti=="on") {
+            $file = $req->file('foto');
+            $nama = $file->getClientOriginalName();
+            $tujuan_upload = 'images/';
+            $file->move($tujuan_upload,$nama);
+            $user = user::all()->where("id",$req->idu)->first()->update([
+                'foto' => $nama,
+                'username' => $req->username,
+                'email' =>$req->email,
+                'alamat' => $req->alamat,
+                'no_hp' => $req->no_hp,
+                // 'status' => $req->status
+                
+          ]);
+        } else {
+            $user = user::all()->where("id",$req->idu)->first()->update([
+                'username' => $req->username,
+                'email' =>$req->email,
+                'alamat' => $req->alamat,
+                'no_hp' => $req->no_hp,
+                'status' => $req->status
+                
+          ]);
+        }
+
+       
 // dd($user);
         // $user->username = 'Paris to London';
 
         // $user->save();
-        return redirect('/users');
+        return redirect('/profil');
     }
 
     public function cek()
@@ -81,10 +100,11 @@ class UserController extends Controller
     }
 
     public function profil() {
+        $idu=Auth::user()->id;
         $semua = user::all();
-        $data = user::all()->where('id', 4);
+        $data = user::all()->where('id', $idu);
         // dd($data);
-        return view('profil',['data' => $data, 'semua'=> $semua]);
+        return view('profil',['data' => $data, 'semua'=> $semua, 'idu'=>$idu]);
     }
     
 }

@@ -239,4 +239,32 @@ class TosController extends Controller
         tos1footplat::insert($hasil);
 
     }
+
+    public function in_tos14 (Request $req) {
+        
+        $nama = $req['nama'];
+        $bentuk = $req['bentuk'];
+        $b = $req['B'];
+        $b_ = $req['B_'];
+        $h = $req['H'];
+        $p = $req['panjang'];
+        $la = $p * $b;
+        $v_bk = $p * $b * $p;
+        $p_urug = $la;
+        $galian = $v_bk;
+        $timbunan = ($galian - $v_bk);
+        
+        $hasil = ['nama'=>$nama,
+        'bentuk'=>$bentuk,
+        'b'=>$b,
+        'b_'=>$b_,
+        'h'=>$h,
+        'p'=>$p,
+        'la'=>$la,
+        'v_bk'=>$v_bk,
+        'pasir_u'=>$p_urug,
+        'galian'=>$galian,
+        'timbunan'=>$timbunan];
+        tos1batukali::insert($hasil);
+    }
 }
