@@ -52,8 +52,9 @@ class AuthController extends Controller
         ];
 
         Auth::attempt($data);
-
-        if (Auth::check()) { // true sekalian session field di users nanti bisa dipanggil via Auth
+        // dd(Auth::user());
+        // echo Auth::user()->username;
+                if (Auth::check()) { // true sekalian session field di users nanti bisa dipanggil via Auth
             //Login Success
             return redirect()->route('home');
 
@@ -66,51 +67,51 @@ class AuthController extends Controller
 
     }
 
-    public function showFormRegister()
-    {
-        return view('register');
-    }
+    // public function showFormRegister()
+    // {
+    //     return view('register');
+    // }
 
-    public function register(Request $request)
-    {
-        $rules = [
-            'name'                  => 'required|min:3|max:35',
-            'email'                 => 'required|email|unique:users,email',
-            'password'              => 'required|confirmed'
-        ];
+    // public function register(Request $request)
+    // {
+    //     $rules = [
+    //         'name'                  => 'required|min:3|max:35',
+    //         'email'                 => 'required|email|unique:users,email',
+    //         'password'              => 'required|confirmed'
+    //     ];
 
-        $messages = [
-            'name.required'         => 'Nama Lengkap wajib diisi',
-            'name.min'              => 'Nama lengkap minimal 3 karakter',
-            'name.max'              => 'Nama lengkap maksimal 35 karakter',
-            'email.required'        => 'Email wajib diisi',
-            'email.email'           => 'Email tidak valid',
-            'email.unique'          => 'Email sudah terdaftar',
-            'password.required'     => 'Password wajib diisi',
-            'password.confirmed'    => 'Password tidak sama dengan konfirmasi password'
-        ];
+    //     $messages = [
+    //         'name.required'         => 'Nama Lengkap wajib diisi',
+    //         'name.min'              => 'Nama lengkap minimal 3 karakter',
+    //         'name.max'              => 'Nama lengkap maksimal 35 karakter',
+    //         'email.required'        => 'Email wajib diisi',
+    //         'email.email'           => 'Email tidak valid',
+    //         'email.unique'          => 'Email sudah terdaftar',
+    //         'password.required'     => 'Password wajib diisi',
+    //         'password.confirmed'    => 'Password tidak sama dengan konfirmasi password'
+    //     ];
 
-        $validator = Validator::make($request->all(), $rules, $messages);
+    //     $validator = Validator::make($request->all(), $rules, $messages);
 
-        if($validator->fails()){
-            return redirect()->back()->withErrors($validator)->withInput($request->all);
-        }
+    //     if($validator->fails()){
+    //         return redirect()->back()->withErrors($validator)->withInput($request->all);
+    //     }
 
-        $user = new User;
-        $user->name = ucwords(strtolower($request->name));
-        $user->email = strtolower($request->email);
-        $user->password = Hash::make($request->password);
-        $user->email_verified_at = \Carbon\Carbon::now();
-        $simpan = $user->save();
+    //     $user = new User;
+    //     $user->name = ucwords(strtolower($request->name));
+    //     $user->email = strtolower($request->email);
+    //     $user->password = Hash::make($request->password);
+    //     $user->email_verified_at = \Carbon\Carbon::now();
+    //     $simpan = $user->save();
 
-        if($simpan){
-            Session::flash('success', 'Register berhasil! Silahkan login untuk mengakses data');
-            return redirect()->route('login');
-        } else {
-            Session::flash('errors', ['' => 'Register gagal! Silahkan ulangi beberapa saat lagi']);
-            return redirect()->route('register');
-        }
-    }
+    //     if($simpan){
+    //         Session::flash('success', 'Register berhasil! Silahkan login untuk mengakses data');
+    //         return redirect()->route('login');
+    //     } else {
+    //         Session::flash('errors', ['' => 'Register gagal! Silahkan ulangi beberapa saat lagi']);
+    //         return redirect()->route('register');
+    //     }
+    // }
 
     public function logout()
     {

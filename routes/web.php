@@ -2,6 +2,7 @@
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -32,3 +33,5 @@ Route::get('/projects', [ProjectController::class, 'index']);
 Route::post('/inputProject', [ProjectController::class, 'store']);
 Route::post('/editProject', [ProjectController::class, 'update']);
 Route::get('/hapusProject/{id}', [ProjectController::class, 'hapus']);
+
+Route::get('/dashboard', [DashboardController::class, 'index']);

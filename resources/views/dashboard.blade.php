@@ -15,7 +15,7 @@
                             <h5>Prepared</h5>
                         </div>
                         <div class="ibox-content">
-                            <h1 class="no-margins">40</h1>
+                            <h1 class="no-margins">{{$prepared}}</h1>
                             <small>Total</small>
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                             <h5>On Going</h5>
                         </div>
                         <div class="ibox-content">
-                            <h1 class="no-margins">27</h1>
+                            <h1 class="no-margins">{{$ongoing}}</h1>
                             <!-- <div class="stat-percent font-bold text-info">20% <i class="fa fa-level-up"></i></div> -->
                             <small>Total</small>
                         </div>
@@ -40,7 +40,7 @@
                             <h5>Finished</h5>
                         </div>
                         <div class="ibox-content">
-                            <h1 class="no-margins">106</h1>
+                            <h1 class="no-margins">{{$finish}}</h1>
                             <!-- <div class="stat-percent font-bold text-navy">44% <i class="fa fa-level-up"></i></div> -->
                             <small>Total</small>
                         </div>
@@ -53,7 +53,7 @@
                             <h5>Users</h5>
                         </div>
                         <div class="ibox-content">
-                            <h1 class="no-margins">45</h1>
+                            <h1 class="no-margins">{{$total_u}}</h1>
                             <!-- <div class="stat-percent font-bold text-danger">38% <i class="fa fa-level-down"></i></div> -->
                             <small>Total</small>
                         </div>
@@ -78,4 +78,26 @@
         </div>
     </div>
 </div>
+<script src="js/plugins/chartJs/Chart.min.js"></script>
+    <script>
+        var doughnutData = {
+            labels: ["Prepared", "On Going", "Finished"],
+            datasets: [{
+                data: [<?=$prepared?>, <?=$ongoing?>, <?=$finish?>],
+                backgroundColor: ["#a3e1d4", "#dedede", "#b5b8cf"]
+            }]
+        };
 
+
+        var doughnutOptions = {
+            responsive: true
+        };
+
+
+        var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+        new Chart(ctx4, {
+            type: 'doughnut',
+            data: doughnutData,
+            options: doughnutOptions
+        });
+    </script>
