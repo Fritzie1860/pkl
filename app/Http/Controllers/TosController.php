@@ -2,11 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\tos1oandh;
 use Illuminate\Http\Request;
 
 class TosController extends Controller
 {
-    public function input(Request $req){
+    public function in_tos11(Request $req)
+    {
+        $hasil = [
+            'dia' => $req->dia,
+            'p' => $req->pjg
+        ];
+
+        tos1oandh::insert($hasil);
+    }
+
+    public function in_tos12(Request $req){
         //Koefisien
         $lc=0.05;
         $pasir=0.05;

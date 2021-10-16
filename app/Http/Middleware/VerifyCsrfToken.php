@@ -16,7 +16,8 @@ class VerifyCsrfToken extends Middleware
         '/inputuser',
         '/edituser',
         '/inputProject',
-        '/editProject'
+        '/editProject',
+        '/tos11'
        
     ];
 }

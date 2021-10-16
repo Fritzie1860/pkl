@@ -3,6 +3,7 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\TosController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -21,7 +22,7 @@ Route::get('/users', [UserController::class, 'index']);
 Route::post('/inputuser', [UserController::class, 'store']);
 Route::post('/edituser', [UserController::class, 'update']);
 Route::get('/hapususer/{id}', [UserController::class, 'hapus']);
-Route::get('/profil', [UserController::class, 'profil']);
+Route::get('/profil', [TosController::class, 'profil']);
 Route::view('/p','profil');
 
 
@@ -35,3 +36,11 @@ Route::post('/editProject', [ProjectController::class, 'update']);
 Route::get('/hapusProject/{id}', [ProjectController::class, 'hapus']);
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::view("/target",'detil_project');
+
+Route::post('tos11', [TosController::class,'in_tos11']);
+Route::post('tos12', [tos1pumproom::class,'index']);
+Route::post('tos13', [tos1footplat::class,'index']);
+Route::post('tos14', [tos1batukali::class,'index']);
+
+
