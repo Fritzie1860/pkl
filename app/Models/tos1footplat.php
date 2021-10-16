@@ -9,7 +9,7 @@ class tos1footplat extends Model
 {
     use HasFactory;
     protected $table="tos1footplat";
-    protected $primaryKey = 'id_tos11';
+    protected $primaryKey = 'id_tos12';
     public $timestamps = false;
     
     protected $fillable = [

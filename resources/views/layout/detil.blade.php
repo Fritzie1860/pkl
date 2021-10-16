@@ -147,20 +147,17 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
+                                                                                @foreach($Tos11 as $row)
                                                                                 <tr class="gradeA">
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
+                                                                                    <td>{{$row->dia}}</td>
+                                                                                    <td>{{$row->p}}</td>
 
                                                                                 </tr>
-                                                                                <tr class="gradeA">
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-
-                                                                                </tr>
+                                                                                @endforeach
                                                                             </tbody>
                                                                         </table>
                                                                     </div>
-                                                                    
+
                                                                 </div>
 
                                                             </div>
@@ -244,78 +241,55 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
+                                                                                @foreach($Tos12 as $row)
                                                                                 <tr class="gradeA">
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
+                                                                                    <td>{{$row->type}}</td>
+                                                                                    <td>{{$row->dfp_l}}</td>
+                                                                                    <td>{{$row->dfp_p}}</td>
+                                                                                    <td>{{$row->dfp_t}}</td>
+                                                                                    <td>{{$row->level_mta}}</td>
+                                                                                    <td>{{$row->jumlah}}</td>
+                                                                                    <td>{{$row->tav_dia}}</td>
+                                                                                    <td>{{$row->tav_jarak}}</td>
+                                                                                    <td>{{$row->tav_p}}</td>
+                                                                                    <td>{{$row->tav_add}}</td>
+                                                                                    <td>{{$row->tav_jum}}</td>
+                                                                                    <td>{{$row->tav_bjenis}}</td>
+                                                                                    <td>{{$row->tav_total}}</td>
+                                                                                    <td>{{$row->tbv_dia}}</td>
+                                                                                    <td>{{$row->tbv_jarak}}</td>
+                                                                                    <td>{{$row->tbv_p}}</td>
+                                                                                    <td>{{$row->tbv_add}}</td>
+                                                                                    <td>{{$row->tbv_jum}}</td>
+                                                                                    <td>{{$row->tbv_bjenis}}</td>
+                                                                                    <td>{{$row->tbv_total}}</td>
+                                                                                    <td>{{$row->tah_dia}}</td>
+                                                                                    <td>{{$row->tah_jarak}}</td>
+                                                                                    <td>{{$row->tah_p}}</td>
+                                                                                    <td>{{$row->tah_add}}</td>
+                                                                                    <td>{{$row->tah_jum}}</td>
+                                                                                    <td>{{$row->tah_bjenis}}</td>
+                                                                                    <td>{{$row->tah_total}}</td>
+                                                                                    <td>{{$row->tbh_dia}}</td>
+                                                                                    <td>{{$row->tbh_jarak}}</td>
+                                                                                    <td>{{$row->tbh_p}}</td>
+                                                                                    <td>{{$row->tbh_add}}</td>
+                                                                                    <td>{{$row->tbh_jum}}</td>
+                                                                                    <td>{{$row->tbh_tjenis}}</td>
+                                                                                    <td>{{$row->tbh_total}}</td>
+                                                                                    <td>{{$row->tp_dia}}</td>
+                                                                                    <td>{{$row->tp_jum}}</td>
+                                                                                    <td>{{$row->tp_p}}</td>
+                                                                                    <td>{{$row->tp_total}}</td>
+                                                                                    <td>{{$row->v_besi}}</td>
+                                                                                    <td>{{$row->v_beton}}</td>
+                                                                                    <td>{{$row->v_bb}}</td>
+                                                                                    <td>{{$row->v_galian}}</td>
+                                                                                    <td>{{$row->v_lc}}</td>
+                                                                                    <td>{{$row->v_pasir}}</td>
+
                                                                                 </tr>
-                                                                                <tr class="gradeA">
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                </tr>
-                                                                                <tr class="gradeA">
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>30</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                    <td>5</td>
-                                                                                </tr>
+                                                                                @endforeach
                                                                         </table>
 
                                                                     </div>
@@ -401,14 +375,56 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                <tr class="gradeC">
-                                                                                    <td>Trident</td>
-                                                                                    <td>Internet
-                                                                                        Explorer 5.0
-                                                                                    </td>
-                                                                                    <td class="center">5</td>
-                                                                                    <td class="center">C</td>
+                                                                            @foreach($Tos13 as $row) 
+                                                                                <tr class="gradeA">
+                                                                                    <td>{{$row->type}}</td>
+                                                                                    <td>{{$row->dfp_l}}</td>
+                                                                                    <td>{{$row->dfp_p}}</td>
+                                                                                    <td>{{$row->dfp_t}}</td>
+                                                                                    <td>{{$row->level_mta}}</td>
+                                                                                    <td>{{$row->jumlah}}</td>
+                                                                                    <td>{{$row->tav_dia}}</td>
+                                                                                    <td>{{$row->tav_jarak}}</td>
+                                                                                    <td>{{$row->tav_p}}</td>
+                                                                                    <td>{{$row->tav_add}}</td>
+                                                                                    <td>{{$row->tav_jum}}</td>
+                                                                                    <td>{{$row->tav_bjenis}}</td>
+                                                                                    <td>{{$row->tav_total}}</td>
+                                                                                    <td>{{$row->tbv_dia}}</td>
+                                                                                    <td>{{$row->tbv_jarak}}</td>
+                                                                                    <td>{{$row->tbv_p}}</td>
+                                                                                    <td>{{$row->tbv_add}}</td>
+                                                                                    <td>{{$row->tbv_jum}}</td>
+                                                                                    <td>{{$row->tbv_bjenis}}</td>
+                                                                                    <td>{{$row->tbv_total}}</td>
+                                                                                    <td>{{$row->tah_dia}}</td>
+                                                                                    <td>{{$row->tah_jarak}}</td>
+                                                                                    <td>{{$row->tah_p}}</td>
+                                                                                    <td>{{$row->tah_add}}</td>
+                                                                                    <td>{{$row->tah_jum}}</td>
+                                                                                    <td>{{$row->tah_bjenis}}</td>
+                                                                                    <td>{{$row->tah_total}}</td>
+                                                                                    <td>{{$row->tbh_dia}}</td>
+                                                                                    <td>{{$row->tbh_jarak}}</td>
+                                                                                    <td>{{$row->tbh_p}}</td>
+                                                                                    <td>{{$row->tbh_add}}</td>
+                                                                                    <td>{{$row->tbh_jum}}</td>
+                                                                                    <td>{{$row->tbh_tjenis}}</td>
+                                                                                    <td>{{$row->tbh_total}}</td>
+                                                                                    <td>{{$row->tp_dia}}</td>
+                                                                                    <td>{{$row->tp_jum}}</td>
+                                                                                    <td>{{$row->tp_p}}</td>
+                                                                                    <td>{{$row->tp_total}}</td>
+                                                                                    <td>{{$row->v_besi}}</td>
+                                                                                    <td>{{$row->v_beton}}</td>
+                                                                                    <td>{{$row->v_bb}}</td>
+                                                                                    <td>{{$row->v_galian}}</td>
+                                                                                    <td>{{$row->v_lc}}</td>
+                                                                                    <td>{{$row->v_pasir}}</td>
+                                                                                    
                                                                                 </tr>
+                                                                            @endforeach
+                                                                            </tbody>
 
                                                                         </table>
                                                                     </div>
@@ -462,6 +478,7 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
+                                                                                @foreach($Tos14 as $row)
                                                                                 <tr class="gradeC">
                                                                                     <td>Trident</td>
                                                                                     <td>Internet
@@ -470,6 +487,7 @@
                                                                                     <td class="center">5</td>
                                                                                     <td class="center">C</td>
                                                                                 </tr>
+                                                                                @endforeach
                                                                         </table>
                                                                     </div>
                                                                 </div>
@@ -617,14 +635,56 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                <tr class="gradeC">
-                                                                                    <td>Trident</td>
-                                                                                    <td>Internet
-                                                                                        Explorer 5.0
-                                                                                    </td>
-                                                                                    <td class="center">5</td>
-                                                                                    <td class="center">C</td>
+                                                                                @foreach($Tos13 as $row)
+                                                                                <tr class="gradeA">
+                                                                                    <td>{{$row->type}}</td>
+                                                                                    <td>{{$row->dfp_l}}</td>
+                                                                                    <td>{{$row->dfp_p}}</td>
+                                                                                    <td>{{$row->dfp_t}}</td>
+                                                                                    <td>{{$row->level_mta}}</td>
+                                                                                    <td>{{$row->jumlah}}</td>
+                                                                                    <td>{{$row->tav_dia}}</td>
+                                                                                    <td>{{$row->tav_jarak}}</td>
+                                                                                    <td>{{$row->tav_p}}</td>
+                                                                                    <td>{{$row->tav_add}}</td>
+                                                                                    <td>{{$row->tav_jum}}</td>
+                                                                                    <td>{{$row->tav_bjenis}}</td>
+                                                                                    <td>{{$row->tav_total}}</td>
+                                                                                    <td>{{$row->tbv_dia}}</td>
+                                                                                    <td>{{$row->tbv_jarak}}</td>
+                                                                                    <td>{{$row->tbv_p}}</td>
+                                                                                    <td>{{$row->tbv_add}}</td>
+                                                                                    <td>{{$row->tbv_jum}}</td>
+                                                                                    <td>{{$row->tbv_bjenis}}</td>
+                                                                                    <td>{{$row->tbv_total}}</td>
+                                                                                    <td>{{$row->tah_dia}}</td>
+                                                                                    <td>{{$row->tah_jarak}}</td>
+                                                                                    <td>{{$row->tah_p}}</td>
+                                                                                    <td>{{$row->tah_add}}</td>
+                                                                                    <td>{{$row->tah_jum}}</td>
+                                                                                    <td>{{$row->tah_bjenis}}</td>
+                                                                                    <td>{{$row->tah_total}}</td>
+                                                                                    <td>{{$row->tbh_dia}}</td>
+                                                                                    <td>{{$row->tbh_jarak}}</td>
+                                                                                    <td>{{$row->tbh_p}}</td>
+                                                                                    <td>{{$row->tbh_add}}</td>
+                                                                                    <td>{{$row->tbh_jum}}</td>
+                                                                                    <td>{{$row->tbh_tjenis}}</td>
+                                                                                    <td>{{$row->tbh_total}}</td>
+                                                                                    <td>{{$row->tp_dia}}</td>
+                                                                                    <td>{{$row->tp_jum}}</td>
+                                                                                    <td>{{$row->tp_p}}</td>
+                                                                                    <td>{{$row->tp_total}}</td>
+                                                                                    <td>{{$row->v_besi}}</td>
+                                                                                    <td>{{$row->v_beton}}</td>
+                                                                                    <td>{{$row->v_bb}}</td>
+                                                                                    <td>{{$row->v_galian}}</td>
+                                                                                    <td>{{$row->v_lc}}</td>
+                                                                                    <td>{{$row->v_pasir}}</td>
+
                                                                                 </tr>
+                                                                                @endforeach
+                                                                            </tbody>
 
                                                                         </table>
                                                                     </div>
@@ -732,14 +792,8 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                <tr class="gradeC">
-                                                                                    <td>Trident</td>
-                                                                                    <td>Internet
-                                                                                        Explorer 5.0
-                                                                                    </td>
-                                                                                    <td class="center">5</td>
-                                                                                    <td class="center">C</td>
-                                                                                </tr>
+
+                                                                            </tbody>
 
                                                                         </table>
                                                                     </div>
@@ -2431,7 +2485,7 @@
                                                                             </tbody>
                                                                         </table>
                                                                     </div>
-                                                                    
+
                                                                 </div>
 
                                                             </div>
@@ -2517,15 +2571,16 @@
                                                                                     <th>Beton</th>
                                                                                     <th>Bekisting</th>
                                                                                     <th>Besi</th>
-                                                                                    <th>Lean Concrete</th>                                                                                </tr>
+                                                                                    <th>Lean Concrete</th>
+                                                                                </tr>
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr class="gradeA">
-                                                                                    
+
 
                                                                                 </tr>
                                                                                 <tr class="gradeA">
-                                                                                    
+
 
                                                                                 </tr>
                                                                             </tbody>
@@ -2616,15 +2671,16 @@
                                                                                     <th>Beton</th>
                                                                                     <th>Bekisting</th>
                                                                                     <th>Besi</th>
-                                                                                    <th>Lean Concrete</th>                                                                                </tr>
+                                                                                    <th>Lean Concrete</th>
+                                                                                </tr>
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr class="gradeA">
-                                                                                    
+
 
                                                                                 </tr>
                                                                                 <tr class="gradeA">
-                                                                                    
+
 
                                                                                 </tr>
                                                                             </tbody>
@@ -2715,15 +2771,16 @@
                                                                                     <th>Beton</th>
                                                                                     <th>Bekisting</th>
                                                                                     <th>Besi</th>
-                                                                                    <th>Lean Concrete</th>                                                                                </tr>
+                                                                                    <th>Lean Concrete</th>
+                                                                                </tr>
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr class="gradeA">
-                                                                                    
+
 
                                                                                 </tr>
                                                                                 <tr class="gradeA">
-                                                                                    
+
 
                                                                                 </tr>
                                                                             </tbody>
@@ -2814,15 +2871,16 @@
                                                                                     <th>Beton</th>
                                                                                     <th>Bekisting</th>
                                                                                     <th>Besi</th>
-                                                                                    <th>Lean Concrete</th>                                                                                </tr>
+                                                                                    <th>Lean Concrete</th>
+                                                                                </tr>
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr class="gradeA">
-                                                                                    
+
 
                                                                                 </tr>
                                                                                 <tr class="gradeA">
-                                                                                    
+
 
                                                                                 </tr>
                                                                             </tbody>

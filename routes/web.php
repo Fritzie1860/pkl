@@ -37,8 +37,8 @@ Route::post('/editProject', [ProjectController::class, 'update']);
 Route::get('/hapusProject/{id}', [ProjectController::class, 'hapus']);
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
-Route::view("/target",'detil_project');
 
+Route::get("/target",[TosController::class,'index']);
 Route::post('tos11', [TosController::class,'in_tos11']);
 Route::post('tos12', [TosController::class,'in_tos12']);
 Route::post('tos13', [TosController::class,'in_tos13']);
