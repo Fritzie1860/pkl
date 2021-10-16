@@ -17,7 +17,7 @@ class CreateTos1oandhTable extends Migration
             $table->id('id_tos11', 5);
             $table->double('dia',5);
             $table->double('p',5);
-            $table->timestamps();
+            
         });
     }
 

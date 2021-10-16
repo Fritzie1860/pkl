@@ -49,7 +49,6 @@ class CreateTos3groundTable extends Migration
             $table->double('beton',5);
             $table->double('bekisting',5);
             $table->double('rasio_besi',5);
-            $table->timestamps();
         });
     }
 

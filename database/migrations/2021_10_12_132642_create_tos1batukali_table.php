@@ -26,7 +26,7 @@ class CreateTos1batukaliTable extends Migration
             $table->double('pasir_u',5);
             $table->double('galian',5);
             $table->double('timbunan',5);
-            $table->timestamps();
+            
         });
     }
 

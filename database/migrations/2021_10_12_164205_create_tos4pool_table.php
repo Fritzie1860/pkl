@@ -72,7 +72,6 @@ class CreateTos4poolTable extends Migration
             $table->double('v_beton',5);
             $table->double('v_besi',5);
             $table->double('v_bb',5);
-            $table->timestamps();
         });
     }
 

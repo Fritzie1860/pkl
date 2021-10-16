@@ -20,7 +20,7 @@ class CreateTos2summaryTable extends Migration
             $table->double('besi',5);
             $table->double('bekisting',5);
             $table->double('timbunan',5);
-            $table->timestamps();
+            
         });
     }
     //

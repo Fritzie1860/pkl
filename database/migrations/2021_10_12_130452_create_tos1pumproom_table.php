@@ -54,7 +54,6 @@ class CreateTos1pumproomTable extends Migration
             $table->double('v_galian',5);
             $table->double('v_lc',5);
             $table->double('v_pasir',5);
-            $table->timestamps();
         });
     }
 

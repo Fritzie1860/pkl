@@ -18,27 +18,32 @@ class CreateTos1footplatTable extends Migration
             $table->string('type',100);
             $table->double('dfp_l',5);
             $table->double('dfp_p',5);
+            $table->double('dfp_t',5);
             $table->double('level_mta',5);
             $table->double('jumlah',5);
             $table->double('tav_dia',5);
+            $table->double('tav_jarak',5);
             $table->double('tav_p',5);
             $table->double('tav_add',5);
             $table->double('tav_jum',5);
             $table->double('tav_bjenis',5);
             $table->double('tav_total',5);
             $table->double('tbv_dia',5);
+            $table->double('tbv_jarak',5);
             $table->double('tbv_p',5);
             $table->double('tbv_add',5);
             $table->double('tbv_jum',5);
             $table->double('tbv_bjenis',5);
             $table->double('tbv_total',5);
             $table->double('tah_dia',5);
+            $table->double('tah_jarak',5);
             $table->double('tah_p',5);
             $table->double('tah_add',5);
             $table->double('tah_jum',5);
             $table->double('tah_bjenis',5);
             $table->double('tah_total',5);
             $table->double('tbh_dia',5);
+            $table->double('tbh_jarak',5);
             $table->double('tbh_p',5);
             $table->double('tbh_add',5);
             $table->double('tbh_jum',5);
@@ -54,7 +59,6 @@ class CreateTos1footplatTable extends Migration
             $table->double('v_galian',5);
             $table->double('v_lc',5);
             $table->double('v_pasir',5);
-            $table->timestamps();
         });
     }
 

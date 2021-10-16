@@ -50,7 +50,7 @@ class CreateTos2kolompedestalTable extends Migration
             $table->double('bekisting',5);
             $table->double('timbunan',5);
             $table->double('rasio_besi',5);
-            $table->timestamps();
+        
         });
     }
 

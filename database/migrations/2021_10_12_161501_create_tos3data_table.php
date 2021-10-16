@@ -33,7 +33,6 @@ class CreateTos3dataTable extends Migration
             $table->double('tvtump_jarak',5);
             $table->double('tvlap_dia',5);
             $table->double('tvlap_jarak',5);
-            $table->timestamps();
         });
     }
 

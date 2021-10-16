@@ -37,7 +37,6 @@ class CreateTos4dataTable extends Migration
             $table->double('jarakseng_dia_tg', 5);
             $table->double('jarakseng_dia_ki', 5);
             $table->double('l_sekur_beton', 5);
-            $table->timestamps();
         });
     }
 

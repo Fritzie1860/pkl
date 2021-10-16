@@ -4,6 +4,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TosController;
+use App\Models\tos1footplat;
 use Illuminate\Support\Facades\Route;
 
 
@@ -39,8 +40,8 @@ Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::view("/target",'detil_project');
 
 Route::post('tos11', [TosController::class,'in_tos11']);
-Route::post('tos12', [tos1pumproom::class,'index']);
-Route::post('tos13', [tos1footplat::class,'index']);
-Route::post('tos14', [tos1batukali::class,'index']);
+Route::post('tos12', [TosController::class,'in_tos12']);
+Route::post('tos13', [TosController::class,'in_tos13']);
+Route::post('tos14', [TosController::class,'in_tos14']);
 
 

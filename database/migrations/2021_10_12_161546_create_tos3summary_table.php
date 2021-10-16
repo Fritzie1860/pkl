@@ -19,7 +19,6 @@ class CreateTos3summaryTable extends Migration
             $table->double('beton',5);
             $table->double('besi',5);
             $table->double('bekisting',5);
-            $table->timestamps();
         });
     }
 
