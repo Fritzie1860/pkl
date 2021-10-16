@@ -35,17 +35,24 @@ class ProjectController extends Controller
     //     return redirect('/users');
     // }
 
-    // public function update(Request $req)
-    // {
+    public function update(Request $req)
+    {
 
-    //     // dd($req);
-    //     $user = user::all()->where("id", $req->idu)->first()->update([
-    //         'username' => $req->username,
-    //         'email' => $req->email,
-    //         'alamat' => $req->alamat,
-    //         // 'no_hp' => $req->no_hp,
-    //         'status' => $req->status
+        echo($req->idp);
+        $date = new DateTime('now');
+        $user = projects::all()->where("id_projects", $req->idp)->first()->update([
+            'pro_nama' => $req->proname,
+            'tanggal_mulai' => $req->stardate,
+            'pro_status' => $req->prostatus,
+            'pro_update' => $date,
 
-    //     ]);
-    // }
+        ]);
+        return redirect('/projects');
+    }
+
+    public function hapus($id)
+    {
+        $post = projects::all()->where('id_projects', $id)->each->delete();
+        return redirect('/projects');
+    }
 }

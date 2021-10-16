@@ -26,23 +26,23 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ibox">
-                        <div class="ibox-title">
+                        <!-- <div class="ibox-title">
                             <h5>All form elements <small>With custom checbox and radion elements.</small></h5>
-                        </div>
+                        </div> -->
                         <div class="ibox-content">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="m-b-md">
                                         <a href="#" class="btn btn-white btn-xs float-right">Edit project</a>
-                                        <h2>Contract with Zender Company</h2>
+                                        <h2>Invest Island</h2>
                                     </div>
-
                                 </div>
                             </div>
+                            @foreach($data as $row)
                             <div class="row">
                                 <div class="col-lg-3">
                                     <center>
-                                        <img src="img/a2.jpg" alt="">
+                                        <img src="images/<?= $row->foto; ?>" alt="" style="height: 100px;">
                                     </center>
                                 </div>
                                 <div class="col-lg-9" id="cluster_info">
@@ -51,403 +51,100 @@
                                             <dt>Status:</dt>
                                         </div>
                                         <div class="col-sm-4 text-sm-left">
-                                            <dd class="mb-1"><span class="label label-primary">Active</span></dd>
+                                            <dd class="mb-1">
+                                                @if($row->status==0)
+                                                <span class="label label-primary">
+                                                    Staff
+                                                </span>
+                                                @else
+                                                <span class="label label-primary">
+                                                    Staff
+                                                </span>
+                                                @endif
+                                            </dd>
                                         </div>
                                     </dl>
                                     <dl class="row mb-0">
                                         <div class="col-sm-3 text-sm-left">
-                                            <dt>Created by:</dt>
+                                            <dt>Name:</dt>
                                         </div>
                                         <div class="col-sm-4 text-sm-left">
-                                            <dd class="mb-1">Alex Smith</dd>
+                                            <dd class="mb-1">{{$row->username}}</dd>
                                         </div>
                                     </dl>
                                     <dl class="row mb-0">
                                         <div class="col-sm-3 text-sm-left">
-                                            <dt>Messages:</dt>
+                                            <dt>E-mail:</dt>
                                         </div>
                                         <div class="col-sm-4 text-sm-left">
-                                            <dd class="mb-1"> 162</dd>
+                                            <dd class="mb-1"> {{$row->email}}</dd>
                                         </div>
                                     </dl>
                                     <dl class="row mb-0">
                                         <div class="col-sm-3 text-sm-left">
-                                            <dt>Client:</dt>
+                                            <dt>Phone Number:</dt>
                                         </div>
                                         <div class="col-sm-4 text-sm-left">
-                                            <dd class="mb-1"><a href="#" class="text-navy"> Zender Company</a> </dd>
+                                            <dd class="mb-1"><a href="#" class="text-navy">{{$row->no_hp}}</a> </dd>
                                         </div>
                                     </dl>
                                     <dl class="row mb-0">
                                         <div class="col-sm-3 text-sm-left">
-                                            <dt>Version:</dt>
+                                            <dt>Address:</dt>
                                         </div>
                                         <div class="col-sm-4 text-sm-left">
-                                            <dd class="mb-1"> v1.4.2 </dd>
+                                            <dd class="mb-1"> {{$row->alamat}} </dd>
                                         </div>
                                     </dl>
 
                                 </div>
                             </div>
-
+                            @endforeach
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row scrollmenu" style="height: 300px;">
-                <div class="col-lg-3">
-                    <div class="contact-box center-version">
+                @foreach($semua as $row)
+                    @if($row->id!=4)
+                    <div class="col-lg-3">
+                        <div class="contact-box center-version">
 
-                        <a href="profile.html">
+                            <a href="profile.html">
+                                <img alt="image" class="rounded-circle" src="images/<?= $row->foto ?>">
+                                <h3 class="m-b-xs"><strong>{{$row->username}}</strong></h3>
+                                <div class="font-bold">
+                                    <dd class="mb-1">
+                                        @if($row->status==0)
+                                        <span class="label label-primary">
+                                            Staff
+                                        </span>
+                                        @else
+                                        <span class="label label-primary">
+                                            Staff
+                                        </span>
+                                        @endif
+                                    </dd>
+                                </div>
+                                <address class="m-t-md">
+                                    <strong>{{$row->email}}.</strong>
+                                    <br>{{$row->alamat}}<br>
+                                    <abbr title="Phone">HP:</abbr> {{$row->no_hp}}
+                                </address>
 
-                            <img alt="image" class="rounded-circle" src="img/a2.jpg">
-
-
-                            <h3 class="m-b-xs"><strong>John Smith</strong></h3>
-
-                            <div class="font-bold">Graphics designer</div>
-                            <address class="m-t-md">
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-
-                        </a>
-                        <div class="contact-box-footer">
-                            <div class="m-t-xs btn-group">
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
+                            </a>
+                            <div class="contact-box-footer">
+                                <div class="m-t-xs btn-group">
+                                    <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
+                                    <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
+                                    <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
+                                </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="contact-box center-version">
-
-                        <a href="profile.html">
-
-                            <img alt="image" class="rounded-circle" src="img/a1.jpg">
-
-
-                            <h3 class="m-b-xs"><strong>Alex Johnatan</strong></h3>
-
-                            <div class="font-bold">CEO</div>
-                            <address class="m-t-md">
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-
-                        </a>
-                        <div class="contact-box-footer">
-                            <div class="m-t-xs btn-group">
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="contact-box center-version">
-
-                        <a href="profile.html">
-
-                            <img alt="image" class="rounded-circle" src="img/a3.jpg">
-
-
-                            <h3 class="m-b-xs"><strong>Monica Smith</strong></h3>
-
-                            <div class="font-bold">Marketing manager</div>
-                            <address class="m-t-md">
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-
-                        </a>
-                        <div class="contact-box-footer">
-                            <div class="m-t-xs btn-group">
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="contact-box center-version">
-
-                        <a href="profile.html">
-
-                            <img alt="image" class="rounded-circle" src="img/a4.jpg">
-
-
-                            <h3 class="m-b-xs"><strong>Michael Zimber</strong></h3>
-
-                            <div class="font-bold">Sales manager</div>
-                            <address class="m-t-md">
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-
-                        </a>
-                        <div class="contact-box-footer">
-                            <div class="m-t-xs btn-group">
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="contact-box center-version">
-
-                        <a href="profile.html">
-
-                            <img alt="image" class="rounded-circle" src="img/a5.jpg">
-
-
-                            <h3 class="m-b-xs"><strong>Sandra Smith</strong></h3>
-
-                            <div class="font-bold">Graphics designer</div>
-                            <address class="m-t-md">
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-
-                        </a>
-                        <div class="contact-box-footer">
-                            <div class="m-t-xs btn-group">
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="contact-box center-version">
-
-                        <a href="profile.html">
-
-                            <img alt="image" class="rounded-circle" src="img/a6.jpg">
-
-
-                            <h3 class="m-b-xs"><strong>Janet Carton</strong></h3>
-
-                            <div class="font-bold">CFO</div>
-                            <address class="m-t-md">
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-
-                        </a>
-                        <div class="contact-box-footer">
-                            <div class="m-t-xs btn-group">
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="contact-box center-version">
-
-                        <a href="profile.html">
-
-                            <img alt="image" class="rounded-circle" src="img/a1.jpg">
-
-
-                            <h3 class="m-b-xs"><strong>Alex Johnatan</strong></h3>
-
-                            <div class="font-bold">CEO</div>
-                            <address class="m-t-md">
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-
-                        </a>
-                        <div class="contact-box-footer">
-                            <div class="m-t-xs btn-group">
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="contact-box center-version">
-
-                        <a href="profile.html">
-
-                            <img alt="image" class="rounded-circle" src="img/a7.jpg">
-
-
-                            <h3 class="m-b-xs"><strong>John Smith</strong></h3>
-
-                            <div class="font-bold">Graphics designer</div>
-                            <address class="m-t-md">
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-
-                        </a>
-                        <div class="contact-box-footer">
-                            <div class="m-t-xs btn-group">
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="contact-box center-version">
-
-                        <a href="profile.html">
-
-                            <img alt="image" class="rounded-circle" src="img/a2.jpg">
-
-
-                            <h3 class="m-b-xs"><strong>John Smith</strong></h3>
-
-                            <div class="font-bold">Graphics designer</div>
-                            <address class="m-t-md">
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-
-                        </a>
-                        <div class="contact-box-footer">
-                            <div class="m-t-xs btn-group">
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="contact-box center-version">
-
-                        <a href="profile.html">
-
-                            <img alt="image" class="rounded-circle" src="img/a1.jpg">
-
-
-                            <h3 class="m-b-xs"><strong>Alex Johnatan</strong></h3>
-
-                            <div class="font-bold">CEO</div>
-                            <address class="m-t-md">
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-
-                        </a>
-                        <div class="contact-box-footer">
-                            <div class="m-t-xs btn-group">
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="contact-box center-version">
-
-                        <a href="profile.html">
-
-                            <img alt="image" class="rounded-circle" src="img/a3.jpg">
-
-
-                            <h3 class="m-b-xs"><strong>Monica Smith</strong></h3>
-
-                            <div class="font-bold">Marketing manager</div>
-                            <address class="m-t-md">
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-
-                        </a>
-                        <div class="contact-box-footer">
-                            <div class="m-t-xs btn-group">
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="contact-box center-version">
-
-                        <a href="profile.html">
-
-                            <img alt="image" class="rounded-circle" src="img/a4.jpg">
-
-
-                            <h3 class="m-b-xs"><strong>Michael Zimber</strong></h3>
-
-                            <div class="font-bold">Sales manager</div>
-                            <address class="m-t-md">
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-
-                        </a>
-                        <div class="contact-box-footer">
-                            <div class="m-t-xs btn-group">
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
+                    @endif
+                @endforeach
             </div>
         </div>
     </div>

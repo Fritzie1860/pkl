@@ -22,13 +22,15 @@ class UserController extends Controller
     {
         $data = user::all();
         return view('users', ['data' => $data]);
-        dd(user::where('id', 3));
     }
 
     public function store(Request $req)
-    {
+    {   $file = $req->file('upload');
+        $nama = $file->getClientOriginalName();
+        $tujuan_upload = 'images/';
+		$file->move($tujuan_upload,$nama);
         $hasil = [
-            'foto' => 'hey',
+            'foto' => $nama,
             'username' => $req['nama'],
             'email' => $req['email'],
             'no_hp' => $req['no_hp'],
@@ -77,4 +79,12 @@ class UserController extends Controller
     {
         return view('dashboard');
     }
+
+    public function profil() {
+        $semua = user::all();
+        $data = user::all()->where('id', 4);
+        // dd($data);
+        return view('profil',['data' => $data, 'semua'=> $semua]);
+    }
+    
 }

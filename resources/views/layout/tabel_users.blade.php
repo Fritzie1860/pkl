@@ -26,7 +26,7 @@
                         <h5>Users List</h5>
                         <div class="ibox-tools">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#add_user"> Tambah</button>
+                                <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#add_user"> Add User</button>
                             </a>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                                     @foreach ($data as $row)
                                     <tr>
                                         <!-- <td>{{$row->foto}}</td> -->
-                                        <td><img src="img/a2.jpg" alt=""></td>
+                                        <td><img src="images/<?= $row->foto?>" alt="" style="height: 100px;"></td>
                                         <td>{{$row->username}}</td>
                                         <td>{{$row->email}}</td>
                                         <td>{{$row->alamat}}</td>
@@ -63,9 +63,9 @@
                                         <td class="project-actions">
                                             <center>
                                                 <div style="display: inline-block;">
-                                                    <a href="/hapususer/<?= $row->id ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i>  </a>
+                                                    <a href="/hapususer/<?= $row->id ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
                                                     <a class="btn btn-white btn-sm " data-toggle="modal" data-idu="<?= $row->id ?>" data-nama="<?= $row->username ?>" data-alamat="<?= $row->alamat ?>" data-email="<?= $row->email ?>" data-status="<?= $row->status ?>" data-target="#edit_user" id="detil">
-                                                    <i class="fa fa-edit "></i>
+                                                        <i class="fa fa-edit "></i>
                                                     </a>
                                                 </div>
                                             </center>
@@ -93,7 +93,11 @@
                 <h2>Add User</h2>
             </div>
             <div class="container">
-                <form action="/inputuser" method="post">
+                <form action="/inputuser" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <!-- <img src="img/user.png" alt="foto"> -->
+                        <input type="file" name='upload'>
+                    </div>
                     <div class="form-group">
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama">

@@ -20,8 +20,8 @@ Route::get('/users', [UserController::class, 'index']);
 Route::post('/inputuser', [UserController::class, 'store']);
 Route::post('/edituser', [UserController::class, 'update']);
 Route::get('/hapususer/{id}', [UserController::class, 'hapus']);
-// Route::post('verif', [AuthController::class, 'verif']);
-// Route::post('/login', [AuthController::class, 'login']);
+Route::get('/profil', [UserController::class, 'profil']);
+Route::view('/p','profil');
 
 
 Route::get('/', [AuthController::class,'showFormLogin'])->name('login');

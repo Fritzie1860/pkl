@@ -63,8 +63,8 @@
                                         <td class="project-actions">
                                             <center>
                                                 <div style="display: inline-block;">
-                                                    <a href="/hapususer/<?= $row->id ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
-                                                    <a class="btn btn-white btn-sm " data-toggle="modal" data-idu="<?= $row->id ?>" data-nama="<?= $row->username ?>" data-alamat="<?= $row->alamat ?>" data-email="<?= $row->email ?>" data-status="<?= $row->status ?>" data-target="#edit_user" id="detil">
+                                                    <a href="/hapusProject/<?= $row->id_projects?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                    <a class="btn btn-white btn-sm " data-toggle="modal" data-idp=<?= $row->id_projects ?> data-pronama="<?= $row->pro_nama ?>" data-stadate="<?= $row->tanggal_mulai ?>" data-prostatus=<?= $row->pro_status ?>  data-target="#edit_user" id="detil">
                                                         <i class="fa fa-edit "></i>
                                                     </a>
                                                 </div>
@@ -123,4 +123,74 @@
             </div>
         </div>
     </div>
+    <!-- buat edit  -->
+    <div class="modal fade" id="edit_user" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Edit 
+                    </h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            ×
+                        </span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form action="/editProject" method="post">
+
+                        <input type="text" name="idp" id="isi_idp" style="display: none;">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Projct Name</label>
+                            <input type="text" class="form-control" name="proname" id="isi_proname" placeholder="Project Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Start Date</label>
+                            <input type="date" name="stardate" class="form-control" id="isi_startdate" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Status</label>
+                            <select class="form-select form-select-lg" name="prostatus" id="isiin" style="margin-left: 100px; width:150px">
+                                <!-- <option selected>Pilih</option> -->
+                                <option value="0">Prepare</option>
+                                <option value="1">On Going</option>
+                                <option value="2">Finised</option>
+                            </select>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // $(document).ready(function() {
+        $(document).on('click', "#detil", function() {
+            var name = $(this).data('pronama');
+            var start = $(this).data('stadate');
+            var stp = $(this).data('prostatus');
+            var idp = $(this).data('idp');
+
+            $("#isi_proname").val(name);
+            $("#isi_startdate").val(start);
+            // $("#isi_isiin").val(alamat);
+            $("#isi_idp").val(idp);
+            var pilih = document.getElementById('isiin');
+            console.log(stp);
+            pilih.value = stp;
+            // $('#isi_pilih').val(status);
+            // document.querySelector('#isiin').value=status;
+        })
+        // });
+    </script>
 </body>
