@@ -43,9 +43,20 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get("/target",[TosController::class,'index']);
     Route::post('tos11', [TosController::class,'in_tos11']);
+    Route::post('tos11_edit', [TosController::class,'edit_tos11']);
+    Route::get('tos11_del/{id}', [TosController::class,'del_tos11']);
+    
     Route::post('tos12', [TosController::class,'in_tos12']);
+    Route::post('tos12_edit', [TosController::class,'edit_tos12']);
+    Route::get('tos12_del/{id}', [TosController::class,'del_tos12']);
+
     Route::post('tos13', [TosController::class,'in_tos13']);
+    Route::post('tos13_edit', [TosController::class,'edit_tos13']);
+    Route::get('tos13_del/{id}', [TosController::class,'del_tos13']);
+
     Route::post('tos14', [TosController::class,'in_tos14']);
+    Route::post('tos14_edit', [TosController::class,'edit_tos14']);
+    Route::get('tos14_del/{id}', [TosController::class,'del_tos14']);
 });
 
 

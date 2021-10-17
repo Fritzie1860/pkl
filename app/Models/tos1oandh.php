@@ -15,6 +15,7 @@ class tos1oandh extends Model
     protected $table = "tos1oandh";
     
     protected $fillable = [
+        'id_tos11',
         'dia',
         'p',
     ];

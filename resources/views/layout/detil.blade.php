@@ -144,6 +144,7 @@
                                                                                 <tr>
                                                                                     <th>Dia</th>
                                                                                     <th>Panjang</th>
+                                                                                    <th>Action</th>
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
@@ -151,7 +152,18 @@
                                                                                 <tr class="gradeA">
                                                                                     <td>{{$row->dia}}</td>
                                                                                     <td>{{$row->p}}</td>
-
+                                                                                    <td class="project-actions">
+                                                                                        <center>
+                                                                                            <div style="display: inline-block;">
+                                                                                                <a href="/tos11_del/<?= $row->id_tos11 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" 
+                                                                                                data-idt="<?= $row->id_tos11 ?>"  data-dia="<?= $row->dia ?>"
+                                                                                                data-p="<?= $row->p ?>"  data-target="#edit_tos11" id="tos11">
+                                                                                                    <i class="fa fa-edit "></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </center>
+                                                                                    </td>
                                                                                 </tr>
                                                                                 @endforeach
                                                                             </tbody>
@@ -375,7 +387,7 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                            @foreach($Tos13 as $row) 
+                                                                                @foreach($Tos13 as $row)
                                                                                 <tr class="gradeA">
                                                                                     <td>{{$row->type}}</td>
                                                                                     <td>{{$row->dfp_l}}</td>
@@ -421,9 +433,9 @@
                                                                                     <td>{{$row->v_galian}}</td>
                                                                                     <td>{{$row->v_lc}}</td>
                                                                                     <td>{{$row->v_pasir}}</td>
-                                                                                    
+
                                                                                 </tr>
-                                                                            @endforeach
+                                                                                @endforeach
                                                                             </tbody>
 
                                                                         </table>
@@ -3577,3 +3589,4 @@
 </div>
 
 @include('layout.popup')
+@include('layout.popupedit')
