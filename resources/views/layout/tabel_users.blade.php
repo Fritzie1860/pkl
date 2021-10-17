@@ -88,7 +88,7 @@
 <!-- ini pop up  -->
 <div class="modal fade" id="add_user" role="dialog" arialabelledby="modalLabel" area-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="moal-content">
             <div class="modal-header">
                 <h2>Add User</h2>
             </div>
@@ -214,4 +214,18 @@
         // document.querySelector('#isiin').value=status;
     })
     // });
+</script>
+
+<script type="text/javascript">
+    $('#search').on('keyup',function(){
+        $value=$(this).val();
+        $.ajax({
+            type : 'get',
+            url : '/search',
+            data:{'search':$value},
+            success:function(data){
+            $('tbody').html(data);
+            }
+        });
+    })
 </script>

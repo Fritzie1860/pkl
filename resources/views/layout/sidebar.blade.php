@@ -22,8 +22,11 @@
                         </ul>
                     </div>
                 </li>
-                <li class="<?php 
-                    if(request()->is('dashboard')) {
+                <li class="<?php
+
+use Illuminate\Support\Facades\Auth;
+
+if(request()->is('dashboard')) {
                         echo "active";
                     }
                 ?>">
@@ -36,13 +39,20 @@
                 ?>">
                     <a href="/projects"><i class="fa fa-table"></i> <span class="nav-label">Projects</span></a>
                 </li>
+                @if(Auth::user()->status==0)
                 <li class="<?php 
-                    if(request()->is('/')) {
+                    if(request()->is('users')) {
                         echo "active";
                     }
                 ?>">
                     <a href="/users"><i class="fa fa-pie-chart"></i> <span class="nav-label">Users</span>  </a>
                 </li>
+                @else
+                {{Auth::user()->id}}
+                <li>
+                    <?= Auth::user()->status;?>
+                </li>
+                @endif
             </ul>
         </div>
     </nav>

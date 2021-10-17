@@ -94,11 +94,6 @@ class UserController extends Controller
         dd($y);
     }
 
-    public function dashboard()
-    {
-        return view('dashboard');
-    }
-
     public function profil() {
         $idu=Auth::user()->id;
         $semua = user::all();
@@ -106,5 +101,26 @@ class UserController extends Controller
         // dd($data);
         return view('profil',['data' => $data, 'semua'=> $semua, 'idu'=>$idu]);
     }
-    
+
+    public function search(Request $request){
+        if($request->ajax()){
+            $output="";
+            $users=user::all()->where('username','LIKE','%'.$request->search."%");
+            if($users){
+                    foreach ($users as $key => $product) {
+                    $output.='<tr>'.
+                    '<td>'.$product->id.'</td>'.
+                    '<td>'.$product->username.'</td>'.
+                    '<td>'.$product->email.'</td>'.
+                    '<td>'.$product->no_hp.'</td>'.
+                    '</tr>';
+                    }
+                return Response($output);
+            }
+        }
+    }
 }
+    
+
+
+
