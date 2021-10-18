@@ -14,7 +14,7 @@ class CreateTos1footplatTable extends Migration
     public function up()
     {
         Schema::create('tos1footplat', function (Blueprint $table) {
-            $table->id('id_tos13', 5);
+            $table->id('id_tos12', 5);
             $table->string('type',100);
             $table->double('dfp_l',5);
             $table->double('dfp_p',5);

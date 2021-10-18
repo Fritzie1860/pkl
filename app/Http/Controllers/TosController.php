@@ -154,7 +154,7 @@ class TosController extends Controller
     }
 
     public function in_tos13(Request $req)
-    {
+     {   //d/d($req);
         //Koefisien
         $lc = 0.05;
         $pasir = 0.05;
@@ -255,7 +255,7 @@ class TosController extends Controller
             'v_pasir' => $v_pasir,
         ];
         // dd($req);
-        tos1footplat::insert($hasil);
+        tos1pumproom::insert($hasil);
     }
 
     public function in_tos14(Request $req)

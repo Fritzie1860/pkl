@@ -172,7 +172,7 @@
                 <h2>Pump Room</h2>
             </div>
             <div class="container">
-                <form>
+                <form action="tos13" method="post">
                     <div class="form-group">
                         <label for="type">Type</label>
                         <input type="text" class="form-control" name="type" id="type" aria-describedby="emailHelp" placeholder="Enter email">
