@@ -134,28 +134,28 @@
                 <form action="tos14" method="post">
 
                     <div class="form-group">
-                        <label for="Nama">Email address</label> 
+                        <label for="Nama">Nama</label> 
                         <input type="text" class="form-control" name="nama" id="Nama" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
                     <div class="form-group">
-                        <label for="bentuk">Email address</label> 
+                        <label for="bentuk">Bantuk</label> 
                         <input type="text" class="form-control" name="bentuk" id="bentuk" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
                     <div class="form-group">
-                        <label for="B">Email address</label> 
+                        <label for="B">B</label> 
                         <input type="text" class="form-control" name="B" id="B" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
                     <div class="form-group">
-                        <label for="B_">Email address</label> 
+                        <label for="B_">B'</label> 
                         <input type="text" class="form-control" name="B_" id="B_" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
                     <div class="form-group">
-                        <label for="H">Email address</label> 
+                        <label for="H">H</label> 
                         <input type="text" class="form-control" name="H" id="H" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
                     <div class="form-group">
-                        <label for="H">Email address</label> 
-                        <input type="text" class="form-control" name="panjang" id="H" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="H">Panjang</label> 
+                        <input type="text" class="form-control" name="panjang" id="panjang" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

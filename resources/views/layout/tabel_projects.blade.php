@@ -26,7 +26,7 @@
                         <h5>Users List</h5>
                         <div class="ibox-tools">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#add_project"> Tambah</button>
+                                <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#add_project"> Add Project</button>
                             </a>
                         </div>
                     </div>
@@ -55,7 +55,14 @@
                                             </center>
                                         </td>
                                         <td class="center">
-                                            <center> {{$row->pro_status}}</center>
+                                            @if($row->pro_status==0)
+                                            <center>Prepared</center>
+                                            @elseif($row->pro_status==1)
+                                            <center>On Going</center>
+                                            @elseif($row->pro_status==2)
+                                            <center>Finished</center>
+                                            @endif
+
                                         </td>
                                         <td class="center">
                                             <center> {{$row->pro_update}}</center>
@@ -63,9 +70,12 @@
                                         <td class="project-actions">
                                             <center>
                                                 <div style="display: inline-block;">
-                                                    <a href="/hapusProject/<?= $row->id_projects?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
-                                                    <a class="btn btn-white btn-sm " data-toggle="modal" data-idp=<?= $row->id_projects ?> data-pronama="<?= $row->pro_nama ?>" data-stadate="<?= $row->tanggal_mulai ?>" data-prostatus=<?= $row->pro_status ?>  data-target="#edit_user" id="detil">
+                                                    <a href="/hapusProject/<?= $row->id_projects ?>" class="btn btn-danger btn-sm float-left mr-2"> <i class="fa fa-trash"></i>
+                                                    </a>
+                                                    <a class="btn btn-warning btn-sm" data-toggle="modal" data-idp=<?= $row->id_projects ?> data-pronama="<?= $row->pro_nama ?>" data-stadate="<?= $row->tanggal_mulai ?>" data-prostatus=<?= $row->pro_status ?> data-target="#edit_user" id="detil">
                                                         <i class="fa fa-edit "></i>
+                                                    </a>
+                                                    <a href="/target" class="btn btn-sm"> <i class="fa fa-eye"></i>
                                                     </a>
                                                 </div>
                                             </center>
@@ -129,7 +139,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
-                        Edit 
+                        Edit
                     </h5>
 
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -151,7 +161,7 @@
 
                         <div class="form-group">
                             <label for="exampleInputPassword1">Start Date</label>
-                            <input type="date" name="stardate" class="form-control" id="isi_startdate" >
+                            <input type="date" name="stardate" class="form-control" id="isi_startdate">
                         </div>
 
                         <div class="form-group">

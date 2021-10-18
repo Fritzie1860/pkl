@@ -139,7 +139,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th>Dia</th>
@@ -191,7 +191,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Type</th>
@@ -204,8 +204,7 @@
                                                                                     <th colspan="7" align="center">Tulangan Bawah Horizontal</th>
                                                                                     <th colspan="4" align="center"> Tulangan Pinggang</th>
                                                                                     <th colspan="6" align="center">Volume</th>
-                                                                                    <th rowspan="3" align="center">action</th>
-
+                                                                                    <th rowspan="3" tyle="vertical-align:middle; align="center">Action</th>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;">Lebar (m')</th>
@@ -303,16 +302,59 @@
                                                                                     <td class="project-actions">
                                                                                         <center>
                                                                                             <div style="display: inline-block;">
-                                                                                                <a href="/tos11_del/<?= $row->id_tos11 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a href="/tos12_del/<?= $row->id_tos12 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
                                                                                                 <a class="btn btn-white btn-sm " data-toggle="modal" 
-                                                                                                data-idt="<?= $row->id_tos11 ?>"  data-dia="<?= $row->dia ?>"
-                                                                                                data-p="<?= $row->p ?>"  data-target="#edit_tos11" id="tos11">
+                                                                                                data-idt="<?= $row->id_tos12 ?>"
+                                                                                                data-type="<?= $row->type ?>"
+                                                                                                data-dfp_l="<?= $row->dfp_l ?>"  
+                                                                                                data-dfp_p="<?=$row->dfp_p?>"
+                                                                                                data-dfp_t="<?=$row->dfp_t?>"
+                                                                                                data-level_mta="<?= $row->level_mta?>"
+                                                                                                data-jumlah="<?= $row->jumlah?>"
+                                                                                                data-tav_dia="<?= $row->tav_dia?>"
+                                                                                                data-tav_jarak="<?= $row->tav_jarak?>"
+                                                                                                data-tav_p="<?= $row->tav_p?>"
+                                                                                                data-tav_add="<?= $row->tav_add?>"
+                                                                                                data-tav_jum="<?= $row->tav_jum?>"
+                                                                                                data-tav_bjenis="<?= $row->tav_bjenis?>"
+                                                                                                data-tav_total="<?= $row->tav_total?>"
+                                                                                                data-tbv_dia="<?= $row->tbv_dia?>"
+                                                                                                data-tbv_jarak="<?= $row->tbv_jarak?>"
+                                                                                                data-tbv_p="<?= $row->tbv_p?>"
+                                                                                                data-tbv_add="<?= $row->tbv_add?>"
+                                                                                                data-tbv_jum="<?= $row->tbv_jum?>"
+                                                                                                data-tbv_bjenis="<?= $row->tbv_bjenis?>"
+                                                                                                data-tbv_total="<?= $row->tbv_total?>"
+                                                                                                data-tah_dia="<?= $row->tah_dia?>"
+                                                                                                data-tah_jarak="<?= $row->tah_jarak?>"
+                                                                                                data-tah_p="<?= $row->tah_p?>"
+                                                                                                data-tah_add="<?= $row->tah_add?>"
+                                                                                                data-tah_jum="<?= $row->tah_jum?>"
+                                                                                                data-tah_bjenis="<?= $row->tah_bjenis?>"
+                                                                                                data-tah_total="<?= $row->tah_total?>"
+                                                                                                data-tbh_dia="<?= $row->tbh_dia?>"
+                                                                                                data-tbh_jarak="<?= $row->tbh_jarak?>"
+                                                                                                data-tbh_p="<?= $row->tbh_p?>"
+                                                                                                data-tbh_add="<?= $row->tbh_add?>"
+                                                                                                data-tbh_jum="<?= $row->tbh_jum?>"
+                                                                                                data-tbh_bjenis="<?= $row->tbh_bjenis?>"
+                                                                                                data-tbh_total="<?= $row->tbh_total?>"
+                                                                                                data-tp_dia="<?= $row->tp_dia?>"
+                                                                                                data-tp_jum="<?= $row->tp_jum?>"
+                                                                                                data-tp_p="<?= $row->tp_p?>"
+                                                                                                data-tp_total="<?= $row->tp_total?>"
+                                                                                                data-v_besi="<?= $row->v_besi?>"
+                                                                                                data-v_beton="<?= $row->v_beton?>"
+                                                                                                data-v_bb="<?= $row->v_bb?>"
+                                                                                                data-v_galian="<?= $row->v_galian?>"
+                                                                                                data-v_lc="<?= $row->v_lc?>"
+                                                                                                data-v_pasir="<?= $row->v_pasir?>"
+                                                                                                data-target="#edit_tos12" id="tos12">
                                                                                                     <i class="fa fa-edit "></i>
                                                                                                 </a>
                                                                                             </div>
                                                                                         </center>
                                                                                     </td>
-
                                                                                 </tr>
                                                                                 @endforeach
                                                                         </table>
@@ -338,10 +380,9 @@
                                                                 </div>
                                                                 <div class="ibox-content">
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">No</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Type</th>
                                                                                     <th colspan="3" align="center"> Dimensi Foot Plat</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Level MTA (m')</th>
@@ -352,7 +393,7 @@
                                                                                     <th colspan="7" align="center">Tulangan Bawah Horizontal</th>
                                                                                     <th colspan="4" align="center"> Tulangan Pinggang</th>
                                                                                     <th colspan="6" align="center">Volume</th>
-
+                                                                                    <th rowspan="3" tyle="vertical-align:middle; align="center">Action</th>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;">Lebar (m')</th>
@@ -446,7 +487,62 @@
                                                                                     <td>{{$row->v_galian}}</td>
                                                                                     <td>{{$row->v_lc}}</td>
                                                                                     <td>{{$row->v_pasir}}</td>
-
+                                                                                    <td class="project-actions">
+                                                                                        <center>
+                                                                                            <div style="display: inline-block;">
+                                                                                                <a href="/tos13_del/<?= $row->id_tos13 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" 
+                                                                                                data-idt="<?= $row->id_tos13 ?>"
+                                                                                                data-type="<?= $row->type ?>"
+                                                                                                data-dfp_l="<?= $row->dfp_l ?>"  
+                                                                                                data-dfp_p="<?=$row->dfp_p?>"
+                                                                                                data-dfp_t="<?=$row->dfp_t?>"
+                                                                                                data-level_mta="<?= $row->level_mta?>"
+                                                                                                data-jumlah="<?= $row->jumlah?>"
+                                                                                                data-tav_dia="<?= $row->tav_dia?>"
+                                                                                                data-tav_jarak="<?= $row->tav_jarak?>"
+                                                                                                data-tav_p="<?= $row->tav_p?>"
+                                                                                                data-tav_add="<?= $row->tav_add?>"
+                                                                                                data-tav_jum="<?= $row->tav_jum?>"
+                                                                                                data-tav_bjenis="<?= $row->tav_bjenis?>"
+                                                                                                data-tav_total="<?= $row->tav_total?>"
+                                                                                                data-tbv_dia="<?= $row->tbv_dia?>"
+                                                                                                data-tbv_jarak="<?= $row->tbv_jarak?>"
+                                                                                                data-tbv_p="<?= $row->tbv_p?>"
+                                                                                                data-tbv_add="<?= $row->tbv_add?>"
+                                                                                                data-tbv_jum="<?= $row->tbv_jum?>"
+                                                                                                data-tbv_bjenis="<?= $row->tbv_bjenis?>"
+                                                                                                data-tbv_total="<?= $row->tbv_total?>"
+                                                                                                data-tah_dia="<?= $row->tah_dia?>"
+                                                                                                data-tah_jarak="<?= $row->tah_jarak?>"
+                                                                                                data-tah_p="<?= $row->tah_p?>"
+                                                                                                data-tah_add="<?= $row->tah_add?>"
+                                                                                                data-tah_jum="<?= $row->tah_jum?>"
+                                                                                                data-tah_bjenis="<?= $row->tah_bjenis?>"
+                                                                                                data-tah_total="<?= $row->tah_total?>"
+                                                                                                data-tbh_dia="<?= $row->tbh_dia?>"
+                                                                                                data-tbh_jarak="<?= $row->tbh_jarak?>"
+                                                                                                data-tbh_p="<?= $row->tbh_p?>"
+                                                                                                data-tbh_add="<?= $row->tbh_add?>"
+                                                                                                data-tbh_jum="<?= $row->tbh_jum?>"
+                                                                                                data-tbh_bjenis="<?= $row->tbh_bjenis?>"
+                                                                                                data-tbh_total="<?= $row->tbh_total?>"
+                                                                                                data-tp_dia="<?= $row->tp_dia?>"
+                                                                                                data-tp_jum="<?= $row->tp_jum?>"
+                                                                                                data-tp_p="<?= $row->tp_p?>"
+                                                                                                data-tp_total="<?= $row->tp_total?>"
+                                                                                                data-v_besi="<?= $row->v_besi?>"
+                                                                                                data-v_beton="<?= $row->v_beton?>"
+                                                                                                data-v_bb="<?= $row->v_bb?>"
+                                                                                                data-v_galian="<?= $row->v_galian?>"
+                                                                                                data-v_lc="<?= $row->v_lc?>"
+                                                                                                data-v_pasir="<?= $row->v_pasir?>"
+                                                                                                data-target="#edit_tos13" id="tos13">
+                                                                                                    <i class="fa fa-edit "></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </center>
+                                                                                    </td>
                                                                                 </tr>
                                                                                 @endforeach
                                                                             </tbody>
@@ -473,10 +569,10 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">No</th>
+                            
                                                                                     <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Bentuk</th>
                                                                                     <th style="vertical-align:middle;">B</th>
@@ -485,10 +581,10 @@
                                                                                     <th style="vertical-align:middle;">Panjang</th>
                                                                                     <th style="vertical-align:middle;">Luas Alas</th>
                                                                                     <th style="vertical-align:middle;">Volume Batu Kali</th>
-                                                                                    <th style="vertical-align:middle;">Pair Urrug (M2)</th>
+                                                                                    <th style="vertical-align:middle;">Pasir Urug (M2)</th>
                                                                                     <th style="vertical-align:middle;">Galian</th>
                                                                                     <th style="vertical-align:middle;">Timbunan</th>
-
+                                                                                    <th rowspan="3" tyle="vertical-align:middle; align="center">Action</th>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;">(m)</th>
@@ -505,12 +601,42 @@
                                                                             <tbody>
                                                                                 @foreach($Tos14 as $row)
                                                                                 <tr class="gradeC">
-                                                                                    <td>Trident</td>
-                                                                                    <td>Internet
-                                                                                        Explorer 5.0
+                                                                                    <td>{{$row->nama}}</td>
+                                                                                    <td>{{$row->bentuk}}</td>
+                                                                                    <td>{{$row->b}}</td>
+                                                                                    <td>{{$row->b_}}</td>
+                                                                                    <td>{{$row->h}}</td>
+                                                                                    <td>{{$row->p}}</td>
+                                                                                    <td>{{$row->la}}</td>
+                                                                                    <td>{{$row->v_bk}}</td>
+                                                                                    <td>{{$row->pasir_u}}</td>
+                                                                                    <td>{{$row->galian}}</td>
+                                                                                    <td>{{$row->timbunan}}</td>
+                                                                                    <td class="project-actions">
+                                                                                        <center>
+                                                                                            <div style="display: inline-block;">
+                                                                                                <a href="/tos14_del/<?= $row->id_tos14 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" 
+                                                                                                data-idt="<?= $row->id_tos14 ?>" 
+                                                                                                data-nama="<?= $row->nama ?>"
+                                                                                                data-bentuk="<?= $row->bentuk ?>"
+                                                                                                data-b="<?= $row->b ?>"
+                                                                                                data-b_="<?= $row->b_ ?>"
+                                                                                                data-h="<?= $row->h ?>"
+                                                                                                data-p="<?= $row->p ?>"
+                                                                                                data-la="<?= $row->la ?>"
+                                                                                                data-v_bk="<?= $row->v_bk ?>"
+                                                                                                data-pasir_u="<?= $row->pasir_u ?>"
+                                                                                                data-galian="<?= $row->galian ?>"
+                                                                                                data-timbunan="<?= $row->timbunan ?>"
+                                                                                                data-p="<?= $row->p ?>"
+
+                                                                                                data-target="#edit_tos14" id="tos14">
+                                                                                                    <i class="fa fa-edit "></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </center>
                                                                                     </td>
-                                                                                    <td class="center">5</td>
-                                                                                    <td class="center">C</td>
                                                                                 </tr>
                                                                                 @endforeach
                                                                         </table>
@@ -574,7 +700,7 @@
                                                                 </div>
                                                                 <div class="ibox-content">
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="4" style="vertical-align:middle;">No</th>
@@ -733,7 +859,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="4" style="vertical-align:middle;">No</th>
@@ -842,7 +968,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;">No</th>
@@ -925,10 +1051,10 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">No</th>
+                            
                                                                                     <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> Bentuk</th>
                                                                                     <th colspan="2">Dimensi</th>
@@ -995,7 +1121,7 @@
                                                                 </div>
                                                                 <div class="ibox-content">
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="4" style="vertical-align:middle;">No</th>
@@ -1109,7 +1235,7 @@
                                                                 </div>
                                                                 <div class="ibox-content">
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="4" style="vertical-align:middle;">No</th>
@@ -1223,7 +1349,7 @@
                                                                 </div>
                                                                 <div class="ibox-content">
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;">No</th>
@@ -1307,7 +1433,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Type</th>
@@ -1377,7 +1503,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
@@ -1424,7 +1550,7 @@
 
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">no</th>
+                            
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> - </th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
@@ -1550,7 +1676,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
@@ -1597,7 +1723,7 @@
 
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">no</th>
+                            
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> - </th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
@@ -1723,7 +1849,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
@@ -1770,7 +1896,7 @@
 
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">no</th>
+                            
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> - </th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
@@ -1896,10 +2022,10 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">No</th>
+                            
                                                                                     <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                     <th>Beton</th>
                                                                                     <th>Besi</th>
@@ -1989,7 +2115,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Type</th>
@@ -2058,7 +2184,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
@@ -2103,7 +2229,7 @@
 
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">no</th>
+                            
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> - </th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
@@ -2226,7 +2352,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
@@ -2271,7 +2397,7 @@
 
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">no</th>
+                            
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> - </th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
@@ -2395,10 +2521,10 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">No</th>
+                            
                                                                                     <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                     <th>Beton</th>
                                                                                     <th>Besi</th>
@@ -2489,7 +2615,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th>Dia</th>
@@ -2532,7 +2658,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Type</th>
@@ -2581,7 +2707,7 @@
                                                                     </div>
                                                                     <h5>Rekapitulasi Perhitungan Struktur Plat</h5>
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Area</th>
@@ -2632,7 +2758,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Type</th>
@@ -2681,7 +2807,7 @@
                                                                     </div>
                                                                     <h5>Rekapitulasi Perhitungan Struktur Plat</h5>
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Area</th>
@@ -2732,7 +2858,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Type</th>
@@ -2781,7 +2907,7 @@
                                                                     </div>
                                                                     <h5>Rekapitulasi Perhitungan Struktur Plat</h5>
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Area</th>
@@ -2832,7 +2958,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Type</th>
@@ -2881,7 +3007,7 @@
                                                                     </div>
                                                                     <h5>Rekapitulasi Perhitungan Struktur Plat</h5>
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Area</th>
@@ -2931,10 +3057,10 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">No</th>
+                            
                                                                                     <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                     <th>Beton</th>
                                                                                     <th>Besi</th>
@@ -3028,7 +3154,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th>Dia</th>
@@ -3065,7 +3191,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> No</th>
@@ -3148,7 +3274,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> No</th>
@@ -3230,7 +3356,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> No</th>
@@ -3313,7 +3439,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> No</th>
@@ -3395,7 +3521,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> No</th>
@@ -3478,7 +3604,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;"> No</th>
@@ -3511,7 +3637,7 @@
                                                                     </div>
                                                                     <div class="table-responsive scrollmenu">
                                                                         <h5>Rekap Volume Retaining Wall</h5>
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;"> No</th>
@@ -3556,7 +3682,7 @@
 
                                                                     <div class="table-responsive scrollmenu">
                                                                         <h5>Rekap Volume Retaining Wall Batu Kali</h5>
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;"> No</th>
