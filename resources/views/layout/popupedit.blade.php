@@ -346,59 +346,59 @@
                 <form action="/tos14_edit" method="post">
                 @csrf
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <input type="hidden" name="idt" id="id" />
+                <input type="hidden" name="idt" id="id14" />
                     <div class="form-group">
                         <label for="type">Nama</label>
-                        <input type="text" class="form-control" name="nama" id="nama3">
+                        <input type="text" class="form-control" name="nama" id="nama14">
                     </div>
                     <div class="form-group">
                         <label for="type">Bentuk</label>
-                        <input type="text" class="form-control" id="bentuk3" name="bentuk">
+                        <input type="text" class="form-control" id="bentuk14" name="bentuk">
                     </div>
 
                     <div class="form-group">
                         <label for="type">B</label>
-                        <input type="text" class="form-control" id="b3" name="b">
+                        <input type="text" class="form-control" id="b14" name="b">
                     </div>
 
                     <div class="form-group">
                         <label for="type">B'</label>
-                        <input type="text" class="form-control" id="b_3" name="b_">
+                        <input type="text" class="form-control" id="b_14" name="b_">
                     </div>
 
                     <div class="form-group">
                         <label for="type">H</label>
-                        <input type="text" class="form-control" id="h3" name="h">
+                        <input type="text" class="form-control" id="h14" name="h">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Panjang                        </label>
-                        <input type="text" class="form-control" id="panjang3" name="panjang">
+                        <input type="text" class="form-control" id="panjang14" name="panjang">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Luas Alas</label>
-                        <input type="text" class="form-control" id="la3" name="la">
+                        <input type="text" class="form-control" id="la14" name="la">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Volume Batu Kali</label>
-                        <input type="text" class="form-control" id="vbk3" name="vbk">
+                        <input type="text" class="form-control" id="vbk14" name="vbk">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Pasir Urug</label>
-                        <input type="text" class="form-control" id="pu3" name="pu">
+                        <input type="text" class="form-control" id="pu14" name="pu">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Galian</label>
-                        <input type="text" class="form-control" id="galian3" name="galian">
+                        <input type="text" class="form-control" id="galian14" name="galian">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Timbunan</label>
-                        <input type="text" class="form-control" id="timbunan3" name="timbunan">
+                        <input type="text" class="form-control" id="timbunan14" name="timbunan">
                     </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -411,44 +411,35 @@
 <script type="text/javascript">
     // $(document).ready(function() {
     $(document).on('click', "#tos14", function() {
-        console.log("tos 13");
+        
         var id = $(this).data('idt');
         var type = $(this).data('nama');
         var bentuk = $(this).data('bentuk'); 
         var b = $(this).data('b');
         var b_ = $(this).data('b_');
         var h = $(this).data('h');
-        var panjang = $(this).data('panjang');
+        var panjang = $(this).data('p');
         var la = $(this).data('la');
-        var vbk = $(this).data('vbk');
+        var vbk = $(this).data('v_bk');
         var pu = $(this).data('pu');
         var galian = $(this).data('galian');
-        var timbunan = $(this).data('timbunan'); 
+        var timbunan = $(this).data('timbunan');
+        console.log("tos 14" +la); 
         console.log("batu kali "+id);
-        console.log(h);
-        console.log(type);
-        console.log(bentuk);
-        console.log(b);
-        console.log(b_);
-        console.log(panjang);
-        console.log(la);
-        console.log(vbk);
-        console.log(pu);
-        console.log(galian);
-        console.log(timbunan);
-        console.log(tp_dia);
-        $("#nama3").val(type);
-        $("#bentuk3").val(bentuk);
-        $("#b3").val(b);
-        $("#b_3").val(b_);
-        $("#h3").val(h);
-        $("#panjang3").val(panjang);
-        $("#la3").val(la);
-        $("#vbk3").val(vbk);
-        $("#pu3").val(pu);
-        $("#galian3").val(galian);
-        $("#timbunan3").val(timbunan);
-        $("#id").val(id);
+        console.log("batu kali "+panjang);
+        console.log("batu kali "+bentuk);
+        $("#nama14").val(type);
+        $("#bentuk14").val(bentuk);
+        $("#b14").val(b);
+        $("#b_14").val(b_);
+        $("#h14").val(h);
+        $("#panjang14").val(panjang);
+        $("#la14").val(la);
+        $("#vbk14").val(vbk);
+        $("#pu14").val(pu);
+        $("#galian14").val(galian);
+        $("#timbunan14").val(timbunan);
+        $("#id14").val(id);
     })
     // });
 </script>

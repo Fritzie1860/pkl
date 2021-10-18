@@ -142,6 +142,10 @@
                         <input type="text" class="form-control" name="bentuk" id="bentuk" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
                     <div class="form-group">
+                        <label for="bentuk">Panjang</label> 
+                        <input type="text" class="form-control" name="panjang" id="bentuk" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
                         <label for="B">B</label> 
                         <input type="text" class="form-control" name="B" id="B" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>

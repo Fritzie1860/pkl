@@ -30,11 +30,7 @@ Route::post('/edituser', [UserController::class, 'update']);
 Route::get('/hapususer/{id}', [UserController::class, 'hapus']);
 Route::get('/profil', [UserController::class, 'profil']);
 
-Route::group(['middleware' => 'auth'], function () {
-   
-    
-
-    Route::get('/projects', [ProjectController::class, 'index']);
+Route::get('/projects', [ProjectController::class, 'index']);
     Route::post('/inputProject', [ProjectController::class, 'store']);
     Route::post('/editProject', [ProjectController::class, 'update']);
     Route::get('/hapusProject/{id}', [ProjectController::class, 'hapus']);
@@ -57,4 +53,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('tos14', [TosController::class, 'in_tos14']);
     Route::post('tos14_edit', [TosController::class, 'edit_tos14']);
     Route::get('tos14_del/{id}', [TosController::class, 'del_tos14']);
+
+Route::group(['middleware' => 'auth'], function () {
+   
+    
+
+    
 });

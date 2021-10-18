@@ -20,6 +20,7 @@ class CreateTos1batukaliTable extends Migration
             $table->double('b',5);
             $table->double('b_',5);
             $table->double('h',5);
+            $table->double('panjang',5);
             $table->double('p',5);
             $table->double('la',5);
             $table->double('v_bk',5);
