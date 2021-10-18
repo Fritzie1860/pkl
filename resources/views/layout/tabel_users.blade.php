@@ -86,14 +86,25 @@
 </body>
 
 <!-- ini pop up  -->
+<!-- ini popu -->
 <div class="modal fade" id="add_user" role="dialog" arialabelledby="modalLabel" area-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="moal-content">
+        <div class="modal-content">
             <div class="modal-header">
-                <h2>Add User</h2>
+                <h5 class="modal-title" id="exampleModalLabel">
+                    Confirmation
+                </h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        ×
+                    </span>
+                </button>
             </div>
-            <div class="container">
-                <form action="/inputuser" method="post" enctype="multipart/form-data">
+
+            <div class="modal-body">
+
+            <form action="/inputuser" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <!-- <img src="img/user.png" alt="foto"> -->
                         <input type="file" name='upload'>
@@ -129,11 +140,11 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+
             </div>
         </div>
     </div>
 </div>
-
 <!-- buat edit  -->
 <div class="modal fade" id="edit_user" role="dialog" arialabelledby="modalLabel" area-hidden="true">
     <div class="modal-dialog" role="document">

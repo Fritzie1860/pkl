@@ -194,7 +194,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="2" style="vertical-align:middle;">No</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Type</th>
                                                                                     <th colspan="3" align="center"> Dimensi Foot Plat</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Level MTA (m')</th>
@@ -205,6 +204,7 @@
                                                                                     <th colspan="7" align="center">Tulangan Bawah Horizontal</th>
                                                                                     <th colspan="4" align="center"> Tulangan Pinggang</th>
                                                                                     <th colspan="6" align="center">Volume</th>
+                                                                                    <th rowspan="3" align="center">action</th>
 
                                                                                 </tr>
                                                                                 <tr>
@@ -254,6 +254,7 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 @foreach($Tos12 as $row)
+                                                        
                                                                                 <tr class="gradeA">
                                                                                     <td>{{$row->type}}</td>
                                                                                     <td>{{$row->dfp_l}}</td>
@@ -287,7 +288,7 @@
                                                                                     <td>{{$row->tbh_p}}</td>
                                                                                     <td>{{$row->tbh_add}}</td>
                                                                                     <td>{{$row->tbh_jum}}</td>
-                                                                                    <td>{{$row->tbh_tjenis}}</td>
+                                                                                    <td>{{$row->tbh_bjenis}}</td>
                                                                                     <td>{{$row->tbh_total}}</td>
                                                                                     <td>{{$row->tp_dia}}</td>
                                                                                     <td>{{$row->tp_jum}}</td>
@@ -299,6 +300,18 @@
                                                                                     <td>{{$row->v_galian}}</td>
                                                                                     <td>{{$row->v_lc}}</td>
                                                                                     <td>{{$row->v_pasir}}</td>
+                                                                                    <td class="project-actions">
+                                                                                        <center>
+                                                                                            <div style="display: inline-block;">
+                                                                                                <a href="/tos11_del/<?= $row->id_tos11 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" 
+                                                                                                data-idt="<?= $row->id_tos11 ?>"  data-dia="<?= $row->dia ?>"
+                                                                                                data-p="<?= $row->p ?>"  data-target="#edit_tos11" id="tos11">
+                                                                                                    <i class="fa fa-edit "></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </center>
+                                                                                    </td>
 
                                                                                 </tr>
                                                                                 @endforeach
