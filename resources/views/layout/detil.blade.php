@@ -349,7 +349,7 @@
                                                                                                 data-v_galian="<?= $row->v_galian?>"
                                                                                                 data-v_lc="<?= $row->v_lc?>"
                                                                                                 data-v_pasir="<?= $row->v_pasir?>"
-                                                                                                data-target="#edit_tos12" id="tos12">
+                                                                                                data-target="#edit_tos13" id="tos13">
                                                                                                     <i class="fa fa-edit "></i>
                                                                                                 </a>
                                                                                             </div>

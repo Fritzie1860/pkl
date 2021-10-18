@@ -64,7 +64,7 @@
                                             <center>
                                                 <div style="display: inline-block;">
                                                     <a href="/hapususer/<?= $row->id ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
-                                                    <a class="btn btn-white btn-sm " data-toggle="modal" data-idu="<?= $row->id ?>" data-nama="<?= $row->username ?>" data-alamat="<?= $row->alamat ?>" data-email="<?= $row->email ?>" data-status="<?= $row->status ?>" data-target="#edit_user" id="detil">
+                                                    <a class="btn btn-white btn-sm " data-toggle="modal" data-idu="<?= $row->id ?>" data-no_hp="<?= $row->no_hp ?>" data-nama="<?= $row->username ?>" data-alamat="<?= $row->alamat ?>" data-email="<?= $row->email ?>" data-status="<?= $row->status ?>" data-target="#edit_user" id="detil">
                                                         <i class="fa fa-edit "></i>
                                                     </a>
                                                 </div>
@@ -86,7 +86,7 @@
 </body>
 
 <!-- ini pop up  -->
-<!-- ini popu -->
+<!-- ini pop up -->
 <div class="modal fade" id="add_user" role="dialog" arialabelledby="modalLabel" area-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -167,25 +167,21 @@
 
                     <input type="text" name="idu" id="rahasia" style="display: none;">
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Username</label>
+                        <label for="exampleInputPassword1">Nama</label>
                         <input type="text" class="form-control" name="username" id="isi_nama" placeholder="Nama">
                     </div>
-
                     <div class="form-group">
-                        <label for="exampleInputPassword1">E-mail</label>
+                        <label for="exampleInputPassword1">Email</label>
                         <input type="text" name="email" class="form-control" id="isi_email" placeholder="Email">
                     </div>
-
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Nomor HP</label>
+                        <input type="text" name="no_hp" class="form-control" id="isi_no_hp" placeholder="+62 XXX XXX XXX">
+                    </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Alamat</label>
                         <input type="text" name="alamat" class="form-control" id="isi_alamat" placeholder="Alamat">
                     </div>
-
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Nomor HP</label>
-                        <input type="text" name="no_hp" class="form-control" id="isi_email" placeholder="+62 XXX XXX XXX">
-                    </div>
-
                     <div class="form-group">
                         <label for="exampleInputPassword1">Status</label>
                         <select class="form-select form-select-lg" name="status" id="isiin" style="margin-left: 100px; width:150px">
@@ -210,11 +206,13 @@
     $(document).on('click', "#detil", function() {
         var name = $(this).data('nama');
         var email = $(this).data('email');
+        var no_hp = $(this).data('no_hp');
         var alamat = $(this).data('alamat');
         var idu = $(this).data('idu');
 
         $("#isi_nama").val(name);
         $("#isi_email").val(email);
+        $("#isi_no_hp").val(no_hp);
         $("#isi_alamat").val(alamat);
         $("#rahasia").val(idu);
         var status = $(this).data('status');
