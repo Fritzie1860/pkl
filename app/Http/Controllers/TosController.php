@@ -6,10 +6,10 @@ use App\Models\tos1footplat;
 use App\Models\tos1oandh;
 use App\Models\tos1pumproom;
 use App\Models\tos1batukali;
+use App\Models\tos2lewatan;
 use Illuminate\Http\Request;
 
-class TosController extends Controller
-{
+class TosController extends Controller{
 
     public function index()
     {
@@ -17,12 +17,14 @@ class TosController extends Controller
         $Tos12 = tos1footplat::all();
         $Tos13 = tos1pumproom::all();
         $Tos14 = tos1batukali::all();
+        $Tos24 = tos2lewatan::all();
 
-        return view('detil_project', ['Tos11' => $Tos11, 'Tos12' => $Tos12, 'Tos13' => $Tos13, 'Tos14' => $Tos14]);
+        return view('detil_project', ['Tos11' => $Tos11, 'Tos12' => $Tos12, 'Tos13' => $Tos13, 'Tos14' => $Tos14, 
+        'Tos14' => $Tos24]);
     }
 
-    public function in_tos11(Request $req)
-    {
+    // Tos 1 OH
+    public function in_tos11(Request $req){
         $hasil = [
             'dia' => $req->dia,
             'p' => $req->p
@@ -32,14 +34,12 @@ class TosController extends Controller
         return redirect('/target');
     }
 
-    public function del_tos11($id)
-    {
+    public function del_tos11($id){
         $post = tos1oandh::all()->where('id_tos11', $id)->each->delete();
         return redirect('/target');
     }
 
-    public function edit_tos11(Request $req)
-    {
+    public function edit_tos11(Request $req){
         //dd($req);
         $user = tos1oandh::all()->where("id_tos11", $req->idt)->first()->update([
             'dia' => $req->dia,
@@ -49,8 +49,8 @@ class TosController extends Controller
         return redirect('/target');
     }
 
-    public function in_tos12(Request $req)
-    {
+    // Tos 1 Foot Plat
+    public function in_tos12(Request $req){
         //Koefisien
         $lc = 0.05;
         $pasir = 0.05;
@@ -160,8 +160,7 @@ class TosController extends Controller
         return redirect('/target');
     }
 
-    public function edit_tos12(Request $req)
-    {
+    public function edit_tos12(Request $req){
         //Koefisien
         $lc = 0.05;
         $pasir = 0.05;
@@ -263,9 +262,9 @@ class TosController extends Controller
         return redirect('/target');
     }
 
-
-    public function in_tos13(Request $req)
-     {   //d/d($req);
+    // Tos 1 Pump Room
+    public function in_tos13(Request $req){   
+        //d/d($req);
         //Koefisien
         $lc = 0.05;
         $pasir = 0.05;
@@ -375,8 +374,7 @@ class TosController extends Controller
         return redirect('/target');
     }
 
-    public function edit_tos13(Request $req)
-    {   
+    public function edit_tos13(Request $req){   
         // dd($req);
         //Koefisien
         $lc = 0.05;
@@ -479,8 +477,8 @@ class TosController extends Controller
         return redirect('/target');
     }
 
-    public function in_tos14(Request $req)
-    {
+    // Tos 1 Batu Kali
+    public function in_tos14(Request $req){
 
         $nama = $req['nama'];
         $bentuk = $req['bentuk'];
@@ -518,8 +516,7 @@ class TosController extends Controller
         return redirect('/target');
     }
 
-    public function edit_tos14(Request $req)
-    {   
+    public function edit_tos14(Request $req){   
         // dd($req);
         $nama = $req['nama'];
         $bentuk = $req['bentuk'];
@@ -550,4 +547,31 @@ class TosController extends Controller
         ]);
         return redirect('/target');
     }
+
+    // Tos 2 Lewatan
+    public function in_tos24(Request $req){
+        $hasil = [
+            'dia' => $req->dia,
+            'ls' => $req->ls
+        ];
+        // dd($req);
+        tos2lewatan::insert($hasil);
+        return redirect('/target');
+    }
+
+    public function del_tos24($id){
+        $post = tos2lewatan::all()->where('id_tos24', $id)->each->delete();
+        return redirect('/target');
+    }
+
+    public function edit_tos24(Request $req){
+        //dd($req);
+        $user = tos2lewatan::all()->where("id_tos24", $req->idt)->first()->update([
+            'dia' => $req->dia,
+            'ls' => $req->ls,
+
+        ]);
+        return redirect('/target');
+    }
+    
 }

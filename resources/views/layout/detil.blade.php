@@ -1,5 +1,6 @@
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="font_bantu">
+        <!-- Detail Project -->
         <div class="row">
             <div class="col-lg-12">
                 <div class="ibox">
@@ -156,9 +157,7 @@
                                                                                         <center>
                                                                                             <div style="display: inline-block;">
                                                                                                 <a href="/tos11_del/<?= $row->id_tos11 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
-                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" 
-                                                                                                data-idt="<?= $row->id_tos11 ?>"  data-dia="<?= $row->dia ?>"
-                                                                                                data-p="<?= $row->p ?>"  data-target="#edit_tos11" id="tos11">
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos11 ?>" data-dia="<?= $row->dia ?>" data-p="<?= $row->p ?>" data-target="#edit_tos11" id="tos11">
                                                                                                     <i class="fa fa-edit "></i>
                                                                                                 </a>
                                                                                             </div>
@@ -204,7 +203,7 @@
                                                                                     <th colspan="7" align="center">Tulangan Bawah Horizontal</th>
                                                                                     <th colspan="4" align="center"> Tulangan Pinggang</th>
                                                                                     <th colspan="6" align="center">Volume</th>
-                                                                                    <th rowspan="3" tyle="vertical-align:middle; align="center">Action</th>
+                                                                                    <th rowspan="3" tyle="vertical-align:middle; align=" center">Action</th>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;">Lebar (m')</th>
@@ -253,7 +252,7 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 @foreach($Tos12 as $row)
-                                                        
+
                                                                                 <tr class="gradeA">
                                                                                     <td>{{$row->type}}</td>
                                                                                     <td>{{$row->dfp_l}}</td>
@@ -303,53 +302,7 @@
                                                                                         <center>
                                                                                             <div style="display: inline-block;">
                                                                                                 <a href="/tos12_del/<?= $row->id_tos12 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
-                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" 
-                                                                                                data-idt="<?= $row->id_tos12 ?>"
-                                                                                                data-type="<?= $row->type ?>"
-                                                                                                data-dfp_l="<?= $row->dfp_l ?>"  
-                                                                                                data-dfp_p="<?=$row->dfp_p?>"
-                                                                                                data-dfp_t="<?=$row->dfp_t?>"
-                                                                                                data-level_mta="<?= $row->level_mta?>"
-                                                                                                data-jumlah="<?= $row->jumlah?>"
-                                                                                                data-tav_dia="<?= $row->tav_dia?>"
-                                                                                                data-tav_jarak="<?= $row->tav_jarak?>"
-                                                                                                data-tav_p="<?= $row->tav_p?>"
-                                                                                                data-tav_add="<?= $row->tav_add?>"
-                                                                                                data-tav_jum="<?= $row->tav_jum?>"
-                                                                                                data-tav_bjenis="<?= $row->tav_bjenis?>"
-                                                                                                data-tav_total="<?= $row->tav_total?>"
-                                                                                                data-tbv_dia="<?= $row->tbv_dia?>"
-                                                                                                data-tbv_jarak="<?= $row->tbv_jarak?>"
-                                                                                                data-tbv_p="<?= $row->tbv_p?>"
-                                                                                                data-tbv_add="<?= $row->tbv_add?>"
-                                                                                                data-tbv_jum="<?= $row->tbv_jum?>"
-                                                                                                data-tbv_bjenis="<?= $row->tbv_bjenis?>"
-                                                                                                data-tbv_total="<?= $row->tbv_total?>"
-                                                                                                data-tah_dia="<?= $row->tah_dia?>"
-                                                                                                data-tah_jarak="<?= $row->tah_jarak?>"
-                                                                                                data-tah_p="<?= $row->tah_p?>"
-                                                                                                data-tah_add="<?= $row->tah_add?>"
-                                                                                                data-tah_jum="<?= $row->tah_jum?>"
-                                                                                                data-tah_bjenis="<?= $row->tah_bjenis?>"
-                                                                                                data-tah_total="<?= $row->tah_total?>"
-                                                                                                data-tbh_dia="<?= $row->tbh_dia?>"
-                                                                                                data-tbh_jarak="<?= $row->tbh_jarak?>"
-                                                                                                data-tbh_p="<?= $row->tbh_p?>"
-                                                                                                data-tbh_add="<?= $row->tbh_add?>"
-                                                                                                data-tbh_jum="<?= $row->tbh_jum?>"
-                                                                                                data-tbh_bjenis="<?= $row->tbh_bjenis?>"
-                                                                                                data-tbh_total="<?= $row->tbh_total?>"
-                                                                                                data-tp_dia="<?= $row->tp_dia?>"
-                                                                                                data-tp_jum="<?= $row->tp_jum?>"
-                                                                                                data-tp_p="<?= $row->tp_p?>"
-                                                                                                data-tp_total="<?= $row->tp_total?>"
-                                                                                                data-v_besi="<?= $row->v_besi?>"
-                                                                                                data-v_beton="<?= $row->v_beton?>"
-                                                                                                data-v_bb="<?= $row->v_bb?>"
-                                                                                                data-v_galian="<?= $row->v_galian?>"
-                                                                                                data-v_lc="<?= $row->v_lc?>"
-                                                                                                data-v_pasir="<?= $row->v_pasir?>"
-                                                                                                data-target="#edit_tos13" id="tos13">
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos12 ?>" data-type="<?= $row->type ?>" data-dfp_l="<?= $row->dfp_l ?>" data-dfp_p="<?= $row->dfp_p ?>" data-dfp_t="<?= $row->dfp_t ?>" data-level_mta="<?= $row->level_mta ?>" data-jumlah="<?= $row->jumlah ?>" data-tav_dia="<?= $row->tav_dia ?>" data-tav_jarak="<?= $row->tav_jarak ?>" data-tav_p="<?= $row->tav_p ?>" data-tav_add="<?= $row->tav_add ?>" data-tav_jum="<?= $row->tav_jum ?>" data-tav_bjenis="<?= $row->tav_bjenis ?>" data-tav_total="<?= $row->tav_total ?>" data-tbv_dia="<?= $row->tbv_dia ?>" data-tbv_jarak="<?= $row->tbv_jarak ?>" data-tbv_p="<?= $row->tbv_p ?>" data-tbv_add="<?= $row->tbv_add ?>" data-tbv_jum="<?= $row->tbv_jum ?>" data-tbv_bjenis="<?= $row->tbv_bjenis ?>" data-tbv_total="<?= $row->tbv_total ?>" data-tah_dia="<?= $row->tah_dia ?>" data-tah_jarak="<?= $row->tah_jarak ?>" data-tah_p="<?= $row->tah_p ?>" data-tah_add="<?= $row->tah_add ?>" data-tah_jum="<?= $row->tah_jum ?>" data-tah_bjenis="<?= $row->tah_bjenis ?>" data-tah_total="<?= $row->tah_total ?>" data-tbh_dia="<?= $row->tbh_dia ?>" data-tbh_jarak="<?= $row->tbh_jarak ?>" data-tbh_p="<?= $row->tbh_p ?>" data-tbh_add="<?= $row->tbh_add ?>" data-tbh_jum="<?= $row->tbh_jum ?>" data-tbh_bjenis="<?= $row->tbh_bjenis ?>" data-tbh_total="<?= $row->tbh_total ?>" data-tp_dia="<?= $row->tp_dia ?>" data-tp_jum="<?= $row->tp_jum ?>" data-tp_p="<?= $row->tp_p ?>" data-tp_total="<?= $row->tp_total ?>" data-v_besi="<?= $row->v_besi ?>" data-v_beton="<?= $row->v_beton ?>" data-v_bb="<?= $row->v_bb ?>" data-v_galian="<?= $row->v_galian ?>" data-v_lc="<?= $row->v_lc ?>" data-v_pasir="<?= $row->v_pasir ?>" data-target="#edit_tos13" id="tos13">
                                                                                                     <i class="fa fa-edit "></i>
                                                                                                 </a>
                                                                                             </div>
@@ -393,7 +346,7 @@
                                                                                     <th colspan="7" align="center">Tulangan Bawah Horizontal</th>
                                                                                     <th colspan="4" align="center"> Tulangan Pinggang</th>
                                                                                     <th colspan="6" align="center">Volume</th>
-                                                                                    <th rowspan="3" tyle="vertical-align:middle; align="center">Action</th>
+                                                                                    <th rowspan="3" tyle="vertical-align:middle; align=" center">Action</th>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;">Lebar (m')</th>
@@ -491,53 +444,7 @@
                                                                                         <center>
                                                                                             <div style="display: inline-block;">
                                                                                                 <a href="/tos13_del/<?= $row->id_tos13 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
-                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" 
-                                                                                                data-idt="<?= $row->id_tos13 ?>"
-                                                                                                data-type="<?= $row->type ?>"
-                                                                                                data-dfp_l="<?= $row->dfp_l ?>"  
-                                                                                                data-dfp_p="<?=$row->dfp_p?>"
-                                                                                                data-dfp_t="<?=$row->dfp_t?>"
-                                                                                                data-level_mta="<?= $row->level_mta?>"
-                                                                                                data-jumlah="<?= $row->jumlah?>"
-                                                                                                data-tav_dia="<?= $row->tav_dia?>"
-                                                                                                data-tav_jarak="<?= $row->tav_jarak?>"
-                                                                                                data-tav_p="<?= $row->tav_p?>"
-                                                                                                data-tav_add="<?= $row->tav_add?>"
-                                                                                                data-tav_jum="<?= $row->tav_jum?>"
-                                                                                                data-tav_bjenis="<?= $row->tav_bjenis?>"
-                                                                                                data-tav_total="<?= $row->tav_total?>"
-                                                                                                data-tbv_dia="<?= $row->tbv_dia?>"
-                                                                                                data-tbv_jarak="<?= $row->tbv_jarak?>"
-                                                                                                data-tbv_p="<?= $row->tbv_p?>"
-                                                                                                data-tbv_add="<?= $row->tbv_add?>"
-                                                                                                data-tbv_jum="<?= $row->tbv_jum?>"
-                                                                                                data-tbv_bjenis="<?= $row->tbv_bjenis?>"
-                                                                                                data-tbv_total="<?= $row->tbv_total?>"
-                                                                                                data-tah_dia="<?= $row->tah_dia?>"
-                                                                                                data-tah_jarak="<?= $row->tah_jarak?>"
-                                                                                                data-tah_p="<?= $row->tah_p?>"
-                                                                                                data-tah_add="<?= $row->tah_add?>"
-                                                                                                data-tah_jum="<?= $row->tah_jum?>"
-                                                                                                data-tah_bjenis="<?= $row->tah_bjenis?>"
-                                                                                                data-tah_total="<?= $row->tah_total?>"
-                                                                                                data-tbh_dia="<?= $row->tbh_dia?>"
-                                                                                                data-tbh_jarak="<?= $row->tbh_jarak?>"
-                                                                                                data-tbh_p="<?= $row->tbh_p?>"
-                                                                                                data-tbh_add="<?= $row->tbh_add?>"
-                                                                                                data-tbh_jum="<?= $row->tbh_jum?>"
-                                                                                                data-tbh_bjenis="<?= $row->tbh_bjenis?>"
-                                                                                                data-tbh_total="<?= $row->tbh_total?>"
-                                                                                                data-tp_dia="<?= $row->tp_dia?>"
-                                                                                                data-tp_jum="<?= $row->tp_jum?>"
-                                                                                                data-tp_p="<?= $row->tp_p?>"
-                                                                                                data-tp_total="<?= $row->tp_total?>"
-                                                                                                data-v_besi="<?= $row->v_besi?>"
-                                                                                                data-v_beton="<?= $row->v_beton?>"
-                                                                                                data-v_bb="<?= $row->v_bb?>"
-                                                                                                data-v_galian="<?= $row->v_galian?>"
-                                                                                                data-v_lc="<?= $row->v_lc?>"
-                                                                                                data-v_pasir="<?= $row->v_pasir?>"
-                                                                                                data-target="#edit_tos13" id="tos13">
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos13 ?>" data-type="<?= $row->type ?>" data-dfp_l="<?= $row->dfp_l ?>" data-dfp_p="<?= $row->dfp_p ?>" data-dfp_t="<?= $row->dfp_t ?>" data-level_mta="<?= $row->level_mta ?>" data-jumlah="<?= $row->jumlah ?>" data-tav_dia="<?= $row->tav_dia ?>" data-tav_jarak="<?= $row->tav_jarak ?>" data-tav_p="<?= $row->tav_p ?>" data-tav_add="<?= $row->tav_add ?>" data-tav_jum="<?= $row->tav_jum ?>" data-tav_bjenis="<?= $row->tav_bjenis ?>" data-tav_total="<?= $row->tav_total ?>" data-tbv_dia="<?= $row->tbv_dia ?>" data-tbv_jarak="<?= $row->tbv_jarak ?>" data-tbv_p="<?= $row->tbv_p ?>" data-tbv_add="<?= $row->tbv_add ?>" data-tbv_jum="<?= $row->tbv_jum ?>" data-tbv_bjenis="<?= $row->tbv_bjenis ?>" data-tbv_total="<?= $row->tbv_total ?>" data-tah_dia="<?= $row->tah_dia ?>" data-tah_jarak="<?= $row->tah_jarak ?>" data-tah_p="<?= $row->tah_p ?>" data-tah_add="<?= $row->tah_add ?>" data-tah_jum="<?= $row->tah_jum ?>" data-tah_bjenis="<?= $row->tah_bjenis ?>" data-tah_total="<?= $row->tah_total ?>" data-tbh_dia="<?= $row->tbh_dia ?>" data-tbh_jarak="<?= $row->tbh_jarak ?>" data-tbh_p="<?= $row->tbh_p ?>" data-tbh_add="<?= $row->tbh_add ?>" data-tbh_jum="<?= $row->tbh_jum ?>" data-tbh_bjenis="<?= $row->tbh_bjenis ?>" data-tbh_total="<?= $row->tbh_total ?>" data-tp_dia="<?= $row->tp_dia ?>" data-tp_jum="<?= $row->tp_jum ?>" data-tp_p="<?= $row->tp_p ?>" data-tp_total="<?= $row->tp_total ?>" data-v_besi="<?= $row->v_besi ?>" data-v_beton="<?= $row->v_beton ?>" data-v_bb="<?= $row->v_bb ?>" data-v_galian="<?= $row->v_galian ?>" data-v_lc="<?= $row->v_lc ?>" data-v_pasir="<?= $row->v_pasir ?>" data-target="#edit_tos13" id="tos13">
                                                                                                     <i class="fa fa-edit "></i>
                                                                                                 </a>
                                                                                             </div>
@@ -572,7 +479,7 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                            
+
                                                                                     <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Bentuk</th>
                                                                                     <th style="vertical-align:middle;">B</th>
@@ -584,7 +491,7 @@
                                                                                     <th style="vertical-align:middle;">Pasir Urug (M2)</th>
                                                                                     <th style="vertical-align:middle;">Galian</th>
                                                                                     <th style="vertical-align:middle;">Timbunan</th>
-                                                                                    <th rowspan="3" tyle="vertical-align:middle; align="center">Action</th>
+                                                                                    <th rowspan="3" tyle="vertical-align:middle; align=" center">Action</th>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;">(m)</th>
@@ -616,22 +523,7 @@
                                                                                         <center>
                                                                                             <div style="display: inline-block;">
                                                                                                 <a href="/tos14_del/<?= $row->id_tos14 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
-                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" 
-                                                                                                data-idt="<?= $row->id_tos14 ?>" 
-                                                                                                data-nama="<?= $row->nama ?>"
-                                                                                                data-bentuk="<?= $row->bentuk ?>"
-                                                                                                data-b="<?= $row->b ?>"
-                                                                                                data-b_="<?= $row->b_ ?>"
-                                                                                                data-h="<?= $row->h ?>"
-                                                                                                data-p="<?= $row->panjang ?>"
-                                                                                                data-la="<?= $row->la ?>"
-                                                                                                data-v_bk="<?= $row->v_bk ?>"
-                                                                                                data-pu="<?= $row->pasir_u ?>"
-                                                                                                data-galian="<?= $row->galian ?>"
-                                                                                                data-timbunan="<?= $row->timbunan ?>"
-                                                                                                data-p="<?= $row->p ?>"
-
-                                                                                                data-target="#edit_tos14" id="tos14">
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos14 ?>" data-nama="<?= $row->nama ?>" data-bentuk="<?= $row->bentuk ?>" data-b="<?= $row->b ?>" data-b_="<?= $row->b_ ?>" data-h="<?= $row->h ?>" data-p="<?= $row->panjang ?>" data-la="<?= $row->la ?>" data-v_bk="<?= $row->v_bk ?>" data-pu="<?= $row->pasir_u ?>" data-galian="<?= $row->galian ?>" data-timbunan="<?= $row->timbunan ?>" data-p="<?= $row->p ?>" data-target="#edit_tos14" id="tos14">
                                                                                                     <i class="fa fa-edit "></i>
                                                                                                 </a>
                                                                                             </div>
@@ -688,7 +580,7 @@
 
                                     <div class="panel-body">
                                         <div class="tab-content">
-                                        <div class="tab-pane active" id="tab-35">
+                                            <div class="tab-pane active" id="tab-35">
                                                 <div class="wrapper wrapper-content animated fadeInRight">
                                                     <div class="row">
                                                         <div class="col-lg-12">
@@ -710,16 +602,22 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
+                                                                                @foreach($Tos24 as $row)
                                                                                 <tr class="gradeA">
-                                                                                    <td>10</td>
-                                                                                    <td>10</td>
-
+                                                                                    <td>{{$row->dia}}</td>
+                                                                                    <td>{{$row->ls}}</td>
+                                                                                    <td class="project-actions">
+                                                                                        <center>
+                                                                                            <div style="display: inline-block;">
+                                                                                                <a href="/tos24_del/<?= $row->id_tos24 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos24 ?>" data-dia="<?= $row->dia ?>" data-ls="<?= $row->ls ?>" data-target="#edit_tos24" id="tos24">
+                                                                                                    <i class="fa fa-edit "></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </center>
+                                                                                    </td>
                                                                                 </tr>
-                                                                                <tr class="gradeA">
-                                                                                    <td>20</td>
-                                                                                    <td>20</td>
-
-                                                                                </tr>
+                                                                                @endforeach
                                                                             </tbody>
                                                                         </table>
                                                                     </div>
@@ -1095,7 +993,7 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                            
+
                                                                                     <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> Bentuk</th>
                                                                                     <th colspan="2">Dimensi</th>
@@ -1588,7 +1486,7 @@
 
                                                                                 </tr>
                                                                                 <tr>
-                            
+
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> - </th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
@@ -1761,7 +1659,7 @@
 
                                                                                 </tr>
                                                                                 <tr>
-                            
+
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> - </th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
@@ -1934,7 +1832,7 @@
 
                                                                                 </tr>
                                                                                 <tr>
-                            
+
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> - </th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
@@ -2063,7 +1961,7 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                            
+
                                                                                     <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                     <th>Beton</th>
                                                                                     <th>Besi</th>
@@ -2267,7 +2165,7 @@
 
                                                                                 </tr>
                                                                                 <tr>
-                            
+
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> - </th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
@@ -2435,7 +2333,7 @@
 
                                                                                 </tr>
                                                                                 <tr>
-                            
+
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> - </th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> As</th>
@@ -2562,7 +2460,7 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                            
+
                                                                                     <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                     <th>Beton</th>
                                                                                     <th>Besi</th>
@@ -3098,7 +2996,7 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                            
+
                                                                                     <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                     <th>Beton</th>
                                                                                     <th>Besi</th>

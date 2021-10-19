@@ -1,3 +1,5 @@
+<!-- TOS 1 -->
+
 <!-- tos 1 OH -->
 <div class="modal fade" id="edit_tos11" role="dialog" arialabelledby="modalLabel" area-hidden="true">
     <div class="modal-dialog" role="document">
@@ -10,7 +12,7 @@
                 <form action="/tos11_edit" method="post">
                 @csrf
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <input type="hidden" name="idt" id="isi_id" />
+                <input type="hidden" name="idt" id="isi_id11" />
                     <div class="form-group">
                         <label for="Dia">Dia</label>
                         <input type="text" class="form-control" name="dia" id="isi_dia">
@@ -35,7 +37,7 @@
         console.log("ini "+id);
         $("#isi_dia").val(dia);
         $("#isi_p").val(p);
-        $("#isi_id").val(id);
+        $("#isi_id11").val(id);
     })
     // });
 </script>
@@ -52,7 +54,7 @@
                 <form action="/tos12_edit" method="post">
                 @csrf
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <input type="hidden" name="idt" id="isi_id" />
+                <input type="hidden" name="idt" id="isi_id12" />
                     <div class="form-group">
                         <label for="type">Type</label>
                         <input type="text" class="form-control" name="type" id="isi_type3">
@@ -178,7 +180,7 @@
         $("#isi_tah_jarak").val(tah_jarak);
         $("#isi_tp_dia").val(tp_dia);
         $("#isi_tp_jum").val(tp_jum);
-        $("#isi_id").val(id);
+        $("#isi_id12").val(id);
     })
     // });
 </script>
@@ -195,7 +197,7 @@
                 <form action="/tos13_edit" method="post">
                 @csrf
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <input type="hidden" name="idt" id="id3" />
+                <input type="hidden" name="idt" id="isi_id13" />
                     <div class="form-group">
                         <label for="type">Type</label>
                         <input type="text" class="form-control" name="type" id="type3">
@@ -329,7 +331,7 @@
         $("#tah_jarak3").val(tah_jarak);
         $("#tp_dia3").val(tp_dia);
         $("#tp_jum3").val(tp_jum);
-        $("#id3").val(id);
+        $("#isi_id13").val(id);
     })
     // });
 </script>
@@ -346,7 +348,7 @@
                 <form action="/tos14_edit" method="post">
                 @csrf
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <input type="hidden" name="idt" id="id14" />
+                <input type="hidden" name="idt" id="isi_id14" />
                     <div class="form-group">
                         <label for="type">Nama</label>
                         <input type="text" class="form-control" name="nama" id="nama14">
@@ -439,7 +441,51 @@
         $("#pu14").val(pu);
         $("#galian14").val(galian);
         $("#timbunan14").val(timbunan);
-        $("#id14").val(id);
+        $("#isi_id14").val(id);
+    })
+    // });
+</script>
+
+<!-- TOS 2 -->
+
+<!-- tos 1 Lewatan -->
+<div class="modal fade" id="edit_tos24" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Lewatan</h2>
+            </div>
+            <div class="container">
+                
+                <form action="/tos24_edit" method="post">
+                @csrf
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                <input type="hidden" name="idt" id="isi_id24"/>
+                    <div class="form-group">
+                        <label for="Dia">Dia</label>
+                        <input type="text" class="form-control" name="dia" id="isi_dia">
+                    </div>
+                    <div class="form-group">
+                        <label for="panjang">Ls</label>
+                        <input type="text" class="form-control" id="isi_ls" name="ls">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // $(document).ready(function() {
+    $(document).on('click', "#tos24", function() {
+        var dia = $(this).data('dia');
+        var ls = $(this).data('ls');
+        var id = $(this).data('idt');
+        console.log("ini "+id);
+        $("#isi_dia").val(dia);
+        $("#isi_ls").val(p);
+        $("#isi_id24").val(id);
     })
     // });
 </script>

@@ -54,6 +54,10 @@ Route::get('/projects', [ProjectController::class, 'index']);
     Route::post('tos14_edit', [TosController::class, 'edit_tos14']);
     Route::get('tos14_del/{id}', [TosController::class, 'del_tos14']);
 
+    Route::post('tos24', [TosController::class, 'in_tos24']);
+    Route::post('tos24_edit', [TosController::class, 'edit_tos24']);
+    Route::get('tos24_del/{id}', [TosController::class, 'del_tos24']);
+
 Route::group(['middleware' => 'auth'], function () {
    
     
