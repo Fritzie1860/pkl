@@ -363,6 +363,38 @@
     </div>
 </div>
 
+<!-- tos 2 Data Footplat-->
+<div class="modal fade" id="tos2datafootplat" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Data Kolom</h2>
+            </div>
+            <div class="container">
+                <form action="tos25" method="post">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" class="form-control" name="nama" id="nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="nama">B</label>
+                        <input type="text" class="form-control" name="b" id="b" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="nama">H</label>
+                        <input type="text" class="form-control" name="h" id="h" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="nama">T</label>
+                        <input type="text" class="form-control" name="t" id="t" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- tos 2 lewatan -->
 <div class="modal fade" id="tos2lewatan" role="dialog" arialabelledby="modalLabel" area-hidden="true">
     <div class="modal-dialog" role="document">

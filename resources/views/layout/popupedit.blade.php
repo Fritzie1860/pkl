@@ -538,8 +538,6 @@
                         <input type="text" class="form-control" name="tvlap_jarak" id="26_tvlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
-
-                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
@@ -569,7 +567,9 @@
         var tvlap_dia = $(this).data('tvlap_dia');
         var tvlap_jarak = $(this).data('tvlap_jarak');
         var id = $(this).data('idt');
-        console.log("ini " + id);
+        console.log("thlap " + thlap_dia);
+        console.log("id " + id);
+        
         $("#isi_id26").val(id);
         $("#26_nama").val(nama);
         $("#26_bentuk").val(bentuk);
@@ -632,6 +632,60 @@
         $("#isi_dia24").val(dia);
         $("#isi_ls").val(ls);
         $("#isi_id24").val(id);
+    })
+    // });
+</script>
+
+<!-- tos 2 data footplat -->
+<div class="modal fade" id="edit_tos25" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Data Footplat</h2>
+            </div>
+            <div class="container">
+
+                <form action="/tos25_edit" method="post">
+                    @csrf
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="idt" id="isi_id25" />
+                    <div class="form-group">
+                        <label for="dimensi_p">Nama</label>
+                        <input type="text" class="form-control" name="nama" id="nama25" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="dimensi_p">B</label>
+                        <input type="text" class="form-control" name="b" id="b25" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="dimensi_p">H</label>
+                        <input type="text" class="form-control" name="h" id="h25" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="dimensi_p">T</label>
+                        <input type="text" class="form-control" name="t" id="t25" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // $(document).ready(function() {
+    $(document).on('click', "#tos25", function() {
+        var nama = $(this).data('nama');
+        var b = $(this).data('b');
+        var h = $(this).data('h');
+        var t = $(this).data('t');
+        var id = $(this).data('idt');
+        console.log("ini " + nama);
+        $("#nama25").val(nama);
+        $("#b25").val(b);
+        $("#h25").val(h);
+        $("#t25").val(t);
+        $("#isi_id25").val(id);
     })
     // });
 </script>

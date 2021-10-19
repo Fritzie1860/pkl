@@ -658,25 +658,25 @@
                                                                                                 <a href="/tos26_del/<?= $row->id_tos26 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
                                                                                                 <a class="btn btn-white btn-sm " data-toggle="modal"
                                                                                                 data-idt="<?= $row->id_tos26 ?>"
-                                                                                                nama ="<?= $row-> nama?>"
-                                                                                                bentuk ="<?= $row->bentuk?>"
-                                                                                                dimensi_l ="<?= $row->dimensi_l?>"
-                                                                                                dimensi_p ="<?= $row->dimensi_p?>"
-                                                                                                tebal_selimut ="<?= $row->tebal_selimut?>"
-                                                                                                tulpok_dia ="<?= $row->tulpok_dia?>"
-                                                                                                tulpok_jum ="<?= $row->tulpok_jum?>"
-                                                                                                tulseng_dia_tumpuan ="<?= $row->tulseng_dia_tumpuan?>"
-                                                                                                tulseng_dia_lapangan ="<?= $row->tulseng_dia_lapangan?>"
-                                                                                                tulseng_dia_jaraklap ="<?= $row->tulseng_dia_jaraklap?>"
-                                                                                                tulseng_dia_jaraktump ="<?= $row->tulseng_dia_jaraktump?>"
-                                                                                                thtump_dia ="<?= $row->thtump_dia?>"
-                                                                                                thtump_jarak ="<?= $row->thtump_jarak?>"
-                                                                                                thlap_dia ="<?= $row->thlap_dia?>"
-                                                                                                thlap_jarak ="<?= $row->thlap_jarak?>"
-                                                                                                tvtump_dia ="<?= $row->tvtump_dia?>"
-                                                                                                tvtump_jarak ="<?= $row->tvtump_jarak?>"
-                                                                                                tvlap_dia ="<?= $row->tvlap_dia?>"
-                                                                                                tvlap_jarak ="<?= $row->tvlap_jarak?>"
+                                                                                                data-nama ="<?= $row->nama?>"
+                                                                                                data-bentuk ="<?= $row->bentuk?>"
+                                                                                                data-dimensi_l ="<?= $row->dimensi_l?>"
+                                                                                                data-dimensi_p ="<?= $row->dimensi_p?>"
+                                                                                                data-tebal_selimut ="<?= $row->tebal_selimut?>"
+                                                                                                data-tulpok_dia ="<?= $row->tulpok_dia?>"
+                                                                                                data-tulpok_jum ="<?= $row->tulpok_jum?>"
+                                                                                                data-tulseng_dia_tumpuan ="<?= $row->tulseng_dia_tumpuan?>"
+                                                                                                data-tulseng_dia_lapangan ="<?= $row->tulseng_dia_lapangan?>"
+                                                                                                data-tulseng_dia_jaraklap ="<?= $row->tulseng_dia_jaraklap?>"
+                                                                                                data-tulseng_dia_jaraktump ="<?= $row->tulseng_dia_jaraktump?>"
+                                                                                                data-thtump_dia ="<?= $row->thtump_dia?>"
+                                                                                                data-thtump_jarak ="<?= $row->thtump_jarak?>"
+                                                                                                data-thlap_dia ="<?= $row->thlap_dia?>"
+                                                                                                data-thlap_jarak ="<?= $row->thlap_jarak?>"
+                                                                                                data-tvtump_dia ="<?= $row->tvtump_dia?>"
+                                                                                                data-tvtump_jarak ="<?= $row->tvtump_jarak?>"
+                                                                                                data-tvlap_dia ="<?= $row->tvlap_dia?>"
+                                                                                                data-tvlap_jarak ="<?= $row->tvlap_jarak?>"
                                                                                                 data-target="#edit_tos26" 
                                                                                                 id="tos26">
                                                                                                     <i class="fa fa-edit "></i>
@@ -703,9 +703,9 @@
                                                         <div class="col-lg-12">
                                                             <div class="ibox ">
                                                                 <div class="ibox-title">
-                                                                    <h5>Lewatan</h5>
+                                                                    <h5>Data Foot Plat</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos2dataffootplat"> Add Data</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos2datafootplat"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -724,13 +724,17 @@
                                                                             <tbody>
                                                                                 @foreach($Tos25 as $row)
                                                                                 <tr class="gradeA">
-                                                                                    <td>{{$row->dia}}</td>
-                                                                                    <td>{{$row->ls}}</td>
+                                                                                    <td>{{$row->nama}}</td>
+                                                                                    <td>{{$row->b}}</td>
+                                                                                    <td>{{$row->h}}</td>
+                                                                                    <td>{{$row->t}}</td>
                                                                                     <td class="project-actions">
                                                                                         <center>
                                                                                             <div style="display: inline-block;">
                                                                                                 <a href="/tos25_del/<?= $row->id_tos25 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
-                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos25 ?>" data-dia="<?= $row->dia ?>" data-ls="<?= $row->ls ?>" data-target="#edit_tos25" id="tos25">
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos25 ?>" 
+                                                                                                data-nama="<?= $row->nama ?>" data-b="<?= $row->b ?>" data-h="<?= $row->h ?>"
+                                                                                                data-t="<?= $row->t ?>" data-target="#edit_tos25" id="tos25">
                                                                                                     <i class="fa fa-edit "></i>
                                                                                                 </a>
                                                                                             </div>
@@ -799,7 +803,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane active" id="tab-4">
+                                            <div class="tab-pane" id="tab-4">
                                                 <div class="wrapper wrapper-content animated fadeInRight">
                                                     <div class="row">
                                                         <div class="col-lg-12">

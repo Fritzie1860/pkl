@@ -555,8 +555,9 @@ class TosController extends Controller{
 
     // Tos 2 Data Kolom
     public function in_tos26(Request $req){
+        // dd($req);
         $hasil = [
-            'nama' => $req-> nama,
+            'nama' => $req->nama,
             'bentuk' => $req->bentuk,
             'dimensi_l' => $req->dimensi_l,
             'dimensi_p' => $req->dimensi_p,
@@ -634,6 +635,36 @@ class TosController extends Controller{
         $user = tos2lewatan::all()->where("id_tos24", $req->idt)->first()->update([
             'dia' => $req->dia,
             'ls' => $req->ls,
+
+        ]);
+        return redirect('/target');
+    }
+
+    public function in_tos25(Request $req){
+        $hasil = [
+            'nama' => $req->nama,
+            'b' => $req->b,
+            'h' => $req->h,
+            't' => $req->t,
+            
+        ];
+        // dd($req);
+        tos2datafootplat::insert($hasil);
+        return redirect('/target');
+    }
+
+    public function del_tos25($id){
+        $post = tos2datafootplat::all()->where('id_tos25', $id)->each->delete();
+        return redirect('/target');
+    }
+
+    public function edit_tos25(Request $req){
+        // dd($req);
+        $user = tos2datafootplat::all()->where("id_tos25", $req->idt)->first()->update([
+            'nama' => $req->nama,
+            'b' => $req->b,
+            'h' => $req->h,
+            't' => $req->t,
 
         ]);
         return redirect('/target');
