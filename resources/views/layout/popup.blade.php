@@ -10,7 +10,7 @@
                 <h2>Overleap & Hook</h2>
             </div>
             <div class="container">
-                <form action="/tos11" method="post">
+                <form action="tos11" method="post">
                     <div class="form-group">
                         <label for="Dia">Dia</label>
                         <input type="text" class="form-control" name="dia" id="Dia" aria-describedby="emailHelp">
@@ -279,14 +279,14 @@
                 <h2>Lewatan</h2>
             </div>
             <div class="container">
-                <form action="/tos24" method="post">
+                <form action="tos24" method="post">
                     <div class="form-group">
                         <label for="Dia">Dia</label>
                         <input type="text" class="form-control" name="dia" id="Dia" aria-describedby="emailHelp">
                     </div>
                     <div class="form-group">
-                        <label for="panjang">Ls</label>
-                        <input type="text" class="form-control" name="p" id="panjang">
+                        <label for="ls">Ls</label>
+                        <input type="text" class="form-control" name="ls" id="ls">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

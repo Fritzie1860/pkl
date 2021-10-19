@@ -20,7 +20,7 @@ class TosController extends Controller{
         $Tos24 = tos2lewatan::all();
 
         return view('detil_project', ['Tos11' => $Tos11, 'Tos12' => $Tos12, 'Tos13' => $Tos13, 'Tos14' => $Tos14, 
-        'Tos14' => $Tos24]);
+        'Tos24' => $Tos24]);
     }
 
     // Tos 1 OH
