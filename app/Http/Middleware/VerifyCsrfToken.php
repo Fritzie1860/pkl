@@ -22,7 +22,7 @@ class VerifyCsrfToken extends Middleware
         // '/tos11_del',
         '/tos12',
         '/tos13',
-        '/tos14'
-       
+        '/tos14',
+        '/tos24'
     ];
 }
