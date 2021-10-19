@@ -203,7 +203,7 @@
                                                                                     <th colspan="7" align="center">Tulangan Bawah Horizontal</th>
                                                                                     <th colspan="4" align="center"> Tulangan Pinggang</th>
                                                                                     <th colspan="6" align="center">Volume</th>
-                                                                                    <th rowspan="3" tyle="vertical-align:middle; align=" center">Action</th>
+                                                                                    <th rowspan="3" align="center" style="vertical-align:middle;">Action</th>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;">Lebar (m')</th>
@@ -346,7 +346,7 @@
                                                                                     <th colspan="7" align="center">Tulangan Bawah Horizontal</th>
                                                                                     <th colspan="4" align="center"> Tulangan Pinggang</th>
                                                                                     <th colspan="6" align="center">Volume</th>
-                                                                                    <th rowspan="3" tyle="vertical-align:middle; align=" center">Action</th>
+                                                                                    <th rowspan="3" align="center" style="vertical-align:middle;">Action</th>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;">Lebar (m')</th>
@@ -491,7 +491,7 @@
                                                                                     <th style="vertical-align:middle;">Pasir Urug (M2)</th>
                                                                                     <th style="vertical-align:middle;">Galian</th>
                                                                                     <th style="vertical-align:middle;">Timbunan</th>
-                                                                                    <th rowspan="3" tyle="vertical-align:middle; align=" center">Action</th>
+                                                                                    <th rowspan="3" align="center" style="vertical-align:middle">Action</th>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;">(m)</th>
@@ -570,7 +570,9 @@
                                     <div class="panel-heading">
                                         <div class="panel-options">
                                             <ul class="nav nav-tabs">
-                                                <li><a class="nav-link active" href="#tab-35" data-toggle="tab">Absolute Reference</a></li>
+                                                <li><a class="nav-link active" href="#tab-37" data-toggle="tab">Data Kolom</a></li>
+                                                <li><a class="nav-link" href="#tab-36" data-toggle="tab">Data Foot Plat</a></li>
+                                                <li><a class="nav-link" href="#tab-35" data-toggle="tab">Absolute Reference</a></li>
                                                 <li><a class="nav-link" href="#tab-4" data-toggle="tab">Column Pedestal Ground Floor</a></li>
                                                 <li><a class="nav-link" href="#tab-5" data-toggle="tab">Pedestal</a></li>
                                                 <li><a class="nav-link" href="#tab-6" data-toggle="tab">Summary</a></li>
@@ -580,7 +582,174 @@
 
                                     <div class="panel-body">
                                         <div class="tab-content">
-                                            <div class="tab-pane active" id="tab-35">
+                                            <div class="tab-pane active" id="tab-37">
+                                                <div class="wrapper wrapper-content animated fadeInRight">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="ibox ">
+                                                                <div class="ibox-title">
+                                                                    <h5>Data Kolom</h5>
+                                                                    <div class="ibox-tools">
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos2datakolom"> Add Data</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ibox-content">
+
+                                                                    <div class="table-responsive scrollmenu">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <thead>
+                                                                                <tr>
+                                                                                    <th rowspan="2" style="vertical-align:middle;">Nama</th>
+                                                                                    <th rowspan="2" style="vertical-align:middle;"> Bentuk</th>
+                                                                                    <th colspan="2">Dimensi</th>
+                                                                                    <th rowspan="2" style="vertical-align:middle;" style="vertical-align:middle;">Tebal Selimut(mm)</th>
+                                                                                    <th colspan="2"> Tulangan Pokok</th>
+                                                                                    <th colspan="4" style="vertical-align:middle;">Tulangan Sengkang</th>
+                                                                                    <th colspan="2" style="vertical-align:middle;">Ties - Horisontal Tumpuan</th>
+                                                                                    <th colspan="2" style="vertical-align:middle;">Ties - Horisontal Lapangan</th>
+                                                                                    <th colspan="2" style="vertical-align:middle;">Ties - Vertikal Tumpuan</th>
+                                                                                    <th colspan="2" style="vertical-align:middle;">Ties - Vertikal Lapangan</th>
+                                                                                    <th rowspan="2" align="center" style="vertical-align:middle;">Action</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th style="vertical-align:middle;">Lebar (m)</th>
+                                                                                    <th style="vertical-align:middle;">Panjang(m)</th>
+                                                                                    <th style="vertical-align:middle;">Diameter(mm)</th>
+                                                                                    <th style="vertical-align:middle;">Jumlah</th>
+                                                                                    <th style="vertical-align:middle;">Dia. Tumpuan (mm)</th>
+                                                                                    <th style="vertical-align:middle;">Jarak Tumpuan (mm)</th>
+                                                                                    <th style="vertical-align:middle;">Dia. Lapangan (mm)</th>
+                                                                                    <th style="vertical-align:middle;">Jarak Lapangan (mm)</th>
+                                                                                    <th style="vertical-align:middle;">Dia(m)</th>
+                                                                                    <th style="vertical-align:middle;">Jarak(mm)</th>
+                                                                                    <th style="vertical-align:middle;">Dia(m)</th>
+                                                                                    <th style="vertical-align:middle;">Jarak(mm)</th>
+                                                                                    <th style="vertical-align:middle;">Dia(m)</th>
+                                                                                    <th style="vertical-align:middle;">Jarak(mm)</th>
+                                                                                    <th style="vertical-align:middle;">Dia(m)</th>
+                                                                                    <th style="vertical-align:middle;">Jarak(mm)</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                @foreach($Tos26 as $row)
+                                                                                <tr class="gradeA">
+                                                                                    <td>{{$row->nama}}</td>
+                                                                                    <td>{{$row->bentuk}}</td>
+                                                                                    <td>{{$row->dimensi_l}}</td>
+                                                                                    <td>{{$row->dimensi_p}}</td>
+                                                                                    <td>{{$row->tebal_selimut}}</td>
+                                                                                    <td>{{$row->tulpok_dia}}</td>
+                                                                                    <td>{{$row->tulpok_jum}}</td>
+                                                                                    <td>{{$row->tulseng_dia_tumpuan}}</td>
+                                                                                    <td>{{$row->tulseng_dia_lapangan}}</td>
+                                                                                    <td>{{$row->tulseng_dia_jaraklap}}</td>
+                                                                                    <td>{{$row->tulseng_dia_jaraktump}}</td>
+                                                                                    <td>{{$row->thtump_dia}}</td>
+                                                                                    <td>{{$row->thtump_jarak}}</td>
+                                                                                    <td>{{$row->thlap_dia}}</td>
+                                                                                    <td>{{$row->thlap_jarak}}</td>
+                                                                                    <td>{{$row->tvtump_dia}}</td>
+                                                                                    <td>{{$row->tvtump_jarak}}</td>
+                                                                                    <td>{{$row->tvlap_dia}}</td>
+                                                                                    <td>{{$row->tvlap_jarak}}</td>
+                                                                                    <td class="project-actions">
+                                                                                        <center>
+                                                                                            <div style="display: inline-block;">
+                                                                                                <a href="/tos26_del/<?= $row->id_tos26 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal"
+                                                                                                data-idt="<?= $row->id_tos26 ?>"
+                                                                                                nama ="<?= $row-> nama?>"
+                                                                                                bentuk ="<?= $row->bentuk?>"
+                                                                                                dimensi_l ="<?= $row->dimensi_l?>"
+                                                                                                dimensi_p ="<?= $row->dimensi_p?>"
+                                                                                                tebal_selimut ="<?= $row->tebal_selimut?>"
+                                                                                                tulpok_dia ="<?= $row->tulpok_dia?>"
+                                                                                                tulpok_jum ="<?= $row->tulpok_jum?>"
+                                                                                                tulseng_dia_tumpuan ="<?= $row->tulseng_dia_tumpuan?>"
+                                                                                                tulseng_dia_lapangan ="<?= $row->tulseng_dia_lapangan?>"
+                                                                                                tulseng_dia_jaraklap ="<?= $row->tulseng_dia_jaraklap?>"
+                                                                                                tulseng_dia_jaraktump ="<?= $row->tulseng_dia_jaraktump?>"
+                                                                                                thtump_dia ="<?= $row->thtump_dia?>"
+                                                                                                thtump_jarak ="<?= $row->thtump_jarak?>"
+                                                                                                thlap_dia ="<?= $row->thlap_dia?>"
+                                                                                                thlap_jarak ="<?= $row->thlap_jarak?>"
+                                                                                                tvtump_dia ="<?= $row->tvtump_dia?>"
+                                                                                                tvtump_jarak ="<?= $row->tvtump_jarak?>"
+                                                                                                tvlap_dia ="<?= $row->tvlap_dia?>"
+                                                                                                tvlap_jarak ="<?= $row->tvlap_jarak?>"
+                                                                                                data-target="#edit_tos26" 
+                                                                                                id="tos26">
+                                                                                                    <i class="fa fa-edit "></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </center>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endforeach
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab-36">
+                                                <div class="wrapper wrapper-content animated fadeInRight">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="ibox ">
+                                                                <div class="ibox-title">
+                                                                    <h5>Lewatan</h5>
+                                                                    <div class="ibox-tools">
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos2dataffootplat"> Add Data</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ibox-content">
+
+                                                                    <div class="table-responsive scrollmenu">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Nama</th>
+                                                                                    <th>B</th>
+                                                                                    <th>H</th>
+                                                                                    <th>T</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                @foreach($Tos25 as $row)
+                                                                                <tr class="gradeA">
+                                                                                    <td>{{$row->dia}}</td>
+                                                                                    <td>{{$row->ls}}</td>
+                                                                                    <td class="project-actions">
+                                                                                        <center>
+                                                                                            <div style="display: inline-block;">
+                                                                                                <a href="/tos25_del/<?= $row->id_tos25 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos25 ?>" data-dia="<?= $row->dia ?>" data-ls="<?= $row->ls ?>" data-target="#edit_tos25" id="tos25">
+                                                                                                    <i class="fa fa-edit "></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </center>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endforeach
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab-35">
                                                 <div class="wrapper wrapper-content animated fadeInRight">
                                                     <div class="row">
                                                         <div class="col-lg-12">
@@ -638,7 +807,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Column Pedestal Ground Floor</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos2GroundFloor"> Add Data</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos2groundfloor"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -660,7 +829,7 @@
                                                                                     <th rowspan="3" style="vertical-align:middle;">Bekisting</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Timbunan</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Rasio Besi</th>
-
+                                                                                    <th rowspan="4" align="center" style="vertical-align:middle;">Action</th>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Tinggi</th>
@@ -728,13 +897,13 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                @foreach($Tos13 as $row)
+                                                                                @foreach($Tos12 as $row)
                                                                                 <tr class="gradeA">
                                                                                     <td>{{$row->type}}</td>
-                                                                                    <td>{{$row->dfp_l}}</td>
-                                                                                    <td>{{$row->dfp_p}}</td>
-                                                                                    <td>{{$row->dfp_t}}</td>
-                                                                                    <td>{{$row->level_mta}}</td>
+                                                                                    <td>{{$row->bentuk}}</td>
+                                                                                    <td>{{$row->t}}</td>
+                                                                                    <td>{{$row->l}}</td>
+                                                                                    <td>{{$row->p}}</td>
                                                                                     <td>{{$row->jumlah}}</td>
                                                                                     <td>{{$row->tav_dia}}</td>
                                                                                     <td>{{$row->tav_jarak}}</td>
@@ -774,6 +943,16 @@
                                                                                     <td>{{$row->v_galian}}</td>
                                                                                     <td>{{$row->v_lc}}</td>
                                                                                     <td>{{$row->v_pasir}}</td>
+                                                                                    <td class="project-actions">
+                                                                                        <center>
+                                                                                            <div style="display: inline-block;">
+                                                                                                <a href="/tos21_del/<?= $row->id_tos21 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos21 ?>" data-type="<?= $row->type ?>" data-bentuk="<?= $row->bentuk ?>" data-t="<?= $row->t ?>" data-l="<?= $row->l ?>" data-p="<?= $row->p ?>" data-jumlah="<?= $row->jumlah ?>" data-tav_dia="<?= $row->tav_dia ?>" data-tav_jarak="<?= $row->tav_jarak ?>" data-tav_p="<?= $row->tav_p ?>" data-tav_add="<?= $row->tav_add ?>" data-tav_jum="<?= $row->tav_jum ?>" data-tav_bjenis="<?= $row->tav_bjenis ?>" data-tav_total="<?= $row->tav_total ?>" data-tbv_dia="<?= $row->tbv_dia ?>" data-tbv_jarak="<?= $row->tbv_jarak ?>" data-tbv_p="<?= $row->tbv_p ?>" data-tbv_add="<?= $row->tbv_add ?>" data-tbv_jum="<?= $row->tbv_jum ?>" data-tbv_bjenis="<?= $row->tbv_bjenis ?>" data-tbv_total="<?= $row->tbv_total ?>" data-tah_dia="<?= $row->tah_dia ?>" data-tah_jarak="<?= $row->tah_jarak ?>" data-tah_p="<?= $row->tah_p ?>" data-tah_add="<?= $row->tah_add ?>" data-tah_jum="<?= $row->tah_jum ?>" data-tah_bjenis="<?= $row->tah_bjenis ?>" data-tah_total="<?= $row->tah_total ?>" data-tbh_dia="<?= $row->tbh_dia ?>" data-tbh_jarak="<?= $row->tbh_jarak ?>" data-tbh_p="<?= $row->tbh_p ?>" data-tbh_add="<?= $row->tbh_add ?>" data-tbh_jum="<?= $row->tbh_jum ?>" data-tbh_bjenis="<?= $row->tbh_bjenis ?>" data-tbh_total="<?= $row->tbh_total ?>" data-tp_dia="<?= $row->tp_dia ?>" data-tp_jum="<?= $row->tp_jum ?>" data-tp_p="<?= $row->tp_p ?>" data-tp_total="<?= $row->tp_total ?>" data-v_besi="<?= $row->v_besi ?>" data-v_beton="<?= $row->v_beton ?>" data-v_bb="<?= $row->v_bb ?>" data-v_galian="<?= $row->v_galian ?>" data-v_lc="<?= $row->v_lc ?>" data-v_pasir="<?= $row->v_pasir ?>" data-target="#edit_tos13" id="tos13">
+                                                                                                    <i class="fa fa-edit "></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </center>
+                                                                                    </td>
 
                                                                                 </tr>
                                                                                 @endforeach
@@ -983,7 +1162,7 @@
                                                         <div class="col-lg-12">
                                                             <div class="ibox ">
                                                                 <div class="ibox-title">
-                                                                    <h5>Data</h5>
+                                                                    <h5>Data Kolom</h5>
                                                                     <div class="ibox-tools">
                                                                         <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos3Data"> Add Data</button>
                                                                     </div>
@@ -998,7 +1177,7 @@
                                                                                     <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> Bentuk</th>
                                                                                     <th colspan="2">Dimensi</th>
-                                                                                    <th rowspan="2" style="vertical-align:middle;" colspan="2" style="vertical-align:middle;">Tebal Selimut(mm)</th>
+                                                                                    <th rowspan="2" style="vertical-align:middle;" style="vertical-align:middle;">Tebal Selimut(mm)</th>
                                                                                     <th colspan="2"> Tulangan Pokok</th>
                                                                                     <th colspan="4" style="vertical-align:middle;">Tulangan Sengkang</th>
                                                                                     <th colspan="2" style="vertical-align:middle;">Ties - Horisontal Tumpuan</th>

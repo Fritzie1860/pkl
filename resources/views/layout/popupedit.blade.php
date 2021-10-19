@@ -8,11 +8,11 @@
                 <h2>Overleap & Hook</h2>
             </div>
             <div class="container">
-                
+
                 <form action="/tos11_edit" method="post">
-                @csrf
-                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <input type="hidden" name="idt" id="isi_id11" />
+                    @csrf
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="idt" id="isi_id11" />
                     <div class="form-group">
                         <label for="Dia">Dia</label>
                         <input type="text" class="form-control" name="dia" id="isi_dia">
@@ -34,7 +34,7 @@
         var dia = $(this).data('dia');
         var p = $(this).data('p');
         var id = $(this).data('idt');
-        console.log("ini "+id);
+        console.log("ini " + id);
         $("#isi_dia").val(dia);
         $("#isi_p").val(p);
         $("#isi_id11").val(id);
@@ -50,11 +50,11 @@
                 <h2>Foot Plat</h2>
             </div>
             <div class="container">
-                
+
                 <form action="/tos12_edit" method="post">
-                @csrf
-                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <input type="hidden" name="idt" id="isi_id12" />
+                    @csrf
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="idt" id="isi_id12" />
                     <div class="form-group">
                         <label for="type">Type</label>
                         <input type="text" class="form-control" name="type" id="isi_type3">
@@ -147,7 +147,7 @@
     $(document).on('click', "#tos12", function() {
         var id = $(this).data('idt');
         var type = $(this).data('type');
-        var dfp_l = $(this).data('dfp_l'); 
+        var dfp_l = $(this).data('dfp_l');
         var dfp_p = $(this).data('dfp_p');
         var dfp_t = $(this).data('dfp_t');
         var level_mta = $(this).data('level_mta');
@@ -161,8 +161,8 @@
         var tah_dia = $(this).data('tah_dia');
         var tah_jarak = $(this).data('tah_jarak');
         var tp_dia = $(this).data('tp_dia');
-        var tp_jum = $(this).data('tp_jum'); 
-        console.log("footplat "+id);
+        var tp_jum = $(this).data('tp_jum');
+        console.log("footplat " + id);
         console.log(level_mta);
         $("#isi_type").val(type);
         $("#isi_dfp_l").val(dfp_l);
@@ -193,11 +193,11 @@
                 <h2>Pump Room</h2>
             </div>
             <div class="container">
-                
+
                 <form action="/tos13_edit" method="post">
-                @csrf
-                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <input type="hidden" name="idt" id="isi_id13" />
+                    @csrf
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="idt" id="isi_id13" />
                     <div class="form-group">
                         <label for="type">Type</label>
                         <input type="text" class="form-control" name="type" id="type3">
@@ -284,14 +284,14 @@
         </div>
     </div>
 </div>
- 
+
 <script type="text/javascript">
     // $(document).ready(function() {
     $(document).on('click', "#tos13", function() {
         console.log("tos 13");
         var id = $(this).data('idt');
         var type = $(this).data('type');
-        var dfp_l = $(this).data('dfp_l'); 
+        var dfp_l = $(this).data('dfp_l');
         var dfp_p = $(this).data('dfp_p');
         var dfp_t = $(this).data('dfp_t');
         var level_mta = $(this).data('level_mta');
@@ -305,8 +305,8 @@
         var tah_dia = $(this).data('tah_dia');
         var tah_jarak = $(this).data('tah_jarak');
         var tp_dia = $(this).data('tp_dia');
-        var tp_jum = $(this).data('tp_jum'); 
-        console.log("pump room "+id);
+        var tp_jum = $(this).data('tp_jum');
+        console.log("pump room " + id);
         console.log(level_mta);
         console.log(type);
         console.log(dfp_l);
@@ -344,11 +344,11 @@
                 <h2>Batu Kali</h2>
             </div>
             <div class="container">
-                
+
                 <form action="/tos14_edit" method="post">
-                @csrf
-                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <input type="hidden" name="idt" id="isi_id14" />
+                    @csrf
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="idt" id="isi_id14" />
                     <div class="form-group">
                         <label for="type">Nama</label>
                         <input type="text" class="form-control" name="nama" id="nama14">
@@ -374,7 +374,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="type">Panjang                        </label>
+                        <label for="type">Panjang </label>
                         <input type="text" class="form-control" id="panjang14" name="panjang">
                     </div>
 
@@ -409,14 +409,14 @@
         </div>
     </div>
 </div>
- 
+
 <script type="text/javascript">
     // $(document).ready(function() {
     $(document).on('click', "#tos14", function() {
-        
+
         var id = $(this).data('idt');
         var type = $(this).data('nama');
-        var bentuk = $(this).data('bentuk'); 
+        var bentuk = $(this).data('bentuk');
         var b = $(this).data('b');
         var b_ = $(this).data('b_');
         var h = $(this).data('h');
@@ -426,10 +426,10 @@
         var pu = $(this).data('pu');
         var galian = $(this).data('galian');
         var timbunan = $(this).data('timbunan');
-        console.log("tos 14" +la); 
-        console.log("batu kali "+id);
-        console.log("batu kali "+panjang);
-        console.log("batu kali "+bentuk);
+        console.log("tos 14" + la);
+        console.log("batu kali " + id);
+        console.log("batu kali " + panjang);
+        console.log("batu kali " + bentuk);
         $("#nama14").val(type);
         $("#bentuk14").val(bentuk);
         $("#b14").val(b);
@@ -448,7 +448,153 @@
 
 <!-- TOS 2 -->
 
-<!-- tos 1 Lewatan -->
+<!-- tos 2 Data Kolom -->
+<div class="modal fade" id="edit_tos26" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Lewatan</h2>
+            </div>
+            <div class="container">
+
+                <form action="/tos26_edit" method="post">
+                    @csrf
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="idt" id="isi_id26" />
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" class="form-control" name="nama" id="26_nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="bentuk">Bentuk</label>
+                        <input type="text" class="form-control" name="bentuk" id="26_bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="dimensi_l">Lebar Dimensi</label>
+                        <input type="text" class="form-control" name="dimensi_l" id="26_dimensi_l" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="dimensi_p">Panjang Dimensi</label>
+                        <input type="text" class="form-control" name="dimensi_p" id="26_dimensi_p" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tebal_selimut">Tebal Selimut</label>
+                        <input type="text" class="form-control" name="tebal_selimut" id="26_tebal_selimut" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulpok_dia">Diameter Tulangan Pokok</label>
+                        <input type="text" class="form-control" name="tulpok_dia" id="26_tulpok_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulpok_jum">Jumlah Tulangan Pokok</label>
+                        <input type="text" class="form-control" name="tulpok_jum" id="26_tulpok_jum" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_tumpuan">Dia.Tumpuan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_tumpuan" id="26_tulseng_dia_tumpuan" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_jaraktump">Jarak Tumpuan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_jaraktump" id="26_tulseng_dia_jaraktump" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_lapangan">Dia.Lapangan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_lapangan" id="26_tulseng_dia_lapangan" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_jaraklap">Jarak Lapangan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_jaraklap" id="26_tulseng_dia_jaraklap" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thtump_dia">Diameter (Ties-Horisontal Tumpuan)</label>
+                        <input type="text" class="form-control" name="thtump_dia" id="26_thtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thtump_jarak">Jarak (Ties-Horisontal Tumpuan)</label>
+                        <input type="text" class="form-control" name="thtump_jarak" id="26_thtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thlap_dia">Diameter (Ties-Horisontal Lapangan)</label>
+                        <input type="text" class="form-control" name="thlap_dia" id="26_thlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thlap_jarak">Jarak (Ties-Horisontal Lapangan)</label>
+                        <input type="text" class="form-control" name="thlap_jarak" id="26_thlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvtump_dia">Diameter (Ties-Vertikal Tumpuan)</label>
+                        <input type="text" class="form-control" name="tvtump_dia" id="26_tvtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvtump_jarak">Jarak (Ties-Vertikal Tumpuan)</label>
+                        <input type="text" class="form-control" name="tvtump_jarak" id="26_tvtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvlap_dia">Diameter (Ties-Vertikal Lapangan)</label>
+                        <input type="text" class="form-control" name="tvlap_dia" id="26_tvlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvlap_jarak">Jarak (Ties-Vertikal Lapangan)</label>
+                        <input type="text" class="form-control" name="tvlap_jarak" id="26_tvlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // $(document).ready(function() {
+    $(document).on('click', "#tos26", function() {
+        var nama = $(this).data('nama');
+        var bentuk = $(this).data('bentuk');
+        var dimensi_l = $(this).data('dimensi_l');
+        var dimensi_p = $(this).data('dimensi_p');
+        var tebal_selimut = $(this).data('tebal_selimut');
+        var tulpok_dia = $(this).data('tulpok_dia');
+        var tulpok_jum = $(this).data('tulpok_jum');
+        var tulseng_dia_tumpuan = $(this).data('tulseng_dia_tumpuan');
+        var tulseng_dia_lapangan = $(this).data('tulseng_dia_lapangan');
+        var tulseng_dia_jaraklap = $(this).data('tulseng_dia_jaraklap');
+        var tulseng_dia_jaraktump = $(this).data('tulseng_dia_jaraktump');
+        var thtump_dia = $(this).data('thtump_dia');
+        var thtump_jarak = $(this).data('thtump_jarak');
+        var thlap_dia = $(this).data('thlap_dia');
+        var thlap_jarak = $(this).data('thlap_jarak');
+        var tvtump_dia = $(this).data('tvtump_dia');
+        var tvtump_jarak = $(this).data('tvtump_jarak');
+        var tvlap_dia = $(this).data('tvlap_dia');
+        var tvlap_jarak = $(this).data('tvlap_jarak');
+        var id = $(this).data('idt');
+        console.log("ini " + id);
+        $("#isi_id26").val(id);
+        $("#26_nama").val(nama);
+        $("#26_bentuk").val(bentuk);
+        $("#26_dimensi_l").val(dimensi_l);
+        $("#26_dimensi_p").val(dimensi_p);
+        $("#26_tebal_selimut").val(tebal_selimut);
+        $("#26_tulpok_dia").val(tulpok_dia);
+        $("#26_tulpok_jum").val(tulpok_jum);
+        $("#26_tulseng_dia_tumpuan").val(tulseng_dia_tumpuan);
+        $("#26_tulseng_dia_lapangan").val(tulseng_dia_lapangan);
+        $("#26_tulseng_dia_jaraklap").val(tulseng_dia_jaraklap);
+        $("#26_tulseng_dia_jaraktump").val(tulseng_dia_jaraktump);
+        $("#26_thtump_dia").val(thtump_dia);
+        $("#26_thtump_jarak").val(thtump_jarak);
+        $("#26_thlap_dia").val(thlap_dia);
+        $("#26_thlap_jarak").val(thlap_jarak);
+        $("#26_tvtump_dia").val(tvtump_dia);
+        $("#26_tvtump_jarak").val(tvtump_jarak);
+        $("#26_tvlap_dia").val(tvlap_dia);
+        $("#26_tvlap_jarak").val(tvlap_jarak);
+    })
+    // });
+</script>
+
+<!-- tos 2 Lewatan -->
 <div class="modal fade" id="edit_tos24" role="dialog" arialabelledby="modalLabel" area-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -456,11 +602,11 @@
                 <h2>Lewatan</h2>
             </div>
             <div class="container">
-                
+
                 <form action="/tos24_edit" method="post">
-                @csrf
-                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <input type="hidden" name="idt" id="isi_id24"/>
+                    @csrf
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="idt" id="isi_id24" />
                     <div class="form-group">
                         <label for="Dia">Dia</label>
                         <input type="text" class="form-control" name="dia" id="isi_dia24">
@@ -482,7 +628,7 @@
         var dia = $(this).data('dia');
         var ls = $(this).data('ls');
         var id = $(this).data('idt');
-        console.log("ini "+id);
+        console.log("ini " + id);
         $("#isi_dia24").val(dia);
         $("#isi_ls").val(ls);
         $("#isi_id24").val(id);

@@ -6,6 +6,8 @@ use App\Models\tos1footplat;
 use App\Models\tos1oandh;
 use App\Models\tos1pumproom;
 use App\Models\tos1batukali;
+use App\Models\tos2datafootplat;
+use App\Models\tos2datakolom;
 use App\Models\tos2lewatan;
 use Illuminate\Http\Request;
 
@@ -17,10 +19,13 @@ class TosController extends Controller{
         $Tos12 = tos1footplat::all();
         $Tos13 = tos1pumproom::all();
         $Tos14 = tos1batukali::all();
+      
         $Tos24 = tos2lewatan::all();
+        $Tos25 = tos2datafootplat::all();
+        $Tos26 = tos2datakolom::all();
 
         return view('detil_project', ['Tos11' => $Tos11, 'Tos12' => $Tos12, 'Tos13' => $Tos13, 'Tos14' => $Tos14, 
-        'Tos24' => $Tos24]);
+        'Tos24' => $Tos24, 'Tos25' => $Tos25, 'Tos26' => $Tos26]);
     }
 
     // Tos 1 OH
@@ -544,6 +549,66 @@ class TosController extends Controller{
             'pasir_u' => $p_urug,
             'galian' => $galian,
             'timbunan' => $timbunan
+        ]);
+        return redirect('/target');
+    }
+
+    // Tos 2 Data Kolom
+    public function in_tos26(Request $req){
+        $hasil = [
+            'nama' => $req-> nama,
+            'bentuk' => $req->bentuk,
+            'dimensi_l' => $req->dimensi_l,
+            'dimensi_p' => $req->dimensi_p,
+            'tebal_selimut' => $req->tebal_selimut,
+            'tulpok_dia' => $req->tulpok_dia,
+            'tulpok_jum' => $req->tulpok_jum,
+            'tulseng_dia_tumpuan' => $req->tulseng_dia_tumpuan,
+            'tulseng_dia_lapangan' => $req->tulseng_dia_lapangan,
+            'tulseng_dia_jaraklap' => $req->tulseng_dia_jaraklap,
+            'tulseng_dia_jaraktump' => $req->tulseng_dia_jaraktump,
+            'thtump_dia' => $req->thtump_dia,
+            'thtump_jarak' => $req->thtump_jarak,
+            'thlap_dia' => $req->thlap_dia,
+            'thlap_jarak' => $req->thlap_jarak,
+            'tvtump_dia' => $req->tvtump_dia,
+            'tvtump_jarak' => $req->tvtump_jarak,
+            'tvlap_dia' => $req->tvlap_dia,
+            'tvlap_jarak' => $req->tvlap_jarak
+        ];
+        // dd($req);
+        tos2datakolom::insert($hasil);
+        return redirect('/target');
+    }
+
+    public function del_tos26($id){
+        $post = tos2datakolom::all()->where('id_tos26', $id)->each->delete();
+        return redirect('/target');
+    }
+
+    public function edit_tos26(Request $req){
+        //dd($req);
+        $user = tos2datakolom::all()->where("id_tos26", $req->idt)->first()->update([
+            'nama' => $req-> nama,
+            'bentuk' => $req->bentuk,
+            'dimensi_l' => $req->dimensi_l,
+            'dimensi_p' => $req->dimensi_p,
+            'tebal_selimut' => $req->tebal_selimut,
+            'tulpok_dia' => $req->tulpok_dia,
+            'tulpok_jum' => $req->tulpok_jum,
+            'tulseng_dia_tumpuan' => $req->tulseng_dia_tumpuan,
+            'tulseng_dia_lapangan' => $req->tulseng_dia_lapangan,
+            'tulseng_dia_jaraklap' => $req->tulseng_dia_jaraklap,
+            'tulseng_dia_jaraktump' => $req->tulseng_dia_jaraktump,
+            'thtump_dia' => $req->thtump_dia,
+            'thtump_jarak' => $req->thtump_jarak,
+            'thlap_dia' => $req->thlap_dia,
+            'thlap_jarak' => $req->thlap_jarak,
+            'tvtump_dia' => $req->tvtump_dia,
+            'tvtump_jarak' => $req->tvtump_jarak,
+            'tvlap_dia' => $req->tvlap_dia,
+            'tvlap_jarak' => $req->tvlap_jarak
+
         ]);
         return redirect('/target');
     }

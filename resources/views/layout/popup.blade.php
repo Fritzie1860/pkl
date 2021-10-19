@@ -37,84 +37,84 @@
                 <form action="tos12" method="post">
                     <div class="form-group">
                         <label for="type">Type</label>
-                        <input type="text" class="form-control" name="type" id="type" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="type" id="type" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">DFP L</label>
-                        <input type="text" class="form-control" name="dfp_l" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="dfp_l" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">DFP P</label>
-                        <input type="text" class="form-control" name="dfp_p" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="dfp_p" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">DFP T</label>
-                        <input type="text" class="form-control" name="dfp_t" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="dfp_t" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Level MTA</label>
-                        <input type="text" class="form-control" name="level_mta" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="level_mta" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Jumlah
 
                         </label>
-                        <input type="text" class="form-control" name="jumlah" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="jumlah" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tav Dia</label>
-                        <input type="text" class="form-control" name="tav_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tav_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tav Jarak</label>
-                        <input type="text" class="form-control" name="tav_jarak" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tav_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TBV dia</label>
-                        <input type="text" class="form-control" name="tbv_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tbv_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tbv jarak</label>
-                        <input type="text" class="form-control" name="tbv_jarak" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tbv_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TBH dia</label>
-                        <input type="text" class="form-control" name="tbh_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tbh_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TBH Jarak</label>
-                        <input type="text" class="form-control" name="tbh_jarak" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tbh_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TAH dia</label>
-                        <input type="text" class="form-control" name="tah_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tah_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tah jarak</label>
-                        <input type="text" class="form-control" name="tah_jarak" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tah_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TP dia</label>
-                        <input type="text" class="form-control" name="tp_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tp_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TP jum</label>
-                        <input type="text" class="form-control" name="tp_jum" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tp_jum" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
 
@@ -137,31 +137,31 @@
 
                     <div class="form-group">
                         <label for="Nama">Nama</label> 
-                        <input type="text" class="form-control" name="nama" id="Nama" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="nama" id="Nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="bentuk">Bantuk</label> 
-                        <input type="text" class="form-control" name="bentuk" id="bentuk" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="bentuk" id="bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="bentuk">Panjang</label> 
-                        <input type="text" class="form-control" name="panjang" id="bentuk" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="panjang" id="bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="B">B</label> 
-                        <input type="text" class="form-control" name="B" id="B" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="B" id="B" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="B_">B'</label> 
-                        <input type="text" class="form-control" name="B_" id="B_" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="B_" id="B_" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="H">H</label> 
-                        <input type="text" class="form-control" name="H" id="H" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="H" id="H" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="H">Panjang</label> 
-                        <input type="text" class="form-control" name="panjang" id="panjang" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="panjang" id="panjang" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -181,84 +181,84 @@
                 <form action="tos13" method="post">
                     <div class="form-group">
                         <label for="type">Type</label>
-                        <input type="text" class="form-control" name="type" id="type" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="type" id="type" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">DFP L</label>
-                        <input type="text" class="form-control" name="dfp_l" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="dfp_l" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">DFP P</label>
-                        <input type="text" class="form-control" name="dfp_p" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="dfp_p" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">DFP T</label>
-                        <input type="text" class="form-control" name="dfp_t" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="dfp_t" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Level MTA</label>
-                        <input type="text" class="form-control" name="level_mta" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="level_mta" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Jumlah
 
                         </label>
-                        <input type="text" class="form-control" name="jumlah" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="jumlah" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tav Dia</label>
-                        <input type="text" class="form-control" name="tav_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tav_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tav Jarak</label>
-                        <input type="text" class="form-control" name="tav_jarak" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tav_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TBV dia</label>
-                        <input type="text" class="form-control" name="tbv_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tbv_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tbv jarak</label>
-                        <input type="text" class="form-control" name="tbv_jarak" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tbv_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TBH dia</label>
-                        <input type="text" class="form-control" name="tbh_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tbh_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TBH Jarak</label>
-                        <input type="text" class="form-control" name="tbh_jarak" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tbh_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TAH dia</label>
-                        <input type="text" class="form-control" name="tah_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tah_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tah jarak</label>
-                        <input type="text" class="form-control" name="tah_jarak" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tah_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TP dia</label>
-                        <input type="text" class="form-control" name="tp_dia" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tp_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TP jum</label>
-                        <input type="text" class="form-control" name="tp_jum" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" name="tp_jum" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
 
 
@@ -270,6 +270,98 @@
 </div>
 
 <!-- TOS 2 -->
+
+<!-- tos 2 Data Kolom-->
+<div class="modal fade" id="tos2datakolom" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Data Kolom</h2>
+            </div>
+            <div class="container">
+                <form action="tos26" method="post">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" class="form-control" name="nama" id="nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="bentuk">Bentuk</label>
+                        <input type="text" class="form-control" name="bentuk" id="bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="dimensi_l">Lebar Dimensi</label>
+                        <input type="text" class="form-control" name="dimensi_l" id="dimensi_l" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="dimensi_p">Panjang Dimensi</label>
+                        <input type="text" class="form-control" name="dimensi_p" id="dimensi_p" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tebal_selimut">Tebal Selimut</label>
+                        <input type="text" class="form-control" name="tebal_selimut" id="tebal_selimut" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulpok_dia">Diameter Tulangan Pokok</label>
+                        <input type="text" class="form-control" name="tulpok_dia" id="tulpok_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulpok_jum">Jumlah Tulangan Pokok</label>
+                        <input type="text" class="form-control" name="tulpok_jum" id="tulpok_jum" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_tumpuan">Dia.Tumpuan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_tumpuan" id="tulseng_dia_tumpuan" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_jaraktump">Jarak Tumpuan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_jaraktump" id="tulseng_dia_jaraktump" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_lapangan">Dia.Lapangan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_lapangan" id="tulseng_dia_lapangan" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_jaraklap">Jarak Lapangan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_jaraklap" id="tulseng_dia_jaraklap" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thtump_dia">Diameter (Ties-Horisontal Tumpuan)</label>
+                        <input type="text" class="form-control" name="thtump_dia" id="thtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thtump_jarak">Jarak (Ties-Horisontal Tumpuan)</label>
+                        <input type="text" class="form-control" name="thtump_jarak" id="thtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thlap_dia">Diameter (Ties-Horisontal Lapangan)</label>
+                        <input type="text" class="form-control" name="thlap_dia" id="thlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thlap_jarak">Jarak (Ties-Horisontal Lapangan)</label>
+                        <input type="text" class="form-control" name="thlap_jarak" id="thlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvtump_dia">Diameter (Ties-Vertikal Tumpuan)</label>
+                        <input type="text" class="form-control" name="tvtump_dia" id="tvtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvtump_jarak">Jarak (Ties-Vertikal Tumpuan)</label>
+                        <input type="text" class="form-control" name="tvtump_jarak" id="tvtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvlap_dia">Diameter (Ties-Vertikal Lapangan)</label>
+                        <input type="text" class="form-control" name="tvlap_dia" id="tvlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvlap_jarak">Jarak (Ties-Vertikal Lapangan)</label>
+                        <input type="text" class="form-control" name="tvlap_jarak" id="tvlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- tos 2 lewatan -->
 <div class="modal fade" id="tos2lewatan" role="dialog" arialabelledby="modalLabel" area-hidden="true">
@@ -306,7 +398,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -335,7 +427,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -364,7 +456,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -382,7 +474,7 @@
     </div>
 </div>
 
-<!-- tos 3 Data -->
+<!-- tos 3 Data Kolom-->
 <div class="modal fade" id="tos3Data" role="dialog" arialabelledby="modalLabel" area-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -393,7 +485,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -422,7 +514,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -451,7 +543,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -480,7 +572,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -508,7 +600,7 @@
             <div class="container">
                 <form>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -537,7 +629,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -566,7 +658,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -595,7 +687,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -624,7 +716,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -653,7 +745,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -682,7 +774,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -711,7 +803,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -740,7 +832,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -769,7 +861,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -798,7 +890,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -827,7 +919,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -856,7 +948,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -885,7 +977,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -914,7 +1006,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -943,7 +1035,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -972,7 +1064,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -1001,7 +1093,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -1030,7 +1122,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -1059,7 +1151,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -1088,7 +1180,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -1117,7 +1209,7 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
