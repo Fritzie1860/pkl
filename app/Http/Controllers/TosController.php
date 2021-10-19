@@ -8,6 +8,7 @@ use App\Models\tos1pumproom;
 use App\Models\tos1batukali;
 use App\Models\tos2datafootplat;
 use App\Models\tos2datakolom;
+use App\Models\tos2kolompedestal;
 use App\Models\tos2lewatan;
 use Illuminate\Http\Request;
 
@@ -553,6 +554,34 @@ class TosController extends Controller{
         return redirect('/target');
     }
 
+
+     // Tos 2 Lewatan
+     public function in_tos22(Request $req){
+        $hasil = [
+            'dia' => $req->dia,
+            'ls' => $req->ls
+        ];
+        // dd($req);
+        tos2kolompedestal::insert($hasil);
+        return redirect('/target');
+    }
+
+    public function del_tos22($id){
+        $post = tos2kolompedestal::all()->where('id_tos22', $id)->each->delete();
+        return redirect('/target');
+    }
+
+    public function edit_tos22(Request $req){
+        //dd($req);
+        $user = tos2kolompedestal::all()->where("id_tos22", $req->idt)->first()->update([
+            'dia' => $req->dia,
+            'ls' => $req->ls,
+
+        ]);
+        return redirect('/target');
+    }
+
+
     // Tos 2 Data Kolom
     public function in_tos26(Request $req){
         // dd($req);
@@ -640,6 +669,7 @@ class TosController extends Controller{
         return redirect('/target');
     }
 
+    // tos 2 data footplat
     public function in_tos25(Request $req){
         $hasil = [
             'nama' => $req->nama,
