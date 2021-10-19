@@ -1,4 +1,7 @@
 <!-- Modal pop up -->
+
+<!-- TOS 1 -->
+
 <!-- tos 1 OH -->
 <div class="modal fade" id="tos1OH" role="dialog" arialabelledby="modalLabel" area-hidden="true">
     <div class="modal-dialog" role="document">
@@ -22,7 +25,6 @@
         </div>
     </div>
 </div>
-
 
 <!-- tos 1 foot plat -->
 <div class="modal fade" id="tos1FootPlat" role="dialog" arialabelledby="modalLabel" area-hidden="true">
@@ -260,6 +262,32 @@
                     </div>
 
 
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TOS 2 -->
+
+<!-- tos 2 lewatan -->
+<div class="modal fade" id="tos2lewatan" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Lewatan</h2>
+            </div>
+            <div class="container">
+                <form action="/tos24" method="post">
+                    <div class="form-group">
+                        <label for="Dia">Dia</label>
+                        <input type="text" class="form-control" name="dia" id="Dia" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="panjang">Ls</label>
+                        <input type="text" class="form-control" name="p" id="panjang">
+                    </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>

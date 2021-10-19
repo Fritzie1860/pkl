@@ -133,13 +133,13 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Overleap & Hook</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1OH"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1OH"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th>Dia</th>
@@ -185,7 +185,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Foot Plat</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1FootPlat"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1FootPlat"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -375,7 +375,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Pump Room</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1PumpRoom"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1PumpRoom"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -563,7 +563,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Batu Kali</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1BatuKali"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1BatuKali"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -678,7 +678,8 @@
                                     <div class="panel-heading">
                                         <div class="panel-options">
                                             <ul class="nav nav-tabs">
-                                                <li><a class="nav-link active" href="#tab-4" data-toggle="tab">Column Pedestal Ground Floor</a></li>
+                                                <li><a class="nav-link active" href="#tab-35" data-toggle="tab">Absolute Reference</a></li>
+                                                <li><a class="nav-link" href="#tab-4" data-toggle="tab">Column Pedestal Ground Floor</a></li>
                                                 <li><a class="nav-link" href="#tab-5" data-toggle="tab">Pedestal</a></li>
                                                 <li><a class="nav-link" href="#tab-6" data-toggle="tab">Summary</a></li>
                                             </ul>
@@ -687,6 +688,49 @@
 
                                     <div class="panel-body">
                                         <div class="tab-content">
+                                        <div class="tab-pane active" id="tab-35">
+                                                <div class="wrapper wrapper-content animated fadeInRight">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="ibox ">
+                                                                <div class="ibox-title">
+                                                                    <h5>Lewatan</h5>
+                                                                    <div class="ibox-tools">
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos2lewatan"> Add Data</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ibox-content">
+
+                                                                    <div class="table-responsive scrollmenu">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Dia</th>
+                                                                                    <th>Ls</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="gradeA">
+                                                                                    <td>10</td>
+                                                                                    <td>10</td>
+
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    <td>20</td>
+                                                                                    <td>20</td>
+
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="tab-pane active" id="tab-4">
                                                 <div class="wrapper wrapper-content animated fadeInRight">
                                                     <div class="row">
@@ -695,7 +739,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Column Pedestal Ground Floor</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos2GroundFloor"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos2GroundFloor"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -703,7 +747,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="4" style="vertical-align:middle;">No</th>
                                                                                     <th rowspan="4" style="vertical-align:middle;">Type Kolom</th>
                                                                                     <th rowspan="4" style="vertical-align:middle;"> Bentuk Kolom</th>
                                                                                     <th colspan="3">Dimensi Kolom</th>
@@ -853,7 +896,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Pedestal</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos2Pedestal"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos2Pedestal"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -862,7 +905,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="4" style="vertical-align:middle;">No</th>
                                                                                     <th rowspan="4" style="vertical-align:middle;">Type Kolom</th>
                                                                                     <th rowspan="4" style="vertical-align:middle;"> Bentuk Kolom</th>
                                                                                     <th colspan="3">Dimensi Kolom</th>
@@ -962,7 +1004,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Summary</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos2Summary"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos2Summary"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -971,7 +1013,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th style="vertical-align:middle;">No</th>
                                                                                     <th style="vertical-align:middle;">Nama</th>
                                                                                     <th style="vertical-align:middle;">Beton</th>
                                                                                     <th style="vertical-align:middle;">Besi</th>
@@ -1045,7 +1086,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Data</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos3Data"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos3Data"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -1116,7 +1157,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Ground</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos3Ground"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos3Ground"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -1124,7 +1165,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="4" style="vertical-align:middle;">No</th>
                                                                                     <th rowspan="4" style="vertical-align:middle;">Type Kolom</th>
                                                                                     <th rowspan="4" style="vertical-align:middle;"> Bentuk Kolom</th>
                                                                                     <th colspan="3">Dimensi Kolom</th>
@@ -1230,7 +1270,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Pump Room</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos3PumpRoom"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos3PumpRoom"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -1238,7 +1278,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="4" style="vertical-align:middle;">No</th>
                                                                                     <th rowspan="4" style="vertical-align:middle;">Type Kolom</th>
                                                                                     <th rowspan="4" style="vertical-align:middle;"> Bentuk Kolom</th>
                                                                                     <th colspan="3">Dimensi Kolom</th>
@@ -1344,7 +1383,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Summary</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos3Summary"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos3Summary"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -1352,7 +1391,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th style="vertical-align:middle;">No</th>
                                                                                     <th style="vertical-align:middle;">Nama</th>
                                                                                     <th style="vertical-align:middle;">Beton</th>
                                                                                     <th style="vertical-align:middle;">Besi</th>
@@ -1427,7 +1465,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Data</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos4Data"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos4Data"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -1497,7 +1535,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Pool</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos4Data"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos4Data"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -1670,7 +1708,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Ground</h5>
                                                                     <div class="ibox-tools">\
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos4Ground"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos4Ground"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -1843,7 +1881,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Pump Room</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos4PumpRoom"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos4PumpRoom"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -2016,7 +2054,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Summary</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos4Summary"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos4Summary"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -2109,7 +2147,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Data</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos5Data"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos5Data"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -2177,7 +2215,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Ground</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos5Ground"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos5Ground"> Add Data</button>
 
                                                                     </div>
                                                                 </div>
@@ -2346,7 +2384,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Pump Room</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos5PumpRoom"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos5PumpRoom"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -2514,7 +2552,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Summary</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos5Summary"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos5Summary"> Add Data</button>
 
                                                                     </div>
                                                                 </div>
@@ -2609,7 +2647,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Overleap & Hook</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1OH"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1OH"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -2652,7 +2690,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>t 200 upper GF</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos6200UpperGF"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos6200UpperGF"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -2751,7 +2789,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Lantai 1</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos6Lantai1"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos6Lantai1"> Add Data</button>
 
                                                                     </div>
                                                                 </div>
@@ -2851,7 +2889,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>t 120 upper GF</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos6120UppperGF"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos6120UppperGF"> Add Data</button>
 
                                                                     </div>
                                                                 </div>
@@ -2951,7 +2989,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Pump Room</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plusfont_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos4PumpRoom"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plusfont_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos4PumpRoom"> Add Data</button>
 
                                                                     </div>
                                                                 </div>
@@ -3051,7 +3089,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Summary</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos6Summary"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos6Summary"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -3147,7 +3185,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Absolute Reference</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos7AR"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos7AR"> Add Data</button>
 
                                                                     </div>
                                                                 </div>
@@ -3184,7 +3222,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Pump Room</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos7PumpRoom"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos7PumpRoom"> Add Data</button>
 
                                                                     </div>
                                                                 </div>
@@ -3194,7 +3232,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="3" style="vertical-align:middle;"> No</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> Type</th>
                                                                                     <th colspan="3"> Dimensi</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> Beton</th>
@@ -3267,7 +3304,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Pool</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos7Pool"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos7Pool"> Add Data</button>
 
                                                                     </div>
                                                                 </div>
@@ -3277,7 +3314,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="3" style="vertical-align:middle;"> No</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> Type</th>
                                                                                     <th colspan="3"> Dimensi</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> Beton</th>
@@ -3350,7 +3386,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Gutter Kolam Renang</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos7KolamRenang"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos7KolamRenang"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -3359,7 +3395,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="3" style="vertical-align:middle;"> No</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> Type</th>
                                                                                     <th colspan="3"> Dimensi</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> Beton</th>
@@ -3432,7 +3467,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Gutter Tanaman lt 1</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos7Lantai1"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos7Lantai1"> Add Data</button>
 
                                                                     </div>
                                                                 </div>
@@ -3442,7 +3477,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="3" style="vertical-align:middle;"> No</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> Type</th>
                                                                                     <th colspan="3"> Dimensi</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> Beton</th>
@@ -3515,7 +3549,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Janggutan</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos7Janggutan"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos7Janggutan"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -3524,7 +3558,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th rowspan="3" style="vertical-align:middle;"> No</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> Type</th>
                                                                                     <th colspan="3"> Dimensi</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> Beton</th>
@@ -3597,7 +3630,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>RW Batu Kali</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos7RwBatuKali"> Tambah</button>
+                                                                        <button type="submit" class="fa fa-plus font_bantu btn btn-primary float-right" data-toggle="modal" data-target="#tos7RwBatuKali"> Add Data</button>
 
                                                                     </div>
                                                                 </div>
@@ -3607,7 +3640,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th style="vertical-align:middle;"> No</th>
                                                                                     <th style="vertical-align:middle;"> Nama</th>
                                                                                     <th style="vertical-align:middle;"> B</th>
                                                                                     <th style="vertical-align:middle;"> H</th>
@@ -3640,7 +3672,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th style="vertical-align:middle;"> No</th>
                                                                                     <th style="vertical-align:middle;"> Nama</th>
                                                                                     <th style="vertical-align:middle;"> Beton (m3)</th>
                                                                                     <th style="vertical-align:middle;"> Besi (kg)</th>
@@ -3674,7 +3705,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Summary</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos7Summary"> Tambah</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos7Summary"> Add Data</button>
 
                                                                     </div>
                                                                 </div>
@@ -3685,7 +3716,6 @@
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th style="vertical-align:middle;"> No</th>
                                                                                     <th style="vertical-align:middle;"> Nama</th>
                                                                                     <th style="vertical-align:middle;"> Beton (m3)</th>
                                                                                     <th style="vertical-align:middle;"> Besi (kg)</th>
