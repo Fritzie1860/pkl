@@ -463,7 +463,7 @@
                 <input type="hidden" name="idt" id="isi_id24"/>
                     <div class="form-group">
                         <label for="Dia">Dia</label>
-                        <input type="text" class="form-control" name="dia" id="isi_dia">
+                        <input type="text" class="form-control" name="dia" id="isi_dia24">
                     </div>
                     <div class="form-group">
                         <label for="panjang">Ls</label>
@@ -483,8 +483,8 @@
         var ls = $(this).data('ls');
         var id = $(this).data('idt');
         console.log("ini "+id);
-        $("#isi_dia").val(dia);
-        $("#isi_ls").val(p);
+        $("#isi_dia24").val(dia);
+        $("#isi_ls").val(ls);
         $("#isi_id24").val(id);
     })
     // });
