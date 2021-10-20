@@ -881,27 +881,33 @@
                                                                                 <tr class="gradeA">
                                                                                     <td>{{$row->tipe_kolom}}</td>
                                                                                     <td>{{$row->bentuk_kolom}}</td>
-                                                                                    <td>{{$row->dk_t}}</td>
-                                                                                    <td>{{$row->dk_l}}</td>
-                                                                                    <td>{{$row->dk_p}}</td>
+                                                                                    <td>{{1.5-$row->t}}</td>
+                                                                                    <td>{{$row->dimensi_l}}</td>
+                                                                                    <td>{{$row->dimensi_p}}</td>
                                                                                     <td>{{$row->tebal_plat}}</td>
-                                                                                    <td>{{$row->tinggi_net}}</td>
-                                                                                    <td>{{$row->selimut_beton}}</td>
+                                                                                    <td>{{1.5-$row->t-$row->tebal_plat}}</td>
+                                                                                    <td>{{$row->tebal_selimut}}</td>
                                                                                     <td>{{$row->jum_kolom}}</td>
                                                                                     <td>{{$row->footplat_type}}</td>
-                                                                                    <td>{{$row->footplat_b}}</td>
-                                                                                    <td>{{$row->footplat_h}}</td>
-                                                                                    <td>{{$row->footplat_p}}</td>
+                                                                                    <td>{{$row->b}}</td>
+                                                                                    <td>{{$row->h}}</td>
+                                                                                    <td>{{$row->t}}</td>
                                                                                     <td>Tulangan Pokok</td>
-                                                                                    <td rowspan="8">{{$row->pk_tulpok_dia}}</td>
-                                                                                    <td rowspan="8">{{$row->pk_tulpok_qty}}</td>
+                                                                                    <td rowspan="8">{{$row->tulpok_dia}}</td>
+                                                                                    <td rowspan="8">{{$row->tulpok_jum}}</td>
                                                                                     <td colspan="3"></td>
-                                                                                    <td>{{$row->pk_tulanganpokok_ovlp}}</td>
-                                                                                    <td>{{$row->pk_tulanganpokok_suk}}</td>
-                                                                                    <td>{{$row->pk_tulanganpokok_kkf}}</td>
-                                                                                    <td>{{$row->pk_tulanganpokok_p_besi}}</td>
-                                                                                    <td>{{$row->pk_tulanganpokok_total_p}}</td>
-                                                                                    <td>{{$row->pk_tulanganpokok_berat}}</td>
+                                                                                    <td>{{$row->ls}}</td>
+                                                                                    <td>{{(28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))}}</td>
+                                                                                    <td>{{$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))}</td>
+                                                                                    <td>{{(28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
+                                                                                        +$row->ls+$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
+                                                                                    +(1.5-$row->t)}}</td>
+                                                                                    <td>{{$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
+                                                                                        +$row->ls+$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
+                                                                                    +(1.5-$row->t))}</td>
+                                                                                    <td>{{(0.25*3.14*$row->tulpok_dia*$row->tulpok_dia*0.007855)*$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
+                                                                                        +$row->ls+$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
+                                                                                    +(1.5-$row->t))*$row->jum_kolom}}</td>
                                                                                     <td colspan="5"></td>
                                                                                     <td>{{$row->besi}}</td>
                                                                                     <td>{{$row->beton}}</td>
@@ -935,57 +941,79 @@
                                                                                     <td rowspan="7"></td>
                                                                                     <td>Sengkang Tumpuan</td>
                                                                                     
-                                                                                    <td>{{$row->pk_sengkang_dia}}</td>
+                                                                                    <td>{{$row->tulseng_dia_tumpuan}}</td>
                                                                                     <td>{{$row->pk_sengkang_qty}}</td>
-                                                                                    <td>{{$row->pk_sengkang_jarak}}</td>
+                                                                                    <td>{{$row->tulseng_dia_jaraktump}}</td>
                                                                                     <td rowspan="7"></td>
                                                                                     <td rowspan="7"></td>
                                                                                     <td rowspan="7"></td>
                                                                                     <td rowspan="7"></td>
                                                                                     <td rowspan="7"></td>
                                                                                     <td rowspan="7"></td>
-                                                                                    <td>{{$row->pk_sengkang2_tekukan_id}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_tekukan_p}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_qty}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_total_p}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_berat}}</td>
+                                                                                    <td>{{6*($row->tulseng_dia_tumpuan/1000)}}</td>
+                                                                                    <td>{{((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/100))-($row->tebal_selimut*8)}}</td>
+                                                                                    <td>{{ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+((1.5-$row->t)/($row->ls *0.25)))}}</td>
+                                                                                    <td>{{(((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/100))-($row->tebal_selimut*8))*ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+((1.5-$row->t)/($row->ls *0.25)))}}</td>
+                                                                                    <td>{{(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.007855)*((((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/100))-($row->tebal_selimut*8))*ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+((1.5-$row->t)/($row->ls *0.25))))*$row->jum_kolom}}</td>
 
                                                                                 </tr>
                                                                                 <tr class="gradeA">
                                                                                     <td>Sengkang Lapangan</td>
 
-                                                                                    <td>{{$row->pk_sengkang_dia}}</td>
+                                                                                    <td>{{$row->tulseng_dia_lapangan}}</td>
                                                                                     <td>{{$row->pk_sengkang_qty}}</td>
-                                                                                    <td>{{$row->pk_sengkang_jarak}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_tekukan_id}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_tekukan_p}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_qty}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_total_p}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_berat}}</td>
+                                                                                    <td>{{$row->tulseng_dia_jaraklap}}</td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td>{{6*($row->tulseng_dia_lapangan/1000)}}</td>
+                                                                                    <td>{{((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/100))-($row->tebal_selimut*8)}}</td>
+                                                                                    <td>{{ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+((1.5-$row->t)/($row->ls *0.25)))}}</td>
+                                                                                    <td>{{(((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/100))-($row->tebal_selimut*8))*ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+((1.5-$row->t)/($row->ls *0.25)))}}</td>
+                                                                                    <td>{{(0.25*3.14*$row->tulseng_dia_lapangan*$row->tulseng_dia_lapangan*0.007855)*((((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/100))-($row->tebal_selimut*8))*ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+((1.5-$row->t)/($row->ls *0.25))))*$row->jum_kolom}}</td>
+
                                                                                 </tr>
                                                                                 <tr class="gradeA">
                                                                                     <td>Sengkang Tumpuan</td>
 
-                                                                                    <td>{{$row->pk_sengkang_dia}}</td>
+                                                                                    <td>{{$row->tulseng_dia_tumpuan}}</td>
                                                                                     <td>{{$row->pk_sengkang_qty}}</td>
-                                                                                    <td>{{$row->pk_sengkang_jarak}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_tekukan_id}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_tekukan_p}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_qty}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_total_p}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_berat}}</td>
+                                                                                    <td>{{$row->tulseng_dia_jaraktump}}</td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td>{{6*($row->tulseng_dia_tumpuan/1000)}}</td>
+                                                                                    <td>{{((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/100))-($row->tebal_selimut*8)}}</td>
+                                                                                    <td>{{ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+((1.5-$row->t)/($row->ls *0.25)))}}</td>
+                                                                                    <td>{{(((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/100))-($row->tebal_selimut*8))*ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+((1.5-$row->t)/($row->ls *0.25)))}}</td>
+                                                                                    <td>{{(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.007855)*((((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/100))-($row->tebal_selimut*8))*ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+((1.5-$row->t)/($row->ls *0.25))))*$row->jum_kolom}}</td>
+
+                                                                                    
                                                                                 </tr>
                                                                                 <tr class="gradeA">
                                                                                     <td> Ties - Vertikal Tumpuan</td>
 
-                                                                                    <td>{{$row->pk_sengkang_dia}}</td>
+                                                                                    <td>{{$row->thtump_dia}}</td>
                                                                                     <td>{{$row->pk_sengkang_qty}}</td>
-                                                                                    <td>{{$row->pk_sengkang_jarak}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_tekukan_id}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_tekukan_p}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_qty}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_total_p}}</td>
-                                                                                    <td>{{$row->pk_sengkang2_berat}}</td>
+                                                                                    <td>{{$row->thtump_jarak}}</td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td>{{6*($row->thtump_dia/1000)}}</td>
+                                                                                    <td>{{(6*($row->thtump_dia/1000)*2)+($row->dimensi_p-($row->tebal_selimut*2)}}</td>
+                                                                                    <td>{{ceil($row->jum_kolom*0.25/$row->thtump_jarak})+(1*$row->pk_sengkang_qty)}}</td>
+                                                                                    <td>{{(((3.14*$row->dimensi_l)+(6*($row->thtump_dia/100))-($row->tebal_selimut*8))*ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+((1.5-$row->t)/($row->ls *0.25)))}}</td>
+                                                                                    <td>{{(0.25*3.14*$row->thtump_dia*$row->thtump_dia*0.007855)*((((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/100))-($row->tebal_selimut*8))*ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+((1.5-$row->t)/($row->ls *0.25))))*$row->jum_kolom}}</td>
+
                                                                                 </tr>
                                                                                 <tr class="gradeA">
                                                                                     <td> Ties - Vertikal Lapangan</td>
@@ -1138,7 +1166,7 @@
                                                                                     <td>{{$row->footplat_p}}</td>
                                                                                     <td>{{$row->pk_ket}}</td>
                                                                                     <td>{{$row->pk_tulpok_dia}}</td>
-                                                                                    <td>{{$row->pk_tulpok_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang_qty}}</td>
                                                                                     <td>{{$row->pk_sengkang_dia}}</td>
                                                                                     <td>{{$row->pk_sengkang_qty}}</td>
                                                                                     <td>{{$row->pk_sengkang_jarak}}</td>
