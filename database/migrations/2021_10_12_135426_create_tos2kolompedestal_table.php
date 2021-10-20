@@ -17,6 +17,7 @@ class CreateTos2kolompedestalTable extends Migration
             $table->id('id_tos22', 5);
             $table->string('tipe_kolom', 100);
             $table->double('tebal_plat', 5);
+            $table->double('jum_kolom', 5);
             $table->string('footplat_type', 100);
             $table->double('pk_tulpok_qty', 5);
         });
