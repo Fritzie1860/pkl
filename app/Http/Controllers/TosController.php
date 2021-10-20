@@ -24,7 +24,12 @@ class TosController extends Controller
         $Tos13 = tos1pumproom::all();
         $Tos14 = tos1batukali::all();
 
-        $Tos21 = tos2pedestal::all();
+        $coba = new tos2pedestal();
+        
+
+        // dd($coba->detil());
+
+        $Tos21 = $coba->detil();
         $Tos22 = tos2kolompedestal::all();
         $Tos23 = tos2summary::all();
         $Tos24 = tos2lewatan::all();
