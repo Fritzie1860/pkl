@@ -893,8 +893,8 @@
                                                                                     <td>{{$row->footplat_h}}</td>
                                                                                     <td>{{$row->footplat_p}}</td>
                                                                                     <td>Tulangan Pokok</td>
-                                                                                    <td>{{$row->pk_tulpok_dia}}</td>
-                                                                                    <td>{{$row->pk_tulpok_qty}}</td>
+                                                                                    <td rowspan="8">{{$row->pk_tulpok_dia}}</td>
+                                                                                    <td rowspan="8">{{$row->pk_tulpok_qty}}</td>
                                                                                     <td colspan="3"></td>
                                                                                     <td>{{$row->pk_tulanganpokok_ovlp}}</td>
                                                                                     <td>{{$row->pk_tulanganpokok_suk}}</td>
@@ -920,24 +920,30 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr class="gradeA">
-                                                                                    <td colspan="7"></td>
-                                                                                    <td colspan="7"></td>
-                                                                                    <td colspan="7"></td>
-                                                                                    <td colspan="7"></td>
-                                                                                    <td colspan="7"></td>
-                                                                                    <td colspan="7"></td>
-                                                                                    <td colspan="7"></td>
-                                                                                    <td colspan="7"></td>
-                                                                                    <td colspan="7"></td>
-                                                                                    <td colspan="7"></td>
-                                                                                    <td colspan="7"></td>
-                                                                                    <td colspan="7"></td>
-                                                                                    <td colspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
                                                                                     <td>Sengkang Tumpuan</td>
-
+                                                                                    
                                                                                     <td>{{$row->pk_sengkang_dia}}</td>
                                                                                     <td>{{$row->pk_sengkang_qty}}</td>
                                                                                     <td>{{$row->pk_sengkang_jarak}}</td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
+                                                                                    <td rowspan="7"></td>
                                                                                     <td>{{$row->pk_sengkang2_tekukan_id}}</td>
                                                                                     <td>{{$row->pk_sengkang2_tekukan_p}}</td>
                                                                                     <td>{{$row->pk_sengkang2_qty}}</td>

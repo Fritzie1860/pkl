@@ -579,9 +579,22 @@ class TosController extends Controller
      // Tos 2 Pedestal
      public function in_tos21(Request $req)
      {
-        $detil = new tos2pedestal();
-        $hasil = $detil->detil();
-        dd($hasil);
+        $tipe_kolom = $req->tipe_kolom;
+        $tebal_plat = $req->tebal_plat;
+        $jum_kolom = $req->jum_kolom;
+        $footplat_type = $req->footplat_type;
+        $pk_sengkang_qty = $req->pk_sengkang_qty;
+
+        $hasil = [
+            'tipe_kolom' => $req->tipe_kolom,
+            'tebal_plat' => $req->tebal_plat,
+            'jum_kolom' => $req->jum_kolom,
+            'footplat_type' => $req->footplat_type,
+            'pk_sengkang_qty' => $req->pk_sengkang_qty,
+        ];
+
+        tos2pedestal::insert($hasil);
+        return redirect('/target');
      }
  
      public function del_tos21($id)
@@ -614,64 +627,6 @@ class TosController extends Controller
         $footplat_type = $req->footplat_type;
         $pk_sengkang_qty = $req->pk_sengkang_qty;
 
-        $isikolom = tos2datakolom::all()->where('nama', 'b');
-        $isifp = tos2datafootplat::all()->where('nama', 'b');
-
-        foreach ($isifp as $row) {
-
-            $footplat_b = ('cari footplat_b di data Kolom');
-            $footplat_h = ('cari footplat_h di data Kolom');
-            $footplat_p = ('cari footplat_p di data Kolom');
-            $dk_t = 1.5 - $footplat_p;
-        }
-
-        foreach ($isikolom as $row) {
-            
-            $dk_l = $row->dimensi_l;
-            $dk_p = $row->dimensi_p;
-            $tinggi_net = $dk_t - $tebal_plat;
-            $selimut_beton = $row->tebal_selimut;
-            
-            $pk_tulpok_dia = $row->tulpok_dia;;
-            $pk_tulpok_qty = $row->tulpok_jum;
-            $pk_sengkang_dia = ('cari pk_sengkang_dia di data Kolom');
-            $pk_sengkang_jarak = ('cari pk_sengkang_jarak di data Kolom');
-            $pk_tulanganpokok_ovlp = ('excel tidak mendukung penafsiran rumus');
-            $pk_tulanganpokok_suk = (28 * ($pk_tulpok_dia / 1000)) + (8 * ($pk_tulpok_dia / 1000));
-            $pk_tulanganpokok_kkf = $footplat_p + (20 * ($pk_tulpok_dia / 1000)) + (8 * ($pk_tulpok_dia / 1000));
-            $pk_tulanganpokok_p_besi = $pk_tulanganpokok_ovlp + $dk_t + $pk_tulanganpokok_suk + $pk_tulanganpokok_kkf;
-            $pk_tulanganpokok_total_p = ('excel tidak mendukung penafsiran rumus');
-            $pk_tulanganpokok_berat = (0.25 * 3.14 * $pk_tulpok_dia * $pk_tulpok_dia * 0.007855) * $pk_tulanganpokok_total_p * $jum_kolom;
-            $pk_sengkang2_tekukan_id = 6 * ($pk_sengkang_dia / 100);
-            $pk_sengkang2_tekukan_p = ((3.14 * $dk_l) + ($pk_sengkang2_tekukan_id * 2)) - ($selimut_beton * 8);
-            $pk_sengkang2_qty = ceil(($dk_t / ($pk_sengkang_jarak * 0.25)) + ($dk_t / ($pk_tulanganpokok_ovlp * 0.25)));
-            $pk_sengkang2_total_p = ('excel tidak mendukung penafsiran rumus');
-            $pk_sengkang2_berat = (0.25 * 3.14 * $pk_sengkang_dia * $pk_sengkang_dia * 0.007855) * $pk_sengkang2_total_p * $jum_kolom;
-            $besi = ('sum $pk_sengkang2_berat');
-            $beton = 'if $bentuk_kolom == Bundar=>' . '(3.14*(0.5*$dk_l)*(0.5*$dk_l)*$jum_kolom*$dk_t)' . 'else=>' . '$dk_l*$dk_p*$dk_t*$jum_kolom';
-            $bekisting = 'if $bentuk_kolom == Bundar=>' . '(3.14*$dk_l)*$tinggi_net*$jum_kolom' . 'else=>' . '($dk_l+$dk_p)*2*$tinggi_net*$jum_kolom';
-            $timbunan = (($footplat_b * $footplat_h) - ($dk_l * $dk_p)) * $tinggi_net * 1.2 * $jum_kolom;
-            $rasio_besi = $besi / $beton;
-
-            // echo $row->dimensi_l;
-            // echo $row->dimensi_p;
-            // echo $row->tebal_selimut;
-            // echo $row->tulpok_dia;
-            // echo $row->tulpok_jum;
-            echo $row->tulseng_dia_tumpuan;
-            echo $row->tulseng_dia_lapangan;
-            echo $row->tulseng_dia_jaraklap;
-            echo $row->tulseng_dia_jaraktump;
-            echo $row->thtump_dia;
-            echo $row->thtump_jarak;
-            echo $row->thlap_dia;
-            echo $row->thlap_jarak;
-            echo $row->tvtump_dia;
-            echo $row->tvtump_jarak;
-            echo $row->tvlap_dia;
-            echo $row->tvlap_jarak;
-        }
-
         $hasil = [
             'tipe_kolom' => $req->tipe_kolom,
             'tebal_plat' => $req->tebal_plat,
@@ -680,8 +635,8 @@ class TosController extends Controller
             'pk_sengkang_qty' => $req->pk_sengkang_qty,
         ];
 
-        // tos2kolompedestal::insert($hasil);
-        // return redirect('/target');
+        tos2kolompedestal::insert($hasil);
+        return redirect('/target');
     }
 
     public function del_tos22($id)
