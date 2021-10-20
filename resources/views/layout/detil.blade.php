@@ -597,7 +597,7 @@
 
                                                                     <div class="table-responsive scrollmenu">
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
-                                                                        <thead>
+                                                                            <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Nama</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;"> Bentuk</th>
@@ -656,29 +656,7 @@
                                                                                         <center>
                                                                                             <div style="display: inline-block;">
                                                                                                 <a href="/tos26_del/<?= $row->id_tos26 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
-                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal"
-                                                                                                data-idt="<?= $row->id_tos26 ?>"
-                                                                                                data-nama ="<?= $row->nama?>"
-                                                                                                data-bentuk ="<?= $row->bentuk?>"
-                                                                                                data-dimensi_l ="<?= $row->dimensi_l?>"
-                                                                                                data-dimensi_p ="<?= $row->dimensi_p?>"
-                                                                                                data-tebal_selimut ="<?= $row->tebal_selimut?>"
-                                                                                                data-tulpok_dia ="<?= $row->tulpok_dia?>"
-                                                                                                data-tulpok_jum ="<?= $row->tulpok_jum?>"
-                                                                                                data-tulseng_dia_tumpuan ="<?= $row->tulseng_dia_tumpuan?>"
-                                                                                                data-tulseng_dia_lapangan ="<?= $row->tulseng_dia_lapangan?>"
-                                                                                                data-tulseng_dia_jaraklap ="<?= $row->tulseng_dia_jaraklap?>"
-                                                                                                data-tulseng_dia_jaraktump ="<?= $row->tulseng_dia_jaraktump?>"
-                                                                                                data-thtump_dia ="<?= $row->thtump_dia?>"
-                                                                                                data-thtump_jarak ="<?= $row->thtump_jarak?>"
-                                                                                                data-thlap_dia ="<?= $row->thlap_dia?>"
-                                                                                                data-thlap_jarak ="<?= $row->thlap_jarak?>"
-                                                                                                data-tvtump_dia ="<?= $row->tvtump_dia?>"
-                                                                                                data-tvtump_jarak ="<?= $row->tvtump_jarak?>"
-                                                                                                data-tvlap_dia ="<?= $row->tvlap_dia?>"
-                                                                                                data-tvlap_jarak ="<?= $row->tvlap_jarak?>"
-                                                                                                data-target="#edit_tos26" 
-                                                                                                id="tos26">
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos26 ?>" data-nama="<?= $row->nama ?>" data-bentuk="<?= $row->bentuk ?>" data-dimensi_l="<?= $row->dimensi_l ?>" data-dimensi_p="<?= $row->dimensi_p ?>" data-tebal_selimut="<?= $row->tebal_selimut ?>" data-tulpok_dia="<?= $row->tulpok_dia ?>" data-tulpok_jum="<?= $row->tulpok_jum ?>" data-tulseng_dia_tumpuan="<?= $row->tulseng_dia_tumpuan ?>" data-tulseng_dia_lapangan="<?= $row->tulseng_dia_lapangan ?>" data-tulseng_dia_jaraklap="<?= $row->tulseng_dia_jaraklap ?>" data-tulseng_dia_jaraktump="<?= $row->tulseng_dia_jaraktump ?>" data-thtump_dia="<?= $row->thtump_dia ?>" data-thtump_jarak="<?= $row->thtump_jarak ?>" data-thlap_dia="<?= $row->thlap_dia ?>" data-thlap_jarak="<?= $row->thlap_jarak ?>" data-tvtump_dia="<?= $row->tvtump_dia ?>" data-tvtump_jarak="<?= $row->tvtump_jarak ?>" data-tvlap_dia="<?= $row->tvlap_dia ?>" data-tvlap_jarak="<?= $row->tvlap_jarak ?>" data-target="#edit_tos26" id="tos26">
                                                                                                     <i class="fa fa-edit "></i>
                                                                                                 </a>
                                                                                             </div>
@@ -732,9 +710,7 @@
                                                                                         <center>
                                                                                             <div style="display: inline-block;">
                                                                                                 <a href="/tos25_del/<?= $row->id_tos25 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
-                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos25 ?>" 
-                                                                                                data-nama="<?= $row->nama ?>" data-b="<?= $row->b ?>" data-h="<?= $row->h ?>"
-                                                                                                data-t="<?= $row->t ?>" data-target="#edit_tos25" id="tos25">
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos25 ?>" data-nama="<?= $row->nama ?>" data-b="<?= $row->b ?>" data-h="<?= $row->h ?>" data-t="<?= $row->t ?>" data-target="#edit_tos25" id="tos25">
                                                                                                     <i class="fa fa-edit "></i>
                                                                                                 </a>
                                                                                             </div>
@@ -901,53 +877,38 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                @foreach($Tos12 as $row)
+                                                                                @foreach($Tos22 as $row)
                                                                                 <tr class="gradeA">
-                                                                                    <td>{{$row->type}}</td>
-                                                                                    <td>{{$row->bentuk}}</td>
-                                                                                    <td>{{$row->t}}</td>
-                                                                                    <td>{{$row->l}}</td>
-                                                                                    <td>{{$row->p}}</td>
-                                                                                    <td>{{$row->jumlah}}</td>
-                                                                                    <td>{{$row->tav_dia}}</td>
-                                                                                    <td>{{$row->tav_jarak}}</td>
-                                                                                    <td>{{$row->tav_p}}</td>
-                                                                                    <td>{{$row->tav_add}}</td>
-                                                                                    <td>{{$row->tav_jum}}</td>
-                                                                                    <td>{{$row->tav_bjenis}}</td>
-                                                                                    <td>{{$row->tav_total}}</td>
-                                                                                    <td>{{$row->tbv_dia}}</td>
-                                                                                    <td>{{$row->tbv_jarak}}</td>
-                                                                                    <td>{{$row->tbv_p}}</td>
-                                                                                    <td>{{$row->tbv_add}}</td>
-                                                                                    <td>{{$row->tbv_jum}}</td>
-                                                                                    <td>{{$row->tbv_bjenis}}</td>
-                                                                                    <td>{{$row->tbv_total}}</td>
-                                                                                    <td>{{$row->tah_dia}}</td>
-                                                                                    <td>{{$row->tah_jarak}}</td>
-                                                                                    <td>{{$row->tah_p}}</td>
-                                                                                    <td>{{$row->tah_add}}</td>
-                                                                                    <td>{{$row->tah_jum}}</td>
-                                                                                    <td>{{$row->tah_bjenis}}</td>
-                                                                                    <td>{{$row->tah_total}}</td>
-                                                                                    <td>{{$row->tbh_dia}}</td>
-                                                                                    <td>{{$row->tbh_jarak}}</td>
-                                                                                    <td>{{$row->tbh_p}}</td>
-                                                                                    <td>{{$row->tbh_add}}</td>
-                                                                                    <td>{{$row->tbh_jum}}</td>
-                                                                                    <td>{{$row->tbh_tjenis}}</td>
-                                                                                    <td>{{$row->tbh_total}}</td>
-                                                                                    <td>{{$row->tp_dia}}</td>
-                                                                                    <td>{{$row->tp_jum}}</td>
-                                                                                    <td>{{$row->tp_p}}</td>
-                                                                                    <td>{{$row->tp_total}}</td>
-                                                                                    <td>{{$row->v_besi}}</td>
-                                                                                    <td>{{$row->v_beton}}</td>
-                                                                                    <td>{{$row->v_bb}}</td>
-                                                                                    <td>{{$row->v_galian}}</td>
-                                                                                    <td>{{$row->v_lc}}</td>
-                                                                                    <td>{{$row->v_pasir}}</td>
-                                                                                    <td class="project-actions">
+                                                                                    <td>{{$row->tipe_kolom}}</td>
+                                                                                    <td>{{$row->bentuk_kolom}}</td>
+                                                                                    <td>{{$row->dk_t}}</td>
+                                                                                    <td>{{$row->dk_l}}</td>
+                                                                                    <td>{{$row->dk_p}}</td>
+                                                                                    <td>{{$row->tebal_plat}}</td>
+                                                                                    <td>{{$row->tinggi_net}}</td>
+                                                                                    <td>{{$row->selimut_beton}}</td>
+                                                                                    <td>{{$row->jum_kolom}}</td>
+                                                                                    <td>{{$row->footplat_type}}</td>
+                                                                                    <td>{{$row->footplat_b}}</td>
+                                                                                    <td>{{$row->footplat_h}}</td>
+                                                                                    <td>{{$row->footplat_p}}</td>
+                                                                                    <td>Tulangan Pokok</td>
+                                                                                    <td>{{$row->pk_tulpok_dia}}</td>
+                                                                                    <td>{{$row->pk_tulpok_qty}}</td>
+                                                                                    <td colspan="3"></td>
+                                                                                    <td>{{$row->pk_tulanganpokok_ovlp}}</td>
+                                                                                    <td>{{$row->pk_tulanganpokok_suk}}</td>
+                                                                                    <td>{{$row->pk_tulanganpokok_kkf}}</td>
+                                                                                    <td>{{$row->pk_tulanganpokok_p_besi}}</td>
+                                                                                    <td>{{$row->pk_tulanganpokok_total_p}}</td>
+                                                                                    <td>{{$row->pk_tulanganpokok_berat}}</td>
+                                                                                    <td colspan="5"></td>
+                                                                                    <td>{{$row->besi}}</td>
+                                                                                    <td>{{$row->beton}}</td>
+                                                                                    <td>{{$row->bekisting}}</td>
+                                                                                    <td>{{$row->timbunan}}</td>
+                                                                                    <td>{{$row->rasio_besi}}</td>
+                                                                                    <td rowspan="8" class="project-actions">
                                                                                         <center>
                                                                                             <div style="display: inline-block;">
                                                                                                 <a href="/tos21_del/<?= $row->id_tos21 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
@@ -957,7 +918,92 @@
                                                                                             </div>
                                                                                         </center>
                                                                                     </td>
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    <td colspan="7"></td>
+                                                                                    <td colspan="7"></td>
+                                                                                    <td colspan="7"></td>
+                                                                                    <td colspan="7"></td>
+                                                                                    <td colspan="7"></td>
+                                                                                    <td colspan="7"></td>
+                                                                                    <td colspan="7"></td>
+                                                                                    <td colspan="7"></td>
+                                                                                    <td colspan="7"></td>
+                                                                                    <td colspan="7"></td>
+                                                                                    <td colspan="7"></td>
+                                                                                    <td colspan="7"></td>
+                                                                                    <td colspan="7"></td>
+                                                                                    <td>Sengkang Tumpuan</td>
 
+                                                                                    <td>{{$row->pk_sengkang_dia}}</td>
+                                                                                    <td>{{$row->pk_sengkang_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang_jarak}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_id}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_total_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_berat}}</td>
+
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    <td>Sengkang Lapangan</td>
+
+                                                                                    <td>{{$row->pk_sengkang_dia}}</td>
+                                                                                    <td>{{$row->pk_sengkang_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang_jarak}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_id}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_total_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_berat}}</td>
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    <td>Sengkang Tumpuan</td>
+
+                                                                                    <td>{{$row->pk_sengkang_dia}}</td>
+                                                                                    <td>{{$row->pk_sengkang_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang_jarak}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_id}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_total_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_berat}}</td>
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    <td> Ties - Vertikal Tumpuan</td>
+
+                                                                                    <td>{{$row->pk_sengkang_dia}}</td>
+                                                                                    <td>{{$row->pk_sengkang_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang_jarak}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_id}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_total_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_berat}}</td>
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    <td> Ties - Vertikal Lapangan</td>
+
+                                                                                    <td>{{$row->pk_sengkang_dia}}</td>
+                                                                                    <td>{{$row->pk_sengkang_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang_jarak}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_id}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_total_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_berat}}</td>
+                                                                                </tr>
+                                                                                <tr class="gradeA">
+                                                                                    <td> Ties - Horisontal Tumpuan</td>
+
+                                                                                    <td>{{$row->pk_sengkang_dia}}</td>
+                                                                                    <td>{{$row->pk_sengkang_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang_jarak}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_id}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_total_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_berat}}</td>
                                                                                 </tr>
                                                                                 @endforeach
                                                                             </tbody>
@@ -1066,8 +1112,59 @@
 
                                                                                 </tr>
                                                                             </thead>
-                                                                            <tbody>
 
+                                                                            <tbody>
+                                                                                @foreach($Tos21 as $row)
+                                                                                <tr class="gradeA">
+
+                                                                                    <td>{{$row->tipe_kolom}}</td>
+                                                                                    <td>{{$row->bentuk_kolom}}</td>
+                                                                                    <td>{{$row->dk_t}}</td>
+                                                                                    <td>{{$row->dk_l}}</td>
+                                                                                    <td>{{$row->dk_p}}</td>
+                                                                                    <td>{{$row->tebal_plat}}</td>
+                                                                                    <td>{{$row->tinggi_net}}</td>
+                                                                                    <td>{{$row->selimut_beton}}</td>
+                                                                                    <td>{{$row->jum_kolom}}</td>
+                                                                                    <td>{{$row->footplat_type}}</td>
+                                                                                    <td>{{$row->footplat_b}}</td>
+                                                                                    <td>{{$row->footplat_h}}</td>
+                                                                                    <td>{{$row->footplat_p}}</td>
+                                                                                    <td>{{$row->pk_ket}}</td>
+                                                                                    <td>{{$row->pk_tulpok_dia}}</td>
+                                                                                    <td>{{$row->pk_tulpok_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang_dia}}</td>
+                                                                                    <td>{{$row->pk_sengkang_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang_jarak}}</td>
+                                                                                    <td>{{$row->pk_tulanganpokok_ovlp}}</td>
+                                                                                    <td>{{$row->pk_tulanganpokok_suk}}</td>
+                                                                                    <td>{{$row->pk_tulanganpokok_kkf}}</td>
+                                                                                    <td>{{$row->pk_tulanganpokok_p_besi}}</td>
+                                                                                    <td>{{$row->pk_tulanganpokok_total_p}}</td>
+                                                                                    <td>{{$row->pk_tulanganpokok_berat}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_id}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_tekukan_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_qty}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_total_p}}</td>
+                                                                                    <td>{{$row->pk_sengkang2_berat}}</td>
+                                                                                    <td>{{$row->besi}}</td>
+                                                                                    <td>{{$row->beton}}</td>
+                                                                                    <td>{{$row->bekisting}}</td>
+                                                                                    <td>{{$row->timbunan}}</td>
+                                                                                    <td>{{$row->rasio_besi}}</td>
+                                                                                    <td class="project-actions">
+                                                                                        <center>
+                                                                                            <div style="display: inline-block;">
+                                                                                                <a href="/tos21_del/<?= $row->id_tos21 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos21 ?>" data-type="<?= $row->type ?>" data-bentuk="<?= $row->bentuk ?>" data-t="<?= $row->t ?>" data-l="<?= $row->l ?>" data-p="<?= $row->p ?>" data-jumlah="<?= $row->jumlah ?>" data-tav_dia="<?= $row->tav_dia ?>" data-tav_jarak="<?= $row->tav_jarak ?>" data-tav_p="<?= $row->tav_p ?>" data-tav_add="<?= $row->tav_add ?>" data-tav_jum="<?= $row->tav_jum ?>" data-tav_bjenis="<?= $row->tav_bjenis ?>" data-tav_total="<?= $row->tav_total ?>" data-tbv_dia="<?= $row->tbv_dia ?>" data-tbv_jarak="<?= $row->tbv_jarak ?>" data-tbv_p="<?= $row->tbv_p ?>" data-tbv_add="<?= $row->tbv_add ?>" data-tbv_jum="<?= $row->tbv_jum ?>" data-tbv_bjenis="<?= $row->tbv_bjenis ?>" data-tbv_total="<?= $row->tbv_total ?>" data-tah_dia="<?= $row->tah_dia ?>" data-tah_jarak="<?= $row->tah_jarak ?>" data-tah_p="<?= $row->tah_p ?>" data-tah_add="<?= $row->tah_add ?>" data-tah_jum="<?= $row->tah_jum ?>" data-tah_bjenis="<?= $row->tah_bjenis ?>" data-tah_total="<?= $row->tah_total ?>" data-tbh_dia="<?= $row->tbh_dia ?>" data-tbh_jarak="<?= $row->tbh_jarak ?>" data-tbh_p="<?= $row->tbh_p ?>" data-tbh_add="<?= $row->tbh_add ?>" data-tbh_jum="<?= $row->tbh_jum ?>" data-tbh_bjenis="<?= $row->tbh_bjenis ?>" data-tbh_total="<?= $row->tbh_total ?>" data-tp_dia="<?= $row->tp_dia ?>" data-tp_jum="<?= $row->tp_jum ?>" data-tp_p="<?= $row->tp_p ?>" data-tp_total="<?= $row->tp_total ?>" data-v_besi="<?= $row->v_besi ?>" data-v_beton="<?= $row->v_beton ?>" data-v_bb="<?= $row->v_bb ?>" data-v_galian="<?= $row->v_galian ?>" data-v_lc="<?= $row->v_lc ?>" data-v_pasir="<?= $row->v_pasir ?>" data-target="#edit_tos13" id="tos13">
+                                                                                                    <i class="fa fa-edit "></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </center>
+                                                                                    </td>
+
+                                                                                </tr>
+                                                                                @endforeach
                                                                             </tbody>
 
                                                                         </table>
@@ -1103,13 +1200,66 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                <tr class="gradeC">
-                                                                                    <td>Trident</td>
-                                                                                    <td>Internet
-                                                                                        Explorer 5.0
+                                                                                <tr class="gradeA">
+                                                                                    <td colspan="5">
+                                                                                        Ground
                                                                                     </td>
-                                                                                    <td class="center">5</td>
-                                                                                    <td class="center">C</td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <!-- foreach($) -->
+                                                                                    <td>
+                                                                                        c1
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        Total
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        0
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        0
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        0
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        0
+                                                                                    </td>
+
+                                                                                </tr>
+
+                                                                                <tr class="gradeA">
+                                                                                    <td colspan="5">
+                                                                                        Pump Room
+                                                                                    </td>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <!-- foreach($) -->
+                                                                                    <td>
+                                                                                        c1
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        Total
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        0
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        0
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        0
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        0
+                                                                                    </td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>

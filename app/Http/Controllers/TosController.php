@@ -10,9 +10,12 @@ use App\Models\tos2datafootplat;
 use App\Models\tos2datakolom;
 use App\Models\tos2kolompedestal;
 use App\Models\tos2lewatan;
+use App\Models\tos2pedestal;
+use App\Models\tos2summary;
 use Illuminate\Http\Request;
 
-class TosController extends Controller{
+class TosController extends Controller
+{
 
     public function index()
     {
@@ -20,17 +23,24 @@ class TosController extends Controller{
         $Tos12 = tos1footplat::all();
         $Tos13 = tos1pumproom::all();
         $Tos14 = tos1batukali::all();
-      
+
+        $Tos21 = tos2pedestal::all();
+        $Tos22 = tos2kolompedestal::all();
+        $Tos23 = tos2summary::all();
         $Tos24 = tos2lewatan::all();
         $Tos25 = tos2datafootplat::all();
         $Tos26 = tos2datakolom::all();
 
-        return view('detil_project', ['Tos11' => $Tos11, 'Tos12' => $Tos12, 'Tos13' => $Tos13, 'Tos14' => $Tos14, 
-        'Tos24' => $Tos24, 'Tos25' => $Tos25, 'Tos26' => $Tos26]);
+        return view('detil_project', [
+            'Tos11' => $Tos11, 'Tos12' => $Tos12, 'Tos13' => $Tos13, 'Tos14' => $Tos14,
+            'Tos21' => $Tos21, 'Tos22' => $Tos22, 'Tos23' => $Tos23,
+            'Tos24' => $Tos24, 'Tos25' => $Tos25, 'Tos26' => $Tos26
+        ]);
     }
 
     // Tos 1 OH
-    public function in_tos11(Request $req){
+    public function in_tos11(Request $req)
+    {
         $hasil = [
             'dia' => $req->dia,
             'p' => $req->p
@@ -40,12 +50,14 @@ class TosController extends Controller{
         return redirect('/target');
     }
 
-    public function del_tos11($id){
+    public function del_tos11($id)
+    {
         $post = tos1oandh::all()->where('id_tos11', $id)->each->delete();
         return redirect('/target');
     }
 
-    public function edit_tos11(Request $req){
+    public function edit_tos11(Request $req)
+    {
         //dd($req);
         $user = tos1oandh::all()->where("id_tos11", $req->idt)->first()->update([
             'dia' => $req->dia,
@@ -56,7 +68,8 @@ class TosController extends Controller{
     }
 
     // Tos 1 Foot Plat
-    public function in_tos12(Request $req){
+    public function in_tos12(Request $req)
+    {
         //Koefisien
         $lc = 0.05;
         $pasir = 0.05;
@@ -161,12 +174,14 @@ class TosController extends Controller{
         return redirect('/target');
     }
 
-    public function del_tos12 ($id) {
+    public function del_tos12($id)
+    {
         $post = tos1footplat::all()->where('id_tos12', $id)->each->delete();
         return redirect('/target');
     }
 
-    public function edit_tos12(Request $req){
+    public function edit_tos12(Request $req)
+    {
         //Koefisien
         $lc = 0.05;
         $pasir = 0.05;
@@ -269,7 +284,8 @@ class TosController extends Controller{
     }
 
     // Tos 1 Pump Room
-    public function in_tos13(Request $req){   
+    public function in_tos13(Request $req)
+    {
         //d/d($req);
         //Koefisien
         $lc = 0.05;
@@ -375,12 +391,14 @@ class TosController extends Controller{
         return redirect('/target');
     }
 
-    public function del_tos13 ($id) {
+    public function del_tos13($id)
+    {
         $post = tos1pumproom::all()->where('id_tos13', $id)->each->delete();
         return redirect('/target');
     }
 
-    public function edit_tos13(Request $req){   
+    public function edit_tos13(Request $req)
+    {
         // dd($req);
         //Koefisien
         $lc = 0.05;
@@ -484,7 +502,8 @@ class TosController extends Controller{
     }
 
     // Tos 1 Batu Kali
-    public function in_tos14(Request $req){
+    public function in_tos14(Request $req)
+    {
 
         $nama = $req['nama'];
         $bentuk = $req['bentuk'];
@@ -502,7 +521,7 @@ class TosController extends Controller{
         $hasil = [
             'nama' => $nama,
             'bentuk' => $bentuk,
-            'panjang' =>$panjang,
+            'panjang' => $panjang,
             'b' => $b,
             'b_' => $b_,
             'h' => $h,
@@ -517,12 +536,14 @@ class TosController extends Controller{
         return redirect('/target');
     }
 
-    public function del_tos14 ($id) {
+    public function del_tos14($id)
+    {
         $post = tos1pumproom::all()->where('id_tos14', $id)->each->delete();
         return redirect('/target');
     }
 
-    public function edit_tos14(Request $req){   
+    public function edit_tos14(Request $req)
+    {
         // dd($req);
         $nama = $req['nama'];
         $bentuk = $req['bentuk'];
@@ -540,7 +561,7 @@ class TosController extends Controller{
         $user = tos1batukali::all()->where("id_tos14", $req->idt)->first()->update([
             'nama' => $nama,
             'bentuk' => $bentuk,
-            'panjang' =>$panjang,
+            'panjang' => $panjang,
             'b' => $b,
             'b_' => $b_,
             'h' => $h,
@@ -555,23 +576,95 @@ class TosController extends Controller{
     }
 
 
-     // Tos 2 Lewatan
-     public function in_tos22(Request $req){
-        $hasil = [
-            'dia' => $req->dia,
-            'ls' => $req->ls
-        ];
+    // Tos 2 Lewatan
+    public function in_tos22(Request $req)
+    {
+
         // dd($req);
-        tos2kolompedestal::insert($hasil);
-        return redirect('/target');
+        $tipe_kolom = $req->tipe_kolom;
+        $tebal_plat = $req->tebal_plat;
+        $jum_kolom = $req->jum_kolom;
+        $footplat_type = $req->footplat_type;
+        $pk_sengkang_qty = $req->pk_sengkang_qty;
+
+        $isikolom = tos2datakolom::all()->where('nama', 'b');
+        $isifp = tos2datakolom::all()->where('nama', 'b');
+
+        foreach ($isikolom as $row) {
+
+            $footplat_b = ('cari footplat_b di data Kolom');
+            $footplat_h = ('cari footplat_h di data Kolom');
+            $footplat_p = ('cari footplat_p di data Kolom');
+            $dk_t = 1.5 - $footplat_p;
+        }
+
+        foreach ($isikolom as $row) {
+            
+            $dk_l = $row->dimensi_l;
+            $dk_p = $row->dimensi_p;
+            $tinggi_net = $dk_t - $tebal_plat;
+            $selimut_beton = $row->tebal_selimut;
+            
+            $pk_tulpok_dia = $row->tulpok_dia;;
+            $pk_tulpok_qty = $row->tulpok_jum;
+            $pk_sengkang_dia = ('cari pk_sengkang_dia di data Kolom');
+            $pk_sengkang_jarak = ('cari pk_sengkang_jarak di data Kolom');
+            $pk_tulanganpokok_ovlp = ('excel tidak mendukung penafsiran rumus');
+            $pk_tulanganpokok_suk = (28 * ($pk_tulpok_dia / 1000)) + (8 * ($pk_tulpok_dia / 1000));
+            $pk_tulanganpokok_kkf = $footplat_p + (20 * ($pk_tulpok_dia / 1000)) + (8 * ($pk_tulpok_dia / 1000));
+            $pk_tulanganpokok_p_besi = $pk_tulanganpokok_ovlp + $dk_t + $pk_tulanganpokok_suk + $pk_tulanganpokok_kkf;
+            $pk_tulanganpokok_total_p = ('excel tidak mendukung penafsiran rumus');
+            $pk_tulanganpokok_berat = (0.25 * 3.14 * $pk_tulpok_dia * $pk_tulpok_dia * 0.007855) * $pk_tulanganpokok_total_p * $jum_kolom;
+            $pk_sengkang2_tekukan_id = 6 * ($pk_sengkang_dia / 100);
+            $pk_sengkang2_tekukan_p = ((3.14 * $dk_l) + ($pk_sengkang2_tekukan_id * 2)) - ($selimut_beton * 8);
+            $pk_sengkang2_qty = ceil(($dk_t / ($pk_sengkang_jarak * 0.25)) + ($dk_t / ($pk_tulanganpokok_ovlp * 0.25)));
+            $pk_sengkang2_total_p = ('excel tidak mendukung penafsiran rumus');
+            $pk_sengkang2_berat = (0.25 * 3.14 * $pk_sengkang_dia * $pk_sengkang_dia * 0.007855) * $pk_sengkang2_total_p * $jum_kolom;
+            $besi = ('sum $pk_sengkang2_berat');
+            $beton = 'if $bentuk_kolom == Bundar=>' . '(3.14*(0.5*$dk_l)*(0.5*$dk_l)*$jum_kolom*$dk_t)' . 'else=>' . '$dk_l*$dk_p*$dk_t*$jum_kolom';
+            $bekisting = 'if $bentuk_kolom == Bundar=>' . '(3.14*$dk_l)*$tinggi_net*$jum_kolom' . 'else=>' . '($dk_l+$dk_p)*2*$tinggi_net*$jum_kolom';
+            $timbunan = (($footplat_b * $footplat_h) - ($dk_l * $dk_p)) * $tinggi_net * 1.2 * $jum_kolom;
+            $rasio_besi = $besi / $beton;
+
+            // echo $row->dimensi_l;
+            // echo $row->dimensi_p;
+            // echo $row->tebal_selimut;
+            // echo $row->tulpok_dia;
+            // echo $row->tulpok_jum;
+            echo $row->tulseng_dia_tumpuan;
+            echo $row->tulseng_dia_lapangan;
+            echo $row->tulseng_dia_jaraklap;
+            echo $row->tulseng_dia_jaraktump;
+            echo $row->thtump_dia;
+            echo $row->thtump_jarak;
+            echo $row->thlap_dia;
+            echo $row->thlap_jarak;
+            echo $row->tvtump_dia;
+            echo $row->tvtump_jarak;
+            echo $row->tvlap_dia;
+            echo $row->tvlap_jarak;
+        }
+
+        $hasil = [
+            'tipe_kolom' => $req->tipe_kolom,
+            'tebal_plat' => $req->tebal_plat,
+            'jum_kolom' => $req->jum_kolom,
+            'footplat_type' => $req->footplat_type,
+            'pk_sengkang_qty' => $req->pk_sengkang_qty,
+        ];
+
+        // tos2kolompedestal::insert($hasil);
+        // return redirect('/target');
     }
 
-    public function del_tos22($id){
+    public function del_tos22($id)
+    {
         $post = tos2kolompedestal::all()->where('id_tos22', $id)->each->delete();
         return redirect('/target');
     }
 
-    public function edit_tos22(Request $req){
+    public function edit_tos22(Request $req)
+    {
         //dd($req);
         $user = tos2kolompedestal::all()->where("id_tos22", $req->idt)->first()->update([
             'dia' => $req->dia,
@@ -583,7 +676,8 @@ class TosController extends Controller{
 
 
     // Tos 2 Data Kolom
-    public function in_tos26(Request $req){
+    public function in_tos26(Request $req)
+    {
         // dd($req);
         $hasil = [
             'nama' => $req->nama,
@@ -611,15 +705,17 @@ class TosController extends Controller{
         return redirect('/target');
     }
 
-    public function del_tos26($id){
+    public function del_tos26($id)
+    {
         $post = tos2datakolom::all()->where('id_tos26', $id)->each->delete();
         return redirect('/target');
     }
 
-    public function edit_tos26(Request $req){
+    public function edit_tos26(Request $req)
+    {
         //dd($req);
         $user = tos2datakolom::all()->where("id_tos26", $req->idt)->first()->update([
-            'nama' => $req-> nama,
+            'nama' => $req->nama,
             'bentuk' => $req->bentuk,
             'dimensi_l' => $req->dimensi_l,
             'dimensi_p' => $req->dimensi_p,
@@ -644,7 +740,8 @@ class TosController extends Controller{
     }
 
     // Tos 2 Lewatan
-    public function in_tos24(Request $req){
+    public function in_tos24(Request $req)
+    {
         $hasil = [
             'dia' => $req->dia,
             'ls' => $req->ls
@@ -654,12 +751,14 @@ class TosController extends Controller{
         return redirect('/target');
     }
 
-    public function del_tos24($id){
+    public function del_tos24($id)
+    {
         $post = tos2lewatan::all()->where('id_tos24', $id)->each->delete();
         return redirect('/target');
     }
 
-    public function edit_tos24(Request $req){
+    public function edit_tos24(Request $req)
+    {
         //dd($req);
         $user = tos2lewatan::all()->where("id_tos24", $req->idt)->first()->update([
             'dia' => $req->dia,
@@ -670,25 +769,28 @@ class TosController extends Controller{
     }
 
     // tos 2 data footplat
-    public function in_tos25(Request $req){
+    public function in_tos25(Request $req)
+    {
         $hasil = [
             'nama' => $req->nama,
             'b' => $req->b,
             'h' => $req->h,
             't' => $req->t,
-            
+
         ];
         // dd($req);
         tos2datafootplat::insert($hasil);
         return redirect('/target');
     }
 
-    public function del_tos25($id){
+    public function del_tos25($id)
+    {
         $post = tos2datafootplat::all()->where('id_tos25', $id)->each->delete();
         return redirect('/target');
     }
 
-    public function edit_tos25(Request $req){
+    public function edit_tos25(Request $req)
+    {
         // dd($req);
         $user = tos2datafootplat::all()->where("id_tos25", $req->idt)->first()->update([
             'nama' => $req->nama,
@@ -699,5 +801,4 @@ class TosController extends Controller{
         ]);
         return redirect('/target');
     }
-    
 }

@@ -136,31 +136,31 @@
                 <form action="tos14" method="post">
 
                     <div class="form-group">
-                        <label for="Nama">Nama</label> 
+                        <label for="Nama">Nama</label>
                         <input type="text" class="form-control" name="nama" id="Nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
-                        <label for="bentuk">Bantuk</label> 
+                        <label for="bentuk">Bantuk</label>
                         <input type="text" class="form-control" name="bentuk" id="bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
-                        <label for="bentuk">Panjang</label> 
+                        <label for="bentuk">Panjang</label>
                         <input type="text" class="form-control" name="panjang" id="bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
-                        <label for="B">B</label> 
+                        <label for="B">B</label>
                         <input type="text" class="form-control" name="B" id="B" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
-                        <label for="B_">B'</label> 
+                        <label for="B_">B'</label>
                         <input type="text" class="form-control" name="B_" id="B_" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
-                        <label for="H">H</label> 
+                        <label for="H">H</label>
                         <input type="text" class="form-control" name="H" id="H" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
-                        <label for="H">Panjang</label> 
+                        <label for="H">Panjang</label>
                         <input type="text" class="form-control" name="panjang" id="panjang" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -406,11 +406,11 @@
                 <form action="tos24" method="post">
                     <div class="form-group">
                         <label for="Dia">Dia</label>
-                        <input type="text" class="form-control" name="dia" id="Dia" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" name="dia" id="Dia" placeholder=". . .">
                     </div>
                     <div class="form-group">
                         <label for="ls">Ls</label>
-                        <input type="text" class="form-control" name="ls" id="ls">
+                        <input type="text" class="form-control" name="ls" id="ls" placeholder=". . .">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -420,26 +420,34 @@
 </div>
 
 <!-- tos 2 ground flour -->
-<div class="modal fade" id="tos2GroundFloor" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+<div class="modal fade" id="tos2groundfloor" role="dialog" arialabelledby="modalLabel" area-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Batu Kali</h2>
+                <h2>Kolom Pedestal</h2>
             </div>
             <div class="container">
-                <form>
-
+                <form action="tos22" method="post">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <label for="tipe_kolom">Tipe Kolom</label>
+                        <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . .">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <label for="ls">Tebal Kolom</label>
+                                <input type="text" class="form-control" name="tebal_plat" id="tebal_plat" placeholder=". . .">
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div class="form-group">
+                        <label for="jum_kolom">Jumlah Kolom</label>
+                        <input type="text" class="form-control" name="jum_kolom" id="jum_kolom" placeholder=". . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="ls">Tipe Footplat</label>
+                        <input type="text" class="form-control" name="footplat_type" id="footplat_type" placeholder=". . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="pk_sengkang_qty">Penulangan Kolom Sengkang qty</label>
+                        <input type="text" class="form-control" name="pk_sengkang_qty" id="pk_sengkang_qty" placeholder=". . .">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

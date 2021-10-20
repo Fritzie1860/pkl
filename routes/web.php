@@ -70,6 +70,10 @@ Route::get('/projects', [ProjectController::class, 'index']);
     Route::post('tos21_edit', [TosController::class, 'edit_tos21']);
     Route::get('tos21_del/{id}', [TosController::class, 'del_tos21']);
 
+    Route::post('tos22', [TosController::class, 'in_tos22']);
+    Route::post('tos22_edit', [TosController::class, 'edit_tos22']);
+    Route::get('tos22_del/{id}', [TosController::class, 'del_tos22']);
+
 Route::group(['middleware' => 'auth'], function () {
    
     
