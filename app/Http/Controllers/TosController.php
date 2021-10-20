@@ -576,7 +576,34 @@ class TosController extends Controller
     }
 
 
-    // Tos 2 Lewatan
+     // Tos 2 Pedestal
+     public function in_tos21(Request $req)
+     {
+        $detil = new tos2pedestal();
+        $hasil = $detil->detil();
+        dd($hasil);
+     }
+ 
+     public function del_tos21($id)
+     {
+         $post = tos2lewatan::all()->where('id_tos24', $id)->each->delete();
+         return redirect('/target');
+     }
+ 
+     public function edit_tos21(Request $req)
+     {
+         $coba = tos2pedestal::all()->detil();
+
+         dd($coba);
+        //  $user = tos2lewatan::all()->where("id_tos24", $req->idt)->first()->update([
+        //      'dia' => $req->dia,
+        //      'ls' => $req->ls,
+ 
+        //  ]);
+        //  return redirect('/target');
+     }
+
+    // Tos 2 kolome Pedestal
     public function in_tos22(Request $req)
     {
 
@@ -588,9 +615,9 @@ class TosController extends Controller
         $pk_sengkang_qty = $req->pk_sengkang_qty;
 
         $isikolom = tos2datakolom::all()->where('nama', 'b');
-        $isifp = tos2datakolom::all()->where('nama', 'b');
+        $isifp = tos2datafootplat::all()->where('nama', 'b');
 
-        foreach ($isikolom as $row) {
+        foreach ($isifp as $row) {
 
             $footplat_b = ('cari footplat_b di data Kolom');
             $footplat_h = ('cari footplat_h di data Kolom');

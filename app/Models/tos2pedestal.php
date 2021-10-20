@@ -49,4 +49,8 @@ class tos2pedestal extends Model
             'timbunan',
             'rasio_besi',
     ];
+
+    public function detil () {
+        return tos2pedestal::join('tos2datakolom', 'tos2pedestal.tipe_kolom', '=', 'tos2datakolom.nama')->get();
+    }
 }
