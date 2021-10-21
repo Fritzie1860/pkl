@@ -21,7 +21,8 @@ class tos2kolompedestal extends Model
     ];
 
     public function detil () {
-        return tos2pedestal::join('tos2datakolom', 'tos2pedestal.tipe_kolom', '=', 'tos2datakolom.nama')->
-        join('tos2datafootplat', 'tos2pedestal.footplat_type', '=', 'tos2datafootplat.nama')->get();
+        return tos2kolompedestal::join('tos2datakolom', 'tos2kolompedestal.tipe_kolom', '=', 'tos2datakolom.nama')->
+        join('tos2datafootplat', 'tos2kolompedestal.footplat_type', '=', 'tos2datafootplat.nama')->
+        join('tos2lewatan', 'tos2datakolom.tulpok_dia', '=', 'tos2lewatan.dia')->get();
     }
 }

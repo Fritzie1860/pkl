@@ -19,7 +19,7 @@ class CreateTos2kolompedestalTable extends Migration
             $table->double('tebal_plat', 5);
             $table->double('jum_kolom', 5);
             $table->string('footplat_type', 100);
-            $table->double('pk_tulpok_qty', 5);
+            $table->double('pk_sengkang_qty', 5);
         });
     }
 

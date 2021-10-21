@@ -877,7 +877,7 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                @foreach($Tos21 as $row)
+                                                                                @foreach($Tos22 as $row)
                                                                                 <tr class="gradeA">
                                                                                     <td>{{$row->tipe_kolom}}</td>
                                                                                     <td>{{$row->bentuk_kolom}}</td>
@@ -1179,7 +1179,7 @@
                                                                             </thead>
 
                                                                             <tbody>
-                                                                                @foreach($Tos21 as $row)
+                                                                                @foreach($Tos22 as $row)
                                                                                 <tr class="gradeA">
 
                                                                                     <td>{{$row->tipe_kolom}}</td>
