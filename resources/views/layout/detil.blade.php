@@ -968,12 +968,7 @@
                                                                                     <td>{{$row->tulseng_dia_lapangan}}</td>
                                                                                     <td>{{$row->pk_sengkang_qty}}</td>
                                                                                     <td>{{$row->tulseng_dia_jaraklap}}</td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
+
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tulseng_dia_lapangan/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
@@ -991,12 +986,7 @@
                                                                                     <td>{{$row->tulseng_dia_tumpuan}}</td>
                                                                                     <td>{{$row->pk_sengkang_qty}}</td>
                                                                                     <td>{{$row->tulseng_dia_jaraktump}}</td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
+
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tulseng_dia_tumpuan/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
@@ -1015,12 +1005,7 @@
                                                                                     <td>{{$row->tvtump_dia}}</td>
                                                                                     <td>{{$row->pk_sengkang_qty}}</td>
                                                                                     <td>{{$row->tvtump_jarak}}</td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
+
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tvtump_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
@@ -1038,12 +1023,7 @@
                                                                                     <td>{{$row->tvlap_dia}}</td>
                                                                                     <td>{{$row->pk_sengkang_qty}}</td>
                                                                                     <td>{{$row->tvlap_jarak}}</td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
+
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tvlap_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
@@ -1061,12 +1041,7 @@
                                                                                     <td>{{$row->thtump_dia}}</td>
                                                                                     <td>{{$row->pk_sengkang_qty}}</td>
                                                                                     <td>{{$row->thtump_jarak}}</td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
+
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->thtump_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
@@ -1083,12 +1058,7 @@
                                                                                     <td>{{$row->thlap_dia}}</td>
                                                                                     <td>{{$row->pk_sengkang_qty}}</td>
                                                                                     <td>{{$row->thlap_jarak}}</td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
+
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->thlap_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
