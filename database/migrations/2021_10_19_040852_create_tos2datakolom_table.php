@@ -23,9 +23,9 @@ class CreateTos2datakolomTable extends Migration
             $table->double('tulpok_dia',5);
             $table->double('tulpok_jum',5);
             $table->double('tulseng_dia_tumpuan',5);
+            $table->double('tulseng_dia_jaraktump',5);
             $table->double('tulseng_dia_lapangan',5);
             $table->double('tulseng_dia_jaraklap',5);
-            $table->double('tulseng_dia_jaraktump',5);
             $table->double('thtump_dia',5);
             $table->double('thtump_jarak',5);
             $table->double('thlap_dia',5);

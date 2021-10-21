@@ -461,7 +461,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Batu Kali</h2>
+                <h2>Pedestal</h2>
             </div>
             <div class="container">
             <div class="container">
