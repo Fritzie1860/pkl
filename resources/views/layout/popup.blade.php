@@ -428,14 +428,20 @@
             </div>
             <div class="container">
                 <form action="tos22" method="post">
-                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                     <div class="form-group">
                         <label for="tipe_kolom">Tipe Kolom</label>
-                        <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . .">
+                        <!-- <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . ."> -->
+                        <select id="tipetos26" style="float:right; margin-top:5px; width:150px; font-size:16px">
+                            @foreach($Tos26 as $row)
+                            <option value="1">{{$row->nama}}</option>
+                            @endforeach
+                        </select>
                     </div>
+
                     <div class="form-group">
                         <label for="ls">Tebal Kolom</label>
-                                <input type="text" class="form-control" name="tebal_plat" id="tebal_plat" placeholder=". . .">
+                        <input type="text" class="form-control" name="tebal_plat" id="tebal_plat" placeholder=". . .">
                     </div>
                     <div class="form-group">
                         <label for="jum_kolom">Jumlah Kolom</label>
@@ -443,7 +449,11 @@
                     </div>
                     <div class="form-group">
                         <label for="ls">Tipe Footplat</label>
-                        <input type="text" class="form-control" name="footplat_type" id="footplat_type" placeholder=". . .">
+                        <select id="tipetos25" style="float:right; margin-top:5px; width:150px; font-size:16px">
+                            @foreach($Tos25 as $row)
+                            <option value="1">{{$row->nama}}</option>
+                            @endforeach
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="pk_sengkang_qty">Penulangan Kolom Sengkang qty</label>
@@ -464,32 +474,43 @@
                 <h2>Pedestal</h2>
             </div>
             <div class="container">
-            <div class="container">
-                <form action="tos21" method="post">
-                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                    <div class="form-group">
-                        <label for="tipe_kolom">Tipe Kolom</label>
-                        <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . .">
-                    </div>
-                    <div class="form-group">
-                        <label for="ls">Tebal Kolom</label>
-                                <input type="text" class="form-control" name="tebal_plat" id="tebal_plat" placeholder=". . .">
-                    </div>
-                    <div class="form-group">
-                        <label for="jum_kolom">Jumlah Kolom</label>
-                        <input type="text" class="form-control" name="jum_kolom" id="jum_kolom" placeholder=". . .">
-                    </div>
-                    <div class="form-group">
-                        <label for="ls">Tipe Footplat</label>
-                        <input type="text" class="form-control" name="footplat_type" id="footplat_type" placeholder=". . .">
-                    </div>
-                    <div class="form-group">
-                        <label for="pk_sengkang_qty">Penulangan Kolom Sengkang qty</label>
-                        <input type="text" class="form-control" name="pk_sengkang_qty" id="pk_sengkang_qty" placeholder=". . .">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
+                <div class="container">
+                    <form action="tos21" method="post">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+
+                        <div class="form-group">
+                            <label for="tipe_kolom">Tipe Kolom</label>
+                            <!-- <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . ."> -->
+                            <select id="tipetos26" style="float:right; margin-top:5px; width:150px; font-size:16px">
+                                @foreach($Tos26 as $row)
+                                <option value="1">{{$row->nama}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ls">Tebal Kolom</label>
+                            <input type="text" class="form-control" name="tebal_plat" id="tebal_plat" placeholder=". . .">
+                        </div>
+                        <div class="form-group">
+                            <label for="jum_kolom">Jumlah Kolom</label>
+                            <input type="text" class="form-control" name="jum_kolom" id="jum_kolom" placeholder=". . .">
+                        </div>
+                        <div class="form-group">
+                            <label for="ls">Tipe Footplat</label>
+                            <select id="tipetos25" style="float:right; margin-top:5px; width:150px; font-size:16px">
+                                @foreach($Tos25 as $row)
+                                <option value="1">{{$row->nama}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pk_sengkang_qty">Penulangan Kolom Sengkang qty</label>
+                            <input type="text" class="form-control" name="pk_sengkang_qty" id="pk_sengkang_qty" placeholder=". . .">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
