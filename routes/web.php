@@ -38,6 +38,8 @@ Route::get('/projects', [ProjectController::class, 'index']);
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('home');
 
     Route::get("/target", [TosController::class, 'index']);
+    Route::get("/hasil", [TosController::class, 'hasil']);
+
     Route::post('tos11', [TosController::class, 'in_tos11']);
     Route::post('tos11_edit', [TosController::class, 'edit_tos11']);
     Route::get('tos11_del/{id}', [TosController::class, 'del_tos11']);

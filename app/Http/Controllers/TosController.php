@@ -44,6 +44,28 @@ class TosController extends Controller
         ]);
     }
 
+    public function hasil()
+    {
+
+        $pedes = new tos2pedestal();
+        $kopedes = new tos2kolompedestal();
+        
+
+        // dd($coba->detil());
+
+        $Tos21 = $pedes->detil();
+        $Tos22 = $kopedes->detil();
+        $Tos23 = tos2summary::all();
+        $Tos24 = tos2lewatan::all();
+        $Tos25 = tos2datafootplat::all();
+        $Tos26 = tos2datakolom::all();
+
+        return view('hasil', [
+            'Tos21' => $Tos21, 'Tos22' => $Tos22, 'Tos23' => $Tos23,
+            'Tos24' => $Tos24, 'Tos25' => $Tos25, 'Tos26' => $Tos26
+        ]);
+    }
+
     // Tos 1 OH
     public function in_tos11(Request $req)
     {
