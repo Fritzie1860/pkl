@@ -1403,7 +1403,8 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->thtump_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(6*($row->thtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2))}}</td>
+                                                                                    <td>{{((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2)}}
+                                                                                    </td>
                                                                                     <!-- sengkang qty  -->
                                                                                     <td>{{ceil((($row->jum_kolom)*0.25)/$row->thtump_jarak)+(1*$row->pk_sengkang_qty)}}</td>
                                                                                     <!-- sengkang total panjang  -->
@@ -1420,7 +1421,8 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->thlap_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(6*($row->thlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2))}}</td>
+                                                                                    <td>{{((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2)}}
+                                                                                    </td>
                                                                                     <!-- sengkang qty  -->
                                                                                     <td>{{ceil((($row->jum_kolom)*0.25)/$row->thlap_jarak)+(1*$row->pk_sengkang_qty)}}</td>
                                                                                     <!-- sengkang total panjang  -->
