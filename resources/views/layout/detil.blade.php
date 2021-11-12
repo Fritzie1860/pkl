@@ -879,6 +879,30 @@
                                                                             <tbody>
                                                                                 @foreach($Tos22 as $row)
                                                                                 <?php
+                                                                                $a=round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8),2); $b=ceil((1.5-$row->t)/$row->tulseng_dia_jaraktump*0.25+($row->ls/$row->tulseng_dia_jaraktump*0.25))+$row->pk_sengkang_qty;
+                                                                                $b1= round(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.00785*$a*$b*$row->jum_kolom,2);
+                                                               
+                                                                                $a = round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/1000)*2)-($row->tebal_selimut*8),2);
+                                                                                   $b = ceil(((1.5-$row->t)/$row->tulseng_dia_jaraklap*0.2)+($row->ls/$row->tulseng_dia_jaraklap*0.2))*$row->pk_sengkang_qty;
+                                                                                $b2= round(0.25*3.14*$row->tulseng_dia_lapangan*$row->tulseng_dia_lapangan*0.00785*$a*$b*$row->jum_kolom,2);
+                                                               
+                                                                                $a = round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8),2);
+                                                                           $b = ceil((1.5-$row->t)/$row->tulseng_dia_jaraktump*0.25+(round($row->ls,2)/$row->tulseng_dia_jaraktump*0.25))+$row->pk_sengkang_qty;
+                                                                                $b3 = round(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.00785*$a*$b*$row->jum_kolom,2);
+                                                               
+                                                                                $a = round((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2);
+                                                                           $b = ceil($row->jum_kolom/$row->tvlap_jarak*0.2)*$row->pk_sengkang_qty;
+                                                                                $b4= round(0.25*3.14*$row->tvlap_dia*$row->tvlap_dia*0.00785*$a*$b*$row->jum_kolom,2);
+                                                                                $b5= round(0.25*3.14*$row->tvlap_dia*$row->tvlap_dia*0.00785*((round((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2))*(ceil((($row->jum_kolom)*0.25)/$row->tvlap_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom,2);
+                                                               
+                                                                                $a = round(((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2),2);
+                                                                                $b = ceil($row->jum_kolom/$row->thtump_jarak*0.25)+$row->pk_sengkang_qty;
+                                                                                $b6= round(0.25*3.14*$row->thtump_dia*$row->thtump_dia*0.00785*$a*$b*$row->jum_kolom,2);
+                                                               
+                                                                                $a = round(((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2),2);
+                                                                           $b = ceil($row->jum_kolom/$row->thlap_jarak*0.2)*$row->pk_sengkang_qty;
+                                                                                $b7=round(0.25*3.14*$row->thlap_dia*$row->thlap_dia*0.00785*$a*$b*$row->jum_kolom,2);
+                                                                                                                                               $tos22_tamp_berat2 =  $b1+$b2 +$b3  +$b4  +$b5 +$b6+$b7;
                                                                                 $tos22_tamp_berat = (0.25 * 3.14 * $row->tulseng_dia_tumpuan * $row->tulseng_dia_tumpuan * 0.007855) * (((3.14 * $row->dimensi_l) + (6 * ($row->tulseng_dia_tumpuan / 1000) * 2) - ($row->tebal_selimut * 8)) * (ceil(((1.5 - $row->t) / ($row->tulseng_dia_jaraktump * 0.25)) + (($row->ls) / ($row->tulseng_dia_jaraktump * 0.25))) + 1 * $row->pk_sengkang_qty)) * $row->jum_kolom + (0.25 * 3.14 * $row->tulseng_dia_lapangan * $row->tulseng_dia_lapangan * 0.007855) * (((3.14 * $row->dimensi_l) + (6 * ($row->tulseng_dia_lapangan / 1000) * 2) - ($row->tebal_selimut * 8)) * (ceil(((1.5 - $row->t) / ($row->tulseng_dia_jaraklap * 0.25)) + (($row->ls) / ($row->tulseng_dia_jaraklap * 0.25))) + 1 * $row->pk_sengkang_qty)) * $row->jum_kolom + (0.25 * 3.14 * $row->tulseng_dia_tumpuan * $row->tulseng_dia_tumpuan * 0.007855) * (((3.14 * $row->dimensi_l) + (6 * ($row->tulseng_dia_tumpuan / 1000) * 2) - ($row->tebal_selimut * 8)) * (ceil(((1.5 - $row->t) / ($row->tulseng_dia_jaraktump * 0.25)) + (($row->ls) / ($row->tulseng_dia_jaraktump * 0.25))) + 1 * $row->pk_sengkang_qty)) * $row->jum_kolom + 0.25 * 3.14 * $row->tvtump_dia * $row->tvtump_dia * 0.00785 * (((6 * ($row->tvtump_dia / 1000)) * 2 + (($row->dimensi_p) - (($row->tebal_selimut) * 2))) * (ceil((($row->jum_kolom) * 0.25) / $row->tvtump_jarak) + (1 * $row->pk_sengkang_qty))) * $row->jum_kolom + 0.25 * 3.14 * $row->tvlap_dia * $row->tvlap_dia * 0.00785 * (((6 * ($row->tvlap_dia / 1000)) * 2 + (($row->dimensi_p) - (($row->tebal_selimut) * 2))) * (ceil((($row->jum_kolom) * 0.25) / $row->tvlap_jarak) + (1 * $row->pk_sengkang_qty))) * $row->jum_kolom + 0.25 * 3.14 * $row->thtump_dia * $row->thtump_dia * 0.00785 * (((6 * ($row->thtump_dia / 1000)) * 2 + (($row->dimensi_p) - (($row->tebal_selimut) * 2))) * (ceil((($row->jum_kolom) * 0.25) / $row->thtump_jarak) + (1 * $row->pk_sengkang_qty))) * $row->jum_kolom + 0.25 * 3.14 * $row->thlap_dia * $row->thlap_dia * 0.00785 * (((6 * ($row->thlap_dia / 1000)) * 2 + (($row->dimensi_p) - (($row->tebal_selimut) * 2))) * (ceil((($row->jum_kolom) * 0.25) / $row->thlap_jarak) + (1 * $row->pk_sengkang_qty))) * $row->jum_kolom;
                                                                                 ?>
                                                                                 <tr class="gradeA">
@@ -927,7 +951,7 @@
                                                                                     <td>{{$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                         +$row->ls+$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                     +(1.5-$row->t))}}</td>
-                                                                                    <!-- tulang panjang  -->
+                                                                                    <!-- total panjang  -->
                                                                                     <td>{{(0.25*3.14*$row->tulpok_dia*$row->tulpok_dia*0.007855)*$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                         +$row->ls+$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                     +(1.5-$row->t))*$row->jum_kolom}}</td>
@@ -981,13 +1005,13 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tulseng_dia_tumpuan/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8)}}</td>
+                                                                                    <td>{{round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8),2)}}</td>
                                                                                     <!-- sengkang qty  -->
                                                                                     <td>{{ceil((1.5-$row->t/$row->tulseng_dia_jaraktump*0.25)+($row->ls/$row->tulseng_dia_jaraktump *0.25))+1*$row->pk_sengkang_qty}}</td>
                                                                                     <!-- sengkang total panjang  -->
-                                                                                    <td>{{((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+(($row->ls)/($row->tulseng_dia_jaraktump *0.25)))+1*$row->pk_sengkang_qty)}}</td>
+                                                                                    <td>{{(round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8),2))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+(($row->ls)/($row->tulseng_dia_jaraktump *0.25)))+1*$row->pk_sengkang_qty)}}</td>
                                                                                     <!-- sengkang berat  -->
-                                                                                    <td>{{(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.007855)*(((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+(($row->ls)/($row->tulseng_dia_jaraktump *0.25)))+1*$row->pk_sengkang_qty))*$row->jum_kolom}}</td>
+                                                                                    <td>{{(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.007855)*((round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8),2))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+(($row->ls)/($row->tulseng_dia_jaraktump *0.25)))+1*$row->pk_sengkang_qty))*$row->jum_kolom}}</td>
 
                                                                                 </tr>
                                                                                 <tr class="gradeA">
@@ -1000,13 +1024,13 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tulseng_dia_lapangan/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/1000)*2)-($row->tebal_selimut*8)}}</td>
+                                                                                    <td>{{round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/1000)*2)-($row->tebal_selimut*8),2)}}</td>
                                                                                     <!-- sengkang qty  -->
                                                                                     <td>{{ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+(($row->ls)/($row->tulseng_dia_jaraklap *0.25)))+1*$row->pk_sengkang_qty}}</td>
                                                                                     <!-- sengkang total panjang  -->
-                                                                                    <td>{{((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/1000)*2)-($row->tebal_selimut*8))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+(($row->ls)/($row->tulseng_dia_jaraklap *0.25)))+1*$row->pk_sengkang_qty)}}</td>
+                                                                                    <td>{{(round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/1000)*2)-($row->tebal_selimut*8),2))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+(($row->ls)/($row->tulseng_dia_jaraklap *0.25)))+1*$row->pk_sengkang_qty)}}</td>
                                                                                     <!-- sengkang berat  -->
-                                                                                    <td>{{(0.25*3.14*$row->tulseng_dia_lapangan*$row->tulseng_dia_lapangan*0.007855)*(((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/1000)*2)-($row->tebal_selimut*8))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+(($row->ls)/($row->tulseng_dia_jaraklap *0.25)))+1*$row->pk_sengkang_qty))*$row->jum_kolom}}</td>
+                                                                                    <td>{{(0.25*3.14*$row->tulseng_dia_lapangan*$row->tulseng_dia_lapangan*0.007855)*((round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/1000)*2)-($row->tebal_selimut*8),2))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+(($row->ls)/($row->tulseng_dia_jaraklap *0.25)))+1*$row->pk_sengkang_qty))*$row->jum_kolom}}</td>
                                                                                 </tr>
                                                                                 <tr class="gradeA">
                                                                                     <td>Sengkang Tumpuan</td>
@@ -1018,13 +1042,13 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tulseng_dia_tumpuan/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8)}}</td>
+                                                                                    <td>{{round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8),2)}}</td>
                                                                                     <!-- sengkang qty  -->
                                                                                     <td>{{ceil((1.5-$row->t/$row->tulseng_dia_jaraktump*0.25)+($row->ls/$row->tulseng_dia_jaraktump *0.25))+1*$row->pk_sengkang_qty}}</td>
                                                                                     <!-- sengkang total panjang  -->
-                                                                                    <td>{{((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+(($row->ls)/($row->tulseng_dia_jaraktump *0.25)))+1*$row->pk_sengkang_qty)}}</td>
+                                                                                    <td>{{(round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8),2))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+(($row->ls)/($row->tulseng_dia_jaraktump *0.25)))+1*$row->pk_sengkang_qty)}}</td>
                                                                                     <!-- sengkang berat  -->
-                                                                                    <td>{{(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.007855)*(((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+(($row->ls)/($row->tulseng_dia_jaraktump *0.25)))+1*$row->pk_sengkang_qty))*$row->jum_kolom}}</td>
+                                                                                    <td>{{(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.007855)*((round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8),2))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+(($row->ls)/($row->tulseng_dia_jaraktump *0.25)))+1*$row->pk_sengkang_qty))*$row->jum_kolom}}</td>
 
                                                                                 </tr>
                                                                                 <tr class="gradeA">
@@ -1037,13 +1061,13 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tvtump_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(6*($row->tvtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2))}}</td>
+                                                                                    <td>{{round((6*($row->tvtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2)}}</td>
                                                                                     <!-- sengkang qty  -->
                                                                                     <td>{{ceil((($row->jum_kolom)*0.25)/$row->tvtump_jarak)+(1*$row->pk_sengkang_qty)}}</td>.
                                                                                     <!-- sengkang total panjang  -->
-                                                                                    <td>{{((6*($row->tvtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->tvtump_jarak)+(1*$row->pk_sengkang_qty))}}</td>.
+                                                                                    <td>{{(round((6*($row->tvtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2))*(ceil((($row->jum_kolom)*0.25)/$row->tvtump_jarak)+(1*$row->pk_sengkang_qty))}}</td>.
                                                                                     <!-- sengkang berat  -->
-                                                                                    <td>{{0.25*3.14*$row->tvtump_dia*$row->tvtump_dia*0.00785*(((6*($row->tvtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->tvtump_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom}}</td>
+                                                                                    <td>{{0.25*3.14*$row->tvtump_dia*$row->tvtump_dia*0.00785*((round((6*($row->tvtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2))*(ceil((($row->jum_kolom)*0.25)/$row->tvtump_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom}}</td>
                                                                                 </tr>
                                                                                 <tr class="gradeA">
                                                                                     <td> Ties - Vertikal Lapangan</td>
@@ -1055,13 +1079,13 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tvlap_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2))}}</td>
+                                                                                    <td>{{round((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2)}}</td>
                                                                                     <!-- sengkang qty  -->
                                                                                     <td>{{ceil((($row->jum_kolom)*0.25)/$row->tvlap_jarak)+(1*$row->pk_sengkang_qty)}}</td>
                                                                                     <!-- sengkang total panjang  -->
-                                                                                    <td>{{((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->tvlap_jarak)+(1*$row->pk_sengkang_qty))}}</td>
+                                                                                    <td>{{(round((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2))*(ceil((($row->jum_kolom)*0.25)/$row->tvlap_jarak)+(1*$row->pk_sengkang_qty))}}</td>
                                                                                     <!-- sengkang berat  -->
-                                                                                    <td>{{0.25*3.14*$row->tvlap_dia*$row->tvlap_dia*0.00785*(((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->tvlap_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom}}</td>
+                                                                                    <td>{{0.25*3.14*$row->tvlap_dia*$row->tvlap_dia*0.00785*((round((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2))*(ceil((($row->jum_kolom)*0.25)/$row->tvlap_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom}}</td>
                                                                                 </tr>
                                                                                 <tr class="gradeA">
                                                                                     <td> Ties - Horisontal Tumpuan</td>
@@ -1073,13 +1097,13 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->thtump_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(6*($row->thtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2))}}</td>
+                                                                                    <td>{{round((6*($row->thtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2)}}</td>
                                                                                     <!-- sengkang qty  -->
                                                                                     <td>{{ceil((($row->jum_kolom)*0.25)/$row->thtump_jarak)+(1*$row->pk_sengkang_qty)}}</td>
                                                                                     <!-- sengkang total panjang  -->
-                                                                                    <td>{{((6*($row->thtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->thtump_jarak)+(1*$row->pk_sengkang_qty))}}</td>
+                                                                                    <td>{{(round((6*($row->thtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2))*(ceil((($row->jum_kolom)*0.25)/$row->thtump_jarak)+(1*$row->pk_sengkang_qty))}}</td>
                                                                                     <!-- sengkang berat  -->
-                                                                                    <td>{{0.25*3.14*$row->thtump_dia*$row->thtump_dia*0.00785*(((6*($row->thtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->thtump_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom}}</td>
+                                                                                    <td>{{0.25*3.14*$row->thtump_dia*$row->thtump_dia*0.00785*((round((6*($row->thtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2))*(ceil((($row->jum_kolom)*0.25)/$row->thtump_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom}}</td>
                                                                                 </tr>
                                                                                 <tr class="gradeA">
                                                                                     <td> Ties - Horisontal Lapangan</td>
@@ -1090,13 +1114,13 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->thlap_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(6*($row->thlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2))}}</td>
+                                                                                    <td>{{round((6*($row->thlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2)}}</td>
                                                                                     <!-- sengkang qty  -->
                                                                                     <td>{{ceil((($row->jum_kolom)*0.25)/$row->thlap_jarak)+(1*$row->pk_sengkang_qty)}}</td>
                                                                                     <!-- sengkang total panjang  -->
-                                                                                    <td>{{((6*($row->thlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->thlap_jarak)+(1*$row->pk_sengkang_qty))}}</td>
+                                                                                    <td>{{(round((6*($row->thlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2))*(ceil((($row->jum_kolom)*0.25)/$row->thlap_jarak)+(1*$row->pk_sengkang_qty))}}</td>
                                                                                     <!-- sengkang berat  -->
-                                                                                    <td>{{0.25*3.14*$row->thlap_dia*$row->thlap_dia*0.00785*(((6*($row->thlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->thlap_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom}}</td>
+                                                                                    <td>{{0.25*3.14*$row->thlap_dia*$row->thlap_dia*0.00785*((round((6*($row->thlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2))*(ceil((($row->jum_kolom)*0.25)/$row->thlap_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom}}</td>
                                                                                 </tr>
                                                                                 @endforeach
                                                                             </tbody>
@@ -1207,9 +1231,33 @@
                                                                             </thead>
 
                                                                             <tbody>
-                                                                                @foreach($Tos21 as $row)
+                                                                                @foreach($Tos22 as $row)
                                                                                 <?php
-                                                                                $tos21_tamp_berat = (0.25 * 3.14 * $row->tulseng_dia_tumpuan * $row->tulseng_dia_tumpuan * 0.007855) * (((3.14 * $row->dimensi_l) + (6 * ($row->tulseng_dia_tumpuan / 1000) * 2) - ($row->tebal_selimut * 8)) * (ceil(((1.5 - $row->t) / ($row->tulseng_dia_jaraktump * 0.25)) + (($row->ls) / ($row->tulseng_dia_jaraktump * 0.25))) + 1 * $row->pk_sengkang_qty)) * $row->jum_kolom + (0.25 * 3.14 * $row->tulseng_dia_lapangan * $row->tulseng_dia_lapangan * 0.007855) * (((3.14 * $row->dimensi_l) + (6 * ($row->tulseng_dia_lapangan / 1000) * 2) - ($row->tebal_selimut * 8)) * (ceil(((1.5 - $row->t) / ($row->tulseng_dia_jaraklap * 0.25)) + (($row->ls) / ($row->tulseng_dia_jaraklap * 0.25))) + 1 * $row->pk_sengkang_qty)) * $row->jum_kolom + (0.25 * 3.14 * $row->tulseng_dia_tumpuan * $row->tulseng_dia_tumpuan * 0.007855) * (((3.14 * $row->dimensi_l) + (6 * ($row->tulseng_dia_tumpuan / 1000) * 2) - ($row->tebal_selimut * 8)) * (ceil(((1.5 - $row->t) / ($row->tulseng_dia_jaraktump * 0.25)) + (($row->ls) / ($row->tulseng_dia_jaraktump * 0.25))) + 1 * $row->pk_sengkang_qty)) * $row->jum_kolom + 0.25 * 3.14 * $row->tvtump_dia * $row->tvtump_dia * 0.00785 * (((6 * ($row->tvtump_dia / 1000)) * 2 + (($row->dimensi_p) - (($row->tebal_selimut) * 2))) * (ceil((($row->jum_kolom) * 0.25) / $row->tvtump_jarak) + (1 * $row->pk_sengkang_qty))) * $row->jum_kolom + 0.25 * 3.14 * $row->tvlap_dia * $row->tvlap_dia * 0.00785 * (((6 * ($row->tvlap_dia / 1000)) * 2 + (($row->dimensi_p) - (($row->tebal_selimut) * 2))) * (ceil((($row->jum_kolom) * 0.25) / $row->tvlap_jarak) + (1 * $row->pk_sengkang_qty))) * $row->jum_kolom + 0.25 * 3.14 * $row->thtump_dia * $row->thtump_dia * 0.00785 * (((6 * ($row->thtump_dia / 1000)) * 2 + (($row->dimensi_p) - (($row->tebal_selimut) * 2))) * (ceil((($row->jum_kolom) * 0.25) / $row->thtump_jarak) + (1 * $row->pk_sengkang_qty))) * $row->jum_kolom + 0.25 * 3.14 * $row->thlap_dia * $row->thlap_dia * 0.00785 * (((6 * ($row->thlap_dia / 1000)) * 2 + (($row->dimensi_p) - (($row->tebal_selimut) * 2))) * (ceil((($row->jum_kolom) * 0.25) / $row->thlap_jarak) + (1 * $row->pk_sengkang_qty))) * $row->jum_kolom;
+                                                                                $a=round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8),2); $b=ceil((1.5-$row->t)/$row->tulseng_dia_jaraktump*0.25+($row->ls/$row->tulseng_dia_jaraktump*0.25))+$row->pk_sengkang_qty;
+                                                                                $b1= round(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.00785*$a*$b*$row->jum_kolom,2);
+                                                               
+                                                                                $a = round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/1000)*2)-($row->tebal_selimut*8),2);
+                                                                                   $b = ceil(((1.5-$row->t)/$row->tulseng_dia_jaraklap*0.2)+($row->ls/$row->tulseng_dia_jaraklap*0.2))*$row->pk_sengkang_qty;
+                                                                                $b2= round(0.25*3.14*$row->tulseng_dia_lapangan*$row->tulseng_dia_lapangan*0.00785*$a*$b*$row->jum_kolom,2);
+                                                               
+                                                                                $a = round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8),2);
+                                                                           $b = ceil((1.5-$row->t)/$row->tulseng_dia_jaraktump*0.25+(round($row->ls,2)/$row->tulseng_dia_jaraktump*0.25))+$row->pk_sengkang_qty;
+                                                                                $b3 = round(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.00785*$a*$b*$row->jum_kolom,2);
+                                                               
+                                                                                $a = round((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2);
+                                                                           $b = ceil($row->jum_kolom/$row->tvlap_jarak*0.2)*$row->pk_sengkang_qty;
+                                                                                $b4= round(0.25*3.14*$row->tvlap_dia*$row->tvlap_dia*0.00785*$a*$b*$row->jum_kolom,2);
+                                                                                $b5= round(0.25*3.14*$row->tvlap_dia*$row->tvlap_dia*0.00785*((round((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2))*(ceil((($row->jum_kolom)*0.25)/$row->tvlap_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom,2);
+                                                               
+                                                                                $a = round(((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2),2);
+                                                                                $b = ceil($row->jum_kolom/$row->thtump_jarak*0.25)+$row->pk_sengkang_qty;
+                                                                                $b6= round(0.25*3.14*$row->thtump_dia*$row->thtump_dia*0.00785*$a*$b*$row->jum_kolom,2);
+                                                               
+                                                                                $a = round(((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2),2);
+                                                                           $b = ceil($row->jum_kolom/$row->thlap_jarak*0.2)*$row->pk_sengkang_qty;
+                                                                                $b7=round(0.25*3.14*$row->thlap_dia*$row->thlap_dia*0.00785*$a*$b*$row->jum_kolom,2);
+                                                                                                                                               $tos22_tamp_berat2 =  $b1+$b2 +$b3  +$b4  +$b5 +$b6+$b7;
+                                                                                $tos22_tamp_berat = (0.25 * 3.14 * $row->tulseng_dia_tumpuan * $row->tulseng_dia_tumpuan * 0.007855) * (((3.14 * $row->dimensi_l) + (6 * ($row->tulseng_dia_tumpuan / 1000) * 2) - ($row->tebal_selimut * 8)) * (ceil(((1.5 - $row->t) / ($row->tulseng_dia_jaraktump * 0.25)) + (($row->ls) / ($row->tulseng_dia_jaraktump * 0.25))) + 1 * $row->pk_sengkang_qty)) * $row->jum_kolom + (0.25 * 3.14 * $row->tulseng_dia_lapangan * $row->tulseng_dia_lapangan * 0.007855) * (((3.14 * $row->dimensi_l) + (6 * ($row->tulseng_dia_lapangan / 1000) * 2) - ($row->tebal_selimut * 8)) * (ceil(((1.5 - $row->t) / ($row->tulseng_dia_jaraklap * 0.25)) + (($row->ls) / ($row->tulseng_dia_jaraklap * 0.25))) + 1 * $row->pk_sengkang_qty)) * $row->jum_kolom + (0.25 * 3.14 * $row->tulseng_dia_tumpuan * $row->tulseng_dia_tumpuan * 0.007855) * (((3.14 * $row->dimensi_l) + (6 * ($row->tulseng_dia_tumpuan / 1000) * 2) - ($row->tebal_selimut * 8)) * (ceil(((1.5 - $row->t) / ($row->tulseng_dia_jaraktump * 0.25)) + (($row->ls) / ($row->tulseng_dia_jaraktump * 0.25))) + 1 * $row->pk_sengkang_qty)) * $row->jum_kolom + 0.25 * 3.14 * $row->tvtump_dia * $row->tvtump_dia * 0.00785 * (((6 * ($row->tvtump_dia / 1000)) * 2 + (($row->dimensi_p) - (($row->tebal_selimut) * 2))) * (ceil((($row->jum_kolom) * 0.25) / $row->tvtump_jarak) + (1 * $row->pk_sengkang_qty))) * $row->jum_kolom + 0.25 * 3.14 * $row->tvlap_dia * $row->tvlap_dia * 0.00785 * (((6 * ($row->tvlap_dia / 1000)) * 2 + (($row->dimensi_p) - (($row->tebal_selimut) * 2))) * (ceil((($row->jum_kolom) * 0.25) / $row->tvlap_jarak) + (1 * $row->pk_sengkang_qty))) * $row->jum_kolom + 0.25 * 3.14 * $row->thtump_dia * $row->thtump_dia * 0.00785 * (((6 * ($row->thtump_dia / 1000)) * 2 + (($row->dimensi_p) - (($row->tebal_selimut) * 2))) * (ceil((($row->jum_kolom) * 0.25) / $row->thtump_jarak) + (1 * $row->pk_sengkang_qty))) * $row->jum_kolom + 0.25 * 3.14 * $row->thlap_dia * $row->thlap_dia * 0.00785 * (((6 * ($row->thlap_dia / 1000)) * 2 + (($row->dimensi_p) - (($row->tebal_selimut) * 2))) * (ceil((($row->jum_kolom) * 0.25) / $row->thlap_jarak) + (1 * $row->pk_sengkang_qty))) * $row->jum_kolom;
                                                                                 ?>
                                                                                 <tr class="gradeA">
                                                                                     <!-- tipe kolom  -->
@@ -1257,13 +1305,15 @@
                                                                                     <td>{{$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                         +$row->ls+$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                     +(1.5-$row->t))}}</td>
-                                                                                    <!-- tulang panjang  -->
+                                                                                    <!-- total panjang  -->
                                                                                     <td>{{(0.25*3.14*$row->tulpok_dia*$row->tulpok_dia*0.007855)*$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                         +$row->ls+$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                     +(1.5-$row->t))*$row->jum_kolom}}</td>
-                                                                                    <td colspan="5"></td>
-                                                                                    <!-- besi  -->
-                                                                                    <td>{{$tos21_tamp_berat}}</td>
+                                                                                    <td colspan="5">  </td>
+                                                                                    <!-- besi   -->
+                                                                                    <td>{{(0.25*3.14*$row->tulpok_dia*$row->tulpok_dia*0.007855)*$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
+                                                                                        +$row->ls+$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
+                                                                                    +(1.5-$row->t))*$row->jum_kolom+$tos22_tamp_berat2}}</td>
                                                                                     <!-- beton  -->
                                                                                     <td>{{0}}</td>
                                                                                     <!-- bekissting  -->
@@ -1311,13 +1361,16 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tulseng_dia_tumpuan/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8)}}</td>
-                                                                                    <!-- sengkang qty  -->
-                                                                                    <td>{{ceil((1.5-$row->t/$row->tulseng_dia_jaraktump*0.25)+($row->ls/$row->tulseng_dia_jaraktump *0.25))+1*$row->pk_sengkang_qty}}</td>
-                                                                                    <!-- sengkang total panjang  -->
-                                                                                    <td>{{((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+(($row->ls)/($row->tulseng_dia_jaraktump *0.25)))+1*$row->pk_sengkang_qty)}}</td>
-                                                                                    <!-- sengkang berat  -->
-                                                                                    <td>{{(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.007855)*(((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+(($row->ls)/($row->tulseng_dia_jaraktump *0.25)))+1*$row->pk_sengkang_qty))*$row->jum_kolom}}</td>
+                                                                                    <td>{{ round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8))}}</td>
+                                                                                     <!-- sengkang qty  -->
+        <td>{{ceil((1.5-$row->t)/$row->tulseng_dia_jaraktump*0.25+($row->ls/$row->tulseng_dia_jaraktump*0.25))+$row->pk_sengkang_qty}}
+        </td>
+        <!-- sengkang total panjang  -->
+        <?php $a=round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8),2); $b=ceil((1.5-$row->t)/$row->tulseng_dia_jaraktump*0.25+($row->ls/$row->tulseng_dia_jaraktump*0.25))+$row->pk_sengkang_qty; ?>
+        <td>{{  $a*$b}}</td>
+        <!-- sengkang berat  -->
+        <td>{{round(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.00785*$a*$b*$row->jum_kolom,2)}}
+        </td>
 
                                                                                 </tr>
                                                                                 <tr class="gradeA">
@@ -1330,13 +1383,20 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tulseng_dia_lapangan/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/1000)*2)-($row->tebal_selimut*8)}}</td>
-                                                                                    <!-- sengkang qty  -->
-                                                                                    <td>{{ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+(($row->ls)/($row->tulseng_dia_jaraklap *0.25)))+1*$row->pk_sengkang_qty}}</td>
-                                                                                    <!-- sengkang total panjang  -->
-                                                                                    <td>{{((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/1000)*2)-($row->tebal_selimut*8))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+(($row->ls)/($row->tulseng_dia_jaraklap *0.25)))+1*$row->pk_sengkang_qty)}}</td>
-                                                                                    <!-- sengkang berat  -->
-                                                                                    <td>{{(0.25*3.14*$row->tulseng_dia_lapangan*$row->tulseng_dia_lapangan*0.007855)*(((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/1000)*2)-($row->tebal_selimut*8))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraklap*0.25))+(($row->ls)/($row->tulseng_dia_jaraklap *0.25)))+1*$row->pk_sengkang_qty))*$row->jum_kolom}}</td>
+                                                                                    <td>{{round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/1000)*2)-($row->tebal_selimut*8),2)}}</td>
+                                                                                     <!-- sengkang qty  -->
+        <td>{{ceil(((1.5-$row->t)/$row->tulseng_dia_jaraklap*0.2)+($row->ls/$row->tulseng_dia_jaraklap*0.2))*$row->pk_sengkang_qty}}
+            
+            </td>
+                <!-- sengkang total panjang  -->
+                <?php
+                    $a = round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_lapangan/1000)*2)-($row->tebal_selimut*8),2);
+                    $b = ceil(((1.5-$row->t)/$row->tulseng_dia_jaraklap*0.2)+($row->ls/$row->tulseng_dia_jaraklap*0.2))*$row->pk_sengkang_qty;
+                ?>
+                <td>{{$a*$b}}</td>
+                <!-- sengkang berat  -->
+                <td>{{round(0.25*3.14*$row->tulseng_dia_lapangan*$row->tulseng_dia_lapangan*0.00785*$a*$b*$row->jum_kolom,2)}}
+                </td>
                                                                                 </tr>
                                                                                 <tr class="gradeA">
                                                                                     <td>Sengkang Tumpuan</td>
@@ -1348,13 +1408,19 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tulseng_dia_tumpuan/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8)}}</td>
+                                                                                    <td>{{round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8),2)}}</td>
                                                                                     <!-- sengkang qty  -->
-                                                                                    <td>{{ceil((1.5-$row->t/$row->tulseng_dia_jaraktump*0.25)+($row->ls/$row->tulseng_dia_jaraktump *0.25))+1*$row->pk_sengkang_qty}}</td>
-                                                                                    <!-- sengkang total panjang  -->
-                                                                                    <td>{{((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+(($row->ls)/($row->tulseng_dia_jaraktump *0.25)))+1*$row->pk_sengkang_qty)}}</td>
-                                                                                    <!-- sengkang berat  -->
-                                                                                    <td>{{(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.007855)*(((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8))*(ceil(((1.5-$row->t)/($row->tulseng_dia_jaraktump*0.25))+(($row->ls)/($row->tulseng_dia_jaraktump *0.25)))+1*$row->pk_sengkang_qty))*$row->jum_kolom}}</td>
+        <td>{{ceil((1.5-$row->t)/$row->tulseng_dia_jaraktump*0.25+(round($row->ls,2)/$row->tulseng_dia_jaraktump*0.25))+$row->pk_sengkang_qty}}
+        </td>
+        <!-- sengkang total panjang  -->
+        <?php
+            $a = round((3.14*$row->dimensi_l)+(6*($row->tulseng_dia_tumpuan/1000)*2)-($row->tebal_selimut*8),2);
+            $b = ceil((1.5-$row->t)/$row->tulseng_dia_jaraktump*0.25+(round($row->ls,2)/$row->tulseng_dia_jaraktump*0.25))+$row->pk_sengkang_qty;
+        ?>
+        <td>{{$a*$b}}</td>
+        <!-- sengkang berat  -->
+        <td>{{round(0.25*3.14*$row->tulseng_dia_tumpuan*$row->tulseng_dia_tumpuan*0.00785*$a*$b*$row->jum_kolom,2)}}
+        </td>
 
                                                                                 </tr>
                                                                                 <tr class="gradeA">
@@ -1367,13 +1433,19 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tvtump_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(6*($row->tvtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2))}}</td>
+                                                                                    <td>{{round(round((6*($row->tvtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2),2)}}</td>
                                                                                     <!-- sengkang qty  -->
-                                                                                    <td>{{ceil((($row->jum_kolom)*0.25)/$row->tvtump_jarak)+(1*$row->pk_sengkang_qty)}}</td>.
-                                                                                    <!-- sengkang total panjang  -->
-                                                                                    <td>{{((6*($row->tvtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->tvtump_jarak)+(1*$row->pk_sengkang_qty))}}</td>.
-                                                                                    <!-- sengkang berat  -->
-                                                                                    <td>{{0.25*3.14*$row->tvtump_dia*$row->tvtump_dia*0.00785*(((6*($row->tvtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->tvtump_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom}}</td>
+        <td>{{ceil($row->jum_kolom/$row->tvlap_jarak*0.2)*$row->pk_sengkang_qty}}
+        </td>
+        <!-- sengkang total panjang  -->
+        <?php
+            $a = round((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2);
+            $b = ceil($row->jum_kolom/$row->tvlap_jarak*0.2)*$row->pk_sengkang_qty;
+        ?>
+        <td>{{$a*$b}}</td>
+        <!-- sengkang berat  -->
+        <td>{{round(0.25*3.14*$row->tvlap_dia*$row->tvlap_dia*0.00785*$a*$b*$row->jum_kolom,2)}}
+        </td>
                                                                                 </tr>
                                                                                 <tr class="gradeA">
                                                                                     <td> Ties - Vertikal Lapangan</td>
@@ -1385,13 +1457,13 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->tvlap_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{(6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2))}}</td>
+                                                                                    <td>{{round(round((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2),2)}}</td>
                                                                                     <!-- sengkang qty  -->
                                                                                     <td>{{ceil((($row->jum_kolom)*0.25)/$row->tvlap_jarak)+(1*$row->pk_sengkang_qty)}}</td>
                                                                                     <!-- sengkang total panjang  -->
-                                                                                    <td>{{((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->tvlap_jarak)+(1*$row->pk_sengkang_qty))}}</td>
+                                                                                    <td>{{(round((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2))*(ceil((($row->jum_kolom)*0.25)/$row->tvlap_jarak)+(1*$row->pk_sengkang_qty))}}</td>
                                                                                     <!-- sengkang berat  -->
-                                                                                    <td>{{0.25*3.14*$row->tvlap_dia*$row->tvlap_dia*0.00785*(((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->tvlap_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom}}</td>
+                                                                                    <td>{{round(0.25*3.14*$row->tvlap_dia*$row->tvlap_dia*0.00785*((round((6*($row->tvlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)),2))*(ceil((($row->jum_kolom)*0.25)/$row->tvlap_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom,2)}}</td>
                                                                                 </tr>
                                                                                 <tr class="gradeA">
                                                                                     <td> Ties - Horisontal Tumpuan</td>
@@ -1403,14 +1475,20 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->thtump_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2)}}
+                                                                                    <td>{{round((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2),2}}
                                                                                     </td>
-                                                                                    <!-- sengkang qty  -->
-                                                                                    <td>{{ceil((($row->jum_kolom)*0.25)/$row->thtump_jarak)+(1*$row->pk_sengkang_qty)}}</td>
-                                                                                    <!-- sengkang total panjang  -->
-                                                                                    <td>{{((6*($row->thtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->thtump_jarak)+(1*$row->pk_sengkang_qty))}}</td>
-                                                                                    <!-- sengkang berat  -->
-                                                                                    <td>{{0.25*3.14*$row->thtump_dia*$row->thtump_dia*0.00785*(((6*($row->thtump_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->thtump_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom}}</td>
+                                                                                   <!-- sengkang qty  -->
+        <td>{{ceil($row->jum_kolom/$row->thtump_jarak*0.25)+$row->pk_sengkang_qty}}
+        </td>
+        <!-- sengkang total panjang  -->
+        <?php
+            $a = round(((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2),2);
+            $b = ceil($row->jum_kolom/$row->thtump_jarak*0.25)+$row->pk_sengkang_qty;
+        ?>
+        <td>{{$a*$b}}</td>
+        <!-- sengkang berat  -->
+        <td>{{round(0.25*3.14*$row->thtump_dia*$row->thtump_dia*0.00785*$a*$b*$row->jum_kolom,2)}}
+        </td>
                                                                                 </tr>
                                                                                 <tr class="gradeA">
                                                                                     <td> Ties - Horisontal Lapangan</td>
@@ -1421,14 +1499,20 @@
                                                                                     <!-- sengkang tekukan id  -->
                                                                                     <td>{{6*($row->thlap_dia/1000)}}</td>
                                                                                     <!-- sengkang tekukan panjang -->
-                                                                                    <td>{{((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2)}}
+                                                                                    <td>{{round(((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2),2)}}
                                                                                     </td>
                                                                                     <!-- sengkang qty  -->
-                                                                                    <td>{{ceil((($row->jum_kolom)*0.25)/$row->thlap_jarak)+(1*$row->pk_sengkang_qty)}}</td>
-                                                                                    <!-- sengkang total panjang  -->
-                                                                                    <td>{{((6*($row->thlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->thlap_jarak)+(1*$row->pk_sengkang_qty))}}</td>
-                                                                                    <!-- sengkang berat  -->
-                                                                                    <td>{{0.25*3.14*$row->thlap_dia*$row->thlap_dia*0.00785*(((6*($row->thlap_dia/1000))*2+(($row->dimensi_p)-(($row->tebal_selimut)*2)))*(ceil((($row->jum_kolom)*0.25)/$row->thlap_jarak)+(1*$row->pk_sengkang_qty)))*$row->jum_kolom}}</td>
+        <td>{{ceil($row->jum_kolom/$row->thlap_jarak*0.2)*$row->pk_sengkang_qty}}
+        </td>
+        <!-- sengkang total panjang  -->
+        <?php
+            $a = round(((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2),2);
+            $b = ceil($row->jum_kolom/$row->thlap_jarak*0.2)*$row->pk_sengkang_qty;
+        ?>
+        <td>{{$a*$b}}</td>
+        <!-- sengkang berat  -->
+        <td>{{round(0.25*3.14*$row->thlap_dia*$row->thlap_dia*0.00785*$a*$b*$row->jum_kolom,2)}}
+        </td>
                                                                                 </tr>
                                                                                 @endforeach
                                                                             </tbody>

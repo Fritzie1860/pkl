@@ -620,9 +620,9 @@ class TosController extends Controller
             'footplat_type' => $req->footplat_type,
             'pk_sengkang_qty' => $req->pk_sengkang_qty,
         ];
-
-        tos2pedestal::insert($hasil);
-        return redirect('/target');
+        
+        // tos2pedestal::insert($hasil);
+        // return redirect('/target');
      }
  
      public function del_tos21($id)
