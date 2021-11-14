@@ -432,9 +432,9 @@
                     <div class="form-group">
                         <label for="tipe_kolom">Tipe Kolom</label>
                         <!-- <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . ."> -->
-                        <select id="tipetos26" style="float:right; margin-top:5px; width:150px; font-size:16px">
+                        <select name="tipe_kolom" id="tipetos26" style="float:right; margin-top:5px; width:150px; font-size:16px">
                             @foreach($Tos26 as $row)
-                            <option value="1">{{$row->nama}}</option>
+                            <option value="{{$row->nama}}">{{$row->nama}}</option>
                             @endforeach
                         </select>
                     </div>
@@ -448,10 +448,10 @@
                         <input type="text" class="form-control" name="jum_kolom" id="jum_kolom" placeholder=". . .">
                     </div>
                     <div class="form-group">
-                        <label for="ls">Tipe Footplat</label>
-                        <select id="tipetos25" style="float:right; margin-top:5px; width:150px; font-size:16px">
+                        <label  for="ls">Tipe Footplat</label>
+                        <select name="footplat_type" id="tipetos25" style="float:right; margin-top:5px; width:150px; font-size:16px">
                             @foreach($Tos25 as $row)
-                            <option value="1">{{$row->nama}}</option>
+                            <option value="{{$row->nama}}">{{$row->nama}}</option>
                             @endforeach
                         </select>
                     </div>

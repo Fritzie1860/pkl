@@ -621,8 +621,8 @@ class TosController extends Controller
             'pk_sengkang_qty' => $req->pk_sengkang_qty,
         ];
         
-        // tos2pedestal::insert($hasil);
-        // return redirect('/target');
+        tos2pedestal::insert($hasil);
+        return redirect('/target');
      }
  
      public function del_tos21($id)
@@ -635,13 +635,13 @@ class TosController extends Controller
      {
          $coba = tos2pedestal::all()->detil();
 
-         dd($coba);
-        //  $user = tos2lewatan::all()->where("id_tos24", $req->idt)->first()->update([
-        //      'dia' => $req->dia,
-        //      'ls' => $req->ls,
+        //  dd($coba);
+         $user = tos2lewatan::all()->where("id_tos24", $req->idt)->first()->update([
+             'dia' => $req->dia,
+             'ls' => $req->ls,
  
-        //  ]);
-        //  return redirect('/target');
+         ]);
+         return redirect('/target');
      }
 
     // Tos 2 kolome Pedestal
