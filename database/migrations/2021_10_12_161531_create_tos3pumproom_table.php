@@ -14,41 +14,11 @@ class CreateTos3pumproomTable extends Migration
     public function up()
     {
         Schema::create('tos3pumproom', function (Blueprint $table) {
-            $table->id();
-            $table->string('tipe_kolom',100);
-            $table->string('bentuk_kolom',100);
-            $table->double('dk_t',5);
-            $table->double('dk_l',5);
-            $table->double('dk_p',5);
-            $table->double('tebal_plat',5);
-            $table->double('tinggi_net',5);
-            $table->double('selimut_beton',5);
-            $table->double('jum_kolom',5);
-            $table->string('footplat_type',100);
-            $table->double('footplat_b',5);
-            $table->double('footplat_h',5);
-            $table->double('footplat_p',5);
-            $table->double('pk_ket',5);
-            $table->double('pk_tulpok_dia',5);
-            $table->double('pk_tulpok_qty',5);
-            $table->double('pk_sengkang_dia',5);
-            $table->double('pk_sengkang_qty',5);
-            $table->double('pk_sengkang_jarak',5);
-            $table->double('pk_tulanganpokok_ovlp',5);
-            $table->double('pk_tulanganpokok_suk',5);
-            $table->double('pk_tulanganpokok_kkf',5);
-            $table->double('pk_tulanganpokok_p_besi',5);
-            $table->double('pk_tulanganpokok_total_p',5);
-            $table->double('pk_tulanganpokok_berat',5);
-            $table->double('pk_sengkang2_tekukan_id',5);
-            $table->double('pk_sengkang2_tekukan_p',5);
-            $table->double('pk_sengkang2_qty',5);
-            $table->double('pk_sengkang2_total_p',5);
-            $table->double('pk_sengkang2_berat',5);
-            $table->double('besi',5);
-            $table->double('beton',5);
-            $table->double('bekisting',5);
-            $table->double('rasio_besi',5);
+            $table->id('id_tos33', 5);
+            $table->string('tipe_kolom', 100);
+            $table->double('tebal_plat', 5);
+            $table->double('jum_kolom', 5);
+            $table->double('pk_sengkang_qty', 5);    
         });
     }
 

@@ -752,15 +752,15 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                @foreach($Tos24 as $row)
+                                                                                @foreach($Tos35 as $row)
                                                                                 <tr class="gradeA">
                                                                                     <td>{{$row->dia}}</td>
                                                                                     <td>{{$row->ls}}</td>
                                                                                     <td class="project-actions">
                                                                                         <center>
                                                                                             <div style="display: inline-block;">
-                                                                                                <a href="/tos24_del/<?= $row->id_tos24 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
-                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos24 ?>" data-dia="<?= $row->dia ?>" data-ls="<?= $row->ls ?>" data-target="#edit_tos24" id="tos24">
+                                                                                                <a href="/tos35_del/<?= $row->id_tos35 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos35 ?>" data-dia="<?= $row->dia ?>" data-ls="<?= $row->ls ?>" data-target="#edit_tos35" id="tos35">
                                                                                                     <i class="fa fa-edit "></i>
                                                                                                 </a>
                                                                                             </div>
@@ -1698,6 +1698,7 @@
                                         <div class="panel-options">
                                             <ul class="nav nav-tabs">
                                                 <li><a class="nav-link active" href="#tab-7" data-toggle="tab">Data</a></li>
+                                                <li><a class="nav-link" href="#tab-38" data-toggle="tab">Absolute Reference</a></li>
                                                 <li><a class="nav-link" href="#tab-8" data-toggle="tab">Ground</a></li>
                                                 <li><a class="nav-link" href="#tab-9" data-toggle="tab">Pump Room</a></li>
                                                 <li><a class="nav-link" href="#tab-10" data-toggle="tab">Summary</a></li>
@@ -1773,6 +1774,56 @@
                                                                     </div>
 
                                                                 </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab-38">
+                                                <div class="wrapper wrapper-content animated fadeInRight">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="ibox ">
+                                                                <div class="ibox-title">
+                                                                    <h5>Lewatan</h5>
+                                                                    <div class="ibox-tools">
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos2lewatan"> Add Data</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ibox-content">
+
+                                                                    <div class="table-responsive scrollmenu">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Dia</th>
+                                                                                    <th>Ls</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                @foreach($Tos35 as $row)
+                                                                                <tr class="gradeA">
+                                                                                    <td>{{$row->dia}}</td>
+                                                                                    <td>{{$row->ls}}</td>
+                                                                                    <td class="project-actions">
+                                                                                        <center>
+                                                                                            <div style="display: inline-block;">
+                                                                                                <a href="/tos35_del/<?= $row->id_tos35 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos35 ?>" data-dia="<?= $row->dia ?>" data-ls="<?= $row->ls ?>" data-target="#edit_tos35" id="tos35">
+                                                                                                    <i class="fa fa-edit "></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </center>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endforeach
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+
+                                                                </div>
+
                                                             </div>
                                                         </div>
                                                     </div>
