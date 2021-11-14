@@ -553,19 +553,83 @@
                 <h2>Batu Kali</h2>
             </div>
             <div class="container">
-                <form>
-
+            <form action="tos31" method="post">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <label for="nama">Nama</label>
+                        <input type="text" class="form-control" name="nama" id="nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <label for="bentuk">Bentuk</label>
+                        <input type="text" class="form-control" name="bentuk" id="bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div class="form-group">
+                        <label for="dimensi_l">Lebar Dimensi</label>
+                        <input type="text" class="form-control" name="dimensi_l" id="dimensi_l" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="dimensi_p">Panjang Dimensi</label>
+                        <input type="text" class="form-control" name="dimensi_p" id="dimensi_p" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tebal_selimut">Tebal Selimut</label>
+                        <input type="text" class="form-control" name="tebal_selimut" id="tebal_selimut" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulpok_dia">Diameter Tulangan Pokok</label>
+                        <input type="text" class="form-control" name="tulpok_dia" id="tulpok_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulpok_jum">Jumlah Tulangan Pokok</label>
+                        <input type="text" class="form-control" name="tulpok_jum" id="tulpok_jum" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_tumpuan">Dia.Tumpuan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_tumpuan" id="tulseng_dia_tumpuan" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_jaraktump">Jarak Tumpuan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_jaraktump" id="tulseng_dia_jaraktump" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_lapangan">Dia.Lapangan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_lapangan" id="tulseng_dia_lapangan" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_jaraklap">Jarak Lapangan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_jaraklap" id="tulseng_dia_jaraklap" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thtump_dia">Diameter (Ties-Horisontal Tumpuan)</label>
+                        <input type="text" class="form-control" name="thtump_dia" id="thtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thtump_jarak">Jarak (Ties-Horisontal Tumpuan)</label>
+                        <input type="text" class="form-control" name="thtump_jarak" id="thtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thlap_dia">Diameter (Ties-Horisontal Lapangan)</label>
+                        <input type="text" class="form-control" name="thlap_dia" id="thlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thlap_jarak">Jarak (Ties-Horisontal Lapangan)</label>
+                        <input type="text" class="form-control" name="thlap_jarak" id="thlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvtump_dia">Diameter (Ties-Vertikal Tumpuan)</label>
+                        <input type="text" class="form-control" name="tvtump_dia" id="tvtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvtump_jarak">Jarak (Ties-Vertikal Tumpuan)</label>
+                        <input type="text" class="form-control" name="tvtump_jarak" id="tvtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvlap_dia">Diameter (Ties-Vertikal Lapangan)</label>
+                        <input type="text" class="form-control" name="tvlap_dia" id="tvlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvlap_jarak">Jarak (Ties-Vertikal Lapangan)</label>
+                        <input type="text" class="form-control" name="tvlap_jarak" id="tvlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -582,22 +646,33 @@
                 <h2>Batu Kali</h2>
             </div>
             <div class="container">
-                <form>
+            <form action="tos32" method="post">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
 
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                        <div class="form-group">
+                            <label for="tipe_kolom">Tipe Kolom</label>
+                            <!-- <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . ."> -->
+                            <select name="tipe_kolom" id="tipetos26" style="float:right; margin-top:5px; width:150px; font-size:16px">
+                                @foreach($Tos31 as $row)
+                                <option name="tipe_kolom" value="{{$row->nama}}">{{$row->nama}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ls">Tebal Kolom</label>
+                            <input type="text" class="form-control" name="tebal_plat" id="tebal_plat" placeholder=". . .">
+                        </div>
+                        <div class="form-group">
+                            <label for="jum_kolom">Jumlah Kolom</label>
+                            <input type="text" class="form-control" name="jum_kolom" id="jum_kolom" placeholder=". . .">
+                        </div>
+                        <div class="form-group">
+                            <label for="pk_sengkang_qty">Penulangan Kolom Sengkang qty</label>
+                            <input type="text" class="form-control" name="pk_sengkang_qty" id="pk_sengkang_qty" placeholder=". . .">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
             </div>
         </div>
     </div>
@@ -611,22 +686,34 @@
                 <h2>Batu Kali</h2>
             </div>
             <div class="container">
-                <form>
+            <form action="tos33" method="post">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
 
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                        <div class="form-group">
+                            <label for="tipe_kolom">Tipe Kolom</label>
+                            <!-- <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . ."> -->
+                            <select name="tipe_kolom" id="tipetos26" style="float:right; margin-top:5px; width:150px; font-size:16px">
+                                @foreach($Tos31 as $row)
+                                <option name="tipe_kolom" value="{{$row->nama}}">{{$row->nama}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ls">Tebal Kolom</label>
+                            <input type="text" class="form-control" name="tebal_plat" id="tebal_plat" placeholder=". . .">
+                        </div>
+                        <div class="form-group">
+                            <label for="jum_kolom">Jumlah Kolom</label>
+                            <input type="text" class="form-control" name="jum_kolom" id="jum_kolom" placeholder=". . .">
+                        </div>
+                        <div class="form-group">
+                            <label for="pk_sengkang_qty">Penulangan Kolom Sengkang qty</label>
+                            <input type="text" class="form-control" name="pk_sengkang_qty" id="pk_sengkang_qty" placeholder=". . .">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+            </div>
             </div>
         </div>
     </div>
@@ -653,6 +740,32 @@
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- tos 2 lewatan -->
+<div class="modal fade" id="tos3lewatan" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Lewatan</h2>
+            </div>
+            <div class="container">
+                <form action="tos35" method="post">
+                @csrf
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <div class="form-group">
+                        <label for="Dia">Dia</label>
+                        <input type="text" class="form-control" name="dia" id="Dia" placeholder=". . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="ls">Ls</label>
+                        <input type="text" class="form-control" name="ls" id="ls" placeholder=". . .">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

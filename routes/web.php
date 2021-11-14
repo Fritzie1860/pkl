@@ -76,6 +76,26 @@ Route::get('/projects', [ProjectController::class, 'index']);
     Route::post('tos22_edit', [TosController::class, 'edit_tos22']);
     Route::get('tos22_del/{id}', [TosController::class, 'del_tos22']);
 
+    Route::post('tos31', [TosController::class, 'in_tos31']);
+    Route::post('tos31_edit', [TosController::class, 'edit_tos31']);
+    Route::get('tos31_del/{id}', [TosController::class, 'del_tos31']);
+
+    Route::post('tos32', [TosController::class, 'in_tos32']);
+    Route::post('tos32_edit', [TosController::class, 'edit_tos32']);
+    Route::get('tos32_del/{id}', [TosController::class, 'del_tos32']);
+
+    Route::post('tos33', [TosController::class, 'in_tos33']);
+    Route::post('tos33_edit', [TosController::class, 'edit_tos33']);
+    Route::get('tos33_del/{id}', [TosController::class, 'del_tos33']);
+
+    Route::post('tos34', [TosController::class, 'in_tos34']);
+    Route::post('tos34_edit', [TosController::class, 'edit_tos34']);
+    Route::get('tos34_del/{id}', [TosController::class, 'del_tos34']);
+
+    Route::post('tos35', [TosController::class, 'in_tos35']);
+    Route::post('tos35_edit', [TosController::class, 'edit_tos35']);
+    Route::get('tos35_del/{id}', [TosController::class, 'del_tos35']);
+
 Route::group(['middleware' => 'auth'], function () {
    
     

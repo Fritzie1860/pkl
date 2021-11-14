@@ -688,4 +688,193 @@
         $("#isi_id25").val(id);
     })
     // });
+    
+</script>
+
+<!-- tos 3 Data Kolom -->
+<div class="modal fade" id="edit_tos31" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Lewatan</h2>
+            </div>
+            <div class="container">
+
+                <form action="/tos31_edit" method="post">
+                    @csrf
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="idt" id="isi_id31" />
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" class="form-control" name="nama" id="31_nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="bentuk">Bentuk</label>
+                        <input type="text" class="form-control" name="bentuk" id="31_bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="dimensi_l">Lebar Dimensi</label>
+                        <input type="text" class="form-control" name="dimensi_l" id="31_dimensi_l" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="dimensi_p">Panjang Dimensi</label>
+                        <input type="text" class="form-control" name="dimensi_p" id="31_dimensi_p" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tebal_selimut">Tebal Selimut</label>
+                        <input type="text" class="form-control" name="tebal_selimut" id="31_tebal_selimut" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulpok_dia">Diameter Tulangan Pokok</label>
+                        <input type="text" class="form-control" name="tulpok_dia" id="31_tulpok_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulpok_jum">Jumlah Tulangan Pokok</label>
+                        <input type="text" class="form-control" name="tulpok_jum" id="31_tulpok_jum" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_tumpuan">Dia.Tumpuan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_tumpuan" id="31_tulseng_dia_tumpuan" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_jaraktump">Jarak Tumpuan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_jaraktump" id="31_tulseng_dia_jaraktump" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_lapangan">Dia.Lapangan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_lapangan" id="31_tulseng_dia_lapangan" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tulseng_dia_jaraklap">Jarak Lapangan (Tulangan Sengkang)</label>
+                        <input type="text" class="form-control" name="tulseng_dia_jaraklap" id="31_tulseng_dia_jaraklap" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thtump_dia">Diameter (Ties-Horisontal Tumpuan)</label>
+                        <input type="text" class="form-control" name="thtump_dia" id="31_thtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thtump_jarak">Jarak (Ties-Horisontal Tumpuan)</label>
+                        <input type="text" class="form-control" name="thtump_jarak" id="31_thtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thlap_dia">Diameter (Ties-Horisontal Lapangan)</label>
+                        <input type="text" class="form-control" name="thlap_dia" id="31_thlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="thlap_jarak">Jarak (Ties-Horisontal Lapangan)</label>
+                        <input type="text" class="form-control" name="thlap_jarak" id="31_thlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvtump_dia">Diameter (Ties-Vertikal Tumpuan)</label>
+                        <input type="text" class="form-control" name="tvtump_dia" id="31_tvtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvtump_jarak">Jarak (Ties-Vertikal Tumpuan)</label>
+                        <input type="text" class="form-control" name="tvtump_jarak" id="31_tvtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvlap_dia">Diameter (Ties-Vertikal Lapangan)</label>
+                        <input type="text" class="form-control" name="tvlap_dia" id="31_tvlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="tvlap_jarak">Jarak (Ties-Vertikal Lapangan)</label>
+                        <input type="text" class="form-control" name="tvlap_jarak" id="31_tvlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // $(document).ready(function() {
+    $(document).on('click', "#tos31", function() {
+        var nama = $(this).data('nama');
+        var bentuk = $(this).data('bentuk');
+        var dimensi_l = $(this).data('dimensi_l');
+        var dimensi_p = $(this).data('dimensi_p');
+        var tebal_selimut = $(this).data('tebal_selimut');
+        var tulpok_dia = $(this).data('tulpok_dia');
+        var tulpok_jum = $(this).data('tulpok_jum');
+        var tulseng_dia_tumpuan = $(this).data('tulseng_dia_tumpuan');
+        var tulseng_dia_lapangan = $(this).data('tulseng_dia_lapangan');
+        var tulseng_dia_jaraklap = $(this).data('tulseng_dia_jaraklap');
+        var tulseng_dia_jaraktump = $(this).data('tulseng_dia_jaraktump');
+        var thtump_dia = $(this).data('thtump_dia');
+        var thtump_jarak = $(this).data('thtump_jarak');
+        var thlap_dia = $(this).data('thlap_dia');
+        var thlap_jarak = $(this).data('thlap_jarak');
+        var tvtump_dia = $(this).data('tvtump_dia');
+        var tvtump_jarak = $(this).data('tvtump_jarak');
+        var tvlap_dia = $(this).data('tvlap_dia');
+        var tvlap_jarak = $(this).data('tvlap_jarak');
+        var id = $(this).data('idt');
+        console.log("thlap " + thlap_dia);
+        console.log("id " + id);
+        
+        $("#isi_id31").val(id);
+        $("#31_nama").val(nama);
+        $("#31_bentuk").val(bentuk);
+        $("#31_dimensi_l").val(dimensi_l);
+        $("#31_dimensi_p").val(dimensi_p);
+        $("#31_tebal_selimut").val(tebal_selimut);
+        $("#31_tulpok_dia").val(tulpok_dia);
+        $("#31_tulpok_jum").val(tulpok_jum);
+        $("#31_tulseng_dia_tumpuan").val(tulseng_dia_tumpuan);
+        $("#31_tulseng_dia_lapangan").val(tulseng_dia_lapangan);
+        $("#31_tulseng_dia_jaraklap").val(tulseng_dia_jaraklap);
+        $("#31_tulseng_dia_jaraktump").val(tulseng_dia_jaraktump);
+        $("#31_thtump_dia").val(thtump_dia);
+        $("#31_thtump_jarak").val(thtump_jarak);
+        $("#31_thlap_dia").val(thlap_dia);
+        $("#31_thlap_jarak").val(thlap_jarak);
+        $("#31_tvtump_dia").val(tvtump_dia);
+        $("#31_tvtump_jarak").val(tvtump_jarak);
+        $("#31_tvlap_dia").val(tvlap_dia);
+        $("#31_tvlap_jarak").val(tvlap_jarak);
+    })
+    // });
+</script>
+
+<!-- tos 3 Lewatan -->
+<div class="modal fade" id="edit_tos35" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Lewatan</h2>
+            </div>
+            <div class="container">
+
+                <form action="/tos35_edit" method="post">
+                    @csrf
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="idt" id="isi_id35" />
+                    <div class="form-group">
+                        <label for="Dia">Dia</label>
+                        <input type="text" class="form-control" name="dia" id="isi_dia35">
+                    </div>
+                    <div class="form-group">
+                        <label for="panjang">Ls</label>
+                        <input type="text" class="form-control" id="isi_ls35" name="ls">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // $(document).ready(function() {
+    $(document).on('click', "#tos35", function() {
+        var dia = $(this).data('dia');
+        var ls = $(this).data('ls');
+        var id = $(this).data('idt');
+        console.log("ini " + id);
+        $("#isi_dia35").val(dia);
+        $("#isi_ls35").val(ls);
+        $("#isi_id35").val(id);
+    })
+    // });
 </script>

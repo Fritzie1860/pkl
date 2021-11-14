@@ -12,7 +12,13 @@ use App\Models\tos2kolompedestal;
 use App\Models\tos2lewatan;
 use App\Models\tos2pedestal;
 use App\Models\tos2summary;
+use App\Models\tos3data;
+use App\Models\tos3ground;
+use App\Models\tos3lewatan;
+use App\Models\tos3pumproom;
+use App\Models\tos3summary;
 use Illuminate\Http\Request;
+use PHPUnit\TextUI\XmlConfiguration\Group;
 
 class TosController extends Controller
 {
@@ -37,10 +43,24 @@ class TosController extends Controller
         $Tos25 = tos2datafootplat::all();
         $Tos26 = tos2datakolom::all();
 
+        $ground = new tos3ground();
+        $pumproom = new tos3pumproom();
+
+
+        $tos31 = tos3data::all();
+        $tos32 = $ground->detil();
+        $tos33 = $pumproom->detil();
+        $tos34 = tos3summary::all();
+        $tos35 = tos3lewatan::all();
+
+        
+
         return view('detil_project', [
             'Tos11' => $Tos11, 'Tos12' => $Tos12, 'Tos13' => $Tos13, 'Tos14' => $Tos14,
             'Tos21' => $Tos21, 'Tos22' => $Tos22, 'Tos23' => $Tos23,
-            'Tos24' => $Tos24, 'Tos25' => $Tos25, 'Tos26' => $Tos26
+            'Tos24' => $Tos24, 'Tos25' => $Tos25, 'Tos26' => $Tos26,
+            'Tos31' => $tos31, 'Tos32' =>  $tos32, 'Tos33' => $tos33,
+            'Tos34' => $tos34, 'Tos35' => $tos35
         ]);
     }
 
@@ -627,7 +647,7 @@ class TosController extends Controller
  
      public function del_tos21($id)
      {
-         $post = tos2lewatan::all()->where('id_tos24', $id)->each->delete();
+         $post = tos2pedestal::all()->where('id_tos24', $id)->each->delete();
          return redirect('/target');
      }
  
@@ -811,4 +831,174 @@ class TosController extends Controller
         ]);
         return redirect('/target');
     }
+
+    // Tos 3 Data Kolom
+    public function in_tos31(Request $req)
+    {
+        // dd($req);
+        $hasil = [
+            'nama' => $req->nama,
+            'bentuk' => $req->bentuk,
+            'dimensi_l' => $req->dimensi_l,
+            'dimensi_p' => $req->dimensi_p,
+            'tebal_selimut' => $req->tebal_selimut,
+            'tulpok_dia' => $req->tulpok_dia,
+            'tulpok_jum' => $req->tulpok_jum,
+            'tulseng_dia_tumpuan' => $req->tulseng_dia_tumpuan,
+            'tulseng_dia_lapangan' => $req->tulseng_dia_lapangan,
+            'tulseng_dia_jaraklap' => $req->tulseng_dia_jaraklap,
+            'tulseng_dia_jaraktump' => $req->tulseng_dia_jaraktump,
+            'thtump_dia' => $req->thtump_dia,
+            'thtump_jarak' => $req->thtump_jarak,
+            'thlap_dia' => $req->thlap_dia,
+            'thlap_jarak' => $req->thlap_jarak,
+            'tvtump_dia' => $req->tvtump_dia,
+            'tvtump_jarak' => $req->tvtump_jarak,
+            'tvlap_dia' => $req->tvlap_dia,
+            'tvlap_jarak' => $req->tvlap_jarak
+        ];
+        // dd($req);
+        tos3data::insert($hasil);
+        return redirect('/target');
+    }
+
+    public function del_tos31($id)
+    {
+        $post = tos3data::all()->where('id_tos31', $id)->each->delete();
+        return redirect('/target');
+    }
+
+    public function edit_tos31(Request $req)
+    {
+        //dd($req);
+        $user = tos3data::all()->where("id_tos31", $req->idt)->first()->update([
+            'nama' => $req->nama,
+            'bentuk' => $req->bentuk,
+            'dimensi_l' => $req->dimensi_l,
+            'dimensi_p' => $req->dimensi_p,
+            'tebal_selimut' => $req->tebal_selimut,
+            'tulpok_dia' => $req->tulpok_dia,
+            'tulpok_jum' => $req->tulpok_jum,
+            'tulseng_dia_tumpuan' => $req->tulseng_dia_tumpuan,
+            'tulseng_dia_lapangan' => $req->tulseng_dia_lapangan,
+            'tulseng_dia_jaraklap' => $req->tulseng_dia_jaraklap,
+            'tulseng_dia_jaraktump' => $req->tulseng_dia_jaraktump,
+            'thtump_dia' => $req->thtump_dia,
+            'thtump_jarak' => $req->thtump_jarak,
+            'thlap_dia' => $req->thlap_dia,
+            'thlap_jarak' => $req->thlap_jarak,
+            'tvtump_dia' => $req->tvtump_dia,
+            'tvtump_jarak' => $req->tvtump_jarak,
+            'tvlap_dia' => $req->tvlap_dia,
+            'tvlap_jarak' => $req->tvlap_jarak
+
+        ]);
+        return redirect('/target');
+    }
+
+    // Tos Ground
+    public function in_tos32(Request $req)
+    {
+       $tipe_kolom = $req->tipe_kolom;
+       $tebal_plat = $req->tebal_plat;
+       $jum_kolom = $req->jum_kolom;
+       $pk_sengkang_qty = $req->pk_sengkang_qty;
+
+       $hasil = [
+           'tipe_kolom' => $req->tipe_kolom,
+           'tebal_plat' => $req->tebal_plat,
+           'jum_kolom' => $req->jum_kolom,
+           'pk_sengkang_qty' => $req->pk_sengkang_qty,
+       ];
+       
+      tos3ground::insert($hasil);
+       return redirect('/target');
+    }
+
+    public function del_tos32($id)
+    {
+        $post = tos3ground::all()->where('id_tos24', $id)->each->delete();
+        return redirect('/target');
+    }
+
+    public function edit_tos32(Request $req)
+    {
+        $coba =tos3ground::all()->detil();
+
+       //  dd($coba);
+        $user = tos2lewatan::all()->where("id_tos24", $req->idt)->first()->update([
+            'dia' => $req->dia,
+            'ls' => $req->ls,
+
+        ]);
+        return redirect('/target');
+    }
+
+    // Tos Ground
+    public function in_tos33(Request $req)
+    {
+       $tipe_kolom = $req->tipe_kolom;
+       $tebal_plat = $req->tebal_plat;
+       $jum_kolom = $req->jum_kolom;
+       $pk_sengkang_qty = $req->pk_sengkang_qty;
+
+       $hasil = [
+           'tipe_kolom' => $req->tipe_kolom,
+           'tebal_plat' => $req->tebal_plat,
+           'jum_kolom' => $req->jum_kolom,
+           'pk_sengkang_qty' => $req->pk_sengkang_qty,
+       ];
+       
+       tos3pumproom::insert($hasil);
+       return redirect('/target');
+    }
+
+    public function del_tos33($id)
+    {
+        $post = tos3pumproom::all()->where('id_tos24', $id)->each->delete();
+        return redirect('/target');
+    }
+
+    public function edit_tos33(Request $req)
+    {
+        $coba = tos3pumproom::all()->detil();
+
+       //  dd($coba);
+        $user = tos2lewatan::all()->where("id_tos24", $req->idt)->first()->update([
+            'dia' => $req->dia,
+            'ls' => $req->ls,
+
+        ]);
+        return redirect('/target');
+    }
+
+
+     // Tos 3 Lewatan
+     public function in_tos35(Request $req)
+     {
+         $hasil = [
+             'dia' => $req->dia,
+             'ls' => $req->ls
+         ];
+         // dd($req);
+         tos3lewatan::insert($hasil);
+         return redirect('/target');
+     }
+ 
+     public function del_tos35($id)
+     {
+         $post = tos3lewatan::all()->where('id_tos35', $id)->each->delete();
+         return redirect('/target');
+     }
+ 
+     public function edit_tos35(Request $req)
+     {
+         //dd($req);
+         $user = tos3lewatan::all()->where("id_tos35", $req->idt)->first()->update([
+             'dia' => $req->dia,
+             'ls' => $req->ls,
+ 
+         ]);
+         return redirect('/target');
+     }
 }

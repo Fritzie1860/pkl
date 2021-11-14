@@ -18,7 +18,6 @@ class CreateTos3groundTable extends Migration
             $table->string('tipe_kolom', 100);
             $table->double('tebal_plat', 5);
             $table->double('jum_kolom', 5);
-            $table->string('footplat_type', 100);
             $table->double('pk_sengkang_qty', 5);
         });
     }

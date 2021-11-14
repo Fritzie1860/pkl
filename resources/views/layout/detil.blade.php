@@ -752,15 +752,15 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                @foreach($Tos35 as $row)
+                                                                                @foreach($Tos24 as $row)
                                                                                 <tr class="gradeA">
                                                                                     <td>{{$row->dia}}</td>
                                                                                     <td>{{$row->ls}}</td>
                                                                                     <td class="project-actions">
                                                                                         <center>
                                                                                             <div style="display: inline-block;">
-                                                                                                <a href="/tos35_del/<?= $row->id_tos35 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
-                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos35 ?>" data-dia="<?= $row->dia ?>" data-ls="<?= $row->ls ?>" data-target="#edit_tos35" id="tos35">
+                                                                                                <a href="/tos24_del/<?= $row->id_tos24 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos24 ?>" data-dia="<?= $row->dia ?>" data-ls="<?= $row->ls ?>" data-target="#edit_tos24" id="tos24">
                                                                                                     <i class="fa fa-edit "></i>
                                                                                                 </a>
                                                                                             </div>
@@ -1736,6 +1736,7 @@
                                                                                     <th colspan="2" style="vertical-align:middle;">Ties - Horisontal Lapangan</th>
                                                                                     <th colspan="2" style="vertical-align:middle;">Ties - Vertikal Tumpuan</th>
                                                                                     <th colspan="2" style="vertical-align:middle;">Ties - Vertikal Lapangan</th>
+                                                                                    <th rowspan="2" align="center" style="vertical-align:middle;">Action</th>
 
                                                                                 </tr>
                                                                                 <tr>
@@ -1761,14 +1762,42 @@
 
                                                                             </thead>
                                                                             <tbody>
-                                                                                <tr class="gradeC">
-                                                                                    <td>Trident</td>
-                                                                                    <td>Internet
-                                                                                        Explorer 5.0
+                                                                            @foreach($Tos31 as $row)
+                                                                                <tr class="gradeA">
+                                                                                    <td>{{$row->nama}}</td>
+                                                                                    <td>{{$row->bentuk}}</td>
+                                                                                    <td>{{$row->dimensi_l}}</td>
+                                                                                    <td>{{$row->dimensi_p}}</td>
+                                                                                    <td>{{$row->tebal_selimut}}</td>
+                                                                                    <td>{{$row->tulpok_dia}}</td>
+                                                                                    <td>{{$row->tulpok_jum}}</td>
+                                                                                    <td>{{$row->tulseng_dia_tumpuan}}</td>
+                                                                                    <td>{{$row->tulseng_dia_lapangan}}</td>
+                                                                                    <td>{{$row->tulseng_dia_jaraklap}}</td>
+                                                                                    <td>{{$row->tulseng_dia_jaraktump}}</td>
+                                                                                    <td>{{$row->thtump_dia}}</td>
+                                                                                    <td>{{$row->thtump_jarak}}</td>
+                                                                                    <td>{{$row->thlap_dia}}</td>
+                                                                                    <td>{{$row->thlap_jarak}}</td>
+                                                                                    <td>{{$row->tvtump_dia}}</td>
+                                                                                    <td>{{$row->tvtump_jarak}}</td>
+                                                                                    <td>{{$row->tvlap_dia}}</td>
+                                                                                    <td>{{$row->tvlap_jarak}}</td>
+                                                                                    <td class="project-actions">
+                                                                                        <center>
+                                                                                            <div style="display: inline-block;">
+                                                                                                <a href="/tos31_del/<?= $row->id_tos31 ?>" class="btn btn-danger btn-sm float-left"> <i class="fa fa-trash"></i> </a>
+                                                                                                <a class="btn btn-white btn-sm " data-toggle="modal" data-idt="<?= $row->id_tos31 ?>" data-nama="<?= $row->nama ?>" data-bentuk="<?= $row->bentuk ?>" data-dimensi_l="<?= $row->dimensi_l ?>" data-dimensi_p="<?= $row->dimensi_p ?>" data-tebal_selimut="<?= $row->tebal_selimut ?>" data-tulpok_dia="<?= $row->tulpok_dia ?>" data-tulpok_jum="<?= $row->tulpok_jum ?>" data-tulseng_dia_tumpuan="<?= $row->tulseng_dia_tumpuan ?>" data-tulseng_dia_lapangan="<?= $row->tulseng_dia_lapangan ?>" data-tulseng_dia_jaraklap="<?= $row->tulseng_dia_jaraklap ?>" data-tulseng_dia_jaraktump="<?= $row->tulseng_dia_jaraktump ?>" data-thtump_dia="<?= $row->thtump_dia ?>" data-thtump_jarak="<?= $row->thtump_jarak ?>" data-thlap_dia="<?= $row->thlap_dia ?>" data-thlap_jarak="<?= $row->thlap_jarak ?>" data-tvtump_dia="<?= $row->tvtump_dia ?>" data-tvtump_jarak="<?= $row->tvtump_jarak ?>" data-tvlap_dia="<?= $row->tvlap_dia ?>" data-tvlap_jarak="<?= $row->tvlap_jarak ?>" data-target="#edit_tos31" id="tos31">
+                                                                                                    <i class="fa fa-edit "></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </center>
                                                                                     </td>
-                                                                                    <td class="center">5</td>
-                                                                                    <td class="center">C</td>
                                                                                 </tr>
+                                                                                @endforeach
+                                                                            </tbody>
+
+                                                                            </tbody>
 
                                                                         </table>
                                                                     </div>
@@ -1787,7 +1816,7 @@
                                                                 <div class="ibox-title">
                                                                     <h5>Lewatan</h5>
                                                                     <div class="ibox-tools">
-                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos2lewatan"> Add Data</button>
+                                                                        <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos3lewatan"> Add Data</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
@@ -2046,10 +2075,7 @@
                                                                                     <td rowspan="7"></td>
                                                                                     <td rowspan="7"></td>
                                                                                     <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
+                                                                                    
                                                                                     <td>Sengkang Tumpuan</td>
 
                                                                                     <td>{{$row->tulseng_dia_tumpuan}}</td>

@@ -16,7 +16,6 @@ class tos3pumproom extends Model
         'tipe_kolom',
         'tebal_plat',
         'jum_kolom',
-        'footplat_type',
         'pk_sengkang_qty',
     ];
 
