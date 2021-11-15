@@ -1949,7 +1949,7 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                @foreach($Tos22 as $row)
+                                                                                @foreach($Tos32 as $row)
                                                                                 <?php $a = round((3.14 * $row->dimensi_l) + (6 * ($row->tulseng_dia_tumpuan / 1000) * 2) - ($row->tebal_selimut * 8), 2);
                                                                                 $b = ceil((1.5 - $row->t) / $row->tulseng_dia_jaraktump * 0.25 + ($row->ls / $row->tulseng_dia_jaraktump * 0.25)) + $row->pk_sengkang_qty;
                                                                                 $b1 = round(0.25 * 3.14 * $row->tulseng_dia_tumpuan * $row->tulseng_dia_tumpuan * 0.00785 * $a * $b * $row->jum_kolom, 2);
@@ -2347,7 +2347,7 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                @foreach($Tos21 as $row)
+                                                                                @foreach($Tos32 as $row)
                                                                                 <?php $a = round((3.14 * $row->dimensi_l) + (6 * ($row->tulseng_dia_tumpuan / 1000) * 2) - ($row->tebal_selimut * 8), 2);
                                                                                 $b = ceil((1.5 - $row->t) / $row->tulseng_dia_jaraktump * 0.25 + ($row->ls / $row->tulseng_dia_jaraktump * 0.25)) + $row->pk_sengkang_qty;
                                                                                 $b1 = round(0.25 * 3.14 * $row->tulseng_dia_tumpuan * $row->tulseng_dia_tumpuan * 0.00785 * $a * $b * $row->jum_kolom, 2);
@@ -2402,14 +2402,7 @@
                                                                                     <td>{{$row->tebal_selimut}}</td>
                                                                                     <!-- jumlah kolom  -->
                                                                                     <td>{{$row->jum_kolom}}</td>
-                                                                                    <!-- tipe footplat  -->
-                                                                                    <td>{{$row->footplat_type}}</td>
-                                                                                    <!-- footplat b  -->
-                                                                                    <td>{{$row->b}}</td>
-                                                                                    <!-- footplat h  -->
-                                                                                    <td>{{$row->h}}</td>
-                                                                                    <!-- footplat t  -->
-                                                                                    <td>{{$row->t}}</td>
+                                                                                    
                                                                                     <td>Tulangan Pokok</td>
                                                                                     <!-- pk sengkang dia -->
                                                                                     <td rowspan="8">{{$row->tulpok_dia}}</td>
@@ -2480,10 +2473,7 @@
                                                                                     <td rowspan="7"></td>
                                                                                     <td rowspan="7"></td>
                                                                                     <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
-                                                                                    <td rowspan="7"></td>
+                                                                                    
                                                                                     <td>Sengkang Tumpuan</td>
 
                                                                                     <td>{{$row->tulseng_dia_tumpuan}}</td>
