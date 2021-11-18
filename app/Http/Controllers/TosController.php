@@ -627,22 +627,29 @@ class TosController extends Controller
      // Tos 2 Pedestal
      public function in_tos21(Request $req)
      {
-        $tipe_kolom = $req->tipe_kolom;
-        $tebal_plat = $req->tebal_plat;
-        $jum_kolom = $req->jum_kolom;
-        $footplat_type = $req->footplat_type;
-        $pk_sengkang_qty = $req->pk_sengkang_qty;
+        // $tipe_kolom = $req->tipe_kolom;
+        // $tebal_plat = $req->tebal_plat;
+        // $jum_kolom = $req->jum_kolom;
+        // $footplat_type = $req->footplat_type;
+        // $pk_sengkang_qty = $req->pk_sengkang_qty;
 
-        $hasil = [
-            'tipe_kolom' => $req->tipe_kolom,
-            'tebal_plat' => $req->tebal_plat,
-            'jum_kolom' => $req->jum_kolom,
-            'footplat_type' => $req->footplat_type,
-            'pk_sengkang_qty' => $req->pk_sengkang_qty,
-        ];
+        // $hasil = [
+        //     'tipe_kolom' => $req->tipe_kolom,
+        //     'tebal_plat' => $req->tebal_plat,
+        //     'jum_kolom' => $req->jum_kolom,
+        //     'footplat_type' => $req->footplat_type,
+        //     'pk_sengkang_qty' => $req->pk_sengkang_qty,
+        // ];
         
-        tos2pedestal::insert($hasil);
-        return redirect('/target');
+        // tos2pedestal::insert($hasil);
+
+        $tes = tos2pedestal::join('tos2datakolom', 'tos2pedestal.tipe_kolom', '=', 'tos2datakolom.nama')->limit(1)->get();
+        // foreach ($tes as $row) {
+        //     echo $row['nama'];
+        // }
+
+        dd($tes);
+        // return redirect('/target');
      }
  
      public function del_tos21($id)
