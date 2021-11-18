@@ -2207,7 +2207,7 @@
                                                                                     <!-- sengkang tekukan panjang -->
                                                                                     <td>{{round((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2),2}}
                                                                                     </td>
-                                                                                    <!-- sengkang qty  -->
+                                                                                    <!-- sengkang qty  --> 
                                                                                     <td>{{ceil($row->jum_kolom/$row->thtump_jarak*0.25)+$row->pk_sengkang_qty}}
                                                                                     </td>
                                                                                     <!-- sengkang total panjang  -->
@@ -2787,13 +2787,51 @@
 
                                                                             </thead>
                                                                             <tbody>
-                                                                                <tr class="gradeC">
-                                                                                    <td>Trident</td>
-                                                                                    <td>Internet
-                                                                                        Explorer 5.0
-                                                                                    </td>
-                                                                                    <td class="center">5</td>
-                                                                                    <td class="center">C</td>
+                                                                                <tr class="gradeA">
+                                                                                    <!-- type -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- B -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- H -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- Beton Decking -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- Dia Tul Utama -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- Dia Tul Skg -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- Dia Tul Pg -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- Sengkang Dia Ka -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- Sengkang Dia Tg -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- Sengkang Dia Ki -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- Peminggang Dia -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- Peminggang N  -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- J Tul Uta Atas 1 -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- J Tul Uta Atas 2 -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- J Tul Uta Atas 3 -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- J Tul Uta Bawah 1 -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- J Tul Uta Bawah 2 -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- J Tul Uta Bawah 3 -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- Jrk Sengkang Dia Ka -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- Jrk Sengkang Dia tg -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- Jrk Sengkang Dia Ki -->
+                                                                                    <td>{{0}}</td>
+                                                                                    <!-- Luas Sekur -->
+                                                                                    <td>{{0}}</td>
                                                                                 </tr>
 
                                                                         </table>

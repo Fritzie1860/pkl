@@ -553,8 +553,8 @@
                 <h2>Batu Kali</h2>
             </div>
             <div class="container">
-            <form action="tos31" method="post">
-            <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                <form action="tos31" method="post">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                     <div class="form-group">
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control" name="nama" id="nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
@@ -782,19 +782,97 @@
                 <h2>Data</h2>
             </div>
             <div class="container">
-                <form>
+                <form action="tos31" method="post">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <label for="type">Type</label>
+                        <input type="text" class="form-control" name="type" id="type" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <label for="b">B</label>
+                        <input type="text" class="form-control" name="b" id="b" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div class="form-group">
+                        <label for="h">H</label>
+                        <input type="text" class="form-control" name="h" id="h" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
+                    <div class="form-group">
+                        <label for="bd">Beton Decking</label>
+                        <input type="text" class="form-control" name="bd" id="bd" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="diatul_utama">Dia Tulangan Utama</label>
+                        <input type="text" class="form-control" name="diatul_utama" id="diatul_utama" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="diatul_skg">Dia Tulangan Skg</label>
+                        <input type="text" class="form-control" name="diatul_skg" id="diatul_skg" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="diatul_pg">Dia Tulangan pg</label>
+                        <input type="text" class="form-control" name="tulpok_jum" id="tulpok_jum" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="sengkang_dia_ka">Sengkang Dia Ka</label>
+                        <input type="text" class="form-control" name="sengkang_dia_ka" id="sengkang_dia_ka" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="sengkang_dia_tg">Sengkang Dia Tg</label>
+                        <input type="text" class="form-control" name="sengkang_dia_tg" id="sengkang_dia_tg" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="sengkang_dia_ki">Sengkang Dia Ki</label>
+                        <input type="text" class="form-control" name="sengkang_dia_ki" id="sengkang_dia_ki" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="peminggang_dia">Peminggang Dia</label>
+                        <input type="text" class="form-control" name="peminggang_dia" id="peminggang_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="peminggang_n">Peminggang N</label>
+                        <input type="text" class="form-control" name="peminggang_n" id="peminggang_n" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="jumtulut_atas1">Jumlah Tulangan Utama Atas 1</label>
+                        <input type="text" class="form-control" name="jumtulut_atas1" id="jumtulut_atas1" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="jumtulut_atas2">Jumlah Tulangan Utama Atas 2</label>
+                        <input type="text" class="form-control" name="jumtulut_atas2" id="jumtulut_atas2" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="jumtulut_atas3">Jumlah Tulangan Utama Atas 3</label>
+                        <input type="text" class="form-control" name="jumtulut_atas3" id="jumtulut_atas3" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="jumtulut_bawah1">Jumlah Tulangan Utama Bawah 1</label>
+                        <input type="text" class="form-control" name="jumtulut_bawah1" id="jumtulut_bawah1" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="jumtulut_bawah2">Jumlah Tulangan Utama Bawah 2</label>
+                        <input type="text" class="form-control" name="jumtulut_bawah2" id="jumtulut_bawah2" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="jumtulut_bawah3">Jumlah Tulangan Utama Bawah 3</label>
+                        <input type="text" class="form-control" name="jumtulut_bawah3" id="jumtulut_bawah3" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="jarakseng_dia_ka">Jarak Sengkang Dia Ka</label>
+                        <input type="text" class="form-control" name="jarakseng_dia_ka" id="jarakseng_dia_ka" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="jarakseng_dia_tg">Jarak Sengkang Dia Tg</label>
+                        <input type="text" class="form-control" name="jarakseng_dia_tg" id="jarakseng_dia_tg" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="jarakseng_dia_ki">Jarak Sengkang Dia Ki</label>
+                        <input type="text" class="form-control" name="jarakseng_dia_ki" id="jarakseng_dia_ki" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="l_sekur_beton">Luas Sekur</label>
+                        <input type="text" class="form-control" name="l_sekur_beton" id="l_sekur_beton" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                    </div>
+
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
