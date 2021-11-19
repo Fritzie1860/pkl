@@ -18,6 +18,10 @@ class tos2pedestal extends Model
         'jum_kolom',
         'footplat_type',
         'pk_sengkang_qty',
+        'besi',
+        'beton',
+        'bekisting',
+        'rasio_b'
     ];
 
     public function detil () {

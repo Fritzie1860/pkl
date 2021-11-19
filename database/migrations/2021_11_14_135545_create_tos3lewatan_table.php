@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTos3lewatansTable extends Migration
+class CreateTos3lewatanTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateTos3lewatansTable extends Migration
      */
     public function up()
     {
-        Schema::create('tos3lewatans', function (Blueprint $table) {
+        Schema::create('tos3lewatan', function (Blueprint $table) {
             $table->id('id_tos31', 5);
             $table->double('dia',5);
             $table->double('ls',5);
@@ -27,6 +27,6 @@ class CreateTos3lewatansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tos3lewatans');
+        Schema::dropIfExists('tos3lewatan');
     }
 }

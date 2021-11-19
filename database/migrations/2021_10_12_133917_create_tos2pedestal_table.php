@@ -19,7 +19,11 @@ class CreateTos2pedestalTable extends Migration
             $table->double('tebal_plat', 5);
             $table->double('jum_kolom', 5);
             $table->string('footplat_type', 100);
-            $table->double('pk_sengkang_qty', 5);    
+            $table->double('pk_sengkang_qty', 5);
+            $table->double('besi', 5);
+            $table->double('beton', 5);
+            $table->double('bekisting', 5);
+            $table->double('rasio_b', 5);    
                      
         });
     }
