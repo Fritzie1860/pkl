@@ -29,4 +29,12 @@ class tos2pedestal extends Model
         join('tos2datafootplat', 'tos2pedestal.footplat_type', '=', 'tos2datafootplat.nama')->
         join('tos2lewatan', 'tos2datakolom.tulpok_dia', '=', 'tos2lewatan.dia')->get();
     }
+    
+    public function summarry () {
+        return tos2pedestal::selectRaw("SUM(besi) as total_besi")
+        ->selectRaw("SUM(beton) as total_beton")
+        ->groupBy('tipe_kolom')
+        ->get();
+        ;
+    }
 }

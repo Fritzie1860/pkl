@@ -960,9 +960,9 @@
                                                                                         +$row->ls+$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                     +(1.5-$row->t))}}</td>
                                                                                     <!-- total panjang  -->
-                                                                                    <td>{{(0.25*3.14*$row->tulpok_dia*$row->tulpok_dia*0.007855)*$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
+                                                                                    <td>{{round((0.25*3.14*$row->tulpok_dia*$row->tulpok_dia*0.007855)*$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                         +$row->ls+$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
-                                                                                    +(1.5-$row->t))*$row->jum_kolom}}</td>
+                                                                                    +(1.5-$row->t))*$row->jum_kolom,2)}}</td>
                                                                                     <td colspan="5"></td>
                                                                                     <!-- besi  -->
                                                                                     <td>{{round(((0.25*3.14*$row->tulpok_dia*$row->tulpok_dia*0.007855)*$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
@@ -1328,20 +1328,20 @@
                                                                                     <td>{{$row->ls}}</td>
                                                                                     <!-- tulpok ovlp  -->
                                                                                     <td>{{(28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))}}</td>
-                                                                                    <!-- stek u/ kolom -->
+                                                                                    <!-- Kait ke footplat -->
                                                                                     <td>{{$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))}}</td>
-                                                                                    <!-- Kait ke footplat  -->
+                                                                                    <!-- panjang besi  -->
                                                                                     <td>{{(28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                         +$row->ls+$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                     +(1.5-$row->t)}}</td>
-                                                                                    <!-- panjang besi  -->
+                                                                                    <!-- total panjang  -->
                                                                                     <td>{{$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                         +$row->ls+$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                     +(1.5-$row->t))}}</td>
-                                                                                    <!-- total panjang  -->
-                                                                                    <td>{{(0.25*3.14*$row->tulpok_dia*$row->tulpok_dia*0.007855)*$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
+                                                                                    <!-- Berat  -->
+                                                                                    <td>{{round((0.25*3.14*$row->tulpok_dia*$row->tulpok_dia*0.007855)*$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
                                                                                         +$row->ls+$row->t+(20*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
-                                                                                    +(1.5-$row->t))*$row->jum_kolom}}</td>
+                                                                                    +(1.5-$row->t))*$row->jum_kolom,2)}}</td>
                                                                                     <td colspan="5"> </td>
                                                                                     <!-- besi  -->
                                                                                     <td>{{round(((0.25*3.14*$row->tulpok_dia*$row->tulpok_dia*0.007855)*$row->tulpok_jum * ((28*($row->tulpok_dia/1000))+(8*($row->tulpok_dia/1000))
