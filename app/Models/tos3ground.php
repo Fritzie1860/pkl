@@ -23,4 +23,15 @@ class tos3ground extends Model
         return tos3ground::join('tos3data', 'tos3ground.tipe_kolom', '=', 'tos3data.nama')->
         join('tos3lewatan', 'tos3data.tulpok_dia', '=', 'tos3lewatan.dia')->get();
     }
+
+    public function summarry () {
+        return tos3ground::select('tipe_kolom as label')
+        ->selectRaw("SUM(besi) as total_besi")
+        ->selectRaw("SUM(beton) as total_beton")
+        ->selectRaw("SUM(bekisting) as total_bekisting")
+        ->selectRaw("SUM(rasio_b) as rsaio_b")
+        ->groupBy('tipe_kolom')
+        ->get();
+        ;
+    }
 }

@@ -42,9 +42,14 @@ class TosController extends Controller
         $Tos24 = tos2lewatan::all();
         $Tos25 = tos2datafootplat::all();
         $Tos26 = tos2datakolom::all();
+        $sum_pedes = $pedes->summarry();
+        $sum_kopedes = $kopedes->summarry();
 
         $ground = new tos3ground();
         $pumproom = new tos3pumproom();
+
+        $sum_ground = $ground->summarry();
+        $sum_pm = $pumproom->summarry();
 
 
         $tos31 = tos3data::all();
@@ -60,7 +65,8 @@ class TosController extends Controller
             'Tos21' => $Tos21, 'Tos22' => $Tos22, 'Tos23' => $Tos23,
             'Tos24' => $Tos24, 'Tos25' => $Tos25, 'Tos26' => $Tos26,
             'Tos31' => $tos31, 'Tos32' =>  $tos32, 'Tos33' => $tos33,
-            'Tos34' => $tos34, 'Tos35' => $tos35
+            'Tos34' => $tos34, 'Tos35' => $tos35, 'sum_pedes' => $sum_pedes,
+            'sum_kopedes' => $sum_kopedes, 'sum_ground' => $sum_ground, 'sum_pm' => $sum_pm
         ]);
     }
 
@@ -635,7 +641,7 @@ class TosController extends Controller
         $datafoot = tos2datafootplat::all()->where('nama', $footplat_type);
         $datalewat = tos2lewatan::all()->where('dia', $datakol[1]['tulpok_dia']);
         // dd($datalewat);
-        // echo $datalewat[0]['ls'];
+        // echo $datalewat[]['ls'];
 
         $a = round((3.14 * $datakol[1]['dimensi_l']) + (6 * ($datakol[1]['tulseng_dia_tumpuan'] / 1000) * 2) - ($datakol[1]['tebal_selimut'] * 8), 2);
         $b = ceil((1.5 - $datafoot[0]['t']) / $datakol[1]['tulseng_dia_jaraktump'] * 0.25 + ($datalewat[1]['ls'] / $datakol[1]['tulseng_dia_jaraktump'] * 0.25)) + $pk_sengkang_qty;
@@ -1190,17 +1196,113 @@ class TosController extends Controller
         $tipe_kolom = $req->tipe_kolom;
         $tebal_plat = $req->tebal_plat;
         $jum_kolom = $req->jum_kolom;
+        $dim_kol = $req->dim_kom;
         $pk_sengkang_qty = $req->pk_sengkang_qty;
+        $jumkom = 21;
 
-        $hasil = [
-            'tipe_kolom' => $req->tipe_kolom,
-            'tebal_plat' => $req->tebal_plat,
-            'jum_kolom' => $req->jum_kolom,
-            'pk_sengkang_qty' => $req->pk_sengkang_qty,
-        ];
+        $datakol = tos3data::all()->where('nama', $tipe_kolom);
+        
+        $datalewat = tos3lewatan::all()->where('dia', $datakol[1]['tulpok_dia']);
 
-        tos3ground::insert($hasil);
-        return redirect('/target');
+        // dd($datalewat);
+
+        $a = ceil($dim_kol/$datakol[1]['tulseng_dia_jaraktump']*1/4+$datalewat[0]['ls']/$datakol[1]['tulseng_dia_jaraktump']*1/4)+1*$pk_sengkang_qty;
+        $b = ((3.14*$datakol[1]['dimensi_l'])+(6*$datakol[1]['tulseng_dia_tumpuan']/1000*2))-($datakol[1]['tebal_selimut']*8);
+        $Y11 = $a*$b;
+
+        $a = ceil($dim_kol/$datakol[1]['tulseng_dia_jaraklap']*1/5+$datalewat[0]['ls']/$datakol[1]['tulseng_dia_jaraklap']*1/5)*$pk_sengkang_qty;
+        $b = ((3.14*$datakol[1]['dimensi_l'])+(6*$datakol[1]['tulseng_dia_lapangan']/1000*2))-($datakol[1]['tebal_selimut']*8);
+        $Y12 = $a*$b;
+
+        $a = ceil($dim_kol/$datakol[1]['tulseng_dia_jaraktump']*1/4+$datalewat[0]['ls']/$datakol[1]['tulseng_dia_jaraktump']*1/4)+1*$pk_sengkang_qty;
+        $b = ((3.14*$datakol[1]['dimensi_l'])+(6*$datakol[1]['tulseng_dia_tumpuan']/1000*2))-($datakol[1]['tebal_selimut']*8);
+        $Y13 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[1]['tvtump_jarak']*1/4)+1*$pk_sengkang_qty;
+        $b = (6*$datakol[1]['tvtump_dia']/1000*2)+($datakol[1]['dimensi_p']-$datakol[1]['tulseng_dia_jaraktump']*2);
+        $Y14 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[1]['tvlap_jarak']*1/5)*$pk_sengkang_qty;
+        $b = (6*$datakol[1]['tvlap_dia']/1000*2)+($datakol[1]['dimensi_p']-$datakol[1]['tulseng_dia_jaraktump']*2);
+        $Y15 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[1]['thtump_jarak']*1/4)+1*$pk_sengkang_qty;
+        $b = ((6*$datakol[1]['thtump_dia']/1000*2)+($datakol[1]['dimensi_p']-$datakol[1]['tulseng_dia_jaraktump']*2)*2);
+        $Y16 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[1]['thlap_jarak']*1/5)*$pk_sengkang_qty;
+        $b = ((6*$datakol[1]['thlap_dia']/1000*2)+($datakol[1]['dimensi_p']-$datakol[1]['tulseng_dia_jaraktump']*2)*2);
+        $Y17 = $a*$b; 
+
+
+        $b1 = (0.25*3.14*$datakol[1]['tulseng_dia_tumpuan']*$datakol[1]['tulseng_dia_tumpuan']*0.00785)*$Y11*$jumkom;
+        $b2 = (0.25*3.14*$datakol[1]['tulseng_dia_lapangan']*$datakol[1]['tulseng_dia_lapangan']*0.00785)*$Y12*$jumkom;
+        $b3 = (0.25*3.14*$datakol[1]['tulseng_dia_tumpuan']*$datakol[1]['tulseng_dia_tumpuan']*0.00785)*$Y13*$jumkom ;
+        $b4 = (0.25*3.14*$datakol[1]['tvtump_dia']*0.00785)*$Y14*$jumkom ;
+        $b5 = (0.25*3.14*$datakol[1]['tvlap_dia']*0.00785)*$Y15*$jumkom;
+        $b6 = (0.25*3.14*$datakol[1]['thtump_dia']*0.00785)*$Y16*$jumkom;
+        $b7 = (0.25*3.14*$datakol[1]['thlap_dia']*0.00785)*$Y17*$jumkom;
+
+        $tos32_tamp_berat = $b1 + $b2 + $b3 + $b4 + $b5 + $b6 + $b7;
+
+        $beton_bundar = 3.14 * (0.5 * $datakol[1]['dimensi_l']) * (0.5 * $datakol[1]['dimensi_l']) * $jum_kolom * $dim_kol;
+        
+        $beton_kotak = ($datakol[1]['dimensi_l'] * $datakol[1]['dimensi_p'] * $dim_kol * $jum_kolom);
+        
+
+        $bekisting_bundar = (3.14 * $datakol[1]['dimensi_l']) * ($dim_kol - $tebal_plat) * $jum_kolom ;
+        $bekisting_kotak = (($datakol[1]['dimensi_l'] + $datakol[1]['dimensi_p']) * 2 * ($dim_kol - $tebal_plat)) * $jum_kolom;
+
+        
+
+       // besi  -->
+        echo "part 1 : ".(0.25*3.14*$datakol[1]['tulpok_dia']*$datakol[1]['tulpok_dia']*0.00785)*($datalewat[0]['ls']+$dim_kol+(28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)))*$datakol[1]['tulpok_jum']*$jum_kolom ;
+
+        echo "<br> <br> Q18 :".$datalewat[0]['ls'];
+        echo "<br> D18 :".$dim_kol." tulpok jum ".$datakol[1]['tulpok_jum'];
+        echo "<br> R18 :".((28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)));
+        echo "<br> S18 :".(round($datalewat[0]['ls'],2)+round($dim_kol,2)+round((28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)),2));
+        dd($datalewat);
+        $besi = round((0.25*3.14*$datakol[1]['tulpok_dia']*$datakol[1]['tulpok_dia']*0.00785)*($datalewat[0]['ls']+$dim_kol+(28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)))*$datakol[1]['tulpok_jum']*$jum_kolom,2) + $tos32_tamp_berat;
+        // echo $besi;
+        
+        
+        // beton  -->
+                                                                                   
+        if ($datakol[1]['bentuk'] == 'Kotak') {
+            $beton = round($beton_kotak, 2);
+        } else {
+            $beton = round($beton_bundar, 2);
+        }
+         // bekissting  -->                                                                                   
+        if ($datakol[1]['bentuk'] == 'Kotak') {
+            $bekisting = round($bekisting_kotak, 2);
+        } else {
+            $bekisting = round($bekisting_bundar, 2);
+        }
+
+        // rasio besi  -->
+        $rasio_b = 0;//round($besi/$beton_kotak,2);
+
+        
+        // dd($datal);
+        echo "<br>".$beton_bundar;
+        echo "<br>".$beton_kotak;
+        dd($datalewat);
+       
+        // $hasil = [
+        //     'tipe_kolom' => $req->tipe_kolom,
+        //     'tebal_plat' => $req->tebal_plat,
+        //     'jum_kolom' => $req->jum_kolom,
+        //     'pk_sengkang_qty' => $req->pk_sengkang_qty,
+        //     'besi' => $besi,
+        //     'beton' => $beton,
+        //     'bekisting' => $bekisting,
+        //     'rasio_b' => $rasio_b
+        // ];
+
+        // tos3ground::insert($hasil);
+        // return redirect('/target');
     }
 
     public function del_tos32($id)
@@ -1211,12 +1313,108 @@ class TosController extends Controller
 
     public function edit_tos32(Request $req)
     {
-        $coba = tos3ground::all()->detil();
+        $tipe_kolom = $req->tipe_kolom;
+        $tebal_plat = $req->tebal_plat;
+        $jum_kolom = $req->jum_kolom;
+        $dim_kol = $req->dim_kom;
+        $pk_sengkang_qty = $req->pk_sengkang_qty;
+        $jumkom = 21;
 
-        //  dd($coba);
-        $user = tos2lewatan::all()->where("id_tos24", $req->idt)->first()->update([
-            'dia' => $req->dia,
-            'ls' => $req->ls,
+        $datakol = tos3data::all()->where('nama', $tipe_kolom);
+        
+        $datalewat = tos3lewatan::all()->where('dia', $datakol[0]['tulpok_dia']);
+
+        $a = ceil($dim_kol/$datakol[0]['tulseng_dia_jaraktump']*1/4+$datalewat[0]['ls']/$datakol[0]['tulseng_dia_jaraktump']*1/4)+1*$pk_sengkang_qty;
+        $b = ((3.14*$datakol[0]['dimensi_l'])+(6*$datakol[0]['tulseng_dia_tumpuan']/1000*2))-($datakol[0]['tebal_selimut']*8);
+        $Y11 = $a*$b;
+
+        $a = ceil($dim_kol/$datakol[0]['tulseng_dia_jaraklap']*1/5+$datalewat[0]['ls']/$datakol[0]['tulseng_dia_jaraklap']*1/5)*$pk_sengkang_qty;
+        $b = ((3.14*$datakol[0]['dimensi_l'])+(6*$datakol[0]['tulseng_dia_lapangan']/1000*2))-($datakol[0]['tebal_selimut']*8);
+        $Y12 = $a*$b;
+
+        $a = ceil($dim_kol/$datakol[0]['tulseng_dia_jaraktump']*1/4+$datalewat[0]['ls']/$datakol[0]['tulseng_dia_jaraktump']*1/4)+1*$pk_sengkang_qty;
+        $b = ((3.14*$datakol[0]['dimensi_l'])+(6*$datakol[0]['tulseng_dia_tumpuan']/1000*2))-($datakol[0]['tebal_selimut']*8);
+        $Y13 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[0]['tvtump_jarak']*1/4)+1*$pk_sengkang_qty;
+        $b = (6*$datakol[0]['tvtump_dia']/1000*2)+($datakol[0]['dimensi_p']-$datakol[0]['tulseng_dia_jaraktump']*2);
+        $Y14 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[0]['tvlap_jarak']*1/5)*$pk_sengkang_qty;
+        $b = (6*$datakol[0]['tvlap_dia']/1000*2)+($datakol[0]['dimensi_p']-$datakol[0]['tulseng_dia_jaraktump']*2);
+        $Y15 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[0]['thtump_jarak']*1/4)+1*$pk_sengkang_qty;
+        $b = ((6*$datakol[0]['thtump_dia']/1000*2)+($datakol[0]['dimensi_p']-$datakol[0]['tulseng_dia_jaraktump']*2)*2);
+        $Y16 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[0]['thlap_jarak']*1/5)*$pk_sengkang_qty;
+        $b = ((6*$datakol[0]['thlap_dia']/1000*2)+($datakol[0]['dimensi_p']-$datakol[0]['tulseng_dia_jaraktump']*2)*2);
+        $Y17 = $a*$b; 
+
+
+        $b1 = (0.25*3.14*$datakol[0]['tulseng_dia_tumpuan']*$datakol[0]['tulseng_dia_tumpuan']*0.00785)*$Y11*$jumkom;
+        $b2 = (0.25*3.14*$datakol[0]['tulseng_dia_lapangan']*$datakol[0]['tulseng_dia_lapangan']*0.00785)*$Y12*$jumkom;
+        $b3 = (0.25*3.14*$datakol[0]['tulseng_dia_tumpuan']*$datakol[0]['tulseng_dia_tumpuan']*0.00785)*$Y13*$jumkom ;
+        $b4 = (0.25*3.14*$datakol[0]['tvtump_dia']*0.00785)*$Y14*$jumkom ;
+        $b5 = (0.25*3.14*$datakol[0]['tvlap_dia']*0.00785)*$Y15*$jumkom;
+        $b6 = (0.25*3.14*$datakol[0]['thtump_dia']*0.00785)*$Y16*$jumkom;
+        $b7 = (0.25*3.14*$datakol[0]['thlap_dia']*0.00785)*$Y17*$jumkom;
+
+        $tos32_tamp_berat = $b1 + $b2 + $b3 + $b4 + $b5 + $b6 + $b7;
+
+        $beton_bundar = 3.14 * (0.5 * $datakol[0]['dimensi_l']) * (0.5 * $datakol[0]['dimensi_l']) * $jum_kolom * $dim_kol;
+        
+        $beton_kotak = ($datakol[0]['dimensi_l'] * $datakol[0]['dimensi_p'] * $dim_kol * $jum_kolom);
+        
+
+        $bekisting_bundar = (3.14 * $datakol[0]['dimensi_l']) * ($dim_kol - $tebal_plat) * $jum_kolom ;
+        $bekisting_kotak = (($datakol[0]['dimensi_l'] + $datakol[0]['dimensi_p']) * 2 * ($dim_kol - $tebal_plat)) * $jum_kolom;
+
+        
+
+       // besi  -->
+        // echo "part 1 : ".(0.25*3.14*$datakol[0]['tulpok_dia']*$datakol[0]['tulpok_dia']*0.00785)*($datalewat[0]['ls']+$dim_kol+(28*($datakol[0]['tulpok_dia']*0.001))+(8*($datakol[0]['tulpok_dia']*0.001)))*$datakol[0]['tulpok_jum']*$jum_kolom ;
+
+        // echo "<br> <br> Q18 :".$datalewat[0]['ls'];
+        // echo "<br> D18 :".$dim_kol." tulpok jum ".$datakol[0]['tulpok_jum'];
+        // echo "<br> R18 :".((28*($datakol[0]['tulpok_dia']*0.001))+(8*($datakol[0]['tulpok_dia']*0.001)));
+        // echo "<br> S18 :".(round($datalewat[0]['ls'],2)+round($dim_kol,2)+round((28*($datakol[0]['tulpok_dia']*0.001))+(8*($datakol[0]['tulpok_dia']*0.001)),2));
+        // dd($datalewat);
+        $besi = round((0.25*3.14*$datakol[0]['tulpok_dia']*$datakol[0]['tulpok_dia']*0.00785)*($datalewat[0]['ls']+$dim_kol+(28*($datakol[0]['tulpok_dia']*0.001))+(8*($datakol[0]['tulpok_dia']*0.001)))*$datakol[0]['tulpok_jum']*$jum_kolom,2) + $tos32_tamp_berat;
+        echo $besi;
+        
+        
+        // beton  -->
+                                                                                   
+        if ($datakol[0]['bentuk'] == 'Kotak') {
+            $beton = round($beton_kotak, 2);
+        } else {
+            $beton = round($beton_bundar, 2);
+        }
+         // bekissting  -->                                                                                   
+        if ($datakol[0]['bentuk'] == 'Kotak') {
+            $bekisting = round($bekisting_kotak, 2);
+        } else {
+            $bekisting = round($bekisting_bundar, 2);
+        }
+
+        // rasio besi  -->
+        $rasio_b = round($besi/$beton_kotak,2);
+
+        
+        // dd($datal);
+
+        
+        $user = tos3ground::all()->where("id_tos24", $req->idt)->first()->update([
+            'tipe_kolom' => $req->tipe_kolom,
+            'tebal_plat' => $req->tebal_plat,
+            'jum_kolom' => $req->jum_kolom,
+            'pk_sengkang_qty' => $req->pk_sengkang_qty,
+            'besi' => $besi,
+            'beton' => $beton,
+            'bekisting' => $bekisting,
+            'rasio_b' => $rasio_b
 
         ]);
         return redirect('/target');
@@ -1228,13 +1426,106 @@ class TosController extends Controller
         $tipe_kolom = $req->tipe_kolom;
         $tebal_plat = $req->tebal_plat;
         $jum_kolom = $req->jum_kolom;
+        $dim_kol = $req->dim_kom;
         $pk_sengkang_qty = $req->pk_sengkang_qty;
+        $jumkom = 21;
 
+        $datakol = tos3data::all()->where('nama', $tipe_kolom);
+        
+        $datalewat = tos3lewatan::all()->where('dia', $datakol[1]['tulpok_dia']);
+
+        $a = ceil($dim_kol/$datakol[1]['tulseng_dia_jaraktump']*1/4+$datalewat[0]['ls']/$datakol[1]['tulseng_dia_jaraktump']*1/4)+1*$pk_sengkang_qty;
+        $b = ((3.14*$datakol[1]['dimensi_l'])+(6*$datakol[1]['tulseng_dia_tumpuan']/1000*2))-($datakol[1]['tebal_selimut']*8);
+        $Y11 = $a*$b;
+
+        $a = ceil($dim_kol/$datakol[1]['tulseng_dia_jaraklap']*1/5+$datalewat[0]['ls']/$datakol[1]['tulseng_dia_jaraklap']*1/5)*$pk_sengkang_qty;
+        $b = ((3.14*$datakol[1]['dimensi_l'])+(6*$datakol[1]['tulseng_dia_lapangan']/1000*2))-($datakol[1]['tebal_selimut']*8);
+        $Y12 = $a*$b;
+
+        $a = ceil($dim_kol/$datakol[1]['tulseng_dia_jaraktump']*1/4+$datalewat[0]['ls']/$datakol[1]['tulseng_dia_jaraktump']*1/4)+1*$pk_sengkang_qty;
+        $b = ((3.14*$datakol[1]['dimensi_l'])+(6*$datakol[1]['tulseng_dia_tumpuan']/1000*2))-($datakol[1]['tebal_selimut']*8);
+        $Y13 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[1]['tvtump_jarak']*1/4)+1*$pk_sengkang_qty;
+        $b = (6*$datakol[1]['tvtump_dia']/1000*2)+($datakol[1]['dimensi_p']-$datakol[1]['tulseng_dia_jaraktump']*2);
+        $Y14 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[1]['tvlap_jarak']*1/5)*$pk_sengkang_qty;
+        $b = (6*$datakol[1]['tvlap_dia']/1000*2)+($datakol[1]['dimensi_p']-$datakol[1]['tulseng_dia_jaraktump']*2);
+        $Y15 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[1]['thtump_jarak']*1/4)+1*$pk_sengkang_qty;
+        $b = ((6*$datakol[1]['thtump_dia']/1000*2)+($datakol[1]['dimensi_p']-$datakol[1]['tulseng_dia_jaraktump']*2)*2);
+        $Y16 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[1]['thlap_jarak']*1/5)*$pk_sengkang_qty;
+        $b = ((6*$datakol[1]['thlap_dia']/1000*2)+($datakol[1]['dimensi_p']-$datakol[1]['tulseng_dia_jaraktump']*2)*2);
+        $Y17 = $a*$b; 
+
+
+        $b1 = (0.25*3.14*$datakol[1]['tulseng_dia_tumpuan']*$datakol[1]['tulseng_dia_tumpuan']*0.00785)*$Y11*$jumkom;
+        $b2 = (0.25*3.14*$datakol[1]['tulseng_dia_lapangan']*$datakol[1]['tulseng_dia_lapangan']*0.00785)*$Y12*$jumkom;
+        $b3 = (0.25*3.14*$datakol[1]['tulseng_dia_tumpuan']*$datakol[1]['tulseng_dia_tumpuan']*0.00785)*$Y13*$jumkom ;
+        $b4 = (0.25*3.14*$datakol[1]['tvtump_dia']*0.00785)*$Y14*$jumkom ;
+        $b5 = (0.25*3.14*$datakol[1]['tvlap_dia']*0.00785)*$Y15*$jumkom;
+        $b6 = (0.25*3.14*$datakol[1]['thtump_dia']*0.00785)*$Y16*$jumkom;
+        $b7 = (0.25*3.14*$datakol[1]['thlap_dia']*0.00785)*$Y17*$jumkom;
+
+        $tos32_tamp_berat = $b1 + $b2 + $b3 + $b4 + $b5 + $b6 + $b7;
+
+        $beton_bundar = 3.14 * (0.5 * $datakol[1]['dimensi_l']) * (0.5 * $datakol[1]['dimensi_l']) * $jum_kolom * $dim_kol;
+        
+        $beton_kotak = ($datakol[1]['dimensi_l'] * $datakol[1]['dimensi_p'] * $dim_kol * $jum_kolom);
+        
+
+        $bekisting_bundar = (3.14 * $datakol[1]['dimensi_l']) * ($dim_kol - $tebal_plat) * $jum_kolom ;
+        $bekisting_kotak = (($datakol[1]['dimensi_l'] + $datakol[1]['dimensi_p']) * 2 * ($dim_kol - $tebal_plat)) * $jum_kolom;
+
+        
+
+       // besi  -->
+        // echo "part 1 : ".(0.25*3.14*$datakol[1]['tulpok_dia']*$datakol[1]['tulpok_dia']*0.00785)*($datalewat[]['ls']+$dim_kol+(28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)))*$datakol[1]['tulpok_jum']*$jum_kolom ;
+
+        // echo "<br> <br> Q18 :".$datalewat[]['ls'];
+        // echo "<br> D18 :".$dim_kol." tulpok jum ".$datakol[1]['tulpok_jum'];
+        // echo "<br> R18 :".((28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)));
+        // echo "<br> S18 :".(round($datalewat[]['ls'],2)+round($dim_kol,2)+round((28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)),2));
+        // dd($datalewat);
+        $besi = round((0.25*3.14*$datakol[1]['tulpok_dia']*$datakol[1]['tulpok_dia']*0.00785)*($datalewat[0]['ls']+$dim_kol+(28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)))*$datakol[1]['tulpok_jum']*$jum_kolom,2) + $tos32_tamp_berat;
+        echo $besi;
+        
+        
+        // beton  -->
+                                                                                   
+        if ($datakol[1]['bentuk'] == 'Kotak') {
+            $beton = round($beton_kotak, 2);
+        } else {
+            $beton = round($beton_bundar, 2);
+        }
+         // bekissting  -->                                                                                   
+        if ($datakol[1]['bentuk'] == 'Kotak') {
+            $bekisting = round($bekisting_kotak, 2);
+        } else {
+            $bekisting = round($bekisting_bundar, 2);
+        }
+
+        // rasio besi  -->
+        $rasio_b = round($besi/$beton_kotak,2);
+
+        
+        // dd($datal);
+
+        
+       
         $hasil = [
             'tipe_kolom' => $req->tipe_kolom,
             'tebal_plat' => $req->tebal_plat,
             'jum_kolom' => $req->jum_kolom,
             'pk_sengkang_qty' => $req->pk_sengkang_qty,
+            'besi' => $besi,
+            'beton' => $beton,
+            'bekisting' => $bekisting,
+            'rasio_b' => $rasio_b
         ];
 
         tos3pumproom::insert($hasil);
@@ -1249,12 +1540,104 @@ class TosController extends Controller
 
     public function edit_tos33(Request $req)
     {
-        $coba = tos3pumproom::all()->detil();
+        $tipe_kolom = $req->tipe_kolom;
+        $tebal_plat = $req->tebal_plat;
+        $jum_kolom = $req->jum_kolom;
+        $dim_kol = $req->dim_kom;
+        $pk_sengkang_qty = $req->pk_sengkang_qty;
+        $jumkom = 21;
 
-        //  dd($coba);
-        $user = tos2lewatan::all()->where("id_tos24", $req->idt)->first()->update([
-            'dia' => $req->dia,
-            'ls' => $req->ls,
+        $datakol = tos3data::all()->where('nama', $tipe_kolom);
+        
+        $datalewat = tos3lewatan::all()->where('dia', $datakol[1]['tulpok_dia']);
+
+        $a = ceil($dim_kol/$datakol[1]['tulseng_dia_jaraktump']*1/4+$datalewat[0]['ls']/$datakol[1]['tulseng_dia_jaraktump']*1/4)+1*$pk_sengkang_qty;
+        $b = ((3.14*$datakol[1]['dimensi_l'])+(6*$datakol[1]['tulseng_dia_tumpuan']/1000*2))-($datakol[1]['tebal_selimut']*8);
+        $Y11 = $a*$b;
+
+        $a = ceil($dim_kol/$datakol[1]['tulseng_dia_jaraklap']*1/5+$datalewat[0]['ls']/$datakol[1]['tulseng_dia_jaraklap']*1/5)*$pk_sengkang_qty;
+        $b = ((3.14*$datakol[1]['dimensi_l'])+(6*$datakol[1]['tulseng_dia_lapangan']/1000*2))-($datakol[1]['tebal_selimut']*8);
+        $Y12 = $a*$b;
+
+        $a = ceil($dim_kol/$datakol[1]['tulseng_dia_jaraktump']*1/4+$datalewat[0]['ls']/$datakol[1]['tulseng_dia_jaraktump']*1/4)+1*$pk_sengkang_qty;
+        $b = ((3.14*$datakol[1]['dimensi_l'])+(6*$datakol[1]['tulseng_dia_tumpuan']/1000*2))-($datakol[1]['tebal_selimut']*8);
+        $Y13 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[1]['tvtump_jarak']*1/4)+1*$pk_sengkang_qty;
+        $b = (6*$datakol[1]['tvtump_dia']/1000*2)+($datakol[1]['dimensi_p']-$datakol[1]['tulseng_dia_jaraktump']*2);
+        $Y14 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[1]['tvlap_jarak']*1/5)*$pk_sengkang_qty;
+        $b = (6*$datakol[1]['tvlap_dia']/1000*2)+($datakol[1]['dimensi_p']-$datakol[1]['tulseng_dia_jaraktump']*2);
+        $Y15 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[1]['thtump_jarak']*1/4)+1*$pk_sengkang_qty;
+        $b = ((6*$datakol[1]['thtump_dia']/1000*2)+($datakol[1]['dimensi_p']-$datakol[1]['tulseng_dia_jaraktump']*2)*2);
+        $Y16 = $a*$b;
+
+        $a = ceil($jum_kolom/$datakol[1]['thlap_jarak']*1/5)*$pk_sengkang_qty;
+        $b = ((6*$datakol[1]['thlap_dia']/1000*2)+($datakol[1]['dimensi_p']-$datakol[1]['tulseng_dia_jaraktump']*2)*2);
+        $Y17 = $a*$b; 
+
+
+        $b1 = (0.25*3.14*$datakol[1]['tulseng_dia_tumpuan']*$datakol[1]['tulseng_dia_tumpuan']*0.00785)*$Y11*$jumkom;
+        $b2 = (0.25*3.14*$datakol[1]['tulseng_dia_lapangan']*$datakol[1]['tulseng_dia_lapangan']*0.00785)*$Y12*$jumkom;
+        $b3 = (0.25*3.14*$datakol[1]['tulseng_dia_tumpuan']*$datakol[1]['tulseng_dia_tumpuan']*0.00785)*$Y13*$jumkom ;
+        $b4 = (0.25*3.14*$datakol[1]['tvtump_dia']*0.00785)*$Y14*$jumkom ;
+        $b5 = (0.25*3.14*$datakol[1]['tvlap_dia']*0.00785)*$Y15*$jumkom;
+        $b6 = (0.25*3.14*$datakol[1]['thtump_dia']*0.00785)*$Y16*$jumkom;
+        $b7 = (0.25*3.14*$datakol[1]['thlap_dia']*0.00785)*$Y17*$jumkom;
+
+        $tos32_tamp_berat = $b1 + $b2 + $b3 + $b4 + $b5 + $b6 + $b7;
+
+        $beton_bundar = 3.14 * (0.5 * $datakol[1]['dimensi_l']) * (0.5 * $datakol[1]['dimensi_l']) * $jum_kolom * $dim_kol;
+        
+        $beton_kotak = ($datakol[1]['dimensi_l'] * $datakol[1]['dimensi_p'] * $dim_kol * $jum_kolom);
+        
+
+        $bekisting_bundar = (3.14 * $datakol[1]['dimensi_l']) * ($dim_kol - $tebal_plat) * $jum_kolom ;
+        $bekisting_kotak = (($datakol[1]['dimensi_l'] + $datakol[1]['dimensi_p']) * 2 * ($dim_kol - $tebal_plat)) * $jum_kolom;
+
+        
+
+       // besi  -->
+        // echo "part 1 : ".(0.25*3.14*$datakol[1]['tulpok_dia']*$datakol[1]['tulpok_dia']*0.00785)*($datalewat[]['ls']+$dim_kol+(28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)))*$datakol[1]['tulpok_jum']*$jum_kolom ;
+
+        // echo "<br> <br> Q18 :".$datalewat[]['ls'];
+        // echo "<br> D18 :".$dim_kol." tulpok jum ".$datakol[1]['tulpok_jum'];
+        // echo "<br> R18 :".((28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)));
+        // echo "<br> S18 :".(round($datalewat[]['ls'],2)+round($dim_kol,2)+round((28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)),2));
+        // dd($datalewat);
+        $besi = round((0.25*3.14*$datakol[1]['tulpok_dia']*$datakol[1]['tulpok_dia']*0.00785)*($datalewat[0]['ls']+$dim_kol+(28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)))*$datakol[1]['tulpok_jum']*$jum_kolom,2) + $tos32_tamp_berat;
+        echo $besi;
+        
+        
+        // beton  -->
+                                                                                   
+        if ($datakol[1]['bentuk'] == 'Kotak') {
+            $beton = round($beton_kotak, 2);
+        } else {
+            $beton = round($beton_bundar, 2);
+        }
+         // bekissting  -->                                                                                   
+        if ($datakol[1]['bentuk'] == 'Kotak') {
+            $bekisting = round($bekisting_kotak, 2);
+        } else {
+            $bekisting = round($bekisting_bundar, 2);
+        }
+
+        // rasio besi  -->
+        $rasio_b = round($besi/$beton_kotak,2);
+
+        tos3pumproom::all()->where("id_tos24", $req->idt)->first()->update([
+            'tipe_kolom' => $req->tipe_kolom,
+            'tebal_plat' => $req->tebal_plat,
+            'jum_kolom' => $req->jum_kolom,
+            'pk_sengkang_qty' => $req->pk_sengkang_qty,
+            'besi' => $besi,
+            'beton' => $beton,
+            'bekisting' => $bekisting,
+            'rasio_b' => $rasio_b
 
         ]);
         return redirect('/target');

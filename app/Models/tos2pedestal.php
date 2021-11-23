@@ -31,8 +31,11 @@ class tos2pedestal extends Model
     }
     
     public function summarry () {
-        return tos2pedestal::selectRaw("SUM(besi) as total_besi")
+        return tos2pedestal::select('tipe_kolom as label')
+        ->selectRaw("SUM(besi) as total_besi")
         ->selectRaw("SUM(beton) as total_beton")
+        ->selectRaw("SUM(bekisting) as total_bekisting")
+        ->selectRaw("SUM(rasio_b) as rsaio_b")
         ->groupBy('tipe_kolom')
         ->get();
         ;

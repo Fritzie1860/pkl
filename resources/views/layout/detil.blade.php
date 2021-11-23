@@ -1602,30 +1602,59 @@
                                                                                         Ground
                                                                                     </td>
                                                                                 </tr>
-
+                                                                                <?php
+                                                                                    $t_bes = 0;
+                                                                                    $t_bet = 0;
+                                                                                    $t_bek = 0;
+                                                                                    $ras = 0;
+                                                                                ?>
+                                                                                @foreach($sum_pedes as $row)
                                                                                 <tr>
-                                                                                    <!-- foreach($) -->
+
                                                                                     <td>
-                                                                                        c1
+                                                                                        {{$row->label}}
                                                                                     </td>
+
+                                                                                    <td>
+                                                                                        {{$row->total_besi}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$row->total_beton}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$row->total_bekisting}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$row->rasio_b}}
+                                                                                    </td>
+                                                                                    <?php
+                                                                                    $t_bes += $row->total_besi;
+                                                                                    $t_bet += $row->total_beton;
+                                                                                    $t_bek += $row->total_bekisting;
+                                                                                    $ras += $row->rasio_b;
+                                                                                    ?>
                                                                                 </tr>
+
+
+                                                                                @endforeach
 
                                                                                 <tr>
                                                                                     <td>
                                                                                         Total
                                                                                     </td>
                                                                                     <td>
-                                                                                        0
+                                                                                        {{$t_bes}}
                                                                                     </td>
                                                                                     <td>
-                                                                                        0
+                                                                                    {{$t_bet}}
                                                                                     </td>
                                                                                     <td>
-                                                                                        0
+                                                                                    {{$t_bek}}
                                                                                     </td>
                                                                                     <td>
-                                                                                        0
+                                                                                    {{$ras}}
                                                                                     </td>
+
 
                                                                                 </tr>
 
@@ -1635,29 +1664,62 @@
                                                                                     </td>
 
                                                                                 </tr>
+                                                                                <?php
+                                                                                    $t_bes = 0;
+                                                                                    $t_bet = 0;
+                                                                                    $t_bek = 0;
+                                                                                    $ras = 0;
+                                                                                ?>
+                                                                                @foreach($sum_kopedes as $row)
                                                                                 <tr>
-                                                                                    <!-- foreach($) -->
+
                                                                                     <td>
-                                                                                        c1
+                                                                                        {{$row->label}}
                                                                                     </td>
+
+                                                                                    <td>
+                                                                                        {{$row->total_besi}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$row->total_beton}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$row->total_bekisting}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$row->rasio_b}}
+                                                                                    </td>
+                                                                                    <?php
+                                                                                    $t_bes += $row->total_besi;
+                                                                                    $t_bet += $row->total_beton;
+                                                                                    $t_bek += $row->total_bekisting;
+                                                                                    $ras += $row->rasio_b;
+                                                                                    ?>
                                                                                 </tr>
+
+
+                                                                                @endforeach
+
                                                                                 <tr>
                                                                                     <td>
                                                                                         Total
                                                                                     </td>
                                                                                     <td>
-                                                                                        0
+                                                                                        {{$t_bes}}
                                                                                     </td>
                                                                                     <td>
-                                                                                        0
+                                                                                    {{$t_bet}}
                                                                                     </td>
                                                                                     <td>
-                                                                                        0
+                                                                                    {{$t_bek}}
                                                                                     </td>
                                                                                     <td>
-                                                                                        0
+                                                                                    {{$ras}}
                                                                                     </td>
+
+
                                                                                 </tr>
+
                                                                             </tbody>
                                                                         </table>
                                                                     </div>
@@ -1762,7 +1824,7 @@
 
                                                                             </thead>
                                                                             <tbody>
-                                                                            @foreach($Tos31 as $row)
+                                                                                @foreach($Tos31 as $row)
                                                                                 <tr class="gradeA">
                                                                                     <td>{{$row->nama}}</td>
                                                                                     <td>{{$row->bentuk}}</td>
@@ -1872,7 +1934,7 @@
                                                                 <div class="ibox-content">
                                                                     <div class="table-responsive scrollmenu">
                                                                         <table class="table table-striped table-bordered table-hover dataTables-user">
-                                                                        <thead>
+                                                                            <thead>
                                                                                 <tr>
                                                                                     <th rowspan="4" style="vertical-align:middle;">Type Kolom</th>
                                                                                     <th rowspan="4" style="vertical-align:middle;"> Bentuk Kolom</th>
@@ -1881,7 +1943,7 @@
                                                                                     <th rowspan="3" style="vertical-align:middle;">Tinggi Net</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Selimut Beton</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Jumlah Kolom</th>
-                                                                                    
+
                                                                                     <th colspan="17"> Penulangan Kolom</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Besi</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Beton</th>
@@ -1893,7 +1955,7 @@
                                                                                     <th rowspan="2" style="vertical-align:middle;">Tinggi</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Lebar</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Panjang</th>
-                                                                                    
+
                                                                                     <th rowspan="3" style="vertical-align:middle;">Keterangan</th>
                                                                                     <th colspan="2">Tulang Pokok</th>
                                                                                     <th colspan="3">Sengkang</th>
@@ -1926,7 +1988,7 @@
                                                                                     <th style="vertical-align:middle;">(m)</th>
                                                                                     <th style="vertical-align:middle;">(m)</th>
                                                                                     <th style="vertical-align:middle;">(Ttk)</th>
-                                                                                    
+
                                                                                     <th style="vertical-align:middle;">(mm)</th>
                                                                                     <th style="vertical-align:middle;">(n)</th>
                                                                                     <th style="vertical-align:middle;">(mm)</th>
@@ -2004,7 +2066,7 @@
                                                                                     <td>{{$row->tebal_selimut}}</td>
                                                                                     <!-- jumlah kolom  -->
                                                                                     <td>{{$row->jum_kolom}}</td>
-                                                                                    
+
                                                                                     <td>Tulangan Pokok</td>
                                                                                     <!-- pk sengkang dia -->
                                                                                     <td rowspan="8">{{$row->tulpok_dia}}</td>
@@ -2075,7 +2137,7 @@
                                                                                     <td rowspan="7"></td>
                                                                                     <td rowspan="7"></td>
                                                                                     <td rowspan="7"></td>
-                                                                                    
+
                                                                                     <td>Sengkang Tumpuan</td>
 
                                                                                     <td>{{$row->tulseng_dia_tumpuan}}</td>
@@ -2207,7 +2269,7 @@
                                                                                     <!-- sengkang tekukan panjang -->
                                                                                     <td>{{round((($row->thtump_dia/1000)*12)+($row->dimensi_p-$row->tebal_selimut*2)*2),2}}
                                                                                     </td>
-                                                                                    <!-- sengkang qty  --> 
+                                                                                    <!-- sengkang qty  -->
                                                                                     <td>{{ceil($row->jum_kolom/$row->thtump_jarak*0.25)+$row->pk_sengkang_qty}}
                                                                                     </td>
                                                                                     <!-- sengkang total panjang  -->
@@ -2278,7 +2340,7 @@
                                                                                     <th rowspan="3" style="vertical-align:middle;">Tinggi Net</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Selimut Beton</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Jumlah Kolom</th>
-                                                                                    
+
                                                                                     <th colspan="17"> Penulangan Kolom</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Besi</th>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Beton</th>
@@ -2291,7 +2353,7 @@
                                                                                     <th rowspan="2" style="vertical-align:middle;">Tinggi</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Lebar</th>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Panjang</th>
-                                                                                    
+
                                                                                     <th rowspan="3" style="vertical-align:middle;">Keterangan</th>
                                                                                     <th colspan="2">Tulang Pokok</th>
                                                                                     <th colspan="3">Sengkang</th>
@@ -2324,7 +2386,7 @@
                                                                                     <th style="vertical-align:middle;">(m)</th>
                                                                                     <th style="vertical-align:middle;">(m)</th>
                                                                                     <th style="vertical-align:middle;">(Ttk)</th>
-                                                                                    
+
                                                                                     <th style="vertical-align:middle;">(mm)</th>
                                                                                     <th style="vertical-align:middle;">(n)</th>
                                                                                     <th style="vertical-align:middle;">(mm)</th>
@@ -2402,7 +2464,7 @@
                                                                                     <td>{{$row->tebal_selimut}}</td>
                                                                                     <!-- jumlah kolom  -->
                                                                                     <td>{{$row->jum_kolom}}</td>
-                                                                                    
+
                                                                                     <td>Tulangan Pokok</td>
                                                                                     <!-- pk sengkang dia -->
                                                                                     <td rowspan="8">{{$row->tulpok_dia}}</td>
@@ -2473,7 +2535,7 @@
                                                                                     <td rowspan="7"></td>
                                                                                     <td rowspan="7"></td>
                                                                                     <td rowspan="7"></td>
-                                                                                    
+
                                                                                     <td>Sengkang Tumpuan</td>
 
                                                                                     <td>{{$row->tulseng_dia_tumpuan}}</td>
@@ -2676,14 +2738,129 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                <tr class="gradeC">
-                                                                                    <td>Trident</td>
-                                                                                    <td>Internet
-                                                                                        Explorer 5.0
+                                                                                <tr class="gradeA">
+                                                                                    <td colspan="5">
+                                                                                        Ground
                                                                                     </td>
-                                                                                    <td class="center">5</td>
-                                                                                    <td class="center">C</td>
                                                                                 </tr>
+                                                                                <?php
+                                                                                    $t_bes = 0;
+                                                                                    $t_bet = 0;
+                                                                                    $t_bek = 0;
+                                                                                    $ras = 0;
+                                                                                ?>
+                                                                                @foreach($sum_ground as $row)
+                                                                                <tr>
+
+                                                                                    <td>
+                                                                                        {{$row->label}}
+                                                                                    </td>
+
+                                                                                    <td>
+                                                                                        {{$row->total_besi}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$row->total_beton}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$row->total_bekisting}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$row->rasio_b}}
+                                                                                    </td>
+                                                                                    <?php
+                                                                                    $t_bes += $row->total_besi;
+                                                                                    $t_bet += $row->total_beton;
+                                                                                    $t_bek += $row->total_bekisting;
+                                                                                    $ras += $row->rasio_b;
+                                                                                    ?>
+                                                                                </tr>
+
+
+                                                                                @endforeach
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        Total
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$t_bes}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                    {{$t_bet}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                    {{$t_bek}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                    {{$ras}}
+                                                                                    </td>
+
+
+                                                                                </tr>
+
+                                                                                <tr class="gradeA">
+                                                                                    <td colspan="5">
+                                                                                        Pump Room
+                                                                                    </td>
+
+                                                                                </tr>
+                                                                                <?php
+                                                                                    $t_bes = 0;
+                                                                                    $t_bet = 0;
+                                                                                    $t_bek = 0;
+                                                                                    $ras = 0;
+                                                                                ?>
+                                                                                @foreach($sum_pm as $row)
+                                                                                <tr>
+
+                                                                                    <td>
+                                                                                        {{$row->label}}
+                                                                                    </td>
+
+                                                                                    <td>
+                                                                                        {{$row->total_besi}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$row->total_beton}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$row->total_bekisting}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$row->rasio_b}}
+                                                                                    </td>
+                                                                                    <?php
+                                                                                    $t_bes += $row->total_besi;
+                                                                                    $t_bet += $row->total_beton;
+                                                                                    $t_bek += $row->total_bekisting;
+                                                                                    $ras += $row->rasio_b;
+                                                                                    ?>
+                                                                                </tr>
+
+
+                                                                                @endforeach
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        Total
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        {{$t_bes}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                    {{$t_bet}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                    {{$t_bek}}
+                                                                                    </td>
+                                                                                    <td>
+                                                                                    {{$ras}}
+                                                                                    </td>
+
+
+                                                                                </tr>
+
                                                                             </tbody>
                                                                         </table>
                                                                     </div>

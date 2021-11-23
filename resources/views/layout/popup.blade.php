@@ -664,6 +664,10 @@
                             <input type="text" class="form-control" name="tebal_plat" id="tebal_plat" placeholder=". . .">
                         </div>
                         <div class="form-group">
+                            <label for="ls">Dimnesi Kolom T</label>
+                            <input type="text" class="form-control" name="dim_kol" id="dim_kol" placeholder=". . .">
+                        </div>
+                        <div class="form-group">
                             <label for="jum_kolom">Jumlah Kolom</label>
                             <input type="text" class="form-control" name="jum_kolom" id="jum_kolom" placeholder=". . .">
                         </div>
