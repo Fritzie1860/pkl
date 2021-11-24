@@ -1196,7 +1196,7 @@ class TosController extends Controller
         $tipe_kolom = $req->tipe_kolom;
         $tebal_plat = $req->tebal_plat;
         $jum_kolom = $req->jum_kolom;
-        $dim_kol = $req->dim_kom;
+        $dim_kol = $req->dim_kol;
         $pk_sengkang_qty = $req->pk_sengkang_qty;
         $jumkom = 21;
 
@@ -1256,13 +1256,13 @@ class TosController extends Controller
         
 
        // besi  -->
-        echo "part 1 : ".(0.25*3.14*$datakol[1]['tulpok_dia']*$datakol[1]['tulpok_dia']*0.00785)*($datalewat[0]['ls']+$dim_kol+(28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)))*$datakol[1]['tulpok_jum']*$jum_kolom ;
+        // echo "part 1 : ".(0.25*3.14*$datakol[1]['tulpok_dia']*$datakol[1]['tulpok_dia']*0.00785)*($datalewat[0]['ls']+$dim_kol+(28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)))*$datakol[1]['tulpok_jum']*$jum_kolom ;
 
-        echo "<br> <br> Q18 :".$datalewat[0]['ls'];
-        echo "<br> D18 :".$dim_kol." tulpok jum ".$datakol[1]['tulpok_jum'];
-        echo "<br> R18 :".((28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)));
-        echo "<br> S18 :".(round($datalewat[0]['ls'],2)+round($dim_kol,2)+round((28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)),2));
-        dd($datalewat);
+        // echo "<br> <br> Q18 :".$datalewat[0]['ls'];
+        // echo "<br> D18 :".$dim_kol." tulpok jum ".$datakol[1]['tulpok_jum'];
+        // echo "<br> R18 :".((28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)));
+        // echo "<br> S18 :".(round($datalewat[0]['ls'],2)+round($dim_kol,2)+round((28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)),2));
+        // dd($datalewat);
         $besi = round((0.25*3.14*$datakol[1]['tulpok_dia']*$datakol[1]['tulpok_dia']*0.00785)*($datalewat[0]['ls']+$dim_kol+(28*($datakol[1]['tulpok_dia']*0.001))+(8*($datakol[1]['tulpok_dia']*0.001)))*$datakol[1]['tulpok_jum']*$jum_kolom,2) + $tos32_tamp_berat;
         // echo $besi;
         
@@ -1286,23 +1286,23 @@ class TosController extends Controller
 
         
         // dd($datal);
-        echo "<br>".$beton_bundar;
-        echo "<br>".$beton_kotak;
-        dd($datalewat);
+        // echo "<br>".$beton_bundar;
+        // echo "<br>".$beton_kotak;
+        // dd($datalewat);
        
-        // $hasil = [
-        //     'tipe_kolom' => $req->tipe_kolom,
-        //     'tebal_plat' => $req->tebal_plat,
-        //     'jum_kolom' => $req->jum_kolom,
-        //     'pk_sengkang_qty' => $req->pk_sengkang_qty,
-        //     'besi' => $besi,
-        //     'beton' => $beton,
-        //     'bekisting' => $bekisting,
-        //     'rasio_b' => $rasio_b
-        // ];
+        $hasil = [
+            'tipe_kolom' => $req->tipe_kolom,
+            'tebal_plat' => $req->tebal_plat,
+            'jum_kolom' => $req->jum_kolom,
+            'pk_sengkang_qty' => $req->pk_sengkang_qty,
+            'besi' => $besi,
+            'beton' => $beton,
+            'bekisting' => $bekisting,
+            'rasio_b' => $rasio_b
+        ];
 
-        // tos3ground::insert($hasil);
-        // return redirect('/target');
+        tos3ground::insert($hasil);
+        return redirect('/target');
     }
 
     public function del_tos32($id)
@@ -1316,7 +1316,7 @@ class TosController extends Controller
         $tipe_kolom = $req->tipe_kolom;
         $tebal_plat = $req->tebal_plat;
         $jum_kolom = $req->jum_kolom;
-        $dim_kol = $req->dim_kom;
+        $dim_kol = $req->dim_kol;
         $pk_sengkang_qty = $req->pk_sengkang_qty;
         $jumkom = 21;
 
