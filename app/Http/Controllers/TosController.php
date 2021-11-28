@@ -108,7 +108,7 @@ class TosController extends Controller
 
 
 
-        return view('detil_project', [
+        return view('detil_project', [   'cari' => $req->cari,
             'Tos11' => $Tos11, 'Tos12' => $Tos12, 'Tos13' => $Tos13, 'Tos14' => $Tos14,
             'Tos21' => $Tos21, 'Tos22' => $Tos22, 'Tos23' => $Tos23,
             'Tos24' => $Tos24, 'Tos25' => $Tos25, 'Tos26' => $Tos26,
@@ -141,13 +141,15 @@ class TosController extends Controller
     // Tos 1 OH
     public function in_tos11(Request $req)
     {
-        $hasil = [
-            'dia' => $req->dia,
-            'p' => $req->p
-        ];
-        // dd($req);
-        tos1oandh::insert($hasil);
-        return redirect('/target');
+        var_dump($req->cari);
+        // $hasil = [
+        //     'project_id' => $req->cari,
+        //     'dia' => $req->dia,
+        //     'p' => $req->p
+        // ];
+        // // dd($req);
+        // tos1oandh::insert($hasil);
+        // return redirect('/target');
     }
 
     public function del_tos11($id)
@@ -224,6 +226,7 @@ class TosController extends Controller
         // dd($req);
 
         $hasil = [
+            'project_id' => $req->cari,
             'type' => $req->type,
             'dfp_l' => $req->dfp_l,
             'dfp_p' => $req->dfp_p,
@@ -441,6 +444,7 @@ class TosController extends Controller
         // dd($req);
 
         $hasil = [
+            'project_id' => $req->cari,
             'type' => $req->type,
             'dfp_l' => $req->dfp_l,
             'dfp_p' => $req->dfp_p,
@@ -750,6 +754,7 @@ class TosController extends Controller
 
 
         $hasil = [
+            'project_id' => $req->cari,
             'tipe_kolom' => $req->tipe_kolom,
             'tebal_plat' => $req->tebal_plat,
             'jum_kolom' => $req->jum_kolom,
@@ -935,6 +940,7 @@ class TosController extends Controller
 
 
         $hasil = [
+            'project_id' => $req->cari,
             'tipe_kolom' => $req->tipe_kolom,
             'tebal_plat' => $req->tebal_plat,
             'jum_kolom' => $req->jum_kolom,
@@ -1052,6 +1058,7 @@ class TosController extends Controller
     {
         // dd($req);
         $hasil = [
+            'project_id' => $req->cari,
             'nama' => $req->nama,
             'bentuk' => $req->bentuk,
             'dimensi_l' => $req->dimensi_l,
@@ -1115,6 +1122,7 @@ class TosController extends Controller
     public function in_tos24(Request $req)
     {
         $hasil = [
+            'project_id' => $req->cari,
             'dia' => $req->dia,
             'ls' => $req->ls
         ];
@@ -1144,6 +1152,7 @@ class TosController extends Controller
     public function in_tos25(Request $req)
     {
         $hasil = [
+            'project_id' => $req->cari,
             'nama' => $req->nama,
             'b' => $req->b,
             'h' => $req->h,
@@ -1179,6 +1188,7 @@ class TosController extends Controller
     {
         // dd($req);
         $hasil = [
+            'project_id' => $req->cari,
             'nama' => $req->nama,
             'bentuk' => $req->bentuk,
             'dimensi_l' => $req->dimensi_l,
@@ -1339,6 +1349,7 @@ class TosController extends Controller
         // dd($datalewat);
        
         $hasil = [
+            'project_id' => $req->cari,
             'tipe_kolom' => $req->tipe_kolom,
             'tebal_plat' => $req->tebal_plat,
             'jum_kolom' => $req->jum_kolom,
@@ -1566,6 +1577,7 @@ class TosController extends Controller
         
        
         $hasil = [
+            'project_id' => $req->cari,
             'tipe_kolom' => $req->tipe_kolom,
             'tebal_plat' => $req->tebal_plat,
             'jum_kolom' => $req->jum_kolom,
@@ -1696,6 +1708,7 @@ class TosController extends Controller
     public function in_tos35(Request $req)
     {
         $hasil = [
+            'project_id' => $req->cari,
             'dia' => $req->dia,
             'ls' => $req->ls
         ];

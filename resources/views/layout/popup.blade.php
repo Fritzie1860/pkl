@@ -11,8 +11,10 @@
             </div>
             <div class="container">
                 <form action="tos11" method="post">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
-                        <label for="Dia">Dia</label>
+                        <label for="Dia">Dia  {{$cari}}</label>
                         <input type="text" class="form-control" name="dia" id="Dia" aria-describedby="emailHelp">
                     </div>
                     <div class="form-group">
@@ -35,6 +37,8 @@
             </div>
             <div class="container">
                 <form action="tos12" method="post">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="type">Type</label>
                         <input type="text" class="form-control" name="type" id="type" aria-describedby="emailHelp" placeholder="Enter data . . .">
@@ -134,7 +138,8 @@
             </div>
             <div class="container">
                 <form action="tos14" method="post">
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="Nama">Nama</label>
                         <input type="text" class="form-control" name="nama" id="Nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
@@ -179,6 +184,8 @@
             </div>
             <div class="container">
                 <form action="tos13" method="post">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="type">Type</label>
                         <input type="text" class="form-control" name="type" id="type" aria-describedby="emailHelp" placeholder="Enter data . . .">
@@ -280,6 +287,8 @@
             </div>
             <div class="container">
                 <form action="tos26" method="post">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control" name="nama" id="nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
@@ -372,6 +381,8 @@
             </div>
             <div class="container">
                 <form action="tos25" method="post">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control" name="nama" id="nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
@@ -404,6 +415,8 @@
             </div>
             <div class="container">
                 <form action="tos24" method="post">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="Dia">Dia</label>
                         <input type="text" class="form-control" name="dia" id="Dia" placeholder=". . .">
@@ -428,7 +441,8 @@
             </div>
             <div class="container">
                 <form action="tos22" method="post">
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="tipe_kolom">Tipe Kolom</label>
                         <!-- <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . ."> -->
@@ -448,7 +462,7 @@
                         <input type="text" class="form-control" name="jum_kolom" id="jum_kolom" placeholder=". . .">
                     </div>
                     <div class="form-group">
-                        <label  for="ls">Tipe Footplat</label>
+                        <label for="ls">Tipe Footplat</label>
                         <select name="footplat_type" id="tipetos25" style="float:right; margin-top:5px; width:150px; font-size:16px">
                             @foreach($Tos25 as $row)
                             <option value="{{$row->nama}}">{{$row->nama}}</option>
@@ -476,8 +490,8 @@
             <div class="container">
                 <div class="container">
                     <form action="tos21" method="post">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                         <div class="form-group">
                             <label for="tipe_kolom">Tipe Kolom</label>
                             <!-- <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . ."> -->
@@ -500,7 +514,7 @@
                             <label for="ls">Tipe Footplat</label>
                             <select name="footplat_type" id="tipetos25" style="float:right; margin-top:5px; width:150px; font-size:16px">
                                 @foreach($Tos25 as $row)
-                                <option  value="{{$row->nama}}">{{$row->nama}}</option>
+                                <option value="{{$row->nama}}">{{$row->nama}}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -525,7 +539,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -554,7 +569,8 @@
             </div>
             <div class="container">
                 <form action="tos31" method="post">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control" name="nama" id="nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
@@ -646,37 +662,38 @@
                 <h2>Batu Kali</h2>
             </div>
             <div class="container">
-            <form action="tos32" method="post">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                <form action="tos32" method="post">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
 
-                        <div class="form-group">
-                            <label for="tipe_kolom">Tipe Kolom</label>
-                            <!-- <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . ."> -->
-                            <select name="tipe_kolom" id="tipetos26" style="float:right; margin-top:5px; width:150px; font-size:16px">
-                                @foreach($Tos31 as $row)
-                                <option name="tipe_kolom" value="{{$row->nama}}">{{$row->nama}}</option>
-                                @endforeach
-                            </select>
-                        </div>
+                    <div class="form-group">
+                        <label for="tipe_kolom">Tipe Kolom</label>
+                        <!-- <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . ."> -->
+                        <select name="tipe_kolom" id="tipetos26" style="float:right; margin-top:5px; width:150px; font-size:16px">
+                            @foreach($Tos31 as $row)
+                            <option name="tipe_kolom" value="{{$row->nama}}">{{$row->nama}}</option>
+                            @endforeach
+                        </select>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="ls">Tebal Kolom</label>
-                            <input type="text" class="form-control" name="tebal_plat" id="tebal_plat" placeholder=". . .">
-                        </div>
-                        <div class="form-group">
-                            <label for="ls">Dimnesi Kolom T</label>
-                            <input type="text" class="form-control" name="dim_kol" id="dim_kol" placeholder=". . .">
-                        </div>
-                        <div class="form-group">
-                            <label for="jum_kolom">Jumlah Kolom</label>
-                            <input type="text" class="form-control" name="jum_kolom" id="jum_kolom" placeholder=". . .">
-                        </div>
-                        <div class="form-group">
-                            <label for="pk_sengkang_qty">Penulangan Kolom Sengkang qty</label>
-                            <input type="text" class="form-control" name="pk_sengkang_qty" id="pk_sengkang_qty" placeholder=". . .">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                    <div class="form-group">
+                        <label for="ls">Tebal Kolom</label>
+                        <input type="text" class="form-control" name="tebal_plat" id="tebal_plat" placeholder=". . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="ls">Dimnesi Kolom T</label>
+                        <input type="text" class="form-control" name="dim_kol" id="dim_kol" placeholder=". . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="jum_kolom">Jumlah Kolom</label>
+                        <input type="text" class="form-control" name="jum_kolom" id="jum_kolom" placeholder=". . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="pk_sengkang_qty">Penulangan Kolom Sengkang qty</label>
+                        <input type="text" class="form-control" name="pk_sengkang_qty" id="pk_sengkang_qty" placeholder=". . .">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
     </div>
@@ -690,37 +707,37 @@
                 <h2>Batu Kali</h2>
             </div>
             <div class="container">
-            <form action="tos33" method="post">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                <form action="tos33" method="post">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
+                    <div class="form-group">
+                        <label for="tipe_kolom">Tipe Kolom</label>
+                        <!-- <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . ."> -->
+                        <select name="tipe_kolom" id="tipetos26" style="float:right; margin-top:5px; width:150px; font-size:16px">
+                            @foreach($Tos31 as $row)
+                            <option name="tipe_kolom" value="{{$row->nama}}">{{$row->nama}}</option>
+                            @endforeach
+                        </select>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="tipe_kolom">Tipe Kolom</label>
-                            <!-- <input type="text" class="form-control" name="tipe_kolom" id="tipe_kolom" placeholder=". . ."> -->
-                            <select name="tipe_kolom" id="tipetos26" style="float:right; margin-top:5px; width:150px; font-size:16px">
-                                @foreach($Tos31 as $row)
-                                <option name="tipe_kolom" value="{{$row->nama}}">{{$row->nama}}</option>
-                                @endforeach
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="ls">Tebal Kolom</label>
-                            <input type="text" class="form-control" name="tebal_plat" id="tebal_plat" placeholder=". . .">
-                        </div>
-                        <div class="form-group">
-                            <label for="jum_kolom">Jumlah Kolom</label>
-                            <input type="text" class="form-control" name="jum_kolom" id="jum_kolom" placeholder=". . .">
-                        </div>
-                        <div class="form-group">
-                            <label for="pk_sengkang_qty">Penulangan Kolom Sengkang qty</label>
-                            <input type="text" class="form-control" name="pk_sengkang_qty" id="pk_sengkang_qty" placeholder=". . .">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-            </div>
+                    <div class="form-group">
+                        <label for="ls">Tebal Kolom</label>
+                        <input type="text" class="form-control" name="tebal_plat" id="tebal_plat" placeholder=". . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="jum_kolom">Jumlah Kolom</label>
+                        <input type="text" class="form-control" name="jum_kolom" id="jum_kolom" placeholder=". . .">
+                    </div>
+                    <div class="form-group">
+                        <label for="pk_sengkang_qty">Penulangan Kolom Sengkang qty</label>
+                        <input type="text" class="form-control" name="pk_sengkang_qty" id="pk_sengkang_qty" placeholder=". . .">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <!-- tos 3 summary  -->
@@ -732,7 +749,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -761,8 +779,9 @@
             </div>
             <div class="container">
                 <form action="tos35" method="post">
-                @csrf
+                    @csrf
                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="Dia">Dia</label>
                         <input type="text" class="form-control" name="dia" id="Dia" placeholder=". . .">
@@ -787,7 +806,8 @@
             </div>
             <div class="container">
                 <form action="tos31" method="post">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="type">Type</label>
                         <input type="text" class="form-control" name="type" id="type" aria-describedby="emailHelp" placeholder="Enter data . . .">
@@ -893,7 +913,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -951,7 +972,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -980,7 +1002,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1009,7 +1032,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1038,7 +1062,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1067,7 +1092,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1096,7 +1122,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1125,7 +1152,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1154,7 +1182,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1183,7 +1212,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1212,7 +1242,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1241,7 +1272,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1270,7 +1302,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1299,7 +1332,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1328,7 +1362,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1357,7 +1392,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1386,7 +1422,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1415,7 +1452,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1444,7 +1482,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -1473,7 +1512,8 @@
             </div>
             <div class="container">
                 <form>
-
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input type="hidden" name="cari" value="{{ $cari }}" />
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter data . . .">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>

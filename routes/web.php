@@ -98,8 +98,5 @@ Route::get('/projects', [ProjectController::class, 'index']);
     Route::get('tos35_del/{id}', [TosController::class, 'del_tos35']);
 
 Route::group(['middleware' => 'auth'], function () {
-   
-    
-
     
 });
