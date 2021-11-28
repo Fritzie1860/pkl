@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -15,6 +15,7 @@ class CreateTos1pumproomTable extends Migration
     {
         Schema::create('tos1pumproom', function (Blueprint $table) {
             $table->id('id_tos13', 5);
+            $table->float('project_id',5);
             $table->string('type',100);
             $table->double('dfp_l',5);
             $table->double('dfp_p',5);

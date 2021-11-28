@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTos1batukaliTable extends Migration
 {
-    /**
+    /** 
      * Run the migrations.
      *
      * @return void
@@ -15,6 +15,7 @@ class CreateTos1batukaliTable extends Migration
     {
         Schema::create('tos1batukali', function (Blueprint $table) {
             $table->id('id_tos14', 5);
+            $table->float('project_id',5);
             $table->string('nama',100);
             $table->string('bentuk',100);
             $table->double('b',5);

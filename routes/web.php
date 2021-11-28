@@ -37,6 +37,7 @@ Route::get('/projects', [ProjectController::class, 'index']);
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('home');
 
+    Route::post("/target", [TosController::class, 'index']);
     Route::get("/target", [TosController::class, 'index']);
     Route::get("/hasil", [TosController::class, 'hasil']);
 

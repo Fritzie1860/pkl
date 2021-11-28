@@ -1,14 +1,15 @@
 @extends('layout.app')
 @section('title')
-    <title>Invest Islands || sb</title>
-@endsection 
+<title>Invest Islands || sb</title>
+@endsection
+
 <body>
     <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                        <img alt="image" class="rounded-circle" src="img/profile_small.jpg"/>
+                        <img alt="image" class="rounded-circle" src="img/profile_small.jpg" />
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="block m-t-xs font-bold">David Williams</span>
                             <span class="text-muted text-xs block">Art Director <b class="caret"></b></span>
@@ -24,22 +25,22 @@
                 </li>
                 <li class="<?php
 
-use Illuminate\Support\Facades\Auth;
+                            use Illuminate\Support\Facades\Auth;
 
-if(request()->is('dashboard')) {
-                        echo "active";
-                    }
-                ?>">
+                            if (request()->is('dashboard')) {
+                                echo "active";
+                            }
+                            ?>">
                     <a href="/dashboard"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span></a>
                 </li>
-                <li class="<?php 
-                    if(request()->is('projects')) {
-                        echo "active";
-                    }
-                ?>">
+                <li class="<?php
+                            if (request()->is('projects')) {
+                                echo "active";
+                            }
+                            ?>">
                     <a href="/projects"><i class="fa fa-table"></i> <span class="nav-label">Projects</span></a>
                 </li>
-                
+
             </ul>
         </div>
     </nav>

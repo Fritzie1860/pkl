@@ -75,7 +75,11 @@
                                                     <a class="btn btn-warning btn-sm" data-toggle="modal" data-idp=<?= $row->id_projects ?> data-pronama="<?= $row->pro_nama ?>" data-stadate="<?= $row->tanggal_mulai ?>" data-prostatus=<?= $row->pro_status ?> data-target="#edit_user" id="detil">
                                                         <i class="fa fa-edit "></i>
                                                     </a>
-                                                    <a href="/target" class="btn btn-sm"> <i class="fa fa-eye"></i>
+                                                    <form action="/target" method="post" style="float:right">
+                                                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                                                        <input type="hidden" name="cari" value="{{ $row->id_projects }}" />
+                                                        <button type="submit" class="btn btn-sm"><i class="fa fa-eye"></i> </button>
+                                                    </form>
                                                     </a>
                                                 </div>
                                             </center>

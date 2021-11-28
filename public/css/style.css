@@ -895,7 +895,8 @@ h5 {
   border: 0;
 }
 .navbar-default {
-  background-color: #141414;
+  background-color: #f2fbff;
+  background-repeat: no-repeat;
   background-image: url("patterns/Gradient.png");
 }
 .navbar-top-links li {

@@ -23,12 +23,60 @@ use PHPUnit\TextUI\XmlConfiguration\Group;
 class TosController extends Controller
 {
 
-    public function index()
+    // public function index($id)
+    // {
+    //     $Tos11 = tos1oandh::all()->where('project_id', $id);
+    //     $Tos12 = tos1footplat::all()->where('project_id', $id);
+    //     $Tos13 = tos1pumproom::all()->where('project_id', $id);
+    //     $Tos14 = tos1batukali::all()->where('project_id', $id);
+
+    //     $pedes = new tos2pedestal();
+    //     $kopedes = new tos2kolompedestal();
+
+
+    //     // dd($coba->detil());
+
+    //     $Tos21 = $pedes->detil($id);
+    //     $Tos22 = $kopedes->detil($id);
+    //     $Tos23 = tos2summary::all()->where('project_id', $id);
+    //     $Tos24 = tos2lewatan::all()->where('project_id', $id);
+    //     $Tos25 = tos2datafootplat::all()->where('project_id', $id);
+    //     $Tos26 = tos2datakolom::all()->where('project_id', $id);
+    //     $sum_pedes = $pedes->summarry($id);
+    //     $sum_kopedes = $kopedes->summarry($id);
+
+    //     $ground = new tos3ground();
+    //     $pumproom = new tos3pumproom();
+
+    //     $sum_ground = $ground->summarry($id);
+    //     $sum_pm = $pumproom->summarry($id);
+
+
+    //     $tos31 = tos3data::all()->where('project_id', $id);
+    //     $tos32 = $ground->detil($id);
+    //     $tos33 = $pumproom->detil($id);
+    //     $tos34 = tos3summary::all()->where('project_id', $id);
+    //     $tos35 = tos3lewatan::all()->where('project_id', $id);
+
+
+
+    //     return view('detil_project', [
+    //         'Tos11' => $Tos11, 'Tos12' => $Tos12, 'Tos13' => $Tos13, 'Tos14' => $Tos14,
+    //         'Tos21' => $Tos21, 'Tos22' => $Tos22, 'Tos23' => $Tos23,
+    //         'Tos24' => $Tos24, 'Tos25' => $Tos25, 'Tos26' => $Tos26,
+    //         'Tos31' => $tos31, 'Tos32' =>  $tos32, 'Tos33' => $tos33,
+    //         'Tos34' => $tos34, 'Tos35' => $tos35, 'sum_pedes' => $sum_pedes,
+    //         'sum_kopedes' => $sum_kopedes, 'sum_ground' => $sum_ground, 'sum_pm' => $sum_pm
+    //     ]);
+    // }
+
+    public function index(Request $req)
     {
-        $Tos11 = tos1oandh::all();
-        $Tos12 = tos1footplat::all();
-        $Tos13 = tos1pumproom::all();
-        $Tos14 = tos1batukali::all();
+        $id = $req->cari;
+        $Tos11 = tos1oandh::all()->where('project_id',$req->cari);
+        $Tos12 = tos1footplat::all()->where('project_id',$req->cari);
+        $Tos13 = tos1pumproom::all()->where('project_id',$req->cari);
+        $Tos14 = tos1batukali::all()->where('project_id',$req->cari);
 
         $pedes = new tos2pedestal();
         $kopedes = new tos2kolompedestal();
@@ -36,27 +84,27 @@ class TosController extends Controller
 
         // dd($coba->detil());
 
-        $Tos21 = $pedes->detil();
-        $Tos22 = $kopedes->detil();
-        $Tos23 = tos2summary::all();
-        $Tos24 = tos2lewatan::all();
+        $Tos21 = $pedes->detil($id);
+        $Tos22 = $kopedes->detil($id);
+        $Tos23 = tos2summary::all()->where('project_id',$req->cari);
+        $Tos24 = tos2lewatan::all()->where('project_id',$req->cari);
         $Tos25 = tos2datafootplat::all();
         $Tos26 = tos2datakolom::all();
-        $sum_pedes = $pedes->summarry();
-        $sum_kopedes = $kopedes->summarry();
+        $sum_pedes = $pedes->summarry($id);
+        $sum_kopedes = $kopedes->summarry($id);
 
         $ground = new tos3ground();
         $pumproom = new tos3pumproom();
 
-        $sum_ground = $ground->summarry();
-        $sum_pm = $pumproom->summarry();
+        $sum_ground = $ground->summarry($id);
+        $sum_pm = $pumproom->summarry($id);
 
 
-        $tos31 = tos3data::all();
-        $tos32 = $ground->detil();
-        $tos33 = $pumproom->detil();
-        $tos34 = tos3summary::all();
-        $tos35 = tos3lewatan::all();
+        $tos31 = tos3data::all()->where('project_id',$req->cari);
+        $tos32 = $ground->detil($id);
+        $tos33 = $pumproom->detil($id);
+        $tos34 = tos3summary::all()->where('project_id',$req->cari);
+        $tos35 = tos3lewatan::all()->where('project_id',$req->cari);
 
 
 
@@ -70,7 +118,7 @@ class TosController extends Controller
         ]);
     }
 
-    public function hasil()
+    public function hasil($id)
     {
 
         $pedes = new tos2pedestal();
@@ -81,7 +129,7 @@ class TosController extends Controller
 
         $Tos21 = $pedes->detil();
         $Tos22 = $kopedes->detil();
-        $summa = $pedes->summarry();
+        $summa = $pedes->summarry($id);
     dd($summa);
         // return view('hasil', [
         //     // 'Tos21' => $Tos21, 'Tos22' => $Tos22, 'Tos23' => $Tos23,

@@ -30,13 +30,14 @@ class tos2pedestal extends Model
         join('tos2lewatan', 'tos2datakolom.tulpok_dia', '=', 'tos2lewatan.dia')->get();
     }
     
-    public function summarry () {
+    public function summarry ($id) {
         return tos2pedestal::select('tipe_kolom as label')
         ->selectRaw("SUM(besi) as total_besi")
         ->selectRaw("SUM(beton) as total_beton")
         ->selectRaw("SUM(bekisting) as total_bekisting")
         ->selectRaw("SUM(rasio_b) as rsaio_b")
         ->groupBy('tipe_kolom')
+        ->where('project_id', $id)
         ->get();
         ;
     }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTos3summaryTable extends Migration
+class CreateTos3summaryTable extends Migration 
 {
     /**
      * Run the migrations.
@@ -15,6 +15,7 @@ class CreateTos3summaryTable extends Migration
     {
         Schema::create('tos3summary', function (Blueprint $table) {
             $table->id('id_tos34', 5);
+            $table->float('project_id',5);
             $table->string('nama', 100);
             $table->double('beton',5);
             $table->double('besi',5);

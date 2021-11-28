@@ -15,6 +15,7 @@ class CreateTos2lewatanTable extends Migration
     {
         Schema::create('tos2lewatan', function (Blueprint $table) {
             $table->id('id_tos24', 5);
+            $table->float('project_id',5);
             $table->double('dia',5);
             $table->double('ls',5);
         });
@@ -30,3 +31,4 @@ class CreateTos2lewatanTable extends Migration
         Schema::dropIfExists('tos2lewatan');
     }
 }
+ 

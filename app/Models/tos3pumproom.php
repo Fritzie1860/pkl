@@ -24,13 +24,14 @@ class tos3pumproom extends Model
         join('tos3lewatan', 'tos3data.tulpok_dia', '=', 'tos3lewatan.dia')->get();
     }
 
-    public function summarry () {
+    public function summarry ($id) {
         return tos3pumproom::select('tipe_kolom as label')
         ->selectRaw("SUM(besi) as total_besi")
         ->selectRaw("SUM(beton) as total_beton")
         ->selectRaw("SUM(bekisting) as total_bekisting")
         ->selectRaw("SUM(rasio_b) as rsaio_b")
         ->groupBy('tipe_kolom')
+        ->where('project_id', $id)
         ->get();
         ;
     }

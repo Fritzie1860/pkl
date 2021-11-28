@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 class CreateTos1footplatTable extends Migration
-{
+{ 
     /**
      * Run the migrations.
      *
@@ -15,6 +15,7 @@ class CreateTos1footplatTable extends Migration
     {
         Schema::create('tos1footplat', function (Blueprint $table) {
             $table->id('id_tos12', 5);
+            $table->float('project_id',5);
             $table->string('type',100);
             $table->double('dfp_l',5);
             $table->double('dfp_p',5);

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTos3dataTable extends Migration
+class CreateTos3dataTable extends Migration 
 {
     /**
      * Run the migrations.
@@ -15,6 +15,7 @@ class CreateTos3dataTable extends Migration
     {
         Schema::create('tos3data', function (Blueprint $table) {
             $table->id('id_tos31', 5);
+            $table->float('project_id',5);
             $table->string('nama', 100);
             $table->string('bentuk', 100);
             $table->double('dimensi_l',5);

@@ -15,6 +15,7 @@ class CreateTos2datakolomTable extends Migration
     {
         Schema::create('tos2datakolom', function (Blueprint $table) {
             $table->id('id_tos26', 5);
+            $table->float('project_id',5);
             $table->string('nama', 100);
             $table->string('bentuk', 100);
             $table->double('dimensi_l',5);
@@ -40,7 +41,7 @@ class CreateTos2datakolomTable extends Migration
     /**
      * Reverse the migrations.
      *
-     * @return void
+     * @return void 
      */
     public function down()
     {
