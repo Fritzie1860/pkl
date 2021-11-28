@@ -141,15 +141,15 @@ class TosController extends Controller
     // Tos 1 OH
     public function in_tos11(Request $req)
     {
-        var_dump($req->cari);
-        // $hasil = [
-        //     'project_id' => $req->cari,
-        //     'dia' => $req->dia,
-        //     'p' => $req->p
-        // ];
-        // // dd($req);
-        // tos1oandh::insert($hasil);
-        // return redirect('/target');
+        // var_dump($req->cari);
+        $hasil = [
+            'project_id' => $req->cari,
+            'dia' => $req->dia,
+            'p' => $req->p
+        ];
+        // dd($req);
+        tos1oandh::insert($hasil);
+        return redirect('/target');
     }
 
     public function del_tos11($id)
