@@ -38,7 +38,7 @@
                                         <dd class="mb-1">Admin</dd>
                                     </div>
                                 </dl>
-                                
+
 
                             </div>
                             <div class="col-lg-6" id="cluster_info">
@@ -123,14 +123,14 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
-
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th>Dia</th>
                                                                                     <th>Panjang</th>
                                                                                     <th>Action</th>
+
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
@@ -172,10 +172,10 @@
                                                                         <button type="submit" class="font_bantu fa fa-plus btn btn-primary float-right" data-toggle="modal" data-target="#tos1FootPlat"> Add Data</button>
                                                                     </div>
                                                                 </div>
-                                                                <div class="ibox-content">
 
+                                                                <div class="ibox-content">
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table id="dataTables-example" class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Type</th>
@@ -295,11 +295,14 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 @endforeach
-                                                                        </table>
 
+
+                                                                            </tbody>
+                                                                        </table>
                                                                     </div>
 
                                                                 </div>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -318,7 +321,7 @@
                                                                 </div>
                                                                 <div class="ibox-content">
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Type</th>
@@ -459,9 +462,8 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="ibox-content">
-
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
 
@@ -516,6 +518,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 @endforeach
+                                                                            </tbody>
                                                                         </table>
                                                                     </div>
                                                                 </div>
@@ -581,7 +584,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Nama</th>
@@ -674,7 +677,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th>Nama</th>
@@ -728,7 +731,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th>Dia</th>
@@ -777,7 +780,7 @@
                                                                 </div>
                                                                 <div class="ibox-content">
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="4" style="vertical-align:middle;">Type Kolom</th>
@@ -1156,7 +1159,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="4" style="vertical-align:middle;">Type Kolom</th>
@@ -1571,7 +1574,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;">Nama</th>
@@ -1588,10 +1591,10 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <?php
-                                                                                    $t_bes = 0;
-                                                                                    $t_bet = 0;
-                                                                                    $t_bek = 0;
-                                                                                    $ras = 0;
+                                                                                $t_bes = 0;
+                                                                                $t_bet = 0;
+                                                                                $t_bek = 0;
+                                                                                $ras = 0;
                                                                                 ?>
                                                                                 @foreach($sum_pedes as $row)
                                                                                 <tr>
@@ -1631,13 +1634,13 @@
                                                                                         {{$t_bes}}
                                                                                     </td>
                                                                                     <td>
-                                                                                    {{$t_bet}}
+                                                                                        {{$t_bet}}
                                                                                     </td>
                                                                                     <td>
-                                                                                    {{$t_bek}}
+                                                                                        {{$t_bek}}
                                                                                     </td>
                                                                                     <td>
-                                                                                    {{$ras}}
+                                                                                        {{$ras}}
                                                                                     </td>
 
 
@@ -1650,10 +1653,10 @@
 
                                                                                 </tr>
                                                                                 <?php
-                                                                                    $t_bes = 0;
-                                                                                    $t_bet = 0;
-                                                                                    $t_bek = 0;
-                                                                                    $ras = 0;
+                                                                                $t_bes = 0;
+                                                                                $t_bet = 0;
+                                                                                $t_bek = 0;
+                                                                                $ras = 0;
                                                                                 ?>
                                                                                 @foreach($sum_kopedes as $row)
                                                                                 <tr>
@@ -1693,13 +1696,13 @@
                                                                                         {{$t_bes}}
                                                                                     </td>
                                                                                     <td>
-                                                                                    {{$t_bet}}
+                                                                                        {{$t_bet}}
                                                                                     </td>
                                                                                     <td>
-                                                                                    {{$t_bek}}
+                                                                                        {{$t_bek}}
                                                                                     </td>
                                                                                     <td>
-                                                                                    {{$ras}}
+                                                                                        {{$ras}}
                                                                                     </td>
 
 
@@ -1769,7 +1772,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-examples">
                                                                             <thead>
                                                                                 <tr>
 
@@ -1869,7 +1872,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th>Dia</th>
@@ -1918,7 +1921,7 @@
                                                                 </div>
                                                                 <div class="ibox-content">
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="4" style="vertical-align:middle;">Type Kolom</th>
@@ -2315,7 +2318,7 @@
                                                                 </div>
                                                                 <div class="ibox-content">
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="4" style="vertical-align:middle;">Type Kolom</th>
@@ -2713,7 +2716,7 @@
                                                                 </div>
                                                                 <div class="ibox-content">
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;">Nama</th>
@@ -2729,10 +2732,10 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <?php
-                                                                                    $t_bes = 0;
-                                                                                    $t_bet = 0;
-                                                                                    $t_bek = 0;
-                                                                                    $ras = 0;
+                                                                                $t_bes = 0;
+                                                                                $t_bet = 0;
+                                                                                $t_bek = 0;
+                                                                                $ras = 0;
                                                                                 ?>
                                                                                 @foreach($sum_ground as $row)
                                                                                 <tr>
@@ -2772,13 +2775,13 @@
                                                                                         {{$t_bes}}
                                                                                     </td>
                                                                                     <td>
-                                                                                    {{$t_bet}}
+                                                                                        {{$t_bet}}
                                                                                     </td>
                                                                                     <td>
-                                                                                    {{$t_bek}}
+                                                                                        {{$t_bek}}
                                                                                     </td>
                                                                                     <td>
-                                                                                    {{$ras}}
+                                                                                        {{$ras}}
                                                                                     </td>
 
 
@@ -2791,10 +2794,10 @@
 
                                                                                 </tr>
                                                                                 <?php
-                                                                                    $t_bes = 0;
-                                                                                    $t_bet = 0;
-                                                                                    $t_bek = 0;
-                                                                                    $ras = 0;
+                                                                                $t_bes = 0;
+                                                                                $t_bet = 0;
+                                                                                $t_bek = 0;
+                                                                                $ras = 0;
                                                                                 ?>
                                                                                 @foreach($sum_pm as $row)
                                                                                 <tr>
@@ -2834,13 +2837,13 @@
                                                                                         {{$t_bes}}
                                                                                     </td>
                                                                                     <td>
-                                                                                    {{$t_bet}}
+                                                                                        {{$t_bet}}
                                                                                     </td>
                                                                                     <td>
-                                                                                    {{$t_bek}}
+                                                                                        {{$t_bek}}
                                                                                     </td>
                                                                                     <td>
-                                                                                    {{$ras}}
+                                                                                        {{$ras}}
                                                                                     </td>
 
 
@@ -2911,7 +2914,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Type</th>
@@ -3019,7 +3022,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
@@ -3192,7 +3195,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
@@ -3365,7 +3368,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
@@ -3538,7 +3541,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
 
@@ -3631,7 +3634,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Type</th>
@@ -3700,7 +3703,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
@@ -3868,7 +3871,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;" colspan="4">AS</th>
@@ -4037,7 +4040,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
 
@@ -4131,7 +4134,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th>Dia</th>
@@ -4174,7 +4177,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Type</th>
@@ -4223,7 +4226,7 @@
                                                                     </div>
                                                                     <h5>Rekapitulasi Perhitungan Struktur Plat</h5>
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Area</th>
@@ -4274,7 +4277,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Type</th>
@@ -4323,7 +4326,7 @@
                                                                     </div>
                                                                     <h5>Rekapitulasi Perhitungan Struktur Plat</h5>
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Area</th>
@@ -4374,7 +4377,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Type</th>
@@ -4423,7 +4426,7 @@
                                                                     </div>
                                                                     <h5>Rekapitulasi Perhitungan Struktur Plat</h5>
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Area</th>
@@ -4474,7 +4477,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;">Type</th>
@@ -4523,7 +4526,7 @@
                                                                     </div>
                                                                     <h5>Rekapitulasi Perhitungan Struktur Plat</h5>
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="2" style="vertical-align:middle;">Area</th>
@@ -4573,7 +4576,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
 
@@ -4670,7 +4673,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th>Dia</th>
@@ -4707,7 +4710,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> Type</th>
@@ -4789,7 +4792,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> Type</th>
@@ -4870,7 +4873,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> Type</th>
@@ -4952,7 +4955,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> Type</th>
@@ -5033,7 +5036,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th rowspan="3" style="vertical-align:middle;"> Type</th>
@@ -5115,7 +5118,7 @@
                                                                 <div class="ibox-content">
 
                                                                     <div class="table-responsive scrollmenu">
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;"> Nama</th>
@@ -5147,7 +5150,7 @@
                                                                     </div>
                                                                     <div class="table-responsive scrollmenu">
                                                                         <h5>Rekap Volume Retaining Wall</h5>
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;"> Nama</th>
@@ -5191,7 +5194,7 @@
 
                                                                     <div class="table-responsive scrollmenu">
                                                                         <h5>Rekap Volume Retaining Wall Batu Kali</h5>
-                                                                        <table class="table table-striped table-bordered table-hover dataTables-user">
+                                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th style="vertical-align:middle;"> Nama</th>

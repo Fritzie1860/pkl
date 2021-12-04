@@ -31,7 +31,6 @@
                         </div>
                     </div>
                     <div class="ibox-content">
-
                         <div class="table-responsive scrollmenu">
                             <table class="table table-striped table-bordered table-hover dataTables-example">
                                 <thead>
@@ -100,6 +99,7 @@
                         </div>
 
                     </div>
+                    
                 </div>
             </div>
         </div>

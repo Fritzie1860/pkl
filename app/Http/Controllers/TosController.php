@@ -24,56 +24,10 @@ use PHPUnit\TextUI\XmlConfiguration\Group;
 class TosController extends Controller
 {
 
-    // public function index($id)
-    // {
-    //     $Tos11 = tos1oandh::all()->where('project_id', $id);
-    //     $Tos12 = tos1footplat::all()->where('project_id', $id);
-    //     $Tos13 = tos1pumproom::all()->where('project_id', $id);
-    //     $Tos14 = tos1batukali::all()->where('project_id', $id);
-
-    //     $pedes = new tos2pedestal();
-    //     $kopedes = new tos2kolompedestal();
-
-
-    //     // dd($coba->detil());
-
-    //     $Tos21 = $pedes->detil($id);
-    //     $Tos22 = $kopedes->detil($id);
-    //     $Tos23 = tos2summary::all()->where('project_id', $id);
-    //     $Tos24 = tos2lewatan::all()->where('project_id', $id);
-    //     $Tos25 = tos2datafootplat::all()->where('project_id', $id);
-    //     $Tos26 = tos2datakolom::all()->where('project_id', $id);
-    //     $sum_pedes = $pedes->summarry($id);
-    //     $sum_kopedes = $kopedes->summarry($id);
-
-    //     $ground = new tos3ground();
-    //     $pumproom = new tos3pumproom();
-
-    //     $sum_ground = $ground->summarry($id);
-    //     $sum_pm = $pumproom->summarry($id);
-
-
-    //     $tos31 = tos3data::all()->where('project_id', $id);
-    //     $tos32 = $ground->detil($id);
-    //     $tos33 = $pumproom->detil($id);
-    //     $tos34 = tos3summary::all()->where('project_id', $id);
-    //     $tos35 = tos3lewatan::all()->where('project_id', $id);
-
-
-
-    //     return view('detil_project', [
-    //         'Tos11' => $Tos11, 'Tos12' => $Tos12, 'Tos13' => $Tos13, 'Tos14' => $Tos14,
-    //         'Tos21' => $Tos21, 'Tos22' => $Tos22, 'Tos23' => $Tos23,
-    //         'Tos24' => $Tos24, 'Tos25' => $Tos25, 'Tos26' => $Tos26,
-    //         'Tos31' => $tos31, 'Tos32' =>  $tos32, 'Tos33' => $tos33,
-    //         'Tos34' => $tos34, 'Tos35' => $tos35, 'sum_pedes' => $sum_pedes,
-    //         'sum_kopedes' => $sum_kopedes, 'sum_ground' => $sum_ground, 'sum_pm' => $sum_pm
-    //     ]);
-    // }
-
     public function index(Request $req)
     {
         $id = $req->cari;
+        $req->session()->put('lihat',$req->cari);
         $Tos11 = tos1oandh::all()->where('project_id',$req->cari);
         $Tos12 = tos1footplat::all()->where('project_id',$req->cari);
         $Tos13 = tos1pumproom::all()->where('project_id',$req->cari);
@@ -119,6 +73,56 @@ class TosController extends Controller
         ]);
     }
 
+    public function pindah(Request $requ)
+    {
+        $req = $requ->session()->get('lihat');
+        // echo "hali".$re;
+        // dd($req);
+        $Tos11 = tos1oandh::all()->where('project_id',$req);
+        $Tos12 = tos1footplat::all()->where('project_id',$req);
+        $Tos13 = tos1pumproom::all()->where('project_id',$req);
+        $Tos14 = tos1batukali::all()->where('project_id',$req);
+
+        $pedes = new tos2pedestal();
+        $kopedes = new tos2kolompedestal();
+
+        $info = projects::all()->where('id_projects', $req);
+        // dd($coba->detil());
+
+        $Tos21 = $pedes->detil($req);
+        $Tos22 = $kopedes->detil($req);
+        $Tos23 = tos2summary::all()->where('project_id',$req);
+        $Tos24 = tos2lewatan::all()->where('project_id',$req);
+        $Tos25 = tos2datafootplat::all();
+        $Tos26 = tos2datakolom::all();
+        $sum_pedes = $pedes->summarry($req);
+        $sum_kopedes = $kopedes->summarry($req);
+
+        $ground = new tos3ground();
+        $pumproom = new tos3pumproom();
+
+        $sum_ground = $ground->summarry($req);
+        $sum_pm = $pumproom->summarry($req);
+
+
+        $tos31 = tos3data::all()->where('project_id',$req);
+        $tos32 = $ground->detil($req);
+        $tos33 = $pumproom->detil($req);
+        $tos34 = tos3summary::all()->where('project_id',$req);
+        $tos35 = tos3lewatan::all()->where('project_id',$req);
+
+
+
+        return view('detil_project', [   'cari' => $req, 'info' => $info,
+            'Tos11' => $Tos11, 'Tos12' => $Tos12, 'Tos13' => $Tos13, 'Tos14' => $Tos14,
+            'Tos21' => $Tos21, 'Tos22' => $Tos22, 'Tos23' => $Tos23,
+            'Tos24' => $Tos24, 'Tos25' => $Tos25, 'Tos26' => $Tos26,
+            'Tos31' => $tos31, 'Tos32' =>  $tos32, 'Tos33' => $tos33,
+            'Tos34' => $tos34, 'Tos35' => $tos35, 'sum_pedes' => $sum_pedes,
+            'sum_kopedes' => $sum_kopedes, 'sum_ground' => $sum_ground, 'sum_pm' => $sum_pm
+        ]);
+    }
+
     public function hasil($id)
     {
 
@@ -150,13 +154,13 @@ class TosController extends Controller
         ];
         // dd($req);
         tos1oandh::insert($hasil);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function del_tos11($id)
     {
         $post = tos1oandh::all()->where('id_tos11', $id)->each->delete();
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function edit_tos11(Request $req)
@@ -167,7 +171,7 @@ class TosController extends Controller
             'p' => $req->p,
 
         ]);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     // Tos 1 Foot Plat
@@ -275,13 +279,13 @@ class TosController extends Controller
         ];
         // dd($req);
         tos1footplat::insert($hasil);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function del_tos12($id)
     {
         $post = tos1footplat::all()->where('id_tos12', $id)->each->delete();
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function edit_tos12(Request $req)
@@ -384,7 +388,7 @@ class TosController extends Controller
             'v_pasir' => $v_pasir,
 
         ]);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     // Tos 1 Pump Room
@@ -493,13 +497,13 @@ class TosController extends Controller
         ];
         // dd($req);
         tos1pumproom::insert($hasil);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function del_tos13($id)
     {
         $post = tos1pumproom::all()->where('id_tos13', $id)->each->delete();
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function edit_tos13(Request $req)
@@ -603,7 +607,7 @@ class TosController extends Controller
             'v_pasir' => $v_pasir,
 
         ]);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     // Tos 1 Batu Kali
@@ -624,6 +628,7 @@ class TosController extends Controller
         $timbunan = ($galian - $v_bk);
 
         $hasil = [
+            'project_id' => $req->cari,
             'nama' => $nama,
             'bentuk' => $bentuk,
             'panjang' => $panjang,
@@ -638,13 +643,13 @@ class TosController extends Controller
             'timbunan' => $timbunan
         ];
         tos1batukali::insert($hasil);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function del_tos14($id)
     {
         $post = tos1pumproom::all()->where('id_tos14', $id)->each->delete();
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function edit_tos14(Request $req)
@@ -677,7 +682,7 @@ class TosController extends Controller
             'galian' => $galian,
             'timbunan' => $timbunan
         ]);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
 
@@ -771,13 +776,13 @@ class TosController extends Controller
 
         tos2pedestal::insert($hasil);
 
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function del_tos21($id)
     {
         $post = tos2pedestal::all()->where('id_tos21', $id)->each->delete();
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function edit_tos21(Request $req)
@@ -862,7 +867,7 @@ class TosController extends Controller
             'bekisting' => $bekisting,
             'rasio_b' => $besi
         ]);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     // Tos 2 kolome Pedestal
@@ -956,13 +961,13 @@ class TosController extends Controller
 
         tos2kolompedestal::insert($hasil);
 
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function del_tos22($id)
     {
         $post = tos2kolompedestal::all()->where('id_tos22', $id)->each->delete();
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function edit_tos22(Request $req)
@@ -1050,7 +1055,7 @@ class TosController extends Controller
             'rasio_b' => $rasio_b
 
         ]);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
 
@@ -1082,13 +1087,13 @@ class TosController extends Controller
         ];
         // dd($req);
         tos2datakolom::insert($hasil);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function del_tos26($id)
     {
         $post = tos2datakolom::all()->where('id_tos26', $id)->each->delete();
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function edit_tos26(Request $req)
@@ -1116,7 +1121,7 @@ class TosController extends Controller
             'tvlap_jarak' => $req->tvlap_jarak
 
         ]);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     // Tos 2 Lewatan
@@ -1129,13 +1134,13 @@ class TosController extends Controller
         ];
         // dd($req);
         tos2lewatan::insert($hasil);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function del_tos24($id)
     {
         $post = tos2lewatan::all()->where('id_tos24', $id)->each->delete();
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function edit_tos24(Request $req)
@@ -1146,7 +1151,7 @@ class TosController extends Controller
             'ls' => $req->ls,
 
         ]);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     // tos 2 data footplat
@@ -1162,13 +1167,13 @@ class TosController extends Controller
         ];
         // dd($req);
         tos2datafootplat::insert($hasil);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function del_tos25($id)
     {
         $post = tos2datafootplat::all()->where('id_tos25', $id)->each->delete();
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function edit_tos25(Request $req)
@@ -1181,7 +1186,7 @@ class TosController extends Controller
             't' => $req->t,
 
         ]);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     // Tos 3 Data Kolom
@@ -1212,13 +1217,13 @@ class TosController extends Controller
         ];
         // dd($req);
         tos3data::insert($hasil);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function del_tos31($id)
     {
         $post = tos3data::all()->where('id_tos31', $id)->each->delete();
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function edit_tos31(Request $req)
@@ -1246,7 +1251,7 @@ class TosController extends Controller
             'tvlap_jarak' => $req->tvlap_jarak
 
         ]);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     // Tos Ground
@@ -1362,13 +1367,13 @@ class TosController extends Controller
         ];
 
         tos3ground::insert($hasil);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function del_tos32($id)
     {
         $post = tos3ground::all()->where('id_tos24', $id)->each->delete();
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function edit_tos32(Request $req)
@@ -1477,7 +1482,7 @@ class TosController extends Controller
             'rasio_b' => $rasio_b
 
         ]);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     // Tos Ground
@@ -1590,13 +1595,13 @@ class TosController extends Controller
         ];
 
         tos3pumproom::insert($hasil);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function del_tos33($id)
     {
         $post = tos3pumproom::all()->where('id_tos24', $id)->each->delete();
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function edit_tos33(Request $req)
@@ -1701,7 +1706,7 @@ class TosController extends Controller
             'rasio_b' => $rasio_b
 
         ]);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
 
@@ -1715,13 +1720,13 @@ class TosController extends Controller
         ];
         // dd($req);
         tos3lewatan::insert($hasil);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function del_tos35($id)
     {
         $post = tos3lewatan::all()->where('id_tos35', $id)->each->delete();
-        return redirect('/target');
+        return redirect('/hasil');
     }
 
     public function edit_tos35(Request $req)
@@ -1732,6 +1737,6 @@ class TosController extends Controller
             'ls' => $req->ls,
 
         ]);
-        return redirect('/target');
+        return redirect('/hasil');
     }
 }
