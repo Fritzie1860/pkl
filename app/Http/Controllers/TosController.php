@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\projects;
 use App\Models\tos1footplat;
 use App\Models\tos1oandh;
 use App\Models\tos1pumproom;
@@ -81,7 +82,7 @@ class TosController extends Controller
         $pedes = new tos2pedestal();
         $kopedes = new tos2kolompedestal();
 
-
+        $info = projects::all()->where('id_projects', $id);
         // dd($coba->detil());
 
         $Tos21 = $pedes->detil($id);
@@ -108,7 +109,7 @@ class TosController extends Controller
 
 
 
-        return view('detil_project', [   'cari' => $req->cari,
+        return view('detil_project', [   'cari' => $req->cari, 'info' => $info,
             'Tos11' => $Tos11, 'Tos12' => $Tos12, 'Tos13' => $Tos13, 'Tos14' => $Tos14,
             'Tos21' => $Tos21, 'Tos22' => $Tos22, 'Tos23' => $Tos23,
             'Tos24' => $Tos24, 'Tos25' => $Tos25, 'Tos26' => $Tos26,

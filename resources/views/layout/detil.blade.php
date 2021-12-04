@@ -1,6 +1,7 @@
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="font_bantu">
         <!-- Detail Project -->
+        @foreach($info as $row)
         <div class="row">
             <div class="col-lg-12">
                 <div class="ibox">
@@ -9,7 +10,7 @@
                             <div class="col-lg-12">
                                 <div class="m-b-md">
                                     <a href="#" class="btn btn-white btn-xs float-right">Edit project</a>
-                                    <h2>Villa Warna warni</h2>
+                                    <h2>{{$row->pro_nama}}</h2>
                                 </div>
                             </div>
                         </div>
@@ -20,7 +21,13 @@
                                         <dt>Status:</dt>
                                     </div>
                                     <div class="col-sm-8 text-sm-left">
-                                        <dd class="mb-1"><span class="label label-primary">Active</span></dd>
+                                        @if($row->pro_status==0)
+                                        <dd class="mb-1"><span class="label label-primary">Prepared</span></dd>
+                                        @elseif($row->pro_status==1)
+                                        <dd class="mb-1"><span class="label label-primary">On Going</span></dd>
+                                        @else
+                                        <dd class="mb-1"><span class="label label-primary">Finishhed</span></dd>
+                                        @endif
                                     </div>
                                 </dl>
                                 <dl class="row mb-0">
@@ -28,54 +35,31 @@
                                         <dt>Created by:</dt>
                                     </div>
                                     <div class="col-sm-8 text-sm-left">
-                                        <dd class="mb-1">Alex Smith</dd>
+                                        <dd class="mb-1">Admin</dd>
                                     </div>
                                 </dl>
-                                <dl class="row mb-0">
-                                    <div class="col-sm-4 text-sm-right">
-                                        <dt>Messages:</dt>
-                                    </div>
-                                    <div class="col-sm-8 text-sm-left">
-                                        <dd class="mb-1"> 162</dd>
-                                    </div>
-                                </dl>
-                                <dl class="row mb-0">
-                                    <div class="col-sm-4 text-sm-right">
-                                        <dt>Client:</dt>
-                                    </div>
-                                    <div class="col-sm-8 text-sm-left">
-                                        <dd class="mb-1"><a href="#" class="text-navy"> Zender Company</a> </dd>
-                                    </div>
-                                </dl>
-                                <dl class="row mb-0">
-                                    <div class="col-sm-4 text-sm-right">
-                                        <dt>Version:</dt>
-                                    </div>
-                                    <div class="col-sm-8 text-sm-left">
-                                        <dd class="mb-1"> v1.4.2 </dd>
-                                    </div>
-                                </dl>
+                                
 
                             </div>
                             <div class="col-lg-6" id="cluster_info">
 
                                 <dl class="row mb-0">
                                     <div class="col-sm-4 text-sm-right">
-                                        <dt>Last Updated:</dt>
+                                        <dt>Start Date:</dt>
                                     </div>
                                     <div class="col-sm-8 text-sm-left">
-                                        <dd class="mb-1">16.08.2014 12:15:57</dd>
+                                        <dd class="mb-1">{{$row->tanggal_mulai}}</dd>
                                     </div>
                                 </dl>
                                 <dl class="row mb-0">
                                     <div class="col-sm-4 text-sm-right">
-                                        <dt>Created:</dt>
+                                        <dt>Last update:</dt>
                                     </div>
                                     <div class="col-sm-8 text-sm-left">
-                                        <dd class="mb-1"> 10.07.2014 23:36:57</dd>
+                                        <dd class="mb-1"> {{$row->pro_update}} </dd>
                                     </div>
                                 </dl>
-                                <dl class="row mb-0">
+                                <!-- <dl class="row mb-0">
                                     <div class="col-sm-4 text-sm-right">
                                         <dt>Participants:</dt>
                                     </div>
@@ -88,7 +72,7 @@
                                             <a href="><img alt=" image" class="rounded-circle" src="img/a5.jpg"></a>
                                         </dd>
                                     </div>
-                                </dl>
+                                </dl> -->
                             </div>
                         </div>
 
@@ -96,6 +80,7 @@
                 </div>
             </div>
         </div>
+        @endforeach
         <!-- Tos 1 -->
         <div class="row">
             <div class="col-lg-12">
