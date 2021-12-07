@@ -75,8 +75,8 @@
                                                         <i class="fa fa-edit "></i>
                                                     </a>
                                                     <form action="/target" method="post" style="float:right">
-                                                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                                                        <input type="hidden" name="cari" value="{{ $row->id_projects }}" />
+                                                        <input required type="hidden" name="_token" value="{{ csrf_token() }}" />
+                                                        <input required type="hidden" name="cari" value="{{ $row->id_projects }}" />
                                                         <button type="submit" class="btn btn-sm"><i class="fa fa-eye"></i> </button>
                                                     </form>
                                                     </a>
@@ -115,11 +115,11 @@
                     <form action="/inputProject" method="post">
                         <div class="form-group">
                             <label for="nama">Nama Project</label>
-                            <input type="text" class="form-control" name="proname" id="proname" placeholder="Nama">
+                            <input required type="text" class="form-control" name="proname" id="proname" placeholder="Nama">
                         </div>
                         <div class="form-group">
                             <label for="email">Start Date</label>
-                            <input type="date" class="form-control" name="startdate" id="startdate">
+                            <input required type="date" class="form-control" name="startdate" id="startdate">
                         </div>
                         <div class="form-group">
                             <label for="no_hp">Status</label>
@@ -157,15 +157,15 @@
 
                     <form action="/editProject" method="post">
 
-                        <input type="text" name="idp" id="isi_idp" style="display: none;">
+                        <input required type="text" name="idp" id="isi_idp" style="display: none;">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Projct Name</label>
-                            <input type="text" class="form-control" name="proname" id="isi_proname" placeholder="Project Name">
+                            <input required type="text" class="form-control" name="proname" id="isi_proname" placeholder="Project Name">
                         </div>
 
                         <div class="form-group">
                             <label for="exampleInputPassword1">Start Date</label>
-                            <input type="date" name="stardate" class="form-control" id="isi_startdate">
+                            <input required type="date" name="stardate" class="form-control" id="isi_startdate">
                         </div>
 
                         <div class="form-group">
