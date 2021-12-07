@@ -24,7 +24,9 @@ Route::get('/login', [AuthController::class, 'showFormLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/logout', [AuthController::class, 'logout']);
 
-Route::get('/users', [UserController::class, 'index']);
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/users', [UserController::class, 'index']);
 Route::post('/inputuser', [UserController::class, 'store']);
 Route::post('/edituser', [UserController::class, 'update']);
 Route::get('/hapususer/{id}', [UserController::class, 'hapus']);
@@ -97,6 +99,4 @@ Route::get('/projects', [ProjectController::class, 'index']);
     Route::post('tos35_edit', [TosController::class, 'edit_tos35']);
     Route::get('tos35_del/{id}', [TosController::class, 'del_tos35']);
 
-Route::group(['middleware' => 'auth'], function () {
-    
 });

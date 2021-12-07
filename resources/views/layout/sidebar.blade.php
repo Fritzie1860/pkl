@@ -10,17 +10,15 @@
                 <li class="nav-header">
                     <div class="dropdown profile-element">
                         <img alt="image" class="rounded-circle" src="img/profile_small.jpg" />
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="block m-t-xs font-bold">David Williams</span>
-                            <span class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                        <a href="/profil">
+                            <span class="block m-t-xs font-bold">{{Auth::user()->username}}</span>
+                            @if(Auth::user()->status==0)
+                            <span class="text-muted text-xs block">Staff</span>
+                            @else
+                            <span class="text-muted text-xs block">Trainee</span>
+                            @endif
                         </a>
-                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                            <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
-                            <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
-                            <li class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/logout">Logout</a></li>
-                        </ul>
+                        
                     </div>
                 </li>
                 <li class="<?php
@@ -40,6 +38,15 @@
                             ?>">
                     <a href="/projects"><i class="fa fa-table"></i> <span class="nav-label">Projects</span></a>
                 </li>
+                @if(Auth::user()->status==0)
+                <li class="<?php
+                            if (request()->is('users')) {
+                                echo "active";
+                            }
+                            ?>">
+                    <a href="/users"><i class="fa fa-table"></i> <span class="nav-label">Users</span></a>
+                </li>
+                @endif
 
             </ul>
         </div>
