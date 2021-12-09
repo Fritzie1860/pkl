@@ -24,14 +24,14 @@ Route::view('/d', 'dummy');
 Route::get('/login', [AuthController::class, 'showFormLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/logout', [AuthController::class, 'logout']);
-
-
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('/users', [UserController::class, 'index']);
+Route::get('/users', [UserController::class, 'index']);
 Route::post('/inputuser', [UserController::class, 'store']);
 Route::post('/edituser', [UserController::class, 'update']);
 Route::get('/hapususer/{id}', [UserController::class, 'hapus']);
 Route::get('/profil', [UserController::class, 'profil']);
+
+Route::group(['middleware' => 'auth'], function () {
+   
 
 Route::get('/projects', [ProjectController::class, 'index']);
     Route::post('/inputProject', [ProjectController::class, 'store']);

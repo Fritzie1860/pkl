@@ -18,11 +18,6 @@
 </head>
 
 <body style="background-image: url('images/gradient.png');  ">
-    <?php
-
-use Illuminate\Support\Facades\Hash;
-
-echo Hash::make("ica123");?>
     <center>
         <div class="middle-box loginscreen" >
         <div style="height:150px; margin-top: 25px;">

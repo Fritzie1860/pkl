@@ -22,7 +22,7 @@ class AuthController extends Controller
             return redirect()->route('home');
         }
         return view('dummy');
-        // $hhas = Hash::make("12345678");
+        // $hhas =web
         // dd($hhas);
     }
 
