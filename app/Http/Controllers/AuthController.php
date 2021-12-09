@@ -21,7 +21,7 @@ class AuthController extends Controller
             //Login Success
             return redirect()->route('home');
         }
-        return view('login');
+        return view('dummy');
         // $hhas = Hash::make("12345678");
         // dd($hhas);
     }

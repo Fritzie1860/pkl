@@ -5709,14 +5709,7 @@ body.mini-navbar.fixed-sidebar .logo-element {
     width: 80%;
     margin: 0 auto;
 }
-.login_box {
-    margin: 20% auto;
-    /* position: absolute; */
-    align-content: center;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    width: 400px;
-}
+
 
 .login_box img {
   width: 40%;
