@@ -9,7 +9,7 @@
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                        <img alt="image" class="rounded-circle" src="img/profile_small.jpg" />
+                        <img alt="image" class="rounded-circle" style="width: 125px;" src="images/{{Auth::user()->foto}}" />
                         <a href="/profil">
                             <span class="block m-t-xs font-bold">{{Auth::user()->username}}</span>
                             @if(Auth::user()->status==0)
