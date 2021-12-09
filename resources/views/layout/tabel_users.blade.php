@@ -107,23 +107,23 @@
             <form action="/inputuser" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <!-- <img src="img/user.png" alt="foto"> -->
-                        <input type="file" name='upload'>
+                        <input required autocomplete="off" type="file" name='upload'>
                     </div>
                     <div class="form-group">
                         <label for="nama">Nama</label>
-                        <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama">
+                        <input required autocomplete="off" type="text" class="form-control" name="nama" id="nama" placeholder="Nama">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                        <input required autocomplete="off" type="text" class="form-control" name="email" id="email" placeholder="Email">
                     </div>
                     <div class="form-group">
                         <label for="no_hp">Nomor HP</label>
-                        <input type="text" class="form-control" name="no_hp" id="no_hp" placeholder="+62 XXX XXX XXX">
+                        <input required autocomplete="off" type="text" class="form-control" name="no_hp" id="no_hp" placeholder="+62 XXX XXX XXX">
                     </div>
                     <div class="form-group">
                         <label for="alamat">Alamat</label>
-                        <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Jl. Nama Jalan">
+                        <input required autocomplete="off" type="text" class="form-control" name="alamat" id="alamat" placeholder="Jl. Nama Jalan">
                     </div>
                     <div class="form-group">
                         <label for="status">Status</label>
@@ -136,7 +136,7 @@
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" name="pw" class="form-control" id="password" placeholder="Your Password">
+                        <input required autocomplete="off" type="password" name="pw" class="form-control" id="password" placeholder="Your Password">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -165,22 +165,22 @@
 
                 <form action="/edituser" method="post">
 
-                    <input type="text" name="idu" id="rahasia" style="display: none;">
+                    <input required autocomplete="off" type="text" name="idu" id="rahasia" style="display: none;">
                     <div class="form-group">
                         <label for="exampleInputPassword1">Nama</label>
-                        <input type="text" class="form-control" name="username" id="isi_nama" placeholder="Nama">
+                        <input required autocomplete="off" type="text" class="form-control" name="username" id="isi_nama" placeholder="Nama">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Email</label>
-                        <input type="text" name="email" class="form-control" id="isi_email" placeholder="Email">
+                        <input required autocomplete="off" type="text" name="email" class="form-control" id="isi_email" placeholder="Email">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Nomor HP</label>
-                        <input type="text" name="no_hp" class="form-control" id="isi_no_hp" placeholder="+62 XXX XXX XXX">
+                        <input required autocomplete="off" type="text" name="no_hp" class="form-control" id="isi_no_hp" placeholder="+62 XXX XXX XXX">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Alamat</label>
-                        <input type="text" name="alamat" class="form-control" id="isi_alamat" placeholder="Alamat">
+                        <input required autocomplete="off" type="text" name="alamat" class="form-control" id="isi_alamat" placeholder="Alamat">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Status</label>

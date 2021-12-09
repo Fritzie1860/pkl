@@ -11,15 +11,15 @@
 
                 <form action="/tos11_edit" method="post">
                     @csrf
-                    <input required type="hidden" name="_token" value="{{ csrf_token() }}" />
-                    <input required type="hidden" name="idt" id="isi_id11" />
+                    <input required autocomplete="off" type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input required autocomplete="off" type="hidden" name="idt" id="isi_id11" />
                     <div class="form-group">
                         <label for="Dia">Dia</label>
-                        <input required type="text" class="form-control" name="dia" id="isi_dia">
+                        <input required autocomplete="off" type="text" class="form-control" name="dia" id="isi_dia">
                     </div>
                     <div class="form-group">
                         <label for="panjang">Panjang pop up</label>
-                        <input required type="text" class="form-control" id="isi_p" name="p">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_p" name="p">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -53,87 +53,87 @@
 
                 <form action="/tos12_edit" method="post">
                     @csrf
-                    <input required type="hidden" name="_token" value="{{ csrf_token() }}" />
-                    <input required type="hidden" name="idt" id="isi_id12" />
+                    <input required autocomplete="off" type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input required autocomplete="off" type="hidden" name="idt" id="isi_id12" />
                     <div class="form-group">
                         <label for="type">Type</label>
-                        <input required type="text" class="form-control" name="type" id="isi_type3">
+                        <input required autocomplete="off" type="text" class="form-control" name="type" id="isi_type3">
                     </div>
                     <div class="form-group">
                         <label for="type">DFP L</label>
-                        <input required type="text" class="form-control" id="isi_dfp_l" name="dfp_l">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_dfp_l" name="dfp_l">
                     </div>
 
                     <div class="form-group">
                         <label for="type">DFP P</label>
-                        <input required type="text" class="form-control" id="isi_dfp_p" name="dfp_p">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_dfp_p" name="dfp_p">
                     </div>
 
                     <div class="form-group">
                         <label for="type">DFP T</label>
-                        <input required type="text" class="form-control" id="isi_dfp_t" name="dfp_t">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_dfp_t" name="dfp_t">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Level MTA</label>
-                        <input required type="text" class="form-control" id="isi_level_mta" name="level_mta">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_level_mta" name="level_mta">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Jumlah
 
                         </label>
-                        <input required type="text" class="form-control" id="isi_jumlah" name="jumlah">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_jumlah" name="jumlah">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tav Dia</label>
-                        <input required type="text" class="form-control" id="isi_tav_dia" name="tav_dia">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_tav_dia" name="tav_dia">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tav Jarak</label>
-                        <input required type="text" class="form-control" id="isi_tav_jarak" name="tav_jarak">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_tav_jarak" name="tav_jarak">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TBV dia</label>
-                        <input required type="text" class="form-control" id="isi_tbv_dia" name="tbv_dia">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_tbv_dia" name="tbv_dia">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tbv jarak</label>
-                        <input required type="text" class="form-control" id="isi_tbv_jarak" name="tbv_jarak">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_tbv_jarak" name="tbv_jarak">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TBH dia</label>
-                        <input required type="text" class="form-control" id="isi_tbh_dia" name="tbh_dia">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_tbh_dia" name="tbh_dia">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TBH Jarak</label>
-                        <input required type="text" class="form-control" id="isi_tbh_jarak" name="tbh_jarak">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_tbh_jarak" name="tbh_jarak">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TAH dia</label>
-                        <input required type="text" class="form-control" id="isi_tah_dia" name="tah_dia">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_tah_dia" name="tah_dia">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tah jarak</label>
-                        <input required type="text" class="form-control" id="isi_tah_jarak" name="tah_jarak">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_tah_jarak" name="tah_jarak">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TP dia</label>
-                        <input required type="text" class="form-control" id="isi_tp_dia" name="tp_dia">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_tp_dia" name="tp_dia">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TP jum</label>
-                        <input required type="text" class="form-control" id="isi_tp_jum" name="tp_jum">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_tp_jum" name="tp_jum">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -196,87 +196,87 @@
 
                 <form action="/tos13_edit" method="post">
                     @csrf
-                    <input required type="hidden" name="_token" value="{{ csrf_token() }}" />
-                    <input required type="hidden" name="idt" id="isi_id13" />
+                    <input required autocomplete="off" type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input required autocomplete="off" type="hidden" name="idt" id="isi_id13" />
                     <div class="form-group">
                         <label for="type">Type</label>
-                        <input required type="text" class="form-control" name="type" id="type3">
+                        <input required autocomplete="off" type="text" class="form-control" name="type" id="type3">
                     </div>
                     <div class="form-group">
                         <label for="type">DFP L</label>
-                        <input required type="text" class="form-control" id="dfp_l3" name="dfp_l">
+                        <input required autocomplete="off" type="text" class="form-control" id="dfp_l3" name="dfp_l">
                     </div>
 
                     <div class="form-group">
                         <label for="type">DFP P</label>
-                        <input required type="text" class="form-control" id="dfp_p3" name="dfp_p">
+                        <input required autocomplete="off" type="text" class="form-control" id="dfp_p3" name="dfp_p">
                     </div>
 
                     <div class="form-group">
                         <label for="type">DFP T</label>
-                        <input required type="text" class="form-control" id="dfp_t3" name="dfp_t">
+                        <input required autocomplete="off" type="text" class="form-control" id="dfp_t3" name="dfp_t">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Level MTA</label>
-                        <input required type="text" class="form-control" id="level_mta3" name="level_mta">
+                        <input required autocomplete="off" type="text" class="form-control" id="level_mta3" name="level_mta">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Jumlah
 
                         </label>
-                        <input required type="text" class="form-control" id="jumlah3" name="jumlah">
+                        <input required autocomplete="off" type="text" class="form-control" id="jumlah3" name="jumlah">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tav Dia</label>
-                        <input required type="text" class="form-control" id="tav_dia3" name="tav_dia">
+                        <input required autocomplete="off" type="text" class="form-control" id="tav_dia3" name="tav_dia">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tav Jarak</label>
-                        <input required type="text" class="form-control" id="tav_jarak3" name="tav_jarak">
+                        <input required autocomplete="off" type="text" class="form-control" id="tav_jarak3" name="tav_jarak">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TBV dia</label>
-                        <input required type="text" class="form-control" id="tbv_dia3" name="tbv_dia">
+                        <input required autocomplete="off" type="text" class="form-control" id="tbv_dia3" name="tbv_dia">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tbv jarak</label>
-                        <input required type="text" class="form-control" id="tbv_jarak3" name="tbv_jarak">
+                        <input required autocomplete="off" type="text" class="form-control" id="tbv_jarak3" name="tbv_jarak">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TBH dia</label>
-                        <input required type="text" class="form-control" id="tbh_dia3" name="tbh_dia">
+                        <input required autocomplete="off" type="text" class="form-control" id="tbh_dia3" name="tbh_dia">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TBH Jarak</label>
-                        <input required type="text" class="form-control" id="tbh_jarak3" name="tbh_jarak">
+                        <input required autocomplete="off" type="text" class="form-control" id="tbh_jarak3" name="tbh_jarak">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TAH dia</label>
-                        <input required type="text" class="form-control" id="tah_dia3" name="tah_dia">
+                        <input required autocomplete="off" type="text" class="form-control" id="tah_dia3" name="tah_dia">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Tah jarak</label>
-                        <input required type="text" class="form-control" id="tah_jarak3" name="tah_jarak">
+                        <input required autocomplete="off" type="text" class="form-control" id="tah_jarak3" name="tah_jarak">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TP dia</label>
-                        <input required type="text" class="form-control" id="tp_dia3" name="tp_dia">
+                        <input required autocomplete="off" type="text" class="form-control" id="tp_dia3" name="tp_dia">
                     </div>
 
                     <div class="form-group">
                         <label for="type">TP jum</label>
-                        <input required type="text" class="form-control" id="tp_jum3" name="tp_jum">
+                        <input required autocomplete="off" type="text" class="form-control" id="tp_jum3" name="tp_jum">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -347,60 +347,60 @@
 
                 <form action="/tos14_edit" method="post">
                     @csrf
-                    <input required type="hidden" name="_token" value="{{ csrf_token() }}" />
-                    <input required type="hidden" name="idt" id="isi_id14" />
+                    <input required autocomplete="off" type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input required autocomplete="off" type="hidden" name="idt" id="isi_id14" />
                     <div class="form-group">
                         <label for="type">Nama</label>
-                        <input required type="text" class="form-control" name="nama" id="nama14">
+                        <input required autocomplete="off" type="text" class="form-control" name="nama" id="nama14">
                     </div>
                     <div class="form-group">
                         <label for="type">Bentuk</label>
-                        <input required type="text" class="form-control" id="bentuk14" name="bentuk">
+                        <input required autocomplete="off" type="text" class="form-control" id="bentuk14" name="bentuk">
                     </div>
 
                     <div class="form-group">
                         <label for="type">B</label>
-                        <input required type="text" class="form-control" id="b14" name="b">
+                        <input required autocomplete="off" type="text" class="form-control" id="b14" name="b">
                     </div>
 
                     <div class="form-group">
                         <label for="type">B'</label>
-                        <input required type="text" class="form-control" id="b_14" name="b_">
+                        <input required autocomplete="off" type="text" class="form-control" id="b_14" name="b_">
                     </div>
 
                     <div class="form-group">
                         <label for="type">H</label>
-                        <input required type="text" class="form-control" id="h14" name="h">
+                        <input required autocomplete="off" type="text" class="form-control" id="h14" name="h">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Panjang </label>
-                        <input required type="text" class="form-control" id="panjang14" name="panjang">
+                        <input required autocomplete="off" type="text" class="form-control" id="panjang14" name="panjang">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Luas Alas</label>
-                        <input required type="text" class="form-control" id="la14" name="la">
+                        <input required autocomplete="off" type="text" class="form-control" id="la14" name="la">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Volume Batu Kali</label>
-                        <input required type="text" class="form-control" id="vbk14" name="vbk">
+                        <input required autocomplete="off" type="text" class="form-control" id="vbk14" name="vbk">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Pasir Urug</label>
-                        <input required type="text" class="form-control" id="pu14" name="pu">
+                        <input required autocomplete="off" type="text" class="form-control" id="pu14" name="pu">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Galian</label>
-                        <input required type="text" class="form-control" id="galian14" name="galian">
+                        <input required autocomplete="off" type="text" class="form-control" id="galian14" name="galian">
                     </div>
 
                     <div class="form-group">
                         <label for="type">Timbunan</label>
-                        <input required type="text" class="form-control" id="timbunan14" name="timbunan">
+                        <input required autocomplete="off" type="text" class="form-control" id="timbunan14" name="timbunan">
                     </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -459,83 +459,83 @@
 
                 <form action="/tos26_edit" method="post">
                     @csrf
-                    <input required type="hidden" name="_token" value="{{ csrf_token() }}" />
-                    <input required type="hidden" name="idt" id="isi_id26" />
+                    <input required autocomplete="off" type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input required autocomplete="off" type="hidden" name="idt" id="isi_id26" />
                     <div class="form-group">
                         <label for="nama">Nama</label>
-                        <input required type="text" class="form-control" name="nama" id="26_nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="nama" id="26_nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="bentuk">Bentuk</label>
-                        <input required type="text" class="form-control" name="bentuk" id="26_bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="bentuk" id="26_bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="dimensi_l">Lebar Dimensi</label>
-                        <input required type="text" class="form-control" name="dimensi_l" id="26_dimensi_l" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="dimensi_l" id="26_dimensi_l" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="dimensi_p">Panjang Dimensi</label>
-                        <input required type="text" class="form-control" name="dimensi_p" id="26_dimensi_p" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="dimensi_p" id="26_dimensi_p" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tebal_selimut">Tebal Selimut</label>
-                        <input required type="text" class="form-control" name="tebal_selimut" id="26_tebal_selimut" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tebal_selimut" id="26_tebal_selimut" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tulpok_dia">Diameter Tulangan Pokok</label>
-                        <input required type="text" class="form-control" name="tulpok_dia" id="26_tulpok_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tulpok_dia" id="26_tulpok_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tulpok_jum">Jumlah Tulangan Pokok</label>
-                        <input required type="text" class="form-control" name="tulpok_jum" id="26_tulpok_jum" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tulpok_jum" id="26_tulpok_jum" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tulseng_dia_tumpuan">Dia.Tumpuan (Tulangan Sengkang)</label>
-                        <input required type="text" class="form-control" name="tulseng_dia_tumpuan" id="26_tulseng_dia_tumpuan" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tulseng_dia_tumpuan" id="26_tulseng_dia_tumpuan" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tulseng_dia_jaraktump">Jarak Tumpuan (Tulangan Sengkang)</label>
-                        <input required type="text" class="form-control" name="tulseng_dia_jaraktump" id="26_tulseng_dia_jaraktump" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tulseng_dia_jaraktump" id="26_tulseng_dia_jaraktump" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tulseng_dia_lapangan">Dia.Lapangan (Tulangan Sengkang)</label>
-                        <input required type="text" class="form-control" name="tulseng_dia_lapangan" id="26_tulseng_dia_lapangan" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tulseng_dia_lapangan" id="26_tulseng_dia_lapangan" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tulseng_dia_jaraklap">Jarak Lapangan (Tulangan Sengkang)</label>
-                        <input required type="text" class="form-control" name="tulseng_dia_jaraklap" id="26_tulseng_dia_jaraklap" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tulseng_dia_jaraklap" id="26_tulseng_dia_jaraklap" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="thtump_dia">Diameter (Ties-Horisontal Tumpuan)</label>
-                        <input required type="text" class="form-control" name="thtump_dia" id="26_thtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="thtump_dia" id="26_thtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="thtump_jarak">Jarak (Ties-Horisontal Tumpuan)</label>
-                        <input required type="text" class="form-control" name="thtump_jarak" id="26_thtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="thtump_jarak" id="26_thtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="thlap_dia">Diameter (Ties-Horisontal Lapangan)</label>
-                        <input required type="text" class="form-control" name="thlap_dia" id="26_thlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="thlap_dia" id="26_thlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="thlap_jarak">Jarak (Ties-Horisontal Lapangan)</label>
-                        <input required type="text" class="form-control" name="thlap_jarak" id="26_thlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="thlap_jarak" id="26_thlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tvtump_dia">Diameter (Ties-Vertikal Tumpuan)</label>
-                        <input required type="text" class="form-control" name="tvtump_dia" id="26_tvtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tvtump_dia" id="26_tvtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tvtump_jarak">Jarak (Ties-Vertikal Tumpuan)</label>
-                        <input required type="text" class="form-control" name="tvtump_jarak" id="26_tvtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tvtump_jarak" id="26_tvtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tvlap_dia">Diameter (Ties-Vertikal Lapangan)</label>
-                        <input required type="text" class="form-control" name="tvlap_dia" id="26_tvlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tvlap_dia" id="26_tvlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tvlap_jarak">Jarak (Ties-Vertikal Lapangan)</label>
-                        <input required type="text" class="form-control" name="tvlap_jarak" id="26_tvlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tvlap_jarak" id="26_tvlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -605,15 +605,15 @@
 
                 <form action="/tos24_edit" method="post">
                     @csrf
-                    <input required type="hidden" name="_token" value="{{ csrf_token() }}" />
-                    <input required type="hidden" name="idt" id="isi_id24" />
+                    <input required autocomplete="off" type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input required autocomplete="off" type="hidden" name="idt" id="isi_id24" />
                     <div class="form-group">
                         <label for="Dia">Dia</label>
-                        <input required type="text" class="form-control" name="dia" id="isi_dia24">
+                        <input required autocomplete="off" type="text" class="form-control" name="dia" id="isi_dia24">
                     </div>
                     <div class="form-group">
                         <label for="panjang">Ls</label>
-                        <input required type="text" class="form-control" id="isi_ls" name="ls">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_ls" name="ls">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -647,23 +647,23 @@
 
                 <form action="/tos25_edit" method="post">
                     @csrf
-                    <input required type="hidden" name="_token" value="{{ csrf_token() }}" />
-                    <input required type="hidden" name="idt" id="isi_id25" />
+                    <input required autocomplete="off" type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input required autocomplete="off" type="hidden" name="idt" id="isi_id25" />
                     <div class="form-group">
                         <label for="dimensi_p">Nama</label>
-                        <input required type="text" class="form-control" name="nama" id="nama25" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="nama" id="nama25" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="dimensi_p">B</label>
-                        <input required type="text" class="form-control" name="b" id="b25" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="b" id="b25" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="dimensi_p">H</label>
-                        <input required type="text" class="form-control" name="h" id="h25" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="h" id="h25" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="dimensi_p">T</label>
-                        <input required type="text" class="form-control" name="t" id="t25" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="t" id="t25" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -702,83 +702,83 @@
 
                 <form action="/tos31_edit" method="post">
                     @csrf
-                    <input required type="hidden" name="_token" value="{{ csrf_token() }}" />
-                    <input required type="hidden" name="idt" id="isi_id31" />
+                    <input required autocomplete="off" type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input required autocomplete="off" type="hidden" name="idt" id="isi_id31" />
                     <div class="form-group">
                         <label for="nama">Nama</label>
-                        <input required type="text" class="form-control" name="nama" id="31_nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="nama" id="31_nama" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="bentuk">Bentuk</label>
-                        <input required type="text" class="form-control" name="bentuk" id="31_bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="bentuk" id="31_bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="dimensi_l">Lebar Dimensi</label>
-                        <input required type="text" class="form-control" name="dimensi_l" id="31_dimensi_l" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="dimensi_l" id="31_dimensi_l" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="dimensi_p">Panjang Dimensi</label>
-                        <input required type="text" class="form-control" name="dimensi_p" id="31_dimensi_p" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="dimensi_p" id="31_dimensi_p" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tebal_selimut">Tebal Selimut</label>
-                        <input required type="text" class="form-control" name="tebal_selimut" id="31_tebal_selimut" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tebal_selimut" id="31_tebal_selimut" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tulpok_dia">Diameter Tulangan Pokok</label>
-                        <input required type="text" class="form-control" name="tulpok_dia" id="31_tulpok_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tulpok_dia" id="31_tulpok_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tulpok_jum">Jumlah Tulangan Pokok</label>
-                        <input required type="text" class="form-control" name="tulpok_jum" id="31_tulpok_jum" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tulpok_jum" id="31_tulpok_jum" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tulseng_dia_tumpuan">Dia.Tumpuan (Tulangan Sengkang)</label>
-                        <input required type="text" class="form-control" name="tulseng_dia_tumpuan" id="31_tulseng_dia_tumpuan" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tulseng_dia_tumpuan" id="31_tulseng_dia_tumpuan" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tulseng_dia_jaraktump">Jarak Tumpuan (Tulangan Sengkang)</label>
-                        <input required type="text" class="form-control" name="tulseng_dia_jaraktump" id="31_tulseng_dia_jaraktump" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tulseng_dia_jaraktump" id="31_tulseng_dia_jaraktump" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tulseng_dia_lapangan">Dia.Lapangan (Tulangan Sengkang)</label>
-                        <input required type="text" class="form-control" name="tulseng_dia_lapangan" id="31_tulseng_dia_lapangan" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tulseng_dia_lapangan" id="31_tulseng_dia_lapangan" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tulseng_dia_jaraklap">Jarak Lapangan (Tulangan Sengkang)</label>
-                        <input required type="text" class="form-control" name="tulseng_dia_jaraklap" id="31_tulseng_dia_jaraklap" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tulseng_dia_jaraklap" id="31_tulseng_dia_jaraklap" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="thtump_dia">Diameter (Ties-Horisontal Tumpuan)</label>
-                        <input required type="text" class="form-control" name="thtump_dia" id="31_thtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="thtump_dia" id="31_thtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="thtump_jarak">Jarak (Ties-Horisontal Tumpuan)</label>
-                        <input required type="text" class="form-control" name="thtump_jarak" id="31_thtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="thtump_jarak" id="31_thtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="thlap_dia">Diameter (Ties-Horisontal Lapangan)</label>
-                        <input required type="text" class="form-control" name="thlap_dia" id="31_thlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="thlap_dia" id="31_thlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="thlap_jarak">Jarak (Ties-Horisontal Lapangan)</label>
-                        <input required type="text" class="form-control" name="thlap_jarak" id="31_thlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="thlap_jarak" id="31_thlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tvtump_dia">Diameter (Ties-Vertikal Tumpuan)</label>
-                        <input required type="text" class="form-control" name="tvtump_dia" id="31_tvtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tvtump_dia" id="31_tvtump_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tvtump_jarak">Jarak (Ties-Vertikal Tumpuan)</label>
-                        <input required type="text" class="form-control" name="tvtump_jarak" id="31_tvtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tvtump_jarak" id="31_tvtump_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tvlap_dia">Diameter (Ties-Vertikal Lapangan)</label>
-                        <input required type="text" class="form-control" name="tvlap_dia" id="31_tvlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tvlap_dia" id="31_tvlap_dia" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
                         <label for="tvlap_jarak">Jarak (Ties-Vertikal Lapangan)</label>
-                        <input required type="text" class="form-control" name="tvlap_jarak" id="31_tvlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
+                        <input required autocomplete="off" type="text" class="form-control" name="tvlap_jarak" id="31_tvlap_jarak" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -848,15 +848,15 @@
 
                 <form action="/tos35_edit" method="post">
                     @csrf
-                    <input required type="hidden" name="_token" value="{{ csrf_token() }}" />
-                    <input required type="hidden" name="idt" id="isi_id35" />
+                    <input required autocomplete="off" type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    <input required autocomplete="off" type="hidden" name="idt" id="isi_id35" />
                     <div class="form-group">
                         <label for="Dia">Dia</label>
-                        <input required type="text" class="form-control" name="dia" id="isi_dia35">
+                        <input required autocomplete="off" type="text" class="form-control" name="dia" id="isi_dia35">
                     </div>
                     <div class="form-group">
                         <label for="panjang">Ls</label>
-                        <input required type="text" class="form-control" id="isi_ls35" name="ls">
+                        <input required autocomplete="off" type="text" class="form-control" id="isi_ls35" name="ls">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
