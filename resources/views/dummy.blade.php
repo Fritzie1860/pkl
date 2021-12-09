@@ -17,7 +17,7 @@
 
 </head>
 
-<body background="">
+<body style="background-image: url('images/gradient.png');  ">
     <center>
         <div class="middle-box loginscreen" >
         <div style="height:150px; margin-top: 25px;">
