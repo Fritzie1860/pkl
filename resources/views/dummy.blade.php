@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Login</title>
+    <title>Invest Islands | Login</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 
 </head>
 
-<body >
+<body background="">
     <center>
         <div class="middle-box loginscreen" >
         <div style="height:150px; margin-top: 25px;">
@@ -25,7 +25,7 @@
         </div>    
         <div class="login_box">
                 <div>
-                    <img src="/images/invest.png" alt="" style="height: 100px; width:225px;">
+                    <img src="/images/invest.png" alt="" style="height: 100px; width:170px;">
                 </div>
 
                 <form action="/login" method="post" >
