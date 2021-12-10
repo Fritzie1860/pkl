@@ -136,9 +136,9 @@
                         </a>
                         <div class="contact-box-footer">
                             <div class="m-t-xs btn-group">
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
+                                <a href="https://wa.me/<?=$row->no_hp?>?text=Permisi%2C%20apakah%20sedang%20ada%20waktu%20luang%3F%20Ada%20yang%20akan%20saya%20diskusikan%2C%20mohon%20hubungi%20saya%20kembali.%20Terima%20kasih." class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
                                 <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
+                                
                             </div>
                         </div>
 
