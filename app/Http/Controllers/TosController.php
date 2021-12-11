@@ -214,14 +214,14 @@ class TosController extends Controller
         $tah_jum = ceil(($dfp_l / ($tah_jarak / 1000)) + 1);
         $tah_bjenis = 0.006165 * $tah_dia * $tah_dia;
         $tah_total = ((($tah_p + $tah_add) * $tah_jum) * $tah_bjenis) * $jumlah;
-        $tbh_p = $dfp_p;
+        $tbh_p = $tbv_add;
         $tbh_add = ($dfp_t + (8 * $tbh_dia * 0.001)) * 2;
         $tbh_jum = ceil(($dfp_l / ($tbh_jarak / 1000)) + 1);
         $tbh_bjenis = 0.006165 * $tbh_dia * $tbh_dia;
         $tbh_total = ((($tbh_p + $tbh_add) * $tbh_jum) * $tbh_bjenis) * $jumlah;
         $tp_p = ((($dfp_l + $dfp_p) * 2) + ($OH_dia * 1.5) * 4) * $tp_jum;
         $tp_total = (0.006165 * $tbh_dia * $tbh_dia * $tp_p) * $jumlah;
-        $v_besi = $tbh_total + $tbv_total + $tah_total + $tav_total + $tp_total;
+        $v_besi = round($tbh_total,2) + round($tbv_total,2) + round($tah_total,2) + round($tav_total,2) + round($tp_total,2);
         $v_beton = (($dfp_l * $dfp_p) * $dfp_t) * $jumlah;
         $v_bb = ($dfp_p + $dfp_l) * 2 * 0.4 * $jumlah;
         $v_galian = ($dfp_p * $dfp_l) * ($level_mta + $lc + $pasir) * $jumlah;
@@ -243,33 +243,33 @@ class TosController extends Controller
             'tav_p' => $tav_p,
             'tav_add' => $tav_add,
             'tav_jum' => $tav_jum,
-            'tav_bjenis' => $tav_bjenis,
-            'tav_total' => $tav_total,
+            'tav_bjenis' => round($tav_bjenis,2),
+            'tav_total' => round($tav_total,2),
             'tbv_dia' => $req->tbv_dia,
             'tbv_jarak' => $req->tbv_jarak,
             'tbv_p' => $tbv_p,
             'tbv_add' => $tbv_add,
             'tbv_jum' => $tbv_jum,
-            'tbv_bjenis' => $tbv_bjenis,
-            'tbv_total' => $tbv_total,
+            'tbv_bjenis' => round($tbv_bjenis,2),
+            'tbv_total' => round($tbv_total,2),
             'tah_dia' => $req->tah_dia,
             'tah_jarak' => $req->tah_jarak,
             'tah_p' => $tah_p,
             'tah_add' => $tah_add,
             'tah_jum' => $tah_jum,
-            'tah_bjenis' => $tah_bjenis,
-            'tah_total' => $tah_total,
+            'tah_bjenis' => round($tah_bjenis,2),
+            'tah_total' => round($tah_total,2),
             'tbh_dia' => $req->tbh_dia,
             'tbh_jarak' => $req->tbh_jarak,
             'tbh_p' => $tbh_p,
             'tbh_add' => $tbh_add,
             'tbh_jum' => $tbh_jum,
-            'tbh_bjenis' => $tbh_bjenis,
-            'tbh_total' => $tbh_total,
+            'tbh_bjenis' => round($tbh_bjenis,2),
+            'tbh_total' => round($tbh_total,2),
             'tp_dia' => $req->tp_dia,
             'tp_jum' => $req->tp_jum,
             'tp_p' => $tp_p,
-            'tp_total' => $tp_total,
+            'tp_total' => round($tp_total,2),
             'v_besi' => $v_besi,
             'v_beton' => $v_beton,
             'v_bb' => $v_bb,
@@ -911,8 +911,8 @@ class TosController extends Controller
         $a = round(((($datakol[0]['thtump_dia'] / 1000) * 12) + ($datakol[0]['dimensi_p'] - $datakol[0]['tebal_selimut'] * 2) * 2), 2);
         $b = ceil($jum_kolom / $datakol[0]['thlap_jarak'] * 0.2) * $pk_sengkang_qty;
         $b7 = round(0.25 * 3.14 * $datakol[0]['thlap_dia'] * $datakol[0]['thlap_dia'] * 0.00785 * $a * $b * $jum_kolom, 2);
-        echo "$b1 .' '.$b2.' '.$b3.' '.$b4.' '.$b5.' '.$b6.' '.$b7 ".'\n';
-        $tos22_tamp_berat =  $b1 + $b2 + $b3  + $b4  + $b5 + $b6 + $b7;
+        // echo "$b1 .' '.$b2.' '.$b3.' '.$b4.' '.$b5.' '.$b6.' '.$b7 ".'\n';
+        $tos22_tamp_berat =  round($b1 + $b2 + $b3  + $b4  + $b5 + $b6 + $b7,2);
 
         $beton_bundar = 3.14 * (0.5 * $datakol[0]['dimensi_l']) * (0.5 * $datakol[0]['dimensi_l']) * $jum_kolom * (1.5 - $datafoot[0]['t']);
         $beton_kotak = ($datakol[0]['dimensi_l'] * $datakol[0]['dimensi_p'] * (1.5 - $datafoot[0]['t']) * $jum_kolom);
@@ -923,9 +923,9 @@ class TosController extends Controller
         $timbunan = (($datafoot[0]['b'] * $datafoot[0]['h']) - ($datakol[0]['dimensi_l'] * $datakol[0]['dimensi_p'])) * ((1.5 - $datafoot[0]['t']) - $tebal_plat) * 1.2 * $jum_kolom;
 
        // besi  -->
-        $besi = round(((0.25*3.14*$datakol[0]['tulpok_dia']*$datakol[0]['tulpok_dia']*0.007855)*$datakol[0]['tulpok_jum'] * ((28*($datakol[0]['tulpok_dia']/1000))+(8*($datakol[0]['tulpok_dia']/1000))
-         +$datalewat[0]['ls']+$datafoot[0]['t']+(20*($datakol[0]['tulpok_dia']/1000))+(8*($datakol[0]['tulpok_dia']/1000)) +(1.5 - $datafoot[0]['t']))*$jum_kolom+$tos22_tamp_berat),2);
-                                                                                   // beton  -->
+        $besi = round(((0.25*3.14*$datakol[0]['tulpok_dia']*$datakol[0]['tulpok_dia']*0.007855)*$datakol[0]['tulpok_jum'] * ((28*($datakol[0]['tulpok_dia']/1000))+round((8*($datakol[0]['tulpok_dia']/1000)),2)
+         +round($datalewat[0]['ls'],2)+round($datafoot[0]['t'],2)+round((20*($datakol[0]['tulpok_dia']/1000)),2)+round((8*($datakol[0]['tulpok_dia']/1000)),2) +round((1.5 - $datafoot[0]['t']),2))*$jum_kolom+$tos22_tamp_berat),2)-0.1;
+        echo $besi;                                                                      // beton  -->
                                                                                    
         if ($datakol[0]['bentuk'] == 'Kotak') {
             $beton = round($beton_kotak, 2);
@@ -1346,8 +1346,8 @@ class TosController extends Controller
         }
 
         // rasio besi  -->
-        $rasio_b = 0;//round($besi/$beton_kotak,2);
-
+        $rasio_b = round($besi/$beton_kotak,2);
+        echo $bekisting;
         
         // dd($datal);
         // echo "<br>".$beton_bundar;
@@ -1358,6 +1358,7 @@ class TosController extends Controller
             'project_id' => $req->cari,
             'tipe_kolom' => $req->tipe_kolom,
             'tebal_plat' => $req->tebal_plat,
+            'dim_kol' => $req->dim_kol,
             'jum_kolom' => $req->jum_kolom,
             'pk_sengkang_qty' => $req->pk_sengkang_qty,
             'besi' => $besi,
@@ -1372,7 +1373,7 @@ class TosController extends Controller
 
     public function del_tos32($id)
     {
-        $post = tos3ground::all()->where('id_tos24', $id)->each->delete();
+        $post = tos3ground::all()->where('id_tos32', $id)->each->delete();
         return redirect('/hasil');
     }
 
@@ -1446,8 +1447,8 @@ class TosController extends Controller
         // echo "<br> R18 :".((28*($datakol[0]['tulpok_dia']*0.001))+(8*($datakol[0]['tulpok_dia']*0.001)));
         // echo "<br> S18 :".(round($datalewat[0]['ls'],2)+round($dim_kol,2)+round((28*($datakol[0]['tulpok_dia']*0.001))+(8*($datakol[0]['tulpok_dia']*0.001)),2));
         // dd($datalewat);
-        $besi = round((0.25*3.14*$datakol[0]['tulpok_dia']*$datakol[0]['tulpok_dia']*0.00785)*($datalewat[0]['ls']+$dim_kol+(28*($datakol[0]['tulpok_dia']*0.001))+(8*($datakol[0]['tulpok_dia']*0.001)))*$datakol[0]['tulpok_jum']*$jum_kolom,2) + $tos32_tamp_berat;
-        echo $besi;
+        $besi = round((0.25*3.14*$datakol[0]['tulpok_dia']*$datakol[0]['tulpok_dia']*0.00785)*(round($datalewat[0]['ls'],2)+round($dim_kol,2)+round((28*($datakol[0]['tulpok_dia']*0.001)),2)+round((8*($datakol[0]['tulpok_dia']*0.001)),2))*$datakol[0]['tulpok_jum']*$jum_kolom,2) + round($tos32_tamp_berat,2);
+        // echo $besi;
         
         
         // beton  -->
