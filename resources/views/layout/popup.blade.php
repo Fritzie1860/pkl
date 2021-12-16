@@ -149,10 +149,6 @@
                         <input required autocomplete="off" type="text" class="form-control" name="bentuk" id="bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>
                     <div class="form-group">
-                        <label for="bentuk">Panjang</label>
-                        <input required autocomplete="off" type="text" class="form-control" name="panjang" id="bentuk" aria-describedby="emailHelp" placeholder="Enter data . . .">
-                    </div>
-                    <div class="form-group">
                         <label for="B">B</label>
                         <input required autocomplete="off" type="text" class="form-control" name="B" id="B" aria-describedby="emailHelp" placeholder="Enter data . . .">
                     </div>

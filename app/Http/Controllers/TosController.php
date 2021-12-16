@@ -186,7 +186,7 @@ class TosController extends Controller
         $dfp_l = $req['dfp_l'];
         $dfp_p = $req['dfp_p'];
         $dfp_t = $req['dfp_t'];
-        $level_mta = $req['level_MTA'];
+        $level_mta = $req['level_mta'];
         $jumlah = $req['jumlah'];
         $tav_dia = $req['tav_dia'];
         $tav_jarak = $req['tav_jarak'];
@@ -227,7 +227,7 @@ class TosController extends Controller
         $v_galian = ($dfp_p * $dfp_l) * ($level_mta + $lc + $pasir) * $jumlah;
         $v_lc = ($dfp_p * $dfp_l) * $lc * $jumlah;
         $v_pasir = ($dfp_l * $dfp_p) * $jumlah;
-
+        
         // dd($req);
 
         $hasil = [
